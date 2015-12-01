@@ -1,0 +1,44 @@
+
+#Whisker-Menu theming
+style "darkback"
+{
+	bg[NORMAL] = "#000000"
+	bg[ACTIVE] = "#1f1f1f"
+	bg[PRELIGHT] = "#0b5a98"
+	fg[NORMAL] = "#ccc"
+	fg[ACTIVE] = "#fff"
+	fg[PRELIGHT] = "#fff"
+}
+widget "whiskermenu-window*" style "darkback"
+
+style "darktree"
+{
+	base[NORMAL] = "#000000"
+	base[ACTIVE] = "#0b5a98"
+	text[NORMAL] = "#ccc"
+	text[ACTIVE] = "#fff"
+}
+widget "whiskermenu-window*TreeView*" style "darktree"
+
+#Xfce-desktop text settings
+style "xfdesktop-icon-view" {
+XfdesktopIconView::label-alpha = 0
+
+#Text colors you can delete these if you want you use gtk theme colors
+fg[NORMAL] = "#ffffff"
+fg[SELECTED] = "#ffffff"
+fg[ACTIVE] = "#ffffff"
+
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+
+style "panel"
+{
+bg[NORMAL] = "#000000"
+xthickness = 0
+ythickness = 0
+}
+
+widget_class "*Panel*" style "panel"
+widget "*Panel*" style "panel"
+class "*Panel*" style "panel"

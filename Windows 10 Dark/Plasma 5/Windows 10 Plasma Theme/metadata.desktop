@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Windows 10 Plasma Theme
+Comment=Plasma Theme simulating a Windows 10 panel; based on Caledonia and Dark Glass 
+
+X-KDE-PluginInfo-Author=Christian Medel (Elbullazul)
+X-KDE-PluginInfo-Email=cmedelahumada@gmail.com
+X-KDE-PluginInfo-Name=Windows 10
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=b00merang.weebly.com
+X-KDE-PluginInfo-Category=Plasma Theme
+X-KDE-PluginInfo-License=GPL v2
+X-KDE-PluginInfo-EnabledByDefault=true
+
+[Wallpaper]
+defaultWallpaperTheme=
+defaultFileSuffix=
+defaultWidth=
+defaultHeight=
+
+

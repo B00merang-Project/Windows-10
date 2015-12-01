@@ -1,0 +1,1029 @@
+{
+    "separator-layouts-top": {
+        "type": "separator"
+    }, 
+    "header-layouts": {
+        "type": "header", 
+        "description": "Layouts:"
+    }, 
+    "separator-layouts-bottom": {
+        "type": "separator"
+    }, 
+    "theme": {
+        "type": "combobox", 
+        "description": "Menu layout:", 
+        "default": "classic", 
+        "tooltip": "Select a layout of menu.", 
+        "options": {
+            "Classic": "classic", 
+            "Classic Gnome": "classicGnome", 
+            "Whisker": "whisker", 
+            "Kicker": "kicker", 
+            "GnoMenu Left": "gnomenuLeft", 
+            "GnoMenu Right": "gnomenuRight", 
+            "GnoMenu Top": "gnomenuTop", 
+            "GnoMenu Bottom": "gnomenuBottom", 
+            "Vampire": "vampire", 
+            "Garibaldo": "garibaldo", 
+            "Stylized": "stylized", 
+            "Dragon": "dragon", 
+            "Dragon Inverted": "dragonInverted", 
+            "Luz Helena": "luzHelena", 
+            "Accessible": "accessible", 
+            "Accessible Inverted": "accessibleInverted", 
+            "Mint": "mint", 
+            "Windows 7": "windows7"
+        }, 
+        "value": "classic"
+    }, 
+    "menu-theme-save-button": {
+        "type": "button", 
+        "description": "Save the layout configuration", 
+        "callback": "_saveConfigTheme", 
+        "tooltip": "Press this button to save the layout configuration."
+    }, 
+    "separator-menu-top": {
+        "type": "separator"
+    }, 
+    "header-menu": {
+        "type": "header", 
+        "description": "Menu:"
+    }, 
+    "separator-menu-bottom": {
+        "type": "separator"
+    }, 
+    "menu-icon": {
+        "type": "iconfilechooser", 
+        "default": "/usr/share/cinnamon/theme/menu.png", 
+        "description": "Icon", 
+        "tooltip": "Select an icon to show in the panel.", 
+        "value": "/usr/share/cinnamon/theme/menu.svg"
+    }, 
+    "menu-label": {
+        "type": "entry", 
+        "default": "Menu", 
+        "description": "Text", 
+        "tooltip": "Enter custom text to show in the panel.", 
+        "value": ""
+    }, 
+    "overlay-key": {
+        "type": "keybinding", 
+        "description": "Keyboard shortcut to open and close the menu", 
+        "default": "Super_L::Super_R", 
+        "value": "Super_L::Super_R"
+    }, 
+    "effect": {
+        "type": "combobox", 
+        "description": "Effect on opening and closing:", 
+        "default": "none", 
+        "tooltip": "Select the effect on the menu opening and closing.", 
+        "options": {
+            "None": "none", 
+            "Dispel": "dispel", 
+            "Hide Horizontal": "hideHorizontal", 
+            "Hide Vertical": "hideVertical", 
+            "Scale": "scale", 
+            "Windows": "windows"
+        }, 
+        "value": "hideVertical"
+    }, 
+    "effect-time": {
+        "type": "spinbutton", 
+        "default": 0.4, 
+        "min": 0, 
+        "max": 1, 
+        "step": 0.05, 
+        "units": "seconds", 
+        "description": "Duration of effect:", 
+        "tooltip": "The time on seconds to perform the effect(More time is slower).", 
+        "value": 0.1
+    }, 
+    "swap-panels": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Swap the top and bottom panel", 
+        "tooltip": "Choose whether or not to swap the top and bottom panel on the menu.", 
+        "value": true
+    }, 
+    "allow-search": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show search entry", 
+        "tooltip": "Choose whether or not to show search entry on the menu.", 
+        "value": true
+    }, 
+    "enable-autoscroll": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Enable autoscrolling", 
+        "tooltip": "Choose whether or not to enable smooth autoscrolling on the menu.", 
+        "value": true
+    }, 
+    "show-box-pointer": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show menu box pointer", 
+        "tooltip": "Choose whether or not to show the menu box pointer.", 
+        "value": true
+    }, 
+    "fix-menu-corner": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Menu bordering screen edge", 
+        "tooltip": "Choose whether or not the menu bordering the screen edge.", 
+        "value": true
+    }, 
+    "menu-editor-button": {
+        "type": "button", 
+        "description": "Open the menu editor", 
+        "callback": "_launch_editor", 
+        "tooltip": "Press this button to customize your menu entries."
+    }, 
+    "separator-size-top": {
+        "type": "separator"
+    }, 
+    "header-size": {
+        "type": "header", 
+        "description": "Menu Size:"
+    }, 
+    "separator-size-bottom": {
+        "type": "separator"
+    }, 
+    "allow-resizing": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Allow resizing", 
+        "tooltip": "Choose whether or not to allow resizing the menu.", 
+        "value": true
+    }, 
+    "automatic-size": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Automatic size", 
+        "tooltip": "Choose whether or not to automatic adjust of the menu size.", 
+        "value": false
+    }, 
+    "full-screen": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Full screen", 
+        "tooltip": "Choose whether or not to put the menu in full screen mode.", 
+        "value": false
+    }, 
+    "width": {
+        "type": "spinbutton", 
+        "default": 530, 
+        "min": 200, 
+        "max": 3000, 
+        "step": 5, 
+        "units": "pixels", 
+        "description": "Menu width:", 
+        "tooltip": "Width of the menu.", 
+        "value": 716
+    }, 
+    "height": {
+        "type": "spinbutton", 
+        "default": 600, 
+        "min": 300, 
+        "max": 2000, 
+        "step": 5, 
+        "units": "pixels", 
+        "description": "Menu height:", 
+        "tooltip": "Height of the menu.", 
+        "value": 461
+    }, 
+    "separator-reaction-top": {
+        "type": "separator"
+    }, 
+    "header-reaction": {
+        "type": "header", 
+        "description": "Menu Reaction:"
+    }, 
+    "separator-reaction-bottom": {
+        "type": "separator"
+    }, 
+    "activate-on-hover": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Open the menu when I move my mouse over it", 
+        "tooltip": "Enable opening the menu when the mouse enters the applet", 
+        "value": false
+    }, 
+    "activate-on-press": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Open the menu when I press my mouse over it", 
+        "tooltip": "Enable opening the menu when the mouse press over the applet.", 
+        "value": "true"
+    }, 
+    "separator-categories-top": {
+        "type": "separator"
+    }, 
+    "header-categories": {
+        "type": "header", 
+        "description": "Categories:"
+    }, 
+    "separator-categories-bottom": {
+        "type": "separator"
+    }, 
+    "categories-hover": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Open the category when I move my mouse over it", 
+        "tooltip": "Choose whether or not to open the category when the mouse move over it, otherwise need the mouse click.", 
+        "value": true
+    }, 
+    "hover-delay": {
+        "type": "spinbutton", 
+        "default": 0, 
+        "min": 0, 
+        "max": 1000, 
+        "step": 50, 
+        "units": "milliseconds", 
+        "description": "Menu hover delay:", 
+        "tooltip": "Delay between switching categories", 
+        "indent": true, 
+        "dependency": "arrow-categories", 
+        "value": 0
+    }, 
+    "categories-icons": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show icons on the categories", 
+        "tooltip": "Choose whether or not to have icons on the categories.", 
+        "value": true
+    }, 
+    "icon-cat-size": {
+        "type": "spinbutton", 
+        "default": 32, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Category icon size:", 
+        "tooltip": "Set the category icon size.", 
+        "value": 21
+    }, 
+    "show-recent": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show recent files", 
+        "tooltip": "Choose whether or not to show a recent file list in the menu.", 
+        "value": true
+    }, 
+    "show-places": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show bookmarks and places", 
+        "tooltip": "Choose whether or not to show bookmarks and places in the menu.", 
+        "value": true
+    }, 
+    "scroll-categories": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show scrolling area of categories", 
+        "tooltip": "Choose whether or not to show the scrolling area of categories.", 
+        "value": false
+    }, 
+    "arrow-categories": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show arrow on the categories", 
+        "tooltip": "Choose whether or not to show the arrow on the categories.", 
+        "value": false
+    }, 
+    "arrow-categories-selected": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Only show arrow when selected category", 
+        "tooltip": "Choose whether or not to only show the arrow when selected the category.", 
+        "indent": true, 
+        "dependency": "arrow-categories", 
+        "value": false
+    }, 
+    "separator-apps-top": {
+        "type": "separator"
+    }, 
+    "header-apps": {
+        "type": "header", 
+        "description": "Applications:"
+    }, 
+    "separator-apps-bottom": {
+        "type": "separator"
+    }, 
+    "app-button-width": {
+        "type": "spinbutton", 
+        "default": 300, 
+        "min": 100, 
+        "max": 300, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Maximum width of the application entry text:", 
+        "tooltip": "Set the maximum width of the application entry text.", 
+        "value": 300
+    }, 
+    "app-description": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Application entries have description", 
+        "tooltip": "Choose whether or not to have description on application entries.", 
+        "value": false
+    }, 
+    "icon-app-size": {
+        "type": "spinbutton", 
+        "default": 22, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Application icon size:", 
+        "tooltip": "Set the application icon size.", 
+        "value": 90
+    }, 
+    "scroll-applications": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show scrolling area of applications", 
+        "tooltip": "Choose whether or not to show the scrolling area of applications.", 
+        "value": true
+    }, 
+    "separator-favorites-top": {
+        "type": "separator"
+    }, 
+    "header-favorites": {
+        "type": "header", 
+        "description": "Favorites:"
+    }, 
+    "separator-favorites-bottom": {
+        "type": "separator"
+    }, 
+    "show-favorites": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show favorites", 
+        "tooltip": "Choose whether or not to show favorites on the menu.", 
+        "value": true
+    }, 
+    "icon-max-fav-size": {
+        "type": "spinbutton", 
+        "default": 32, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Maximum favorites icon size:", 
+        "tooltip": "Set the maximum size of the favorites icon.", 
+        "value": 32
+    }, 
+    "favorites-lines": {
+        "type": "spinbutton", 
+        "default": 1, 
+        "min": 1, 
+        "max": 12, 
+        "step": 1, 
+        "units": "lines", 
+        "description": "Number of favorites lines:", 
+        "tooltip": "Choose the number of favorites lines.", 
+        "indent": true, 
+        "dependency": "show-favorites", 
+        "value": 1
+    }, 
+    "scroll-favorites": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show scrolling area of favorites", 
+        "tooltip": "Choose whether or not to show the scrolling area of favorites.", 
+        "value": false
+    }, 
+    "separator-hover-top": {
+        "type": "separator"
+    }, 
+    "header-hover": {
+        "type": "header", 
+        "description": "Hover Icon:"
+    }, 
+    "separator-hover-bottom": {
+        "type": "separator"
+    }, 
+    "show-hover-icon": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show hover icon", 
+        "tooltip": "Choose whether or not to show hover icon on the menu.", 
+        "value": false
+    }, 
+    "hover-box": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Hover icon have a box", 
+        "tooltip": "Choose whether or not to have a box on the hover icon.", 
+        "value": false
+    }, 
+    "icon-hover-size": {
+        "type": "spinbutton", 
+        "default": 68, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Hover icon size:", 
+        "tooltip": "Set the hover icon size.", 
+        "value": 68
+    }, 
+    "separator-system-top": {
+        "type": "separator"
+    }, 
+    "header-system": {
+        "type": "header", 
+        "description": "System Buttons:"
+    }, 
+    "separator-system-bottom": {
+        "type": "separator"
+    }, 
+    "show-power-buttons": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show system buttons", 
+        "tooltip": "Choose whether or not to show system buttons on the menu.", 
+        "value": true
+    }, 
+    "power-theme": {
+        "type": "combobox", 
+        "description": "System buttons layout:", 
+        "default": "vertical-icon", 
+        "tooltip": "Select a layout of system buttons.", 
+        "options": {
+            "Vertical Icon": "vertical-icon", 
+            "Vertical List": "vertical-list", 
+            "Vertical Grid": "vertical-grid", 
+            "Vertical Text": "vertical-text", 
+            "Horizontal Icon": "horizontal-icon", 
+            "Horizontal List": "horizontal-list", 
+            "Horizontal Grid": "horizontal-grid", 
+            "Horizontal Text": "horizontal-text", 
+            "Retractable": "retractable", 
+            "Retractable Text": "retractable-text"
+        }, 
+        "value": "vertical-icon"
+    }, 
+    "power-box": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "System buttons have a box", 
+        "tooltip": "Choose whether or not to have a box on the system buttons.", 
+        "value": false
+    }, 
+    "power-symbolic": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show symbolic icons on the system buttons", 
+        "tooltip": "Enable this option to show symbolic icons, on the system buttons and disable to show full color.", 
+        "value": false
+    }, 
+    "icon-power-size": {
+        "type": "spinbutton", 
+        "default": 32, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "System icons size:", 
+        "tooltip": "Set the system icons size.", 
+        "value": 32
+    }, 
+    "separator-control-top": {
+        "type": "separator"
+    }, 
+    "header-control": {
+        "type": "header", 
+        "description": "Control Buttons:"
+    }, 
+    "separator-control-bottom": {
+        "type": "separator"
+    }, 
+    "show-view-item": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show control buttons", 
+        "tooltip": "Choose whether or not to show control buttons.", 
+        "value": false
+    }, 
+    "control-box": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Control buttons have a box", 
+        "tooltip": "Choose whether or not to have a box on the control buttons.", 
+        "value": false
+    }, 
+    "view-item": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show application entries in grid view", 
+        "tooltip": "Enable show application entries in grid(icon) view and disable show application entries in list view.", 
+        "value": false
+    }, 
+    "control-symbolic": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show symbolic icons on the control buttons", 
+        "tooltip": "Enable this option to show symbolic icons, on the control buttons and disable to show full color.", 
+        "value": false
+    }, 
+    "icon-control-size": {
+        "type": "spinbutton", 
+        "default": 22, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Control icon size:", 
+        "tooltip": "Set the control icon size.", 
+        "value": 22
+    }, 
+    "separator-separators-top": {
+        "type": "separator"
+    }, 
+    "header-separators": {
+        "type": "header", 
+        "description": "Separators:"
+    }, 
+    "separator-separators-bottom": {
+        "type": "separator"
+    }, 
+    "spacer-line": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show separator line", 
+        "tooltip": "Choose whether or not to show a line on separator.", 
+        "value": false
+    }, 
+    "spacer-size": {
+        "type": "spinbutton", 
+        "default": 10, 
+        "min": 0, 
+        "max": 50, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Separator size:", 
+        "tooltip": "Choose the size of separator.", 
+        "value": 10
+    }, 
+    "separator-information-top": {
+        "type": "separator"
+    }, 
+    "header-information": {
+        "type": "header", 
+        "description": "Information Panel:"
+    }, 
+    "separator-information-bottom": {
+        "type": "separator"
+    }, 
+    "show-app-title": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show name of the selected application", 
+        "tooltip": "Choose whether or not to show the selected application name on the menu.", 
+        "value": true
+    }, 
+    "app-title-size": {
+        "type": "spinbutton", 
+        "default": 10, 
+        "min": 4, 
+        "max": 20, 
+        "step": 1, 
+        "units": "points", 
+        "indent": true, 
+        "dependency": "show-app-title", 
+        "description": "Font size of the selected application name:", 
+        "tooltip": "Set the font size of the selected application name.", 
+        "value": 10
+    }, 
+    "show-app-description": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show description of the selected application", 
+        "tooltip": "Choose whether or not to show the selected application description on the menu.", 
+        "value": true
+    }, 
+    "app-description-size": {
+        "type": "spinbutton", 
+        "default": 8, 
+        "min": 4, 
+        "max": 20, 
+        "step": 1, 
+        "units": "points", 
+        "indent": true, 
+        "dependency": "show-app-description", 
+        "description": "Font size of the selected application description:", 
+        "tooltip": "Set the font size of the selected application description.", 
+        "value": 8
+    }, 
+    "show-time-date": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show time and date", 
+        "tooltip": "Choose whether or not to show time and date on the menu.", 
+        "value": false
+    }, 
+    "time-format": {
+        "type": "entry", 
+        "default": "%H:%M", 
+        "indent": true, 
+        "dependency": "show-time-date", 
+        "description": "Time format:", 
+        "tooltip": "Choose the time format to show time on the menu.", 
+        "value": "%H:%M"
+    }, 
+    "date-format": {
+        "type": "entry", 
+        "default": "%A,%e %B", 
+        "indent": true, 
+        "dependency": "show-time-date", 
+        "description": "Date format:", 
+        "tooltip": "Choose the date format to show time on the menu.", 
+        "value": "%A,%e %B"
+    }, 
+    "separator-accessible-top": {
+        "type": "separator"
+    }, 
+    "header-accessible": {
+        "type": "header", 
+        "description": "Accessible Panel:"
+    }, 
+    "separator-accessible-bottom": {
+        "type": "separator"
+    }, 
+    "accessible-box": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Accessible panel has a box", 
+        "tooltip": "Choose whether or not to have a box on the accessible panel.", 
+        "value": false
+    }, 
+    "scroll-accessible": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show scrolling area of accessible panel", 
+        "tooltip": "Choose whether or not to show the scrolling area of accessible panel.", 
+        "value": true
+    }, 
+    "accessible-icons": {
+        "type": "checkbox", 
+        "default": true, 
+        "description": "Show icons on the accessible panel", 
+        "tooltip": "Choose whether or not to have icons on the accessible panel.", 
+        "value": true
+    }, 
+    "icon-accessible-size": {
+        "type": "spinbutton", 
+        "default": 22, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Accessible icons size:", 
+        "tooltip": "Set the accessible icons size.", 
+        "value": 22
+    }, 
+    "show-removable-drives": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show removable drives on the accessible panel", 
+        "tooltip": "Choose whether or not to show removable drives on the accessible panel.", 
+        "value": false
+    }, 
+    "separator-gnomenu-top": {
+        "type": "separator"
+    }, 
+    "header-gnomenu": {
+        "type": "header", 
+        "description": "GnoMenu Panel:"
+    }, 
+    "separator-gnomenu-bottom": {
+        "type": "separator"
+    }, 
+    "gnomenu-buttons-theme": {
+        "type": "combobox", 
+        "description": "GnoMenu buttons layout:", 
+        "default": "icon", 
+        "tooltip": "Select a layout of GnoMenu buttons.", 
+        "options": {
+            "Only Icons": "icon", 
+            "Only Text": "text", 
+            "Grid": "grid", 
+            "List": "list"
+        }, 
+        "value": "icon"
+    }, 
+    "gnomenu-box": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "GnoMenu buttons have a box", 
+        "tooltip": "Choose whether or not to have a box on the GnoMenu buttons.", 
+        "value": false
+    }, 
+    "scroll-gnomenu": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Show scrolling area of GnoMenu panel", 
+        "tooltip": "Choose whether or not to show the scrolling area of GnoMenu panel.", 
+        "value": false
+    }, 
+    "icon-gnomenu-size": {
+        "type": "spinbutton", 
+        "default": 80, 
+        "min": 10, 
+        "max": 100, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "GnoMenu icons size:", 
+        "tooltip": "Set the GnoMenu icons size.", 
+        "value": 80
+    }, 
+    "separator-submenu-top": {
+        "type": "separator"
+    }, 
+    "header-submenu": {
+        "type": "header", 
+        "description": "Submenu:"
+    }, 
+    "separator-submenu-bottom": {
+        "type": "separator"
+    }, 
+    "submenu-align": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Align the submenu with the parent", 
+        "tooltip": "Choose whether or not to align the submenu with the parent.", 
+        "value": false
+    }, 
+    "submenu-width": {
+        "type": "spinbutton", 
+        "default": 200, 
+        "min": 80, 
+        "max": 1000, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Submenu width:", 
+        "tooltip": "Set the submenu width.", 
+        "value": 200
+    }, 
+    "submenu-height": {
+        "type": "spinbutton", 
+        "default": 300, 
+        "min": 100, 
+        "max": 1000, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Submenu height:", 
+        "tooltip": "Set the submenu height.", 
+        "value": 300
+    }, 
+    "separator-search-top": {
+        "type": "separator"
+    }, 
+    "header-search": {
+        "type": "header", 
+        "description": "General search options:"
+    }, 
+    "separator-search-bottom": {
+        "type": "separator"
+    }, 
+    "search-sorted": {
+        "type": "combobox", 
+        "description": "Search results sorted by:", 
+        "default": "name", 
+        "tooltip": "Select a method to sort search results.", 
+        "options": {
+            "Name": "name", 
+            "Relevance": "relevance", 
+            "Usage and Name": "usage-name", 
+            "Usage and Relevance": "usage-relevance"
+        }, 
+        "value": "name"
+    }, 
+    "search-filesystem": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Enable filesystem path entry in search box", 
+        "tooltip": "Allows path entry in the menu search box.", 
+        "value": false
+    }, 
+    "search-web": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Enable web search", 
+        "tooltip": "Allows the web search with the selected search engines.", 
+        "value": false
+    }, 
+    "search-wikipedia": {
+        "type": "checkbox", 
+        "default": false, 
+        "indent": true, 
+        "dependency": "search-web", 
+        "description": "Enable web search with wikipedia", 
+        "tooltip": "Allows web search to the wikipedia search engine.", 
+        "value": false
+    }, 
+    "search-google": {
+        "type": "checkbox", 
+        "default": false, 
+        "indent": true, 
+        "dependency": "search-web", 
+        "description": "Enable web search with google", 
+        "tooltip": "Allows web search to the google search engine.", 
+        "value": false
+    }, 
+    "search-duckduckgo": {
+        "type": "checkbox", 
+        "default": false, 
+        "indent": true, 
+        "dependency": "search-web", 
+        "description": "Enable web search with duckduckgo", 
+        "tooltip": "Allows web search to the duckduckgo search engine.", 
+        "value": false
+    }, 
+    "separator-install-top": {
+        "type": "separator"
+    }, 
+    "header-install": {
+        "type": "header", 
+        "description": "Installer and uninstaller tools:"
+    }, 
+    "separator-install-bottom": {
+        "type": "separator"
+    }, 
+    "installer-tools": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Enable the Cinnamon Installer tool", 
+        "tooltip": "Allows install, uninstall and search for programs and packages(need internet connection to be download).", 
+        "value": false
+    }, 
+    "installer-search": {
+        "type": "checkbox", 
+        "default": false, 
+        "indent": true, 
+        "dependency": "installer-tools", 
+        "description": "Enable to search for packages", 
+        "tooltip": "Allows search for new packages on the repository.", 
+        "value": false
+    }, 
+    "installer-max-search": {
+        "type": "spinbutton", 
+        "default": 10, 
+        "min": 1, 
+        "max": 30, 
+        "step": 1, 
+        "units": "pixels", 
+        "description": "Maximum number of packages:", 
+        "tooltip": "Set the maximum number of packages to show.", 
+        "value": 10
+    }, 
+    "installer-update-button": {
+        "type": "button", 
+        "dependency": "installer-tools", 
+        "description": "Update the Cinnamon Installer tool", 
+        "callback": "_updateInstaller", 
+        "tooltip": "Press this button to update the Cinnamon Installer tool."
+    }, 
+    "installer-update-check": {
+        "type": "checkbox", 
+        "default": false, 
+        "indent": true, 
+        "dependency": "installer-tools", 
+        "description": "Enable to check for a new version of Cinnamon Installer when the menu started", 
+        "tooltip": "Allows to check for a new version of Cinnamon Installer when the menu started.", 
+        "value": false
+    }, 
+    "installer-uninstall-button": {
+        "type": "button", 
+        "dependency": "installer-tools", 
+        "description": "Uninstall the Cinnamon Installer tool", 
+        "callback": "_uninstallInstaller", 
+        "tooltip": "Press this button to uninstall the Cinnamon Installer tool."
+    }, 
+    "installer-default": {
+        "type": "checkbox", 
+        "default": false, 
+        "description": "Enable the default Cinnamon packages manager tools", 
+        "tooltip": "Allows the use of the default packages manager(only if it's available).", 
+        "value": false
+    }, 
+    "list-places": {
+        "type": "generic", 
+        "default": "bookmark:file://computer:///;;bookmark:file://trash:///", 
+        "value": "bookmark:file://computer:///;;bookmark:file://trash:///"
+    }, 
+    "list-apps": {
+        "type": "generic", 
+        "default": "cinnamon-settings.desktop;;synaptic.desktop;;update-manager.desktop;;gnome-terminal.desktop;;yelp.desktop", 
+        "value": "cinnamon-settings.desktop;;synaptic.desktop;;update-manager.desktop;;gnome-terminal.desktop;;yelp.desktop"
+    }, 
+    "list-places-names": {
+        "type": "generic", 
+        "default": "", 
+        "value": ""
+    }, 
+    "list-apps-names": {
+        "type": "generic", 
+        "default": "", 
+        "value": ""
+    }, 
+    "list-apps-usage": {
+        "type": "generic", 
+        "default": "", 
+        "value": "mintstick.desktop::1111;;usb-creator-gtk.desktop::11;;mintstick-format.desktop::1111;;vmware-workstation.desktop::211;;mdmsetup.desktop::21;;gnome-disks.desktop::1;;cinnamon-settings.desktop::3111111213;;mintUpdate.desktop::1;;gnome-screenshot.desktop::111212;;synaptic.desktop::1;;meld.desktop::11;;cinnamon-control-center.desktop::11;;alacarte-made-66e1814c-6c41-11e5-80d4-9cad9793e48d.desktop::3;;gimp.desktop::11421;;Thunar-bulk-rename.desktop::1;;firefox.desktop::1;;gcalctool.desktop::1;;inkscape.desktop::1;;minetest.desktop::11;;gedit.desktop::1"
+    }, 
+    "classic": {
+        "type": "generic", 
+        "default": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::530;;height::600;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true", 
+        "value": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.svg;;menu-label::Menu;;allow-search::true;;swap-panels::true;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::90;;icon-cat-size::25;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::716;;height::461;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true"
+    }, 
+    "classicGnome": {
+        "type": "generic", 
+        "default": "power-theme::vertical-list;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::true;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::true;;allow-resizing::false;;full-screen::false;;width::264;;height::606;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::true;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::true;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true", 
+        "value": "power-theme::vertical-list;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::true;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::true;;allow-resizing::false;;full-screen::false;;width::264;;height::606;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::true;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::true;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true"
+    }, 
+    "whisker": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::false;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::26;;icon-max-fav-size::32;;icon-power-size::20;;icon-control-size::11;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::false;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::8;;show-app-description::false;;app-description-size::6;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::432;;height::520.0001831054688;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true", 
+        "value": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::false;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::26;;icon-max-fav-size::32;;icon-power-size::20;;icon-control-size::11;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::false;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::8;;show-app-description::false;;app-description-size::6;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::432;;height::520;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true"
+    }, 
+    "kicker": {
+        "type": "generic", 
+        "default": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::false;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::true;;allow-resizing::false;;full-screen::false;;width::300;;height::500;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::true;;arrow-categories-selected::true;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true", 
+        "value": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::false;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::true;;allow-resizing::false;;full-screen::false;;width::300;;height::500;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::true;;arrow-categories-selected::true;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true"
+    }, 
+    "vampire": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::25;;icon-control-size::25;;icon-hover-size::52;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::false;;full-screen::false;;width::563;;height::540;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::25;;icon-control-size::25;;icon-hover-size::52;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::false;;full-screen::false;;width::563;;height::540;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "garibaldo": {
+        "type": "generic", 
+        "default": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::true;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::52;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::526;;height::662.0010375976562;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::true;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::52;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::526;;height::662;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "stylized": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::28;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::523;;height::601.0025634765625;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true", 
+        "value": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::28;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::523;;height::601;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true"
+    }, 
+    "dragon": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::28;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::1536;;height::777;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::28;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::1536;;height::777;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "dragonInverted": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::28;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::1483.0000038146973;;height::771.000244140625;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::28;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::1483;;height::771;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "luzHelena": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::true;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::30;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::28;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::false;;full-screen::true;;width::700;;height::500;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true", 
+        "value": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::true;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::30;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::28;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::false;;full-screen::true;;width::700;;height::500;;scroll-favorites::false;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true"
+    }, 
+    "accessible": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::true;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::25;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::28;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::false;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::856;;height::596;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true", 
+        "value": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::true;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::25;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::28;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::false;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::856;;height::596;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true"
+    }, 
+    "accessibleInverted": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::true;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::25;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::856;;height::596;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true", 
+        "value": "power-theme::horizontal-grid;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::true;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::true;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::25;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::32;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::856;;height::596;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true"
+    }, 
+    "mint": {
+        "type": "generic", 
+        "default": "power-theme::vertical-list;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::true;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::200;;app-description::true;;icon-app-size::28;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::22;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::2;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::921;;height::565;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true", 
+        "value": "power-theme::vertical-list;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::true;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::200;;app-description::true;;icon-app-size::28;;icon-cat-size::32;;icon-max-fav-size::32;;icon-power-size::22;;icon-control-size::22;;icon-hover-size::68;;icon-accessible-size::22;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::2;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::921;;height::565;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::true;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::true"
+    }, 
+    "windows7": {
+        "type": "generic", 
+        "default": "power-theme::retractable;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::true;;accessible-icons::false;;categories-icons::true;;app-button-width::115;;app-description::false;;icon-app-size::22;;icon-cat-size::22;;icon-max-fav-size::30;;icon-power-size::27;;icon-control-size::10;;icon-hover-size::68;;icon-accessible-size::10;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::false;;full-screen::false;;width::459;;height::543.999755859375;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true", 
+        "value": "power-theme::retractable;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::true;;accessible-icons::false;;categories-icons::true;;app-button-width::115;;app-description::false;;icon-app-size::22;;icon-cat-size::22;;icon-max-fav-size::30;;icon-power-size::27;;icon-control-size::10;;icon-hover-size::68;;icon-accessible-size::10;;icon-gnomenu-size::80;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::false;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::false;;full-screen::false;;width::459;;height::543;;scroll-favorites::false;;scroll-categories::false;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::false;;fix-menu-corner::true"
+    }, 
+    "gnomenuLeft": {
+        "type": "generic", 
+        "default": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::true;;control-box::false;;power-box::false;;accessible-box::true;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::22;;icon-power-size::40;;icon-control-size::22;;icon-hover-size::60;;icon-accessible-size::50;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::383;;height::644;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::true;;control-box::false;;power-box::false;;accessible-box::true;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::22;;icon-power-size::40;;icon-control-size::22;;icon-hover-size::60;;icon-accessible-size::50;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::true;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::383;;height::644;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "gnomenuRight": {
+        "type": "generic", 
+        "default": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::true;;control-box::false;;power-box::false;;accessible-box::true;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::60;;icon-max-fav-size::22;;icon-power-size::25;;icon-control-size::22;;icon-hover-size::50;;icon-accessible-size::50;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::383;;height::559;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::vertical-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::true;;control-box::false;;power-box::false;;accessible-box::true;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::60;;icon-max-fav-size::22;;icon-power-size::25;;icon-control-size::22;;icon-hover-size::50;;icon-accessible-size::50;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::383;;height::559;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "gnomenuTop": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::true;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::22;;icon-power-size::35;;icon-control-size::22;;icon-hover-size::60;;icon-accessible-size::60;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::464;;height::581.9982299804688;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::true;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::22;;icon-power-size::35;;icon-control-size::22;;icon-hover-size::60;;icon-accessible-size::60;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::464;;height::581;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "gnomenuBottom": {
+        "type": "generic", 
+        "default": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::22;;icon-power-size::33;;icon-control-size::22;;icon-hover-size::60;;icon-accessible-size::60;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::436;;height::573;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false", 
+        "value": "power-theme::horizontal-icon;;gnomenu-buttons-theme::icon;;show-recent::true;;show-places::true;;activate-on-hover::false;;menu-icon::/usr/share/cinnamon/theme/menu.png;;menu-label::Menu;;allow-search::true;;swap-panels::false;;categories-hover::true;;hover-delay::0;;enable-autoscroll::true;;show-view-item::false;;control-symbolic::false;;power-symbolic::false;;view-item::false;;activate-on-press::true;;hover-box::false;;control-box::false;;power-box::false;;accessible-box::false;;gnomenu-box::false;;show-removable-drives::false;;accessible-icons::true;;categories-icons::true;;app-button-width::300;;app-description::false;;icon-app-size::22;;icon-cat-size::32;;icon-max-fav-size::22;;icon-power-size::33;;icon-control-size::22;;icon-hover-size::60;;icon-accessible-size::60;;icon-gnomenu-size::50;;show-favorites::true;;favorites-lines::1;;show-hover-icon::false;;show-power-buttons::true;;show-time-date::true;;time-format::%H:%M;;date-format::%A,%e %B;;show-app-title::true;;app-title-size::10;;show-app-description::true;;app-description-size::8;;automatic-size::false;;allow-resizing::true;;full-screen::false;;width::436;;height::573;;scroll-favorites::true;;scroll-categories::true;;arrow-categories::false;;arrow-categories-selected::false;;scroll-applications::true;;scroll-accessible::false;;scroll-gnomenu::false;;spacer-line::false;;spacer-size::10;;show-box-pointer::true;;fix-menu-corner::false"
+    }, 
+    "__md5__": "ee4f2d90325d2a5c41fc493546ad1c1e"
+}
