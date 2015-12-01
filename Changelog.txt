@@ -65,3 +65,25 @@ v0.6.9 (all themes) : Window buttons for GNOME-SHELL now available! We also test
 v0.7 (all themes) : Final Cinnamon release, even if I may include some other tweaks in the future. Version 0.3 of KDE Plasma Window theme is included.
 
 v0.7.1 (all themes) : Bug correction in Cinnamon.css, New RGB colors for warnings and root windows in GTK 3
+
+v0.7.2 (all themes) : More correctives to Cinnamon theme, GTK 2 filemanager.rc bug corrected.
+
+v0.7.3 (all themes) : New switches for Cinnamon and GTK 3, filemanager dark_combo fix
+
+v0.7.4 (all themes) : Fixes to Filemanager.rc (GTK 2.0) for a better Windows-10 experience, Mintmenu text for MATE is now White.
+
+v0.7.5 (all themes) : New Black color for LXDE, MATE and Xfce panels, modified openbox theme with new minimize and maximize buttons, desktop text for Xfce is now white, dark borders for Xfwm, xfce-notify theme updated and included in dark theme as well, GNOME-SHELL button color fix, new minimize button for Xfce theme.
+
+v0.7.6 (all themes) : fixes text color issues for MATE and potentially Xfce
+
+v0.7.6b (Dark theme only) : uses lighter text color for GTK 2 applications.
+
+v0.7.6b (Default theme) : Final fix to filemanager.rc before we drop it in v0.7.7
+
+v0.7.7 (all themes) : We fixed Xfce issues signaled on Github https://github.com/Elbullazul/B00merang-Project and dropped filemanager.rc since it just brought problems and no real styling difference. Also, we managed a (small) GNOME-SHELL 3.18 that might fix the notifications issue mentioned in the comments (p. 20). 
+
+v0.7.8 (all themes) : New transparency levels for Cinnamon, new software center icon
+
+v0.7.9 (all themes) : Small color change for menus in Cinnamon, blue entry borders in GTK 2 & 3, button active colors changed (GTK 3), bigger padding for Metacity Window buttons.
+
+v0.8 (all themes) : New Plasma 5 Theme for both Dark and Light (new name for the Default Variant) Themes, Dark Aurorae Theme, Cinnamon Menu radius fix,
