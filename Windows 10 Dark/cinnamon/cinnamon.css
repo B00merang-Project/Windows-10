@@ -169,8 +169,8 @@ StScrollBar StButton#hhandle {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-	-arrow-background-image: url('menu-background.png') 80 0 0 0;
 	-arrow-border-color: #858585;
+	-arrow-background-color: transparent;
 	-boxpointer-gap: 0px;
 	-arrow-border-radius: 16px;
 	-arrow-border-width: 0px;
@@ -189,7 +189,6 @@ StScrollBar StButton#hhandle {
 	border-radius: 0px 0px 0px 0px;
 	box-shadow: none;
 	background-color: rgba(10,10,10,0.9);
-	background-image: url('menu-background.png');
 	border-top: 2px;
         border-left: 2px;
         border-right: 2px;
@@ -1407,7 +1406,6 @@ background: #111;
 .menu-favorites-box {
 	margin: auto;
 	padding: 10px;
-	border-image: url('favorites-background.png') 11;
 }
 
 .menu-favorites-button {
