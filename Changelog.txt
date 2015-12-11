@@ -87,3 +87,7 @@ v0.7.8 (all themes) : New transparency levels for Cinnamon, new software center 
 v0.7.9 (all themes) : Small color change for menus in Cinnamon, blue entry borders in GTK 2 & 3, button active colors changed (GTK 3), bigger padding for Metacity Window buttons.
 
 v0.8 (all themes) : New Plasma 5 Theme for both Dark and Light (new name for the Default Variant) Themes, Dark Aurorae Theme, Cinnamon Menu radius fix,
+
+v0.8 Service Pack 1 (all themes) : Bug correction for Cinnamon theme. Called SP1 since no new material is added.
+
+v0.8.1 (all themes) : Adjusted a couple of stuff for Cinnamon 2.8 and previous versions. Still searching for a way to center text in titlebars...

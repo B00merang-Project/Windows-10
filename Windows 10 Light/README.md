@@ -1,11 +1,11 @@
 Windows 10 is a theme made to simulate in the closest way the world-known OS.
 For the moment, this theme works with the following Desktop environments : 
-- Cinnamon 2.4/2.6/2.8
-- GNOME-SHELL 3.14/3.16/
+- Cinnamon 2.4/2.6
+- GNOME-SHELL 3.14/3.16/3.18
 - XFCE 4
 - MATE 1.8
 - LXDE 0.8
-- KDE Plasma 5
+- KDE Plasma 5 (KDE 4 has some issues)
 - Unity 7
 - Openbox 3
 

@@ -344,7 +344,7 @@ background-color: none;
  * ===================================================================*/
 #panel {
         background-color: rgba(0,0,0,0.65);
-	box-shadow: 0px 0px 2px 2px rgba(0,0,0,1);
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
         outline: 0px rgba(0,0,0,0.95);
     color: #326b65;
     font-size: 9pt;
@@ -414,7 +414,7 @@ background: #111;
 
 .expo-background {
     background: rgba(0, 0, 0, .8) url("expo-scale-assets/stripes.svg");
-    background-repeat: repeat;
+    background-repeat: none;
 }
 
 .expo-workspace-thumbnail-frame {
@@ -476,7 +476,7 @@ background: #111;
     height: 15px;
     padding: 10px 12px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
 }
 
@@ -485,7 +485,7 @@ background: #111;
     height: 15px;
     padding: 10px 12px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
 }
 
@@ -495,7 +495,7 @@ background: #111;
     height: 15px;
     padding: 10px 12px;
     text-align: center;
-    font-weight: bold;
+    font-weight: normal;
     color: #000;
     selected-color: #fff;
     caret-color: #000;
@@ -515,7 +515,7 @@ background: #111;
     border-image: url("background-assets/popup.svg") 7;
     padding: 12px 17px;
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20pt;    
 }
 /* ===================================================================
@@ -621,7 +621,7 @@ background: #111;
 .datemenu-date-label {
     padding: .5em 0 .5em 0;
     font-size: 10pt;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     color: #fff;
 }
@@ -629,7 +629,7 @@ background: #111;
 .calendar-month-label {
     padding-top: 2px;
     font-size: 8pt;
-    font-weight: bold;
+    font-weight: normal;
     color: #888;
 }
 
@@ -820,7 +820,7 @@ background: #111;
     color: #fff;
     padding: 20px;
     font-size: 9pt;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .switcher-list-item-container {
@@ -908,7 +908,7 @@ background: #111;
     padding-right: 24px;
     padding-left: 24px;
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .modal-dialog-button:hover {
@@ -997,7 +997,7 @@ background: #111;
     padding-right: 24px;
     padding-left: 24px;
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
     -st-natural-width: 80px;
 }
 
@@ -1293,7 +1293,7 @@ background: #111;
 
 .about-title {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .about-uuid {
@@ -1369,7 +1369,7 @@ background: #111;
     padding: 16px;
     color: #fff;
     font-size: 12pt;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .keyboard-key:hover {
@@ -1529,7 +1529,7 @@ background: #111;
 }
 
 .menu-selected-app-title {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .menu-selected-app-description {
@@ -1558,7 +1558,7 @@ background: #111;
 }
 
 .window-list-item-label {
-    font-weight: bold;
+    font-weight: normal;
     width: 15em;
     padding-left: 0px;
     padding-right: 0px;
@@ -1566,7 +1566,7 @@ background: #111;
 }
 
 .window-list-item-box {
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
 }
 
@@ -1578,12 +1578,12 @@ background: #111;
 }
 
 .window-list-item-demands-attention {
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/bottom-item-attention.svg") 4;
 }
 
 .window-list-item-box:active:hover {
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
 }
 
@@ -1619,14 +1619,14 @@ background: #111;
 /*-----top panel-----*/
 
 .panel-top .window-list-item-box:hover  {   
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/top-item-hover.svg") 4;
 }
 
 .panel-top .window-list-item-box:active,
 .panel-top .window-list-item-box:checked,
 .panel-top .window-list-item-box:focus  {
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/top-item-active.svg") 4;
     color: #fff;
 }
@@ -1634,7 +1634,7 @@ background: #111;
 .panel-top .window-list-item-box:checked:hover,
 .panel-top .window-list-item-box:focus:hover,
 .panel-top .window-list-item-box:active:hover  {     
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/top-item-active-hover.svg") 4;
     color: #fff;
 }
@@ -1650,14 +1650,14 @@ background: #111;
 /*-----bottom panel-----*/
 
 .panel-bottom .window-list-item-box:hover {
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/bottom-item-hover.svg") 4;
 }
 
 .panel-bottom .window-list-item-box:active,
 .panel-bottom .window-list-item-box:checked,
 .panel-bottom .window-list-item-box:focus  {
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/bottom-item-active.svg") 4;
     color: #fff;
 }
@@ -1665,7 +1665,7 @@ background: #111;
 .panel-bottom .window-list-item-box:checked:hover,
 .panel-bottom .window-list-item-box:focus:hover,
 .panel-bottom .window-list-item-box:active:hover  {     
-    font-weight: bold;
+    font-weight: normal;
     border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
     color: #fff;
 }
@@ -1785,7 +1785,7 @@ background: #111;
     padding-left: 8px;
     padding-right: 8px;
     color: #fff;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .panel-bottom .workspace-button {
@@ -1886,7 +1886,7 @@ background: #111;
 } 
 
 .applet-box {
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
     padding-left: 4px;
     padding-right: 4px;
@@ -1897,7 +1897,7 @@ background: #111;
 }
 
 .panel-top .applet-box:hover {
-    font-weight: bold;
+    font-weight: normal;
     color: #fff; 
     border-image: url("panel-assets/top-item-hover.svg") 4;
 }
@@ -1907,12 +1907,12 @@ background: #111;
 }
 
 .applet-label {
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
 }
 
 .applet-label:hover {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .applet-icon {
@@ -1946,7 +1946,7 @@ background: #111;
 .user-label {
     color: #fff;
     font-size: 10pt;
-    font-weight: bold;
+    font-weight: normal;
     margin: 0;
 }
 /* ===================================================================
@@ -1956,7 +1956,7 @@ background: #111;
 .snap-osd {
     border-image: url("background-assets/popup.svg") 7;
     font-size: 14pt;
-    font-weight: bold;
+    font-weight: normal;
     padding: 10px;
     color: #fff;
     text-align: center;     
