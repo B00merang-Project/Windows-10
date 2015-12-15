@@ -413,7 +413,7 @@ background: #111;
  * ===================================================================*/
 
 .expo-background {
-    background: rgba(0, 0, 0, .8) url("expo-scale-assets/stripes.svg");
+    background: rgba(0, 0, 0, .2) url("expo-scale-assets/stripes.svg");
     background-repeat: none;
 }
 

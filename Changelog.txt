@@ -91,3 +91,5 @@ v0.8 (all themes) : New Plasma 5 Theme for both Dark and Light (new name for the
 v0.8 Service Pack 1 (all themes) : Bug correction for Cinnamon theme. Called SP1 since no new material is added.
 
 v0.8.1 (all themes) : Adjusted a couple of stuff for Cinnamon 2.8 and previous versions. Still searching for a way to center text in titlebars...
+
+v0.8.2 (all themes; not Legacy) : Major improvements on the gnome-shell theme, notification bg color fixed, as well as other small improvements in color and borders for a more windowish experience.
