@@ -774,7 +774,7 @@ StScrollBar {
 	border-left-width: 0px; }
 
 .calendar-nonwork-day {
-	background-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0.8);
 	color: rgba(255,255,255,0.7); }
 
 .calendar-today {
@@ -785,11 +785,11 @@ StScrollBar {
 	border: 0px solid rgba(0,0,0,0.2); }
 
 .calendar-day-with-events {
-	color: rgba(0,0,0,0.4);
+	color: rgba(255,255,255,0.9);
 	font-weight: bold; }
 
 .calendar-other-month-day {
-	color: rgba(0,0,0,0.15);
+	color: rgba(255,255,255,0.8);
 	opacity: 0.5; }
 
 /* Message list */
