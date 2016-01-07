@@ -88,7 +88,7 @@ window.inactive.button.toggled.bg.color: #1F1F1F
 window.inactive.button.toggled.image.color: #4c4c4c
 
 !! Global width settings
-border.width: 2
+border.width: 1
 padding.width: 10
 padding.height: 1
 window.handle.width: 0

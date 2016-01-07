@@ -95,3 +95,5 @@ v0.8.1 (all themes) : Adjusted a couple of stuff for Cinnamon 2.8 and previous v
 v0.8.2 (all themes; not Legacy) : Major improvements on the gnome-shell theme, notification bg color fixed, as well as other small improvements in color and borders for a more windowish experience.
 
 v0.8.3 (all themes; not Legacy) : Fixes small calendar color issue with Gnome-Shell theme.
+
+v0.8.4 (all themes; not Legacy) : Improvements to the Openbox theme, narrower borders and menus, new window buttons.
