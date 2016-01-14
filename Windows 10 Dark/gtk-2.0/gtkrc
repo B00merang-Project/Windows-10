@@ -1,7 +1,7 @@
 # name: Windows 10 Dark
 # author: Christian Medel (Elbullazul)
-# date: November 4, 2015
-# description: Windows 10 Dark Gray color
+# date: January 14th, 2016
+# description: Windows 10 Dark Granite color
 
 gtk-color-scheme = "bg_color:#1F1F1F\nfg_color:#aeaeae\nbase_color:#1f1f1f\ntext_color:#aeaeae\nselected_bg_color:#004D8C\nselected_fg_color:#b5b5b5\ntooltip_bg_color:#1F1F1F\ntooltip_fg_color:#ffffff\ntitlebar_bg_color:#1F1F1F\ntitlebar_fg_color:#ffffff\nmenubar_bg_color:#1F1F1F\nmenubar_fg_color:#ffffff\ntoolbar_bg_color:#171717\ntoolbar_fg_color:#aeaeae\nmenu_bg_color:#171717\nmenu_fg_color:#ffffff\npanel_bg_color:#1F1F1F\npanel_fg_color:#ffffff\nlink_color:#224ba0\nbg_color_dark:#000000\nfg_color_dark:#ffffff\ncheckradio_fg_color:#4c4c4c\nwindow-color:#0070da"
 
