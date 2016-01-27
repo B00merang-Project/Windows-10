@@ -98,4 +98,6 @@ v0.8.3 (all themes; not Legacy) : Fixes small calendar color issue with Gnome-Sh
 
 v0.8.4 (all themes; not Legacy) : Improvements to the Openbox theme, narrower borders and menus, new window buttons.
 
-v0.8.5 (all themes; not Legacy) : Modification to some menu icons to avoid having GTK "mirrorring" the checked options
+v0.8.5 (all themes; not Legacy) : Modification to some menu icons to avoid having GTK "mirrorring" the checked options.
+
+v0.9 (all themes; not Legacy) : New scrollbars, fixes to text color to the dark theme, some color fixes, removal of unused assets.
