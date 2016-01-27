@@ -26,8 +26,8 @@
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
     -GtkRange-trough-under-steppers: 1;
-    -GtkScrollbar-has-backward-stepper: false;
-    -GtkScrollbar-has-forward-stepper: false;
+    -GtkScrollbar-has-backward-stepper: true;
+    -GtkScrollbar-has-forward-stepper: true;
     -GtkScrollbar-min-slider-length: 80;
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
@@ -1515,7 +1515,7 @@ GtkLevelBar.vertical {
 .scrollbar.trough {
     border-width: 0;
     border-radius: 0;
-    background-color: @theme_bg_color;
+    background-color: @scrollthrough_bg_color;
     background-image: none;
 }
 
@@ -1530,22 +1530,22 @@ GtkLevelBar.vertical {
 }
 
 .scrollbar.slider {
-    border-width: 1px;
-    border-color: mix(shade(@theme_bg_color, 0.87), @theme_fg_color, 0.21);
+    border-width: 0;
+    border-color: transparent;
     border-radius: 0;
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.21);
+    background-color: @scrollnorm_bg_color;
 }
 
 .scrollbar.slider:hover,
 .scrollbar.slider.vertical:hover {
-    border-color: mix(shade(@theme_bg_color, 0.87), @theme_fg_color, 0.31);
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.31);
+    border-color: transparent;
+    background-color: @scrollhover_bg_color;
 }
 
 .scrollbar.slider:active,
 .scrollbar.slider.vertical:active {
-    border-color: shade(@theme_bg_color, 0.75);
-    background-color: shade(@theme_bg_color, 0.9);
+    border-color: transparent;
+    background-color: @scrollpress_bg_color;
 }
 
 .scrollbar.slider.fine-tune:prelight:active {

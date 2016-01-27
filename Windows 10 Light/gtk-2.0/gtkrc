@@ -1,6 +1,6 @@
 # name: Windows 10 Light
 # author: Christian Medel (Elbullazul)
-# date: January 14th, 2016
+# date: January 27th, 2016
 # description: Windows 10 Default white color
 
 gtk-color-scheme = "bg_color:#ffffff\nfg_color:#4c4c4c\nbase_color:#ffffff\ntext_color:#4c4c4c\nselected_bg_color:#cce8ff\nselected_fg_color:#262626\ntooltip_bg_color:#ffffff\ntooltip_fg_color:#4c4c4c\ntitlebar_bg_color:#ffffff\ntitlebar_fg_color:#4c4c4c\nmenubar_bg_color:#ffffff\nmenubar_fg_color:#4c4c4c\ntoolbar_bg_color:#ffffff\ntoolbar_fg_color:#4c4c4c\nmenu_bg_color:#ffffff\nmenu_fg_color:#4c4c4c\npanel_bg_color:#b5adad\npanel_fg_color:#ffffff\nlink_color:#224ba0\nprogressbar_color:#06B025\nbg_color_dark:#000000\nfg_color_dark:#b7b7b7"
@@ -53,8 +53,8 @@ style "murrine-default" {
 	GtkScale::trough-side-details = 1
 
 	GtkScrollbar::activate-slider = 1
-	GtkScrollbar::has-backward-stepper = 0
-	GtkScrollbar::has-forward-stepper = 0
+	GtkScrollbar::has-backward-stepper = 1
+	GtkScrollbar::has-forward-stepper = 1
 	GtkScrollbar::has-secondary-backward-stepper = 0
 	GtkScrollbar::has-secondary-forward-stepper = 0
 	GtkScrollbar::min-slider-length = 80
@@ -197,15 +197,15 @@ style "murrine-button"  = "murrine-wider" {
 }
 
 style "murrine-scrollbar" {
-	bg[NORMAL] = mix (0.21, @fg_color, @bg_color)
-	bg[PRELIGHT] = mix (0.31, @fg_color, @bg_color)
+	bg[NORMAL] = mix (0.32, @fg_color, @bg_color)
+	bg[PRELIGHT] = mix (0.27, @fg_color, @bg_color)
 	bg[ACTIVE] = shade(0.5, @bg_color)
 
 	engine "murrine" {
 		roundness = 0
 		contrast = 0.0
 		border_shades = { 1.0, 1.0 }
-		trough_shades = { 0.97, 0.97 }
+		trough_shades = { 0.90, 0.90 }
 		trough_border_shades = { 1.0, 1.0 }
 	}
 }
@@ -322,6 +322,11 @@ style "murrine-radiocheck" = "murrine-default" {
 
 	text[NORMAL] = @text_color
 	text[PRELIGHT] = shade (0.8, @selected_bg_color)
+
+	  	engine "murrine" {
+		contrast		= 1.0
+		lightborder_shade	= 1.0
+	}
 }
 
 style "murrine-entry" = "murrine-wider" {
