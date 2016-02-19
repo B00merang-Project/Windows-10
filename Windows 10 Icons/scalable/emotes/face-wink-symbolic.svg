@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="g71291" transform="translate(-561 -519)">
+  <path id="path4734" style="fill:#babdb6" d="m569 520c-3.866 0-7 3.134-7 7s3.134 7 7 7 7-3.134 7-7-3.134-7-7-7zm-2 4c0.55833 0 1.0312 0.47292 1.0312 1.0312v0.96875c0 0.55833-0.47292 1-1.0312 1-0.55833 0-1-0.44167-1-1v-0.96875c0-0.55833 0.44167-1.0312 1-1.0312zm3.4375 1h0.90625c0.5224 0 0.96875 0.21617 0.96875 0.5 0 0.28382-0.44635 0.5-0.96875 0.5h-0.90625c-0.52241 0-0.9375-0.21618-0.9375-0.5 0-0.28383 0.41509-0.5 0.9375-0.5zm-6.4375 3.0625c0.71531 1.0744 2.2352 1.9375 5 1.9375 2.4523 0 4.2108-0.75041 5-1.9375v0.5c0 0.68098-0.8379 2.4062-5 2.4062-3.8808 0-5-1.8737-5-2.4062v-0.5z"/>
+ </g>
+</svg>
