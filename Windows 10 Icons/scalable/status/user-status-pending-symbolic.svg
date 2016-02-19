@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg7384" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <metadata id="metadata90">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>Gnome Symbolic Icon Theme</dc:title>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <title id="title9167">Gnome Symbolic Icon Theme</title>
+ <g id="layer9" transform="translate(-161 -357)">
+  <path id="path8354" style="opacity:.5;fill:#bebebe" d="m164.5 358c-1.385 0-2.5 1.115-2.5 2.5v0.5h14v-0.5c0-1.385-1.115-2.5-2.5-2.5h-9zm-2.4375 8c0.23235 1.1413 1.2256 2 2.4375 2h6.375l3.125 4v-4.0625c0.97406-0.20133 1.7386-0.96043 1.9375-1.9375h-13.875z"/>
+  <path id="path4955-6" style="fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(1.5 0 0 1.5 122.5 50)"/>
+  <path id="path4957-7" style="fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(1.5 0 0 1.5 126.5 50)"/>
+  <path id="path4959-1" style="fill:#bebebe" d="m29 209a1 1 0 1 1 -2 0 1 1 0 1 1 2 0z" transform="matrix(1.5 0 0 1.5 130.5 50)"/>
+ </g>
+</svg>
