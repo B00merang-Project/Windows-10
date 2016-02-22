@@ -1716,6 +1716,47 @@ GtkComboBox .separator {
     border-width: 0;
 }
 
+/*addition start*/
+.sidebar-item {
+  padding: 10px 4px; }
+  .sidebar-item > Gtklabel {
+    padding-left: 6px;
+    padding-right: 6px; }
+  .sidebar-item.needs-attention > Gtklabel {
+    background-size: 6px 6px, 0 0; }
+
+/* -------------
+NEW ON GTK 3.18
+---------------*/
+GtkSidebarRow.list-row {
+  padding: 0px; }
+GtkSidebarRow .sidebar-revealer {
+  padding: 1px 14px 1px 12px; }
+GtkSidebarRow .sidebar-icon:dir(ltr) {
+  padding-right: 8px; }
+GtkSidebarRow .sidebar-icon:dir(rtl) {
+  padding-left: 8px; }
+GtkSidebarRow .sidebar-label:dir(ltr) {
+  padding-right: 2px; }
+GtkSidebarRow .sidebar-label:dir(rtl) {
+  padding-left: 2px; }
+
+
+.sidebar-button.button.image-button {
+  padding: 3px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 0px alpha(@dark_shadow,0)}
+.sidebar-button.button:not(:hover):not(:active) > GtkImage {
+  opacity: 0.5; }
+
+.sidebar-item {
+  padding: 10px 4px; }
+  .sidebar-item > GtkLabel {
+    padding-left: 6px;
+    padding-right: 6px; }
+  .sidebar-item.needs-attention > GtkLabel {
+    background-size: 6px 6px, 0 0; }
+/*addition end*/
 /**************
  * spinbutton *
  **************/
@@ -2202,13 +2243,13 @@ GtkColorButton.button {
 }
 
 .header-bar .entry {
-    border-width: 2px;
+    border-width: 1px;
     border-color: shade(@bg_color, 0.6);
 }
 
 .header-bar .entry:active,
 .header-bar .entry:focus {
-    border-width: 2px;
+    border-width: 1px;
     border-color: shade(@selected_bg_color, 0.6);
 }
 
@@ -2254,7 +2295,7 @@ GtkColorButton.button {
     -GtkWidget-window-dragging: true;
 
     padding: 4px;
-    border-width: 0 0 1px 0;
+    border-width: 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.8);
     background-color: @toolbar_bg_color;
@@ -2277,7 +2318,7 @@ GtkColorButton.button {
 .primary-toolbar .raised.button,
 .toolbar GtkComboBox,
 .toolbar .button {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: transparent;
     background-color: shade(@toolbar_bg_color, 1.08);
     background-image: none;
     color: @toolbar_fg_color;
@@ -2285,21 +2326,21 @@ GtkColorButton.button {
 
 .primary-toolbar .button:hover,
 .toolbar .button:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: transparent;
     background-color: shade(@toolbar_bg_color, 1.10);
     background-image: none;
 }
 
 .primary-toolbar .button:active,
 .toolbar .button:active {
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: transparent;
     background-color: shade(@toolbar_bg_color, 0.95);
     background-image: none;
 }
 
 .primary-toolbar .button:active:hover,
 .toolbar .button:active:hover {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: transparent;
 }
 
 .primary-toolbar .button:focus,
@@ -2310,26 +2351,26 @@ GtkColorButton.button {
 .toolbar .button:hover:focus,
 .toolbar .button:active:focus,
 .toolbar .button:active:hover:focus {
-    border-color: shade(@toolbar_bg_color, 0.7);
+    border-color: transparent;
 }
 
 .primary-toolbar .button:insensitive,
 .toolbar .button:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.85);
+    border-color: transparent;
     background-color: shade(@toolbar_bg_color, 0.9);
     background-image: none;
 }
 
 .primary-toolbar .button:active *:insensitive,
 .toolbar .button:active *:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.75);
+    border-color: transparent;
     background-color: shade(@toolbar_bg_color, 0.80);
     background-image: none;
 }
 
 .primary-toolbar .entry,
 .toolbar .entry {
-    border-width: 2px;
+    border-width: 1px;
     border-color: shade(@bg_color, 0.6);
 }
 
@@ -2337,7 +2378,7 @@ GtkColorButton.button {
 .primary-toolbar .entry:focus,
 .toolbar .entry:active,
 .toolbar .entry:focus {
-    border-width: 2px;
+    border-width: 1px;
     border-color: shade(@selected_bg_color, 0.6);
 }
 

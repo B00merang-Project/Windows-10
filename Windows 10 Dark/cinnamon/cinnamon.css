@@ -33,7 +33,7 @@ stage {
 
 StScrollBar {
     padding: 3px;
-    padding-right: 6px;
+    padding-right: 1px;
 }
 
 StScrollView.vfade {
@@ -50,7 +50,7 @@ StScrollView StScrollBar {
 }
 
 StScrollBar StBin#trough {
-    background-color: transparent;
+    background-color: rgba(50,50,50,0.92);
 }
 
 StScrollBar StButton#vhandle,
@@ -171,7 +171,7 @@ StScrollBar StButton#hhandle {
 .popup-menu-boxpointer {
 	-arrow-border-color: rgba(10,10,10,0.9);
 	-arrow-background-color: transparent;
-	-boxpointer-gap: 0px;
+	-boxpointer-gap: -1px;
 	-arrow-border-radius: 16px;
 	-arrow-border-width: 0;
 }
@@ -185,10 +185,10 @@ StScrollBar StButton#hhandle {
 	padding-bottom: 0px;
 	min-width: 250px;
 	min-height: 80px;
-	border: rgba(10,10,10,0.9);
+	border: rgba(50,50,50,0.9);
 	border-radius: 0 0 0 0;
 	box-shadow: none;
-	background-color: rgba(10,10,10,0.9);
+	background-color: rgba(25,25,25,0.95);
 	border-top: 2px;
         border-left: 2px;
         border-right: 2px;
@@ -280,8 +280,8 @@ border: 1px transparent;
 	spacing: 1em;
 }
 .popup-separator-menu-item {
-	background-color: #0a0a0a;
-box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
+	background-color: rgba(50,50,50,1);
+	box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
 	border-radius: 5px; 
     	-margin-horizontal: 14px;
     	height: 1px;
@@ -345,7 +345,7 @@ background-color: none;
 #panel {
         background-color: rgba(0,0,0,0.65);
 	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
-        outline: 2px rgba(0,0,0,0.95);
+        outline: 0 rgba(0,0,0,0.95);
     color: #326b65;
     font-size: 9pt;
     height: 40px;
@@ -418,12 +418,12 @@ background: #111;
 }
 
 .expo-workspace-thumbnail-frame {
-    border: 5px transparent;
+    border: 3px transparent;
     border-image: url("expo-scale-assets/workspace-frame.svg") 6;
 }
 
 .expo-workspace-thumbnail-frame#active {
-    border: 5px transparent;
+    border: 3px transparent;
     border-image: url("expo-scale-assets/workspace-frame.svg") 6;
 }
 
@@ -527,7 +527,7 @@ background: #111;
     color: #fff;
     font-size: 9pt;
     font-weight: bold;
-    padding: 6px 8px;
+    padding: 0 0;
     -cinnamon-caption-spacing: 10px;
 }
 
@@ -1404,8 +1404,11 @@ background: #111;
  * ===================================================================*/
 
 .menu-favorites-box {
-	margin: auto;
-	padding: 10px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-bottom: 10px; 
 }
 
 .menu-favorites-button {
@@ -1431,29 +1434,29 @@ background: #111;
 
 .menu-categories-box {
     padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;    
 }
 
 .menu-applications-inner-box {
     padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 0px;
 }
 
 .menu-applications-outer-box {
     padding-top: 10px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
     padding-bottom: 0px;
 }
 
 .menu-application-button {
     padding-top: 7px;
     padding-left: 7px;
-    padding-right: 7px;
+    padding-right: 0;
     padding-bottom: 7px; 
     max-width: 10px;   
 }
@@ -1537,7 +1540,7 @@ background: #111;
 }
 
 .menu-search-box {
-   padding-left: 30px;
+   padding-left: 20px;
 }
 
 .menu-search-entry-icon {

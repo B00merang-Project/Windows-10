@@ -103,3 +103,5 @@ v0.8.5 (all themes; not Legacy) : Modification to some menu icons to avoid havin
 v0.9 (all themes; not Legacy) : New scrollbars, fixes to text color to the dark theme, some color fixes, removal of unused assets.
 
 v0.9.1 (all themes; not Legacy) : Entry borders and active buttons get thicker for toolbars, color corrections, 528 new icons to the icon pack, corrections to the metacity themes.
+
+v0.9.2 (all themes; not Legacy) : Return to slimmer entry borders, new assets and switches for better look, remastered cinnamon themes, FULL compatibility with GNOME 3.18.
