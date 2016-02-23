@@ -2294,7 +2294,7 @@ GtkColorButton.button {
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
 
-    padding: 4px;
+    padding: 14px;
     border-width: 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.8);
@@ -2334,7 +2334,7 @@ GtkColorButton.button {
 .primary-toolbar .button:active,
 .toolbar .button:active {
     border-color: transparent;
-    background-color: shade(@toolbar_bg_color, 0.95);
+    background-color: shade(@toolbar_bg_color, 1.6);
     background-image: none;
 }
 

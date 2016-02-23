@@ -30,7 +30,7 @@
 
 /*Nemo Desktop shadow fix*/
  @define-color desktop_item_fg #ffffff;
- @define-color desktop_item_selected_fg @theme_selected_fg_color;
+ @define-color desktop_item_selected_fg shade(@theme_selected_fg_color, 0.8);
  @define-color desktop_item_text_shadow alpha(black, 0.8);
 
 /* shadow effects */
