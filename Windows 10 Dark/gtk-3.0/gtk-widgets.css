@@ -2294,7 +2294,7 @@ GtkColorButton.button {
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
 
-    padding: 14px;
+    padding: 4px;
     border-width: 0;
     border-style: solid;
     border-color: shade(@toolbar_bg_color, 0.8);
@@ -2332,9 +2332,10 @@ GtkColorButton.button {
 }
 
 .primary-toolbar .button:active,
+.primary-toolbar .button:checked,
 .toolbar .button:active {
     border-color: transparent;
-    background-color: shade(@toolbar_bg_color, 1.6);
+    background-color: shade(@toolbar_bg_color, 1.5);
     background-image: none;
 }
 
@@ -2693,7 +2694,7 @@ GtkColorButton.button {
 .toolbar .button.raised.linked,
 .toolbar .raised.linked .button,
 .toolbar .linked .button {
-    box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.9);
+    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.9);
 }
 
 .primary-toolbar .button.raised.linked:active,
