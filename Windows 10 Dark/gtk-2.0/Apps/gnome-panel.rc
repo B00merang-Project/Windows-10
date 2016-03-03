@@ -10,11 +10,11 @@ style "panel" = "dark"
 	bg_pixmap[NORMAL]	= "Panel/panel.png"
 	base[NORMAL] 		= "#000000"
 	base[ACTIVE] 		= "#000000"
-	bg[NORMAL] 		= "#1e1e1e"
+	bg[NORMAL] 			= "#1e1e1e"
 	bg[PRELIGHT]		= "#066dc1"
 	bg[SELECTED]		= "#066dc1"
 	text[NORMAL]		= @fg_color_dark
-	text[ACTIVE]		= "#ffffff"
+	text[ACTIVE]		= @fg_color_dark
 	
 
 	engine "murrine" {

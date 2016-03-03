@@ -109,3 +109,5 @@ v0.9.2 (all themes; not Legacy) : Return to slimmer entry borders, new assets an
 v0.9.3 (all themes; Legacy support terminated) : Fixes to the gnome-shell theme as well as to the dark variant for better visibility of pressed buttons on the toolbar.
 
 v0.9.4 (all themes) : Added code for GNOME 3.18 increased compatibility, removed shadows for toolbar buttons for a cleaner look.
+
+v0.9.5 (all themes) : Fixes for MATE and LXDE panels, MATE menu is now BLACK, fixes to toolbar buttons as well as notebook header color.

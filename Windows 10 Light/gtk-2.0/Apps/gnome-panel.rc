@@ -9,13 +9,13 @@ style "panel" = "dark"
 
 	bg_pixmap[NORMAL]	= "Panel/panel.png"
 	base[NORMAL] 		= "#000000"
-	bg[NORMAL] 		= "#151515"
+	bg[NORMAL] 			= "#151515"
 	bg[PRELIGHT]		= "#1f1f1f"	
 	bg[SELECTED]		= "#004D8C"
 	text[NORMAL]		= @fg_color_dark
 
 	engine "murrine" {
-		colorize_scrollbar = TRUE
+		colorize_scrollbar = FALSE
 	}
 }
 

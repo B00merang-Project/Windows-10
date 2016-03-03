@@ -3,7 +3,7 @@
 # date: January 27th, 2016
 # description: Windows 10 Dark Granite color
 
-gtk-color-scheme = "bg_color:#1F1F1F\nfg_color:#c9c9c9\nbase_color:#1f1f1f\ntext_color:#c9c9c9\nselected_bg_color:#004D8C\nselected_fg_color:#b5b5b5\ntooltip_bg_color:#1F1F1F\ntooltip_fg_color:#ffffff\ntitlebar_bg_color:#1F1F1F\ntitlebar_fg_color:#ffffff\nmenubar_bg_color:#1F1F1F\nmenubar_fg_color:#ffffff\ntoolbar_bg_color:#1f1f1f\ntoolbar_fg_color:#c9c9c9\nmenu_bg_color:#1f1f1f\nmenu_fg_color:#ffffff\npanel_bg_color:#1F1F1F\npanel_fg_color:#ffffff\nlink_color:#224ba0\nbg_color_dark:#000000\nfg_color_dark:#ffffff\ncheckradio_fg_color:#4c4c4c\nwindow-color:#0070da"
+gtk-color-scheme = "bg_color:#1F1F1F\nfg_color:#c9c9c9\nbase_color:#1f1f1f\ntext_color:#c9c9c9\nselected_bg_color:#004D8C\nselected_fg_color:#b5b5b5\ntooltip_bg_color:#1F1F1F\ntooltip_fg_color:#ffffff\ntitlebar_bg_color:#1F1F1F\ntitlebar_fg_color:#ffffff\nmenubar_bg_color:#1F1F1F\nmenubar_fg_color:#ffffff\ntoolbar_bg_color:#1f1f1f\ntoolbar_fg_color:#c9c9c9\nmenu_bg_color:#1f1f1f\nmenu_fg_color:#ffffff\npanel_bg_color:#1F1F1F\npanel_fg_color:#ffffff\nlink_color:#224ba0\nbg_color_dark:#000000\nfg_color_dark:#ffffff\ncheckradio_fg_color:#4c4c4c"
 
 # Scrollbar colors
 gtk-color-scheme = "scrollthrough_bg_color:#e6e6e6\nscrollpress_bg_color:#808080\nscrollhover_bg_color:#cfcfcf\nscrollnorm_bg_color:#c6c6c6"
@@ -828,4 +828,5 @@ include "Apps/ff.rc"
 include "Apps/gnome-panel.rc"
 #include "Apps/panel-menus.rc"
 include "Apps/mintmenu.rc"
+include "Apps/mate.rc"
 include "Apps/xfce.rc"

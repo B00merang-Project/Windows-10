@@ -96,6 +96,8 @@ window.client.padding.width: 0
 
 !! Miscellaneous settings
 border.color: #171717
+window.active.title.separator.color: #1f1f1f
+window.inactive.title.separator.color: #1f1f1f
 
 !! fonts
 window.active.label.text.font: Sans:bold:size=10

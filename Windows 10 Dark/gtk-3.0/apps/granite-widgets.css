@@ -43,7 +43,7 @@
 }
 
 .dynamic-notebook .notebook tab .entry {
-    border-radius: 2px;
+    border-radius: 0px;
     padding: 4px 3px;
 }
 

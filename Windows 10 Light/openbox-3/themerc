@@ -14,8 +14,8 @@ menu.bullet.image.color: #4c4c4c
 menu.bullet.selected.image.color: #464646
 
 menu.items.active.bg: flat border
-menu.items.active.bg.color: #ffffff
-menu.items.active.bg.border.color: #ffffff
+menu.items.active.bg.color: #bddefb
+menu.items.active.bg.border.color: #9ed1f9
 menu.items.active.text.color: #4c4c4c
 
 !! General window settings
@@ -73,11 +73,11 @@ window.inactive.button.pressed.bg.color: parentrelative
 !#buttons new
 window.active.button.disabled.bg: flat
 window.active.button.disabled.bg.color: #ffffff
-window.active.button.disabled.image.color: #4c4c4c
+window.active.button.disabled.image.color: #b3b3b3
 
 window.inactive.button.disabled.bg: flat
 window.inactive.button.disabled.bg.color: #ffffff
-window.inactive.button.disabled.image.color: #4c4c4c
+window.inactive.button.disabled.image.color: #b3b3b3
 
 window.active.button.toggled.bg: flat
 window.active.button.toggled.bg.color: #ffffff
@@ -96,6 +96,8 @@ window.client.padding.width: 0
 
 !! Miscellaneous settings
 border.color: #ededed
+window.active.title.separator.color: #ffffff
+window.inactive.title.separator.color: #ffffff
 
 !! fonts
 window.active.label.text.font: Sans:bold:size=10
@@ -103,3 +105,8 @@ window.inactive.label.text.font: Sans:bold:size=10
 menu.items.font:  Sans:size=10
 menu.title.text.font: Sans:bold:size=10
 
+!!OSD
+osd.hilight.bg: flat border
+osd.hilight.bg.color: #bddefb
+osd.hilight.bg.border.color: #9ed1f9
+osd.inactive.label.text.color:#b3b3b3

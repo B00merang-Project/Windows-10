@@ -1170,7 +1170,7 @@ GtkModelButton.button:selected {
 
 .notebook.header {
     border-width: 0;
-    background-color: shade(@theme_base_color, 0.85);
+    background-color: @theme_base_color;
 }
 
 .notebook.header.frame {
@@ -2358,7 +2358,7 @@ GtkColorButton.button {
 .primary-toolbar .button:insensitive,
 .toolbar .button:insensitive {
     border-color: transparent;
-    background-color: shade(@toolbar_bg_color, 0.9);
+    background-color: @toolbar_bg_color;
     background-image: none;
 }
 
@@ -2702,10 +2702,10 @@ GtkColorButton.button {
 .toolbar .button.raised.linked:active,
 .toolbar .raised.linked .button:active,
 .toolbar .linked .button:active {
-    box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.9),
-                inset 1px 0 alpha(@dark_shadow, 0.07),
-                inset 0 1px alpha(@dark_shadow, 0.08),
-                inset 0 -1px alpha(@dark_shadow, 0.05);
+    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.9),
+                inset 0 0 alpha(@dark_shadow, 0.07),
+                inset 0 0 alpha(@dark_shadow, 0.08),
+                inset 0 0 alpha(@dark_shadow, 0.05);
 }
 
 .primary-toolbar .button.raised.linked:insensitive,
@@ -2713,7 +2713,7 @@ GtkColorButton.button {
 .toolbar .button.raised.linked:insensitive,
 .toolbar .raised.linked .button:insensitive,
 .toolbar .linked .button:insensitive {
-    box-shadow: inset -1px 0 shade(@toolbar_bg_color, 0.85);
+    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.85);
 }
 
 /* remove box shadow from last-child and only-child */

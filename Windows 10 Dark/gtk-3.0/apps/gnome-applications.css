@@ -81,7 +81,7 @@ WnckPager, WnckTasklist {
  * nautilus *
  ************/
 .nautilus-canvas-item {
-    border-radius: 2px;
+    border-radius: 0px;
 }
 
 .nautilus-desktop.nautilus-canvas-item {
@@ -233,7 +233,7 @@ GeditWindow .pane-separator:hover {
 .gedit-document-panel .list-row .button {
     padding: 1px;
     border-image: none;
-    border-radius: 2px;
+    border-radius: 0px;
     border-style: solid;
     border-color: transparent;
     border-width: 1px;
@@ -301,7 +301,7 @@ GeditStatusMenuButton.button:active {
 
 GeditViewFrame .gedit-search-slider {
     padding: 4px;
-    border-radius: 0 0 2px 2px;
+    border-radius: 0 0 0px 0px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
     border-color: shade(@theme_base_color, 0.8);

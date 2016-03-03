@@ -7,7 +7,7 @@ NemoPathbarButton {
     background-image: none;
     color: @toolbar_fg_color;
 
-    -NemoPathbarButton-border-radius: 2px;
+    -NemoPathbarButton-border-radius: 0px;
 }
 
 NemoPathbarButton:active {
