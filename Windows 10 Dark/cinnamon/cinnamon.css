@@ -50,7 +50,8 @@ StScrollView StScrollBar {
 }
 
 StScrollBar StBin#trough {
-    background-color: rgba(50,50,50,0.92);
+    background-color: rgba(250,50,50,0.92);
+    border-image: url('background-assets/scrollthrough.png');
 }
 
 StScrollBar StButton#vhandle,
@@ -66,6 +67,8 @@ StScrollBar StButton#hhandle {
  StScrollBar StButton#hhandle:focus {
     border-image: url("control-assets/scroll-handle-hover.svg") 3;
 }
+
+
 /* ===================================================================
  * Tooltips
  * ===================================================================*/
@@ -179,7 +182,6 @@ StScrollBar StButton#hhandle {
 
 	color: #fff;
 	font-size: 9.5pt;
-	padding-left: 15px;
 	padding-right: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -189,10 +191,11 @@ StScrollBar StButton#hhandle {
 	border-radius: 0 0 0 0;
 	box-shadow: none;
 	background-color: rgba(25,25,25,0.95);
-	border-top: 2px;
-        border-left: 2px;
-        border-right: 2px;
-	border-bottom: 2px;
+	border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+	border-bottom: 1px;
+    box-shadow: 0 0 8px 1px #4c4c4c;
 }
 
 .popup-menu StEntry {
@@ -397,7 +400,7 @@ icon-size: 1.3em;
 }
 
 #panelLeft:dnd {
-background: #000;
+background: #1f1f1f;
 
 }
 
@@ -1571,23 +1574,27 @@ background: #111;
 .window-list-item-box {
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    transition-duration: 500;
 }
 
 
 .window-list-item-box:hover  {     
     /*box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,0.5);  */
-        border-image:url("panel-assets/bottom-item-active.svg") 4;
+    border-image:url("panel-assets/bottom-item-active.svg") 4;
+    transition-duration: 500;
 
 }
 
 .window-list-item-demands-attention {
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-attention.svg") 4;
+    transition-duration: 500;
 }
 
 .window-list-item-box:active:hover {
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    transition-duration: 500;
 }
 
 /* 

@@ -11,6 +11,6 @@ style "mate-menu"
 		ythickness = 0
 } 
 
-widget_class "*-menu*" style "mate-menu"
-widget "*-menu*" style "mate-menu"
-class "*-menu*" style "mate-menu"
+widget_class "*n-menu*" style "mate-menu"
+widget "*n-menu*" style "mate-menu"
+class "*n-menu*" style "mate-menu"

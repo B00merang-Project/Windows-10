@@ -174,25 +174,42 @@
   <image filename="minimize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
+
+<!-- Menu drawing operations -->
 <draw_ops name="menu_button_icon"> 
-  <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+         y="(height-mini_icon_height) / 2"
+         width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 
 <draw_ops name="menu_button_icon_unfocused"> 
-  <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+         y="(height-mini_icon_height) / 2"
+         width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_normal">
-  <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+         y="(height-mini_icon_height) / 2"
+         width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_pressed">
-  <image filename="menu-pressed.png" x="0" y="0" width="width" height="height"/>
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+         y="(height-mini_icon_height) / 2"
+         width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_unfocused">
-  <image filename="menu.png" x="0" y="0" width="width" height="height"/>
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+         y="(height-mini_icon_height) / 2"
+         width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 

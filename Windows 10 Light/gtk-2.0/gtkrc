@@ -1,6 +1,6 @@
 # name: Windows 10 Light
 # author: Christian Medel (Elbullazul)
-# date: January 27th, 2016
+# date: April 7th, 2016
 # description: Windows 10 Default white color
 
 gtk-color-scheme = "bg_color:#ffffff\nfg_color:#4c4c4c\nbase_color:#ffffff\ntext_color:#4c4c4c\nselected_bg_color:#cce8ff\nselected_fg_color:#262626\ntooltip_bg_color:#ffffff\ntooltip_fg_color:#4c4c4c\ntitlebar_bg_color:#ffffff\ntitlebar_fg_color:#4c4c4c\nmenubar_bg_color:#ffffff\nmenubar_fg_color:#4c4c4c\ntoolbar_bg_color:#ffffff\ntoolbar_fg_color:#4c4c4c\nmenu_bg_color:#ffffff\nmenu_fg_color:#4c4c4c\npanel_bg_color:#b5adad\npanel_fg_color:#ffffff\nlink_color:#224ba0\nbg_color_dark:#000000\nfg_color_dark:#b7b7b7"
@@ -129,6 +129,7 @@ style "murrine-default" {
 		colorize_scrollbar = FALSE
 		comboboxstyle = 0 # 0 = normal combobox, 1 = colorized combobox below arrow
 		contrast = 0.8 # overal contrast with borders
+		default_button_color = @selected_bg_color
 		focusstyle = 1 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow
 		glazestyle = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave, 3 = top curved highlight, 4 = beryl highlight
 		glowstyle = 0 # 0 = glow on top, 1 = glow on bottom, 2 = glow on top and bottom, 3 = glow on middle vertically, 4 = glow on middle horizontally, 5 = glow on all sides

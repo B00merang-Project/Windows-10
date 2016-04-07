@@ -1,6 +1,6 @@
 /*# name: Windows 10 Dark
   # author: Christian Medel (Elbullazul)
-  # date: January 27th, 2016
+  # date: April 7th, 2016
   # description: Windows 10 Dark Granite color*/
 
 /* default color scheme */
@@ -92,6 +92,9 @@
 @define-color scrollpress_bg_color #808080;
 @define-color scrollhover_bg_color #cfcfcf;
 @define-color scrollnorm_bg_color #c6c6c6;
+
+/*Progressbar bg color*/
+@define-color progressbar_color #06B025;
 
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
