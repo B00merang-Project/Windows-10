@@ -88,10 +88,10 @@
 @define-color terminal_text_color @text_color;
 
 /*Scrollbar  colors*/
-@define-color scrollthrough_bg_color #e6e6e6;
-@define-color scrollpress_bg_color #808080;
-@define-color scrollhover_bg_color #cfcfcf;
-@define-color scrollnorm_bg_color #c6c6c6;
+@define-color scrollthrough_bg_color shade(@theme_bg_color, 0.75);
+@define-color scrollpress_bg_color shade(@theme_bg_color, 1.65);
+@define-color scrollhover_bg_color shade(@theme_bg_color, 1.4);
+@define-color scrollnorm_bg_color shade(@theme_bg_color, 1.25);
 
 /*Progressbar bg color*/
 @define-color progressbar_color #06B025;

@@ -323,3 +323,42 @@
 	color: @insensitive_fg_color; 
 }
 
+/**********************
+ * Scrollbar steppers *
+ **********************/
+
+.scrollbar.button.vertical.top,
+.scrollbar.button.vertical.top:insensitive {
+	background-image: url("scrollbars/up.png");
+        border-image: url("scrollbars/up.png");
+    background-size: cover;
+	border-width: 0px;
+	border-style: none;
+        color: transparent;
+}
+
+.scrollbar.button.vertical.bottom,
+.scrollbar.button.vertical.bottom:insensitive {
+	background-image: url("scrollbars/down.png");
+        border-image: url("scrollbars/down.png");
+    background-size: cover;
+	border-width: 0px;
+	border-style: none;
+}
+
+.scrollbar.button.horizontal.left,
+.scrollbar.button.horizontal.left:insensitive {
+	background-image: url("scrollbars/left.png");
+        border-image: url("scrollbars/left.png");
+	border-width: 0px;
+	border-style: none;
+}
+
+.scrollbar.button.horizontal.right,
+.scrollbar.button.horizontal.right:insensitive {
+	background-image: url("scrollbars/right.png");
+        border-image: url("scrollbars/right.png");
+	border-width: 0px;
+	border-style: none;
+}
+

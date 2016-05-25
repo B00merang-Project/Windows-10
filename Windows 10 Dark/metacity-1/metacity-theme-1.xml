@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>Windows 10 Theme Dark Mode</name>
+  <name>Windows 10 Theme</name>
   <author>Elbullazul</author>
   <copyright>2015 Elbullazul</copyright>
   <date>Sept 9, 2015</date>
-  <description>Windows 10 Dark Mode window border for Windows 10 Theme</description>
+  <description>Windows 10 window border for Windows 10 Theme</description>
 </info>
 
 <constant name="IconTitleSpacing" value="0"/>
@@ -44,13 +44,11 @@
 </frame_geometry>
 
 <draw_ops name="title-text-focused">
-<title color="#1F1F1F" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/> 
-<title color="#878787" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
+<title color="#6c6c6c" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
 </draw_ops>
 
 <draw_ops name="title-text-unfocused">
- <title color="#1F1F1F" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>  
-<title color="#cfcfcf" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
+<title color="#4c4c4c" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
 </draw_ops>
 
 <draw_ops name="blank">
@@ -174,38 +172,40 @@
   <image filename="minimize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
+
+<!-- Menu drawing operations -->
 <draw_ops name="menu_button_icon"> 
-  <clip x="15" y="0" width="width" height="height"/>
-<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="5" y="0" width="width" height="height"/>
+<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 
 <draw_ops name="menu_button_icon_unfocused"> 
-  <clip x="15" y="0" width="width" height="height"/>
-<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="5" y="0" width="width" height="height"/>
+<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_normal">
-  <clip x="15" y="0" width="width" height="height"/>
-<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="5" y="0" width="width" height="height"/>
+<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_pressed">
-  <clip x="15" y="0" width="width" height="height"/>
-<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="5" y="0" width="width" height="height"/>
+<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_unfocused">
-  <clip x="15" y="0" width="width" height="height"/>
-<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="5" y="0" width="width" height="height"/>
+<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>

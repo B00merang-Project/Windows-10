@@ -908,11 +908,18 @@ GtkComboBox .menu {
 .toolbar .menu,
 .toolbar .primary-toolbar .menu,
 .header-bar .menu,
-.header-bar .primary-toolbar .menu,
-.menu {
+.header-bar .primary-toolbar .menu {
     padding: 0;
     border-radius: 0;
     border-style: none;
+    background-color: @menu_bg_color;
+    color: @menu_fg_color;
+}
+
+.menu {
+    padding: 0;
+    border-radius: 0;
+	border: 1px solid shade(@menu_bg_color, 0.8);
     background-color: @menu_bg_color;
     color: @menu_fg_color;
 }
@@ -992,7 +999,7 @@ GtkTreeMenu .menuitem {
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.5;
 
-    padding: 3px;
+    padding: 4px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
@@ -1525,6 +1532,20 @@ GtkLevelBar.vertical {
 }
 
 .scrollbar.button,
+.scrollbar.button:hover,
+.scrollbar.button:active,
+.scrollbar.button:active:hover,
+.scrollbar.button:insensitive {
+	-GtkRange-arrow-scaling: 0.0; /* dirty hack to use our buttons */
+	border: none;
+	box-shadow: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+    color: transparent;
+    background-color: transparent;
+}
+
+.scrollbar.button,
 .scrollbar.button:active,
 .scrollbar.button:active:hover {
     border-width: 0;
@@ -1544,7 +1565,7 @@ GtkLevelBar.vertical {
 .scrollbar.slider:hover,
 .scrollbar.slider.vertical:hover {
     border-color: transparent;
-    background-color: mix(@theme_bg_color, @theme_fg_color, 0.27);
+    background-color: mix(@theme_bg_color, @theme_fg_color, 0.5);
 }
 
 .scrollbar.slider:active,
