@@ -838,7 +838,7 @@ GtkInfoBar {
     border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0px;
     background-color: @theme_bg_color;
-    background-image: none;
+    background-image: linear-gradient(to top, white);
     color: @theme_fg_color;
 }
 
@@ -1319,16 +1319,13 @@ GtkProgressBar {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focus {
-    background-image: none;
+	border: 1px solid transparent;
+	background-image: linear-gradient(to top, @progressbar_color);
 	background-color: @progressbar_color; 
     box-shadow:none;
+	border-image: linear-gradient(to top, @progressbar_color) 8 8 8 8 / 8px 8px 8px 8px stretch;
 }
  
-.progressbar.vertical {
-    background-image: none;
-	background-color: @progressbar_color;
-}
-
 .trough,
 .trough row,
 .trough row:hover,
@@ -1337,13 +1334,9 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
+    border-image: linear-gradient(shade(@theme_bg_color, 0.85)) 8 8 8 8 / 8px 8px 8px 8px stretch;
     background-color: shade(@theme_bg_color, 0.85);
-    background-image: none;
-}
-
-.trough.vertical {
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
+    background-image: linear-gradient(shade(@theme_bg_color, 0.85));
 }
 
 /* level bars as used for password quality or remaining power */
@@ -3737,4 +3730,3 @@ GtkBubbleWindow .toolbar {
      background-color: @titlebar_bg_color;
      box-shadow: none; 
 }
-

@@ -113,3 +113,7 @@ v0.9.4 (all themes) : Added code for GNOME 3.18 increased compatibility, removed
 v0.9.5 (all themes) : Fixes for MATE and LXDE panels, MATE menu is now BLACK, fixes to toolbar buttons as well as notebook header color.
 
 v0.9.6 (all themes) : New Qtcurve style replacing the GTK2 and Aurorae decorations for KDE (instructions on how to install @ http://b00merang.weebly.com/how-to-install-themes.html), color and style fixes, polished Cinnamon theme (with transitions!), notebook harmonization in GTK for a better imitation of the windows 10 tabs, new icon to the icon pack for better cinnamon (and possibly other DEs as well) integration, Dark theme (pitch black) for GTK apps requesting so, to imitate the "metro apps" look,
+
+v0.9.7 (all themes) : Patches to Cinnamon and GTK 3 for a better visual harmonization with Redmond's OS, New scrollbar steppers for GTK 3
+
+v0.9.8 (all themes) : fixes for enhanced experience on Ubuntu 16.04

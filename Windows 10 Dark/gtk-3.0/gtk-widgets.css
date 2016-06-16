@@ -1315,13 +1315,10 @@ GtkProgressBar {
     background-image: none;
 	background-color: @progressbar_color; 
     box-shadow:none;
+	border: 1px solid transparent;
+	border-image: linear-gradient(to top, @progressbar_color) 8 8 8 8 / 8px 8px 8px 8px stretch;
 }
  
-.progressbar.vertical {
-    background-image: none;
-	background-color: @progressbar_color;
-}
-
 .trough,
 .trough row,
 .trough row:hover,
@@ -1332,11 +1329,7 @@ GtkProgressBar {
     border-color: shade(@theme_bg_color, 0.8);
     background-color: shade(@theme_bg_color, 1.08);
     background-image: none;
-}
-
-.trough.vertical {
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
+	border-image: linear-gradient(to top, shade(@theme_bg_color, 1.08)) 8 8 8 8 / 8px 8px 8px 8px stretch;
 }
 
 /* level bars as used for password quality or remaining power */

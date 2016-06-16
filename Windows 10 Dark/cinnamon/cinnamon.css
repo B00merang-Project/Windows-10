@@ -56,7 +56,7 @@ StScrollBar StBin#trough {
 
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle {
-    border-image: url("control-assets/scroll-handle.png") 10;
+    border-image: url("control-assets/scroll-handle.png") 12;
 }
 
  StScrollBar StButton#vhandle:hover,
@@ -65,7 +65,7 @@ StScrollBar StButton#hhandle {
  StScrollBar StButton#hhandle:active,
  StScrollBar StButton#vhandle:focus,
  StScrollBar StButton#hhandle:focus {
-    border-image: url("control-assets/scroll-handle-hover.png") 10;
+    border-image: url("control-assets/scroll-handle-hover.png") 12;
 }
 
 
@@ -266,12 +266,12 @@ spacing: 1em;
       	border-right: 0px;
 }
 .popup-menu-item:active {
- color: #fff;
-border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
-border: 1px transparent;
+	color: #fff;
+	border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
+	border: 1px transparent;
   	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
+   	border-left: 0px;
+   	border-right: 0px;
 }
 .popup-menu-item:insensitive {
 	color: #9f9f9f;
@@ -345,9 +345,9 @@ background-color: none;
  * Panel (panel.js)
  * ===================================================================*/
 #panel {
-        background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.65);
 	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
-        outline: 0 rgba(0,0,0,0.95);
+    outline: 1px rgba(0,0,0,0.95);
     color: #326b65;
     font-size: 9pt;
     height: 40px;

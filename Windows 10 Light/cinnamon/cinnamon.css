@@ -1,3 +1,9 @@
+/*
+Windows 10 Cinnamon theme 
+Author : Christian Medel
+Website: http://b00merang.weebly.com/
+*/
+
 @import url(third-party-APPLET-stylesheets/weather.css);
 @import url(third-party-APPLET-stylesheets/system-tray-collapsible.css);
 @import url(third-party-APPLET-stylesheets/configurable-menu.css);
@@ -292,8 +298,8 @@ border: 1px transparent;
 	font-weight: bold;
 }
 .popup-slider-menu-item {
-background-color: none;
- box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
+	background-color: none;
+	box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
     height: 1em;
     min-width: 15em;
     -slider-height: 0.1em;
@@ -345,9 +351,9 @@ background-color: none;
  * Panel (panel.js)
  * ===================================================================*/
 #panel {
-        background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0.65);
 	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
-        outline: 0 rgba(0,0,0,0.95);
+    outline: 1px rgba(0,0,0,0.95);
     color: #326b65;
     font-size: 9pt;
     height: 40px;

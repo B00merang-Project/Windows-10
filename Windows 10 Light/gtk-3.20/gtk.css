@@ -9,9 +9,17 @@
 @define-color selected_fg_color #262626;
 @define-color tooltip_bg_color #ffffff;
 @define-color tooltip_fg_color #4c4c4c;
-@define-color theme_dark_fg_color #fff;
-@define-color theme_dark_bg_color #4f4f4f;
 @define-color progressbar_color #06B025;
+
+@define-color outline_color rgba(46,52,54,0.3);
+@define-color txt_shadow rgba(255, 255, 255, 0.76923);
+
+/* OSD colors */
+@define-color osd_bg_color #f1f1f1;
+@define-color osd_fg_color #ffffff;
+@define-color osd_borders #8c8c8c;
+@define-color osd_outline #eeeeec;
+@define-color osd_txt_shadow rgba(255,255,255,0.1);
 
 /* widget text/foreground color */
 @define-color theme_fg_color #2e3436;
