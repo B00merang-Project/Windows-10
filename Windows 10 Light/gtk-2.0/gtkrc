@@ -8,7 +8,7 @@ gtk-color-scheme = "bg_color:#ffffff\nfg_color:#4c4c4c\nbase_color:#ffffff\ntext
 # Default Style
 
 style "murrine-default" {
-	GtkArrow::arrow-scaling= 0.6
+	GtkArrow::arrow-scaling= 0.5
 
 	GtkButton::child-displacement-x = 0
 	GtkButton::child-displacement-y = 0
@@ -234,50 +234,18 @@ style "murrine-scale" = "murrine-thin" {
 	}
 }
 
-style "progressbar"
-{
-  xthickness            		= 1
-  ythickness            		= 1
+style "progressbar" {
+	bg[NORMAL] = @bg_color
+	bg[ACTIVE] = shade( 0.9, @bg_color) #trough bg color
+	bg[SELECTED] = "#06B025" #progressbar bg color
+	bg[PRELIGHT] = @selected_bg_color
 
-  engine "pixmap" 
-  {
-    image
-    {
-      function				= BOX
-      detail				= "trough"
-      file				= "ProgressBar/trough-progressbar.png"
-      border				= { 4, 4, 4, 4 }
-      stretch				= TRUE
-      orientation			= HORIZONTAL
-    }
-    image
-    {
-      function				= BOX
-      detail				= "bar"
-      file				= "ProgressBar/progressbar.png"
-      stretch				= TRUE
-      border				= { 3, 3, 3, 3 }
-      orientation			= HORIZONTAL
-    }
-    image
-    {
-      function				= BOX
-      detail				= "trough"
-      file				= "ProgressBar/trough-progressbar_v.png"
-      border				= { 4, 4, 4, 4 }
-      stretch				= TRUE
-      orientation			= VERTICAL
-    }
-    image
-    {
-      function				= BOX
-      detail				= "bar"
-      file				= "ProgressBar/progressbar_v.png"
-      stretch				= TRUE
-      border				= { 3, 3, 3, 3 }
-      orientation			= VERTICAL
-    }
-  }
+	fg[PRELIGHT] = @selected_fg_color
+
+	engine "murrine" {
+		border_shades = { 1.0, 1.0 }
+		trough_border_shades = { 1.0, 1.0 }
+	}
 }
 
 

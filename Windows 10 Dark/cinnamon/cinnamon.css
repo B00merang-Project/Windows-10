@@ -172,29 +172,29 @@ StScrollBar StButton#hhandle {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-	-arrow-border-color: rgba(10,10,10,0.9);
-	-arrow-background-color: transparent;
-	-boxpointer-gap: -1px;
-	-arrow-border-radius: 16px;
-	-arrow-border-width: 0;
+    -arrow-border-color: rgba(10,10,10,0.9);
+    -arrow-background-color: transparent;
+    -boxpointer-gap: -1px;
+    -arrow-border-radius: 16px;
+    -arrow-border-width: 0;
 }
 .popup-menu {
 
-	color: #fff;
-	font-size: 9.5pt;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-width: 200px;
-	min-height: 80px;
-	border: rgba(50,50,50,0.9);
-	border-radius: 0 0 0 0;
-	background-color: rgba(25,25,25,0.95);
-	border-top: 1px;
+    color: #fff;
+    font-size: 9.5pt;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 200px;
+    min-height: 80px;
+    border: rgba(50,50,50,0.9);
+    border-radius: 0 0 0 0;
+    background-color: rgba(25,25,25,0.85);
+    border-top: 1px;
     border-left: 1px;
     border-right: 1px;
-	border-bottom: 1px;
-	box-shadow: none;
+    border-bottom: 1px;
+    box-shadow: none;
 }
 
 .popup-menu StEntry {
@@ -219,81 +219,83 @@ StScrollBar StButton#hhandle {
 
 }
 .popup-sub-menu {
-	color: #1a938b;	
-       	border: 1px #326b65;
-	border-left: 0px;
-	border-right: 0px;
+    color: #1a938b;    
+    border: 1px #326b65;
+    border-left: 0px;
+    border-right: 0px;
 }
+
 .popup-sub-menu .popup-menu-item:ltr {
-	padding-right: 0em;
+    padding-right: 0em;
 }
 .popup-sub-menu .popup-menu-item:rtl {
-	padding-left: 0em;
+    padding-left: 0em;
 }
 .popup-sub-menu StScrollBar {
-	padding: 4px;
+    padding: 4px;
 }
 .popup-sub-menu StScrollBar StBin#trough {
-	border-width: 0px;
+    border-width: 0px;
 }
 .popup-sub-menu StScrollBar StBin#vhandle {
-  	background-color: rgba(41,41,41,1);
-    	border-width: 0px;
+      background-color: rgba(41,41,41,1);
+    border-width: 0px;
 }
 .popup-combo-menu {
-   	 color: #eeeeee;
-    	background-gradient-direction: vertical;
- 	background-gradient-start: rgba(52,52,52,0.95);
- 	background-gradient-end: rgba(44,44,44,0.95);
-    	border: 1px solid rgba(255,255,255,0.1);
-    	padding:  0em;
-    	font-size: 7.5pt;
-    	border-radius: 2px;
+    color: #eeeeee;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(52,52,52,0.95);
+    background-gradient-end: rgba(44,44,44,0.95);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding:  0em;
+    font-size: 7.5pt;
+    border-radius: 2px;
 }
 
 /* The remaining popup-menu sizing is all done in ems, so that if you
  * override .popup-menu.font-size, everything else will scale with it.
  */
 .popup-menu-content {
-padding: 0.8em 0em;
+    padding: 0.8em 0em;
 }
 .popup-menu-item {
-padding: .4em 1.75em;
-spacing: 1em;
-    	border: 1px solid transparent;
-    	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
+    padding: 8px 15px;
+    spacing: 1em;
+    border: 1px solid transparent;
+/*    background: rgba(20,20,20,1);*/
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
 .popup-menu-item:active {
-	color: #fff;
-	border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
-	border: 1px transparent;
-  	border-bottom: 0px;
-   	border-left: 0px;
-   	border-right: 0px;
+    color: #fff;
+    border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
+    border: 1px transparent;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
 .popup-menu-item:insensitive {
-	color: #9f9f9f;
+    color: #9f9f9f;
 }
 .popup-image-menu-item {
 }
 .popup-combobox-item {
-	spacing: 1em;
+    spacing: 1em;
 }
 .popup-separator-menu-item {
-	background-color: rgba(50,50,50,1);
-	box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
-	border-radius: 5px; 
-    	-margin-horizontal: 14px;
-    	height: 1px;
+    background-color: rgba(50,50,50,1);
+    box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
+    border-radius: 5px; 
+    -margin-horizontal: 14px;
+    height: 1px;
 }
 .popup-alternating-menu-item:alternate {
-	font-weight: bold;
+    font-weight: bold;
 }
 .popup-slider-menu-item {
-background-color: none;
- box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
+    background-color: none;
+    box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
     height: 1em;
     min-width: 15em;
     -slider-height: 0.1em;
@@ -305,17 +307,17 @@ background-color: none;
     -slider-handle-radius: 0.5em;
 }
 .popup-device-menu-item {
-	spacing: .5em;
+    spacing: .5em;
 }
 .popup-inactive-menu-item {
-	font-weight: normal;
-	color: #999;
+    font-weight: normal;
+    color: #999;
 }
 .popup-subtitle-menu-item {
-	font-weight: bold;
+    font-weight: bold;
 }
 .popup-menu-icon {
-	icon-size: 1em;
+    icon-size: 1em;
 }
 /* Switches (to be used in menus) */
 
@@ -346,7 +348,7 @@ background-color: none;
  * ===================================================================*/
 #panel {
     background-color: rgba(0,0,0,0.65);
-	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
     outline: 1px rgba(0,0,0,0.95);
     color: #326b65;
     font-size: 9pt;
@@ -355,7 +357,7 @@ background-color: none;
 }
 
 #panelLeft, #panelCenter, #panelRight {
-	spacing: 0px;
+    spacing: 0px;
 }
 
 #panelLeft:ltr {
@@ -387,11 +389,11 @@ transition-duration: 150;
 
 .panel-status-button:hover,
 .panel-button:hover {
-	background-color: #083854;
-        border-radius: 0px;
-	color:  #083854;
-	box-shadow: inset 0px -1px 0px 0px rgba(37,154,202,1);
-	transition-duration: 100;
+    background-color: #083854;
+    border-radius: 0px;
+    color:  #083854;
+    box-shadow: inset 0px -1px 0px 0px rgba(37,154,202,1);
+    transition-duration: 100;
 }
 
 .system-status-icon {
@@ -1405,7 +1407,8 @@ background: #111;
  * Menu (menu.js)
  * ===================================================================*/
 .menu-background {
-	box-shadow: 1px -1px 4px 1px rgba(1,1,1,0.6);
+    background: rgba(20,20,20,0.9);
+    box-shadow: 1px -1px 4px 1px rgba(1,1,1,0.6);
 }
 
 
@@ -1576,28 +1579,28 @@ background: #111;
 
 .window-list-item-box {
     font-weight: normal;
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
-    transition-duration: 500;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
+    transition-duration: 100;
 }
 
 
 .window-list-item-box:hover  {     
     /*box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,0.5);  */
     border-image:url("panel-assets/bottom-item-active.svg") 4;
-    transition-duration: 500;
+    transition-duration: 100;
 
 }
 
 .window-list-item-demands-attention {
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-attention.svg") 4;
-    transition-duration: 500;
+    transition-duration: 100;
 }
 
 .window-list-item-box:active:hover {
     font-weight: normal;
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
-    transition-duration: 500;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
+    transition-duration: 100;
 }
 
 /* 
@@ -1629,67 +1632,37 @@ background: #111;
 .window-list-item-demands-attention:hover {
 }
 
-/*-----top panel-----*/
+/*-----overrides-----*/
 
-.panel-top .window-list-item-box:hover  {   
-    font-weight: normal;
-    border-image: url("panel-assets/top-item-hover.svg") 4;
-}
-
-.panel-top .window-list-item-box:active,
-.panel-top .window-list-item-box:checked,
-.panel-top .window-list-item-box:focus  {
-    font-weight: normal;
-    border-image: url("panel-assets/top-item-active.svg") 4;
-    color: #fff;
-}
-
-.panel-top .window-list-item-box:checked:hover,
-.panel-top .window-list-item-box:focus:hover,
-.panel-top .window-list-item-box:active:hover  {     
-    font-weight: normal;
-    border-image: url("panel-assets/top-item-active-hover.svg") 4;
-    color: #fff;
-}
-
-.panel-top .window-list-item-demands-attention {
-    border-image: url("panel-assets/top-item-attention.svg") 4;
-}
-
-.panel-top .window-list-item-demands-attention:hover {
-    border-image: url("panel-assets/top-item-attention-hover.svg") 4;
-}
-
-/*-----bottom panel-----*/
-
-.panel-bottom .window-list-item-box:hover {
+.window-list-item-box:hover  {   
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-hover.svg") 4;
 }
 
-.panel-bottom .window-list-item-box:active,
-.panel-bottom .window-list-item-box:checked,
-.panel-bottom .window-list-item-box:focus  {
+.window-list-item-box:active,
+.window-list-item-box:checked,
+.window-list-item-box:focus  {
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-active.svg") 4;
     color: #fff;
 }
 
-.panel-bottom .window-list-item-box:checked:hover,
-.panel-bottom .window-list-item-box:focus:hover,
-.panel-bottom .window-list-item-box:active:hover  {     
+.window-list-item-box:checked:hover,
+.window-list-item-box:focus:hover,
+.window-list-item-box:active:hover  {     
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
     color: #fff;
 }
 
-.panel-bottom .window-list-item-demands-attention {
+.window-list-item-demands-attention {
     border-image: url("panel-assets/bottom-item-attention.svg") 4;
 }
 
-.panel-bottom .window-list-item-demands-attention:hover {
+.window-list-item-demands-attention:hover {
     border-image: url("panel-assets/bottom-item-attention-hover.svg") 4;
 }
+
 /* ===================================================================
  * Sound Applet (status/volume.js)
  * ===================================================================*/
@@ -1807,17 +1780,17 @@ background: #111;
 
 /*---top panel---*/
 
-.panel-top .workspace-button:outlined {
-    border-image: url("panel-assets/top-item-active.svg") 4;
+.workspace-button:outlined {
+    border-image: url("panel-assets/bottom-item-active.svg") 4;
     color: #fff;
 }
 
-.panel-top .workspace-button:hover {
-    border-image: url("panel-assets/top-item-hover.svg") 4;
+.workspace-button:hover {
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
 }
 
-.panel-top .workspace-button:outlined:hover {
-    border-image: url("panel-assets/top-item-active-hover.svg") 4;
+.workspace-button:outlined:hover {
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
     color: #fff;
 }
 
@@ -1833,7 +1806,7 @@ background: #111;
 }
 
 .panel-bottom .workspace-button:outlined:hover {
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
     color: #fff;
 }
 /* ===================================================================
@@ -1851,8 +1824,8 @@ background: #111;
 .panel-launcher:hover {
 }
 
-.panel-top .panel-launcher:hover {
-    border-image: url("panel-assets/top-item-hover.svg") 4;
+.panel-launcher:hover {
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
 }
 
 .panel-bottom .panel-launcher:hover {
@@ -1909,10 +1882,10 @@ background: #111;
 .applet-box:active {
 }
 
-.panel-top .applet-box:hover {
+.applet-box:hover {
     font-weight: normal;
     color: #fff; 
-    border-image: url("panel-assets/top-item-hover.svg") 4;
+    border-image: url("panel-assets/bottom-item-hover.svg") 4;
 }
 
 .panel-bottom .applet-box:hover {

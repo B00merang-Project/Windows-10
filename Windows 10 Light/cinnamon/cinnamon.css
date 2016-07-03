@@ -1,9 +1,3 @@
-/*
-Windows 10 Cinnamon theme 
-Author : Christian Medel
-Website: http://b00merang.weebly.com/
-*/
-
 @import url(third-party-APPLET-stylesheets/weather.css);
 @import url(third-party-APPLET-stylesheets/system-tray-collapsible.css);
 @import url(third-party-APPLET-stylesheets/configurable-menu.css);
@@ -62,7 +56,7 @@ StScrollBar StBin#trough {
 
 StScrollBar StButton#vhandle,
 StScrollBar StButton#hhandle {
-    border-image: url("control-assets/scroll-handle.png") 10;
+    border-image: url("control-assets/scroll-handle.png") 12;
 }
 
  StScrollBar StButton#vhandle:hover,
@@ -71,7 +65,7 @@ StScrollBar StButton#hhandle {
  StScrollBar StButton#hhandle:active,
  StScrollBar StButton#vhandle:focus,
  StScrollBar StButton#hhandle:focus {
-    border-image: url("control-assets/scroll-handle-hover.png") 10;
+    border-image: url("control-assets/scroll-handle-hover.png") 12;
 }
 
 
@@ -195,7 +189,7 @@ StScrollBar StButton#hhandle {
 	min-height: 80px;
 	border: rgba(50,50,50,0.9);
 	border-radius: 0 0 0 0;
-	background-color: rgba(25,25,25,0.95);
+	background-color: rgba(25,25,25,0.85);
 	border-top: 1px;
     border-left: 1px;
     border-right: 1px;
@@ -272,12 +266,12 @@ spacing: 1em;
       	border-right: 0px;
 }
 .popup-menu-item:active {
- color: #fff;
-border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
-border: 1px transparent;
+	color: #fff;
+	border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
+	border: 1px transparent;
   	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
+   	border-left: 0px;
+   	border-right: 0px;
 }
 .popup-menu-item:insensitive {
 	color: #9f9f9f;
@@ -298,8 +292,8 @@ border: 1px transparent;
 	font-weight: bold;
 }
 .popup-slider-menu-item {
-	background-color: none;
-	box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
+background-color: none;
+ box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
     height: 1em;
     min-width: 15em;
     -slider-height: 0.1em;
@@ -1411,6 +1405,7 @@ background: #111;
  * Menu (menu.js)
  * ===================================================================*/
 .menu-background {
+    background: rgba(20,20,20,0.9);
 	box-shadow: 1px -1px 4px 1px rgba(1,1,1,0.6);
 }
 
@@ -1567,7 +1562,7 @@ background: #111;
  * Window list (windowList.js)
  * ===================================================================*/
 
-.window-list-box {
+./-box {
     spacing: 8px;   
     padding-top: 0;   
 }
@@ -1582,28 +1577,28 @@ background: #111;
 
 .window-list-item-box {
     font-weight: normal;
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
-    transition-duration: 500;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
+    transition-duration: 100;
 }
 
 
 .window-list-item-box:hover  {     
     /*box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,0.5);  */
     border-image:url("panel-assets/bottom-item-active.svg") 4;
-    transition-duration: 500;
+    transition-duration: 100;
 
 }
 
 .window-list-item-demands-attention {
     font-weight: normal;
     border-image: url("panel-assets/bottom-item-attention.svg") 4;
-    transition-duration: 500;
+    transition-duration: 100;
 }
 
 .window-list-item-box:active:hover {
     font-weight: normal;
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
-    transition-duration: 500;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
+    transition-duration: 100;
 }
 
 /* 
@@ -1685,7 +1680,7 @@ background: #111;
 .panel-bottom .window-list-item-box:focus:hover,
 .panel-bottom .window-list-item-box:active:hover  {     
     font-weight: normal;
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
     color: #fff;
 }
 
@@ -1839,7 +1834,7 @@ background: #111;
 }
 
 .panel-bottom .workspace-button:outlined:hover {
-    border-image: url("panel-assets/bottom-item-active-hover.svg") 4;
+    border-image: url("panel-assets/bottom-item-active-hover.svg") 8;
     color: #fff;
 }
 /* ===================================================================
