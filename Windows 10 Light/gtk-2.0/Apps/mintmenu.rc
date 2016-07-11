@@ -1,0 +1,11 @@
+style "mintmenu-style"
+{
+    bg_pixmap[NORMAL] = "Panel/bc.png"
+    fg[NORMAL] = @fg_color_dark
+	fg[ACTIVE] = shade (1.02, @fg_color_dark)
+	fg[PRELIGHT] = @selected_fg_color
+    bg[PRELIGHT] = "#0f7bd1"
+    bg[ACTIVE] = "#0f7bd1"
+}
+
+widget "mintmenu.*" style "mintmenu-style"

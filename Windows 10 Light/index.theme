@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Windows 10 Default
+Comment=Windows 10 UI for Linux OSes
+Comment=Author : Christian Medel (Elbullazul)
+Version=v0.9.8
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Windows 10 Default
+MetacityTheme=Windows 10 Default
+ButtonLayout=:minimize,maximize,close
