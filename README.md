@@ -1,6 +1,7 @@
 #Windows 10 Themes#
 
 [![Join the chat at https://gitter.im/Elbullazul/Windows-10](https://badges.gitter.im/Elbullazul/Windows-10.svg)](https://gitter.im/Elbullazul/Windows-10?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 **Home of the Windows 10 Transformation Pack for Linux compatible Distributions**
 
 ---
