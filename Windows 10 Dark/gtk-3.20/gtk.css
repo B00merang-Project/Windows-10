@@ -1,76 +1,76 @@
 /* search for rgba value important! 46, 52, 54 */
 
 /* default color scheme */
-@define-color bg_color #ffffff;
-@define-color fg_color #4c4c4c;
-@define-color base_color #ffffff;
-@define-color text_color #4c4c4c;
-@define-color selected_bg_color #cce8ff;
-@define-color selected_fg_color #262626;
-@define-color tooltip_bg_color #ffffff;
-@define-color tooltip_fg_color #4c4c4c;
+@define-color bg_color #1f1f1f;
+@define-color fg_color #ffffff;
+@define-color base_color #1f1f1f;
+@define-color text_color #ffffff;
+@define-color selected_bg_color #004D8C;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #1f1f1f;
+@define-color tooltip_fg_color #ffffff;
 @define-color progressbar_color #06B025;
 
-@define-color outline_color rgba(46,52,54,0.3);
-@define-color txt_shadow rgba(255, 255, 255, 0.76923);
+@define-color outline_color rgba(164,164,164,0.3);
+@define-color txt_shadow rgba(20, 20, 20, 0.76923);
 
 /* OSD colors */
-@define-color osd_bg_color #f1f1f1;
+@define-color osd_bg_color #000000;
 @define-color osd_fg_color #ffffff;
 @define-color osd_borders #8c8c8c;
-@define-color osd_outline #eeeeec;
+@define-color osd_outline #5e5e5e;
 @define-color osd_txt_shadow rgba(255,255,255,0.1);
 
 /* widget text/foreground color */
-@define-color theme_fg_color #2e3436;
+@define-color theme_fg_color #ffffff;
 /*
 text color for entries, views and content in general */
-@define-color theme_text_color black;
+@define-color theme_text_color ffffff;
 /*
 widget base background color */
-@define-color theme_bg_color #ffffff;
+@define-color theme_bg_color #1f1f1f;
 /*
 text widgets and the like base background color */
-@define-color theme_base_color #ffffff;
+@define-color theme_base_color #1f1f1f;
 /*
 base background color of selections */
-@define-color theme_selected_bg_color #cce8ff;
+@define-color theme_selected_bg_color #004D8C;
 /*
 text/foreground color of selections */
-@define-color theme_selected_fg_color #262626;
+@define-color theme_selected_fg_color #ffffff;
 /*
 base background color of insensitive widgets */
-@define-color insensitive_bg_color #fcfcfc;
+@define-color insensitive_bg_color #1a1a1a;
 /*
 text foreground color of insensitive widgets */
-@define-color insensitive_fg_color #8c8c8c;
+@define-color insensitive_fg_color #e8e8e8;
 /*
 insensitive text widgets and the like base background color */
-@define-color insensitive_base_color #ffffff;
+@define-color insensitive_base_color #1a1a1a;
 /*
 widget text/foreground color on backdrop windows */
-@define-color theme_unfocused_fg_color #8c8c8c;
+@define-color theme_unfocused_fg_color #f1f1f1;
 /*
 text color for entries, views and content in general on backdrop windows */
-@define-color theme_unfocused_text_color black;
+@define-color theme_unfocused_text_color f1f1f1;
 /*
 widget base background color on backdrop windows */
-@define-color theme_unfocused_bg_color #fcfcfc;
+@define-color theme_unfocused_bg_color #292929;
 /*
 text widgets and the like base background color on backdrop windows */
-@define-color theme_unfocused_base_color #fcfcfc;
+@define-color theme_unfocused_base_color #292929;
 /*
 base background color of selections on backdrop windows */
-@define-color theme_unfocused_selected_bg_color #d1d1d1;
+@define-color theme_unfocused_selected_bg_color #8e8e8e;
 /*
 text/foreground color of selections on backdrop windows */
-@define-color theme_unfocused_selected_fg_color #000000;
+@define-color theme_unfocused_selected_fg_color #2c2c2c;
 /*
 widgets main borders color */
-@define-color borders #aaaaaa;
+@define-color borders #434343;
 /*
 widgets main borders color on backdrop windows */
-@define-color unfocused_borders #8c8c8c;
+@define-color unfocused_borders #606060;
 /*
 these are pretty self explicative */
 @define-color warning_color #f57900;
@@ -92,6 +92,6 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_a shade(#e8e8e7, 0.85);
 @define-color wm_button_active_color_b shade(#e8e8e7, 0.89);
 @define-color wm_button_active_color_c shade(#e8e8e7, 0.9);
-@define-color content_view_bg #ffffff;
+@define-color content_view_bg #1f1f1f;
 
 @import url("gtk-contained.css");
