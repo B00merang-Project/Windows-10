@@ -183,7 +183,7 @@ assistant .sidebar {
   border: none; }
   assistant .sidebar:backdrop {
     background-color: @theme_unfocused_bg_color;
-    border-color: none; }
+    border-color: transparent; }
 assistant.csd .sidebar {
   border-top-style: none; }
 assistant .sidebar label {
@@ -985,7 +985,7 @@ button.suggested-action {
     button.suggested-action:backdrop,
     button.suggested-action.flat:backdrop label,
     button.suggested-action.flat:backdrop {
-      color: @theme_selected_bg_color; }
+      color: @theme_unfocused_selected_bg_color; }
     .selection-mode button.titlebutton:backdrop:active, .selection-mode button.titlebutton:backdrop:checked,
     button.suggested-action:backdrop:active,
     button.suggested-action:backdrop:checked,
@@ -1004,7 +1004,7 @@ button.suggested-action {
       button.suggested-action.flat:backdrop:active,
       button.suggested-action.flat:backdrop:checked label,
       button.suggested-action.flat:backdrop:checked {
-        color: @theme_selected_bg_color; }
+        color: @theme_unfocused_selected_bg_color; }
     .selection-mode button.titlebutton:backdrop:disabled,
     button.suggested-action:backdrop:disabled,
     button.suggested-action.flat:backdrop:disabled {
@@ -1915,7 +1915,7 @@ searchbar,
 .location-bar {
   border-style: solid;
   border-color: @borders;
-  background-color: theme_bg_color; } /*#d9d9d7*/
+  background-color: @theme_bg_color; } /*#d9d9d7*/
   .inline-toolbar:backdrop, searchbar:backdrop,
   .location-bar:backdrop {
     border-color: shade(@borders, 0.95);
@@ -1936,13 +1936,13 @@ headerbar {
   border-radius: 0;
   background-image: linear-gradient(to top, @theme_bg_color, @theme_bg_color);
   background-color: @theme_bg_color;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8); }
+  box-shadow: inset 0 1px rgba(20, 20, 20, 0.8); }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
     border-color: shade(@borders, 0.95);
     background-color: @theme_bg_color;
     background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0 1px rgba(20, 20, 20, 0.8);
     transition: 200ms ease-out; }
   .titlebar:not(headerbar) .title,
   headerbar .title {
@@ -2762,7 +2762,7 @@ notebook > header {
         border-color: transparent;
         background-color: transparent; }
     notebook > header tab:checked {
-      color: @theme_fg_color; }
+        color: @theme_fg_color; }
 
 /* active notebook tab in gedit */
       notebook > header tab:checked.reorderable-page {
@@ -2848,7 +2848,7 @@ scrollbar {
   scrollbar.right {
     border-left: 1px solid @borders; }
   scrollbar:backdrop {
-    background-color: @shade(theme_bg_color, 0.9);
+    background-color: shade(@theme_bg_color, 0.9);
     border-color: shade(@borders, 0.95);
     transition: 200ms ease-out; }
   scrollbar slider {
@@ -2875,7 +2875,7 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 1px 1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    border-color: solid 1px 0 0 0 shade(@theme_bg_color, 0.8);
+    border: solid 1px 0 0 0 shade(@theme_bg_color, 0.8);
     opacity: 1;
     margin: 0;
     background-color: shade(@theme_bg_color, 0.9); }
@@ -2985,15 +2985,15 @@ switch {
   font-weight: bold;
   font-size: smaller;
   outline-offset: -4px;
-  border: 1px solid @borders;
+  border: 1px solid shade(@borders, 1.3);
   border-radius: 16px;
   color: transparent;
-  background-color: @borders;
+  background-color: shade(@borders, 1.3);
   text-shadow: 0 0 transparent; }
   switch:checked {
     color: transparent;
-    border-color: shade(@theme_selected_bg_color, 0.6);
-    background-color: shade(@theme_selected_bg_color, 0.6);
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
     text-shadow: 0 0 rgba(24, 68, 114, 0), 0 0 0 transparent; }
   switch:disabled {
     color: transparent;
@@ -3002,14 +3002,14 @@ switch {
     text-shadow: none; }
   switch:backdrop {
     color: transparent;
-    border-color: shade(@borders, 1.3);
-    background-color: shade(@borders, 1.3);
+    border-color: @borders;
+    background-color: @borders;
     text-shadow: none;
     transition: 200ms ease-out; }
     switch:backdrop:checked {
       color: transparent;
-      border-color: @theme_selected_bg_color;
-      background-color: @theme_selected_bg_color; }
+      border-color: shade(@theme_selected_bg_color, 0.6);
+      background-color: shade(@theme_selected_bg_color, 0.6); }
     switch:backdrop:disabled {
       color: transparent;
       border-color: shade(@borders, 0.95);
@@ -3023,7 +3023,7 @@ switch {
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     color: @theme_fg_color;
     outline-color: @outline_color;
-    border-color: @borders;
+    border-color: shade(@borders, 1.3);
     text-shadow: 0 1px @txt_shadow;
     -gtk-icon-shadow: 0 1px @txt_shadow;
     background-image: linear-gradient(to bottom, @theme_bg_color, @theme_bg_color);
@@ -3031,11 +3031,11 @@ switch {
   switch:hover slider {
     color: @theme_fg_color;
     outline-color: @outline_color;
-    border-color: @borders;
+    border-color: shade(@borders, 1.3);
     background-image: linear-gradient(to bottom, @theme_bg_color, @theme_bg_color);
     box-shadow: inset 0 0 @theme_bg_color, inset 0 0 #f4f4f4, inset 0 0 #cfcfcd, 0 1px rgba(0, 0, 0, 0.1); }
   switch:checked slider {
-    border: 6px solid shade(@theme_selected_bg_color, 0.6); }
+    border: 6px solid @theme_selected_bg_color; }
   switch:disabled slider {
     border-color: @borders;
     background-color: @insensitive_bg_color;
@@ -3047,7 +3047,7 @@ switch {
       color: @insensitive_fg_color; }
   switch:backdrop slider {
     transition: 200ms ease-out;
-    border-color: shade(@borders, 1.3);
+    border-color: @borders;
     background-color: transparent;
     background-image: image(@theme_bg_color);
     text-shadow: none;
@@ -3056,7 +3056,7 @@ switch {
     switch:backdrop slider label, switch:backdrop slider {
       color: @insensitive_fg_color; }
   switch:backdrop:checked slider {
-    border-color: @theme_selected_bg_color; }
+    border-color: shade(@theme_selected_bg_color, 0.6); }
   switch:backdrop:disabled slider {
     border-color: shade(@borders, 0.95);
     background-color: @insensitive_bg_color;
@@ -4914,7 +4914,7 @@ row:selected colorswatch {
 colorswatch#editor-color-sample {
   border-radius: 0; }
   colorswatch#editor-color-sample overlay {
-    border-radius: 4.0; }
+    border-radius: 0 px; }
 
 colorchooser .popover.osd {
   border-radius: 0; }

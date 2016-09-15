@@ -192,11 +192,12 @@ style "murrine-notebook" = "murrine-notebook-bg" {
 
 style "murrine-button"  = "murrine-wider" {
 	bg[NORMAL] = shade (1.08, @bg_color)
-	bg[PRELIGHT] = shade (1.10, @bg_color)
-	bg[ACTIVE] = shade (0.95, @bg_color)
+	bg[PRELIGHT] = shade (1.30, @selected_bg_color)
+	bg[ACTIVE] = shade (0.95, @selected_bg_color)
 	bg[INSENSITIVE] = shade (0.85, @bg_color)
 
   	engine "murrine" {
+		border_shades = { 1.1, 1.1 }
 	}
 }
 

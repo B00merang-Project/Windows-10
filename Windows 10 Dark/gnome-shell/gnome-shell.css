@@ -1255,7 +1255,6 @@ StScrollBar {
 }
 
 #dash .app-well-app .overview-icon {
-	width: 60px;
 	transition: width 2s;
 	transition-duration: 1000ms;
 }
