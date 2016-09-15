@@ -1,0 +1,97 @@
+/* search for rgba value important! 46, 52, 54 */
+
+/* default color scheme */
+@define-color bg_color #000000;
+@define-color fg_color #ffffff;
+@define-color base_color #000000;
+@define-color text_color #ffffff;
+@define-color selected_bg_color #0084f0;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #000000;
+@define-color tooltip_fg_color #ffffff;
+@define-color progressbar_color #0084f0;
+
+@define-color outline_color rgba(164,164,164,0.3);
+@define-color txt_shadow rgba(20, 20, 20, 0.76923);
+
+/* OSD colors */
+@define-color osd_bg_color #000000;
+@define-color osd_fg_color #ffffff;
+@define-color osd_borders #8c8c8c;
+@define-color osd_outline #5e5e5e;
+@define-color osd_txt_shadow rgba(255,255,255,0.1);
+
+/* widget text/foreground color */
+@define-color theme_fg_color #ffffff;
+/*
+text color for entries, views and content in general */
+@define-color theme_text_color #ffffff;
+/*
+widget base background color */
+@define-color theme_bg_color #000000;
+/*
+text widgets and the like base background color */
+@define-color theme_base_color #000000;
+/*
+base background color of selections */
+@define-color theme_selected_bg_color #0084f0;
+/*
+text/foreground color of selections */
+@define-color theme_selected_fg_color #ffffff;
+/*
+base background color of insensitive widgets */
+@define-color insensitive_bg_color #000000;
+/*
+text foreground color of insensitive widgets */
+@define-color insensitive_fg_color #e8e8e8;
+/*
+insensitive text widgets and the like base background color */
+@define-color insensitive_base_color #000000;
+/*
+widget text/foreground color on backdrop windows */
+@define-color theme_unfocused_fg_color #f1f1f1;
+/*
+text color for entries, views and content in general on backdrop windows */
+@define-color theme_unfocused_text_color #f1f1f1;
+/*
+widget base background color on backdrop windows */
+@define-color theme_unfocused_bg_color #000000;
+/*
+text widgets and the like base background color on backdrop windows */
+@define-color theme_unfocused_base_color #000000;
+/*
+base background color of selections on backdrop windows */
+@define-color theme_unfocused_selected_bg_color #8e8e8e;
+/*
+text/foreground color of selections on backdrop windows */
+@define-color theme_unfocused_selected_fg_color #2c2c2c;
+/*
+widgets main borders color */
+@define-color borders #343434;
+/*
+widgets main borders color on backdrop windows */
+@define-color unfocused_borders #4a4a4a;
+/*
+these are pretty self explicative */
+@define-color warning_color #f57900;
+@define-color error_color #cc0000;
+@define-color success_color #73d216;
+/*
+these colors are exported for the window manager and shouldn't be used in applications,
+read if you used those and something break with a version upgrade you're on your own... */
+@define-color wm_title shade(#2e3436, 1.8);
+@define-color wm_unfocused_title #8b8e8f;
+@define-color wm_highlight rgba(255, 255, 255, 0.8);
+@define-color wm_borders_edge rgba(255, 255, 255, 0.8);
+@define-color wm_bg_a shade(#e8e8e7, 1.2);
+@define-color wm_bg_b #e8e8e7;
+@define-color wm_shadow alpha(black, 0.35);
+@define-color wm_border alpha(black, 0.18);
+@define-color wm_button_hover_color_a shade(#e8e8e7, 1.3);
+@define-color wm_button_hover_color_b #e8e8e7;
+@define-color wm_button_active_color_a shade(#e8e8e7, 0.85);
+@define-color wm_button_active_color_b shade(#e8e8e7, 0.89);
+@define-color wm_button_active_color_c shade(#e8e8e7, 0.9);
+@define-color content_view_bg #000000;
+
+@import url("gtk-contained-dark.css");

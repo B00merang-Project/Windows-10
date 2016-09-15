@@ -1,0 +1,130 @@
+# ===========================================================================================================================
+# GNOME,XFCE,LXDE & GTK Desktop(S) PANEL SPECIFIC SETTINGS *SPECIFIC SETTINGS TO ENABLE PROPER FUNCTION ON XFCE/LXDE*
+# ===========================================================================================================================
+
+style "panel" = "dark"
+{
+	xthickness = 0
+	ythickness = 0
+
+	bg_pixmap[NORMAL]	= "Panel/panel.png"
+	base[NORMAL] 		= "#000000"
+	bg[NORMAL] 			= "#151515"
+	bg[PRELIGHT]		= "#1f1f1f"	
+	bg[SELECTED]		= "#004D8C"
+	text[NORMAL]		= @fg_color_dark
+
+	engine "murrine" {
+		colorize_scrollbar = FALSE
+	}
+}
+
+style "panel_task_button" = "dark"
+{
+	xthickness = 3
+	ythickness = 3
+
+	GtkWidget::focus-line-width        = 0
+	GtkWidget::focus_padding           = 0
+	GtkWidget::interior_focus          = 0
+	GtkWidget::internal_padding        = 0
+
+	GtkButton::child_displacement_x    = 0
+	GtkButton::child_displacement_y    = 0
+	GtkButton::default_border          = {0, 0, 0, 0}
+	GtkButton::default_outside_border  = {0, 0, 0, 0}
+	GtkButtonBox::child_internal_pad_x = 0
+	GtkButtonBox::child_internal_pad_y = 0
+	GtkButtonBox::child_min_heigth     = 0
+
+	engine "pixmap" {
+      
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= NORMAL
+			file            	= "Panel/panel-button-inactive.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE			
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= PRELIGHT
+			file            	= "Panel/panel-button-hover.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+		}
+
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			shadow			= OUT
+			state			= PRELIGHT
+			file            	= "Panel/panel-button-hover.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+			
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			shadow			= IN
+			state			= PRELIGHT
+			file            	= "Panel/panel-button-hover.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+			 
+		}
+		
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= ACTIVE
+			file            	= "Panel/panel-button-active.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	= TRUE
+		}  
+		image
+		{
+			function        	= BOX
+			recolorable     	= TRUE
+			state			= INSENSITIVE
+			file            	= "Panel/panel-button-inactive.png"
+			border          	= { 4, 4, 4, 4 }
+			stretch         	 = TRUE
+		}
+	}
+}
+
+style "XFCE"
+{
+	xthickness = 3
+	ythickness = 3
+
+	bg_pixmap[NORMAL]	= "Panel/panel.png"
+}
+
+widget "*Panel*"                  style "panel"
+widget "*PanelWidget*"            style "panel"
+widget "*PanelApplet*"            style "panel"
+widget "*fast-user-switch*"       style "panel" # workaround for Fast User Switch applet
+widget "*CPUFreqApplet*"          style "panel" # workaround for CpuFreq Applet
+class "PanelApp*"                 style "panel"
+class "PanelToplevel*"            style "panel"
+#widget_class "*Mail*"            style "panel"
+widget_class "*notif*"            style "panel"
+
+#widget_class "*?anel*utton"      style "panel_task_button" # causing problems to monodevelop
+widget "*task*"                   style "panel_task_button"
+widget "*.tasklist-button"        style "panel_task_button"
+widget "*PanelApplet*TaskTitle*"  style "panel_task_button"
+widget_class "*Xfce*Panel*"	  style "XFCE"
+class "GtkScrollbar"		  style "murrine-scrollbar"

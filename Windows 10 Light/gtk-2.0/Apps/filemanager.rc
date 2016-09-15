@@ -1,0 +1,56 @@
+## Some additional thunar-specific theming
+
+style "sidepane" {
+	base[NORMAL]		= @bg_color
+	bg[NORMAL]			= @bg_color
+	GtkPaned::handle-size		= 0
+	GtkWidget::focus-line-width	= 1
+	
+	engine "murrine" {
+		contrast		= 0.5
+		gradient_shades	= {1.1,0.95,0.95,0.85}
+	}
+}
+
+style "filemanager-notebook" = "notebook_button" {
+	xthickness = 1
+	ythickness = 1
+}
+
+## for nautilus
+widget_class "*NautilusSidePane.*"							style "sidepane"
+widget_class "*Nautilus*Toolbar*"							style "murrine-toolbar"
+widget_class "*Nautilus*Tool*GtkButton"						style "murrine-toolbar"
+widget_class "*Nautilus*Tool*.*.*"							style "murrine-toolbar"
+widget_class "*Nautilus*Tool*GtkToggleButton"				style "murrine-toolbar"
+#widget_class "*Nautilus*Tool*Separator*"					style "murrine-toolbar"
+widget_class "*Nautilus*Tool*.<GtkComboBox>.<GtkCellView>"	style "murrine-comboboxentry"
+
+## for Caja (Linux Mint)
+widget_class "*CajaSidePane.*"							style "sidepane"
+widget_class "*Caja*Toolbar*"							style "murrine-toolbar"
+widget_class "*Caja*Tool*GtkButton"						style "murrine-toolbar"
+widget_class "*Caja*Tool*.*.*"							style "murrine-toolbar"
+widget_class "*Caja*Tool*GtkToggleButton"				style "murrine-toolbar"
+#widget_class "*Caja*Tool*Separator*"					style "murrine-toolbar"
+widget_class "*Caja*Tool*.<GtkComboBox>.<GtkCellView>"	style "murrine-comboboxentry"
+
+## for thunar
+widget_class "*ThunarShortcutsView*"		style "sidepane"
+widget_class "*ThunarTreeView*"				style "sidepane"
+widget_class "*ThunarLocationEntry*"		style "entry"
+widget_class "*ThunarStatusbar*"			style "default"
+widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView*"					style "sidepane"
+widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.<GtkTreeView>.<GtkButton>"	style "default"
+
+## for PcManFm
+widget_class	"*FmMainWin*GtkToolbar*"	style "murrine-toolbar"
+widget_class	"*FmSidePane*"				style "sidepane"
+widget_class	"*FmPlacesView*"			style "sidepane"
+widget		"*FmMainWin*FmTabPage"			style "filemanager-notebook"
+widget		"*FmMainWin*GtkHPaned"			style "sidepane"
+widget		"*FmMainWin*GtkNotebook"		style "filemanager-notebook"
+
+## the text in an entry zone of a dark-toolbar is to light without these 2 lines
+widget_class "*<GtkToolbar>*<GtkEntry>*" 	style "default"
+widget_class "*<GtkMenu>*<GtkEntry>*" 		style "default"
