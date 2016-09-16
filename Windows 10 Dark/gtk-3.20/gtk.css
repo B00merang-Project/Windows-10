@@ -25,11 +25,7 @@
 @define-color theme_fg_color #ffffff;
 /*
 text color for entries, views and content in general */
-<<<<<<< HEAD
 @define-color theme_text_color #ffffff;
-=======
-@define-color theme_text_color ffffff;
->>>>>>> d404f52200288d66ff506c90c4acef4c690e0608
 /*
 widget base background color */
 @define-color theme_bg_color #1f1f1f;
@@ -56,11 +52,7 @@ widget text/foreground color on backdrop windows */
 @define-color theme_unfocused_fg_color #f1f1f1;
 /*
 text color for entries, views and content in general on backdrop windows */
-<<<<<<< HEAD
 @define-color theme_unfocused_text_color #f1f1f1;
-=======
-@define-color theme_unfocused_text_color f1f1f1;
->>>>>>> d404f52200288d66ff506c90c4acef4c690e0608
 /*
 widget base background color on backdrop windows */
 @define-color theme_unfocused_bg_color #292929;

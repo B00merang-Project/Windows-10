@@ -2875,7 +2875,7 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 1px 1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    border: solid 1px 0 0 0 shade(@theme_bg_color, 0.8);
+    border: solid 1px 0 0 shade(@theme_bg_color, 0.8);
     opacity: 1;
     margin: 0;
     background-color: shade(@theme_bg_color, 0.9); }
@@ -3485,7 +3485,7 @@ scale trough, scale fill, progressbar trough {
       background-color: shade(@osd_bg_color, 0.95); }
 
 progressbar progress {
-  border: 1px solid @progressbar_color;
+  border: 0 solid @progressbar_color;
   border-radius: 0;
   background-color: @progressbar_color; }
 
@@ -3504,6 +3504,7 @@ scale highlight {
     scale highlight:backdrop:disabled, progressbar progress:backdrop:disabled, progressbar:backdrop progress:disabled {
       background-color: transparent;
       border-color: transparent; }
+
   row:selected scale highlight:disabled, scale row:selected highlight:disabled, row:selected progressbar progress:disabled, progressbar row:selected progress:disabled, row:selected scale highlight, scale row:selected highlight, row:selected progressbar progress, progressbar row:selected progress {
     border-color: shade(@theme_selected_bg_color, 0.6); }
   .osd scale highlight, scale .osd highlight, .osd progressbar progress, progressbar .osd progress {
@@ -3571,7 +3572,7 @@ scale {
         background-repeat: no-repeat; }
       scale slider:backdrop:disabled {
         border-color: shade(@borders, 0.95);
-        background-color: @insensitive_bg_color;
+	background-image: url("assets/slider-horiz-insensitive.png")
         background-image: none;
         text-shadow: none;
         -gtk-icon-shadow: none;
@@ -3676,6 +3677,7 @@ scale {
     min-width: 3px; }
   scale.color.horizontal slider:hover, scale.color.horizontal slider:backdrop, scale.color.horizontal slider:disabled, scale.color.horizontal slider:backdrop:disabled, scale.color.horizontal slider,
   scale.horizontal contents:last-child:not(:only-child) > trough > slider {
+/* rebellious slider! */
     margin: -10px;
     border-style: none;
     border-radius: 0;
@@ -4912,9 +4914,9 @@ colorswatch:disabled {
 row:selected colorswatch {
   box-shadow: 0 0 0 2px #ffffff; }
 colorswatch#editor-color-sample {
-  border-radius: 0; }
+  border-radius: 0px; }
   colorswatch#editor-color-sample overlay {
-    border-radius: 0 px; }
+    border-radius: 0px; }
 
 colorchooser .popover.osd {
   border-radius: 0; }
@@ -4997,6 +4999,7 @@ headerbar.selection-mode button.titlebutton,
   .titlebar.selection-mode button.titlebutton:backdrop {
     -gtk-icon-shadow: none; }
 
+/* possible error here? */
 .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
 .view text:selected:focus,
 iconview text:selected:focus,

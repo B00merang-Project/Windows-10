@@ -4912,7 +4912,7 @@ colorswatch:disabled {
 row:selected colorswatch {
   box-shadow: 0 0 0 2px #ffffff; }
 colorswatch#editor-color-sample {
-  border-radius: 0; }
+  border-radius: 0px; }
   colorswatch#editor-color-sample overlay {
     border-radius: 0px; }
 

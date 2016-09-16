@@ -428,7 +428,7 @@ StScrollBar {
 	.popup-menu .popup-inactive-menu-item {
 		color: white; }
 		.popup-menu .popup-inactive-menu-item:insensitive {
-			color: rgba(0,0,0,0.2); }
+			color: rgba(255,255,255,0.4); }
 	.popup-menu.panel-menu {
 		-boxpointer-gap: 4px;
 		margin-bottom: 1.75em; }

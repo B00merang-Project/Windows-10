@@ -105,7 +105,10 @@
     color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
 
-.view, iconview,
+/* dirty hex workaround */
+.view, iconview {
+  color: @theme_fg_color;
+  background-color: #111111; }
 .view text,
 iconview text,
 textview text {
@@ -2875,7 +2878,7 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 1px 1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    border: solid 1px 0 0 0 @theme_bg_color;
+    border: solid 1px 0 0 @theme_bg_color;
     opacity: 1;
     margin: 0;
     background-color: @theme_bg_color; }
@@ -3559,7 +3562,6 @@ scale {
 	background-position: center;
         background-repeat: no-repeat; }
     scale slider:disabled {
-
 	background-image: url("assets/slider-horiz-insensitive.png"); 
 	background-position: center;
         background-repeat: no-repeat; }
@@ -3571,8 +3573,7 @@ scale {
         background-repeat: no-repeat; }
       scale slider:backdrop:disabled {
         border-color: shade(@borders, 0.95);
-        background-color: @insensitive_bg_color;
-        background-image: none;
+	background-image: url("assets/slider-horiz-insensitive.png");
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px transparent; }
@@ -4914,7 +4915,7 @@ row:selected colorswatch {
 colorswatch#editor-color-sample {
   border-radius: 0; }
   colorswatch#editor-color-sample overlay {
-    border-radius: 0 px; }
+    border-radius: 0px; }
 
 colorchooser .popover.osd {
   border-radius: 0; }

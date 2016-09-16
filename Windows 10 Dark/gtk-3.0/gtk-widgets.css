@@ -1934,6 +1934,10 @@ GtkStatusbar {
     color: @theme_fg_color;
 }
 
+GtkStatusbar .frame {
+    border-width: 0;
+}
+
 /**********
  * switch *
  **********

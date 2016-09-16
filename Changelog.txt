@@ -121,3 +121,5 @@ v0.9.8 (all themes) : fixes for enhanced experience on Ubuntu 16.04
 v0.9.9 (all themes) : Even more GTK 3.18 fixes I wasn't aware of. Over/undershoot GTK elements are now invisible, just what they were meant for. New progressbar trough and other small fixes for Gtk 3.18 integration
 
 v0.9.9 SP1 [AU] (all themes) : GTK 3.20 fixes and general corrctions to colors, Metro Dark theme added to both variants, CSS structure corrections
+
+v0.9.9 SP2 (all themes) : GTK 3.20 and 3.18 fixes and corrections
