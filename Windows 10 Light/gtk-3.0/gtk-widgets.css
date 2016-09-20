@@ -1736,6 +1736,11 @@ GtkComboBox .separator {
     border-width: 0;
 }
 
+/* nautilus sidebar hover in 3.18 */
+.sidebar .list-row:hover {
+    background-color: shade(@theme_selected_bg_color, 1.05);
+}
+
 /*addition start*/
 .sidebar-item {
   padding: 10px 4px; }

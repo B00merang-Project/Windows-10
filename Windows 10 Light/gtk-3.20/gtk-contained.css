@@ -2519,7 +2519,7 @@ menubar,
     padding: 4px 8px; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
-      box-shadow: inset 0 -3px @theme_selected_bg_color;
+      background-image: linear-gradient(to bottom, @theme_selected_bg_color);
       color: @borders; }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
@@ -3553,6 +3553,29 @@ scale {
     .osd scale fill:disabled:backdrop, .osd scale fill:disabled {
       border-color: transparent;
       background-color: transparent; }
+
+scale slider,
+scale slider.horizontal {
+    background-image: -gtk-scaled(url("assets/slider-horiz.png"));
+}
+
+scale.vertical slider {
+    background-image: -gtk-scaled(url("assets/slider-vert.png"));
+}
+
+scale.vertical slider:hover, 
+scale.vertical slider:active {
+    background-image: -gtk-scaled(url("assets/slider-vert-hover.png")); 
+}
+
+scale.vertical slider:backdrop,
+scale.vertical slider:disabled,
+scale.vertical slider:backdrop:disabled {
+    background-image: -gtk-scaled(url("assets/slider-vert-insensitive.png")); 
+}
+
+/* scale sliders */
+
   scale slider {
 	background-image: url("assets/slider-horiz.png"); 
 	background-position: center;
@@ -3562,7 +3585,6 @@ scale {
 	background-position: center;
         background-repeat: no-repeat; }
     scale slider:disabled {
-
 	background-image: url("assets/slider-horiz-insensitive.png"); 
 	background-position: center;
         background-repeat: no-repeat; }
@@ -3574,8 +3596,8 @@ scale {
         background-repeat: no-repeat; }
       scale slider:backdrop:disabled {
         border-color: shade(@borders, 0.95);
-        background-color: @insensitive_bg_color;
-        background-image: none;
+        background-color: transparent;
+	background-image: url("assets/slider-horiz-insensitive.png"); 
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px transparent; }
@@ -3683,9 +3705,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above.png"), url("assets/slider-horz-scale-has-marks-above@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-top.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-top: -14px;
     background-position: top;
     background-repeat: no-repeat;
@@ -3699,9 +3721,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-hover.png"), url("assets/slider-horz-scale-has-marks-above-hover@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-hover.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-top: -14px;
     background-position: top;
     background-repeat: no-repeat;
@@ -3715,9 +3737,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-active.png"), url("assets/slider-horz-scale-has-marks-above-active@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-hover.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-top: -14px;
     background-position: top;
     background-repeat: no-repeat;
@@ -3731,9 +3753,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-insensitive.png"), url("assets/slider-horz-scale-has-marks-above-insensitive@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-top: -14px;
     background-position: top;
     background-repeat: no-repeat;
@@ -3747,9 +3769,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-backdrop.png"), url("assets/slider-horz-scale-has-marks-above-backdrop@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-top: -14px;
     background-position: top;
     background-repeat: no-repeat;
@@ -3763,9 +3785,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-backdrop-insensitive.png"), url("assets/slider-horz-scale-has-marks-above-backdrop-insensitive@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-top: -14px;
     background-position: top;
     background-repeat: no-repeat;
@@ -3778,9 +3800,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-below.png"), url("assets/slider-horz-scale-has-marks-below@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-bottom: -14px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -3793,9 +3815,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-below-hover.png"), url("assets/slider-horz-scale-has-marks-below-hover@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-hover.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-bottom: -14px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -3808,9 +3830,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-below-active.png"), url("assets/slider-horz-scale-has-marks-below-active@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-hover.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-bottom: -14px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -3823,9 +3845,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-below-insensitive.png"), url("assets/slider-horz-scale-has-marks-below-insensitive@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-bottom: -14px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -3838,9 +3860,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-below-backdrop.png"), url("assets/slider-horz-scale-has-marks-below-backdrop@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-bottom: -14px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -3853,9 +3875,9 @@ scale {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horz-scale-has-marks-below-backdrop-insensitive.png"), url("assets/slider-horz-scale-has-marks-below-backdrop-insensitive@2.png"));
-    min-height: 26px;
-    min-width: 22px;
+    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png");
+    min-height: 19px;
+    min-width: 11px;
     margin-bottom: -14px;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -4124,10 +4146,10 @@ progressbar {
   color: @theme_selected_fg_color; }
   progressbar.horizontal trough,
   progressbar.horizontal progress {
-    min-height: 2px; }
+    min-height: 10px; }
   progressbar.vertical trough,
   progressbar.vertical progress {
-    min-width: 2px; }
+    min-width: 10px; }
   progressbar.horizontal progress {
     margin: 0 -1px; }
   progressbar.vertical progress {
@@ -4156,7 +4178,7 @@ progressbar {
     progressbar.osd trough {
       border-style: none;
       border-radius: 0;
-      background-color: transparent;
+      background-color: shade(@theme_selected_bg_color, 0.6);
       box-shadow: none; }
     progressbar.osd progress {
       border-style: none;
@@ -5079,7 +5101,7 @@ cursor-handle {
     -gtk-icon-source: -gtk-scaled(url("assets/text-select-end.png"), url("assets/text-select-end@2.png"));
     padding-right: 10px; }
   cursor-handle.insertion-cursor:dir(ltr), cursor-handle.insertion-cursor:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above.png"), url("assets/slider-horz-scale-has-marks-above@2.png")); }
+    -gtk-icon-source: -gtk-scaled(url("assets/slider-horiz-top.png"), url("assets/slider-horiz-top@2.png")); }
   cursor-handle.top:hover:dir(ltr), cursor-handle.bottom:hover:dir(rtl) {
     -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-hover.png"), url("assets/text-select-start-hover@2.png"));
     padding-left: 10px; }
@@ -5087,7 +5109,7 @@ cursor-handle {
     -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-hover.png"), url("assets/text-select-end-hover@2.png"));
     padding-right: 10px; }
   cursor-handle.insertion-cursor:hover:dir(ltr), cursor-handle.insertion-cursor:hover:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-hover.png"), url("assets/slider-horz-scale-has-marks-above-hover@2.png")); }
+    -gtk-icon-source: -gtk-scaled(url("assets/slider-horiz-top-hover.png"), url("assets/slider-horiz-top-hover@2.png")); }
   cursor-handle.top:active:dir(ltr), cursor-handle.bottom:active:dir(rtl) {
     -gtk-icon-source: -gtk-scaled(url("assets/text-select-start-active.png"), url("assets/text-select-start-active@2.png"));
     padding-left: 10px; }
@@ -5095,7 +5117,7 @@ cursor-handle {
     -gtk-icon-source: -gtk-scaled(url("assets/text-select-end-active.png"), url("assets/text-select-end-active@2.png"));
     padding-right: 10px; }
   cursor-handle.insertion-cursor:active:dir(ltr), cursor-handle.insertion-cursor:active:dir(rtl) {
-    -gtk-icon-source: -gtk-scaled(url("assets/slider-horz-scale-has-marks-above-active.png"), url("assets/slider-horz-scale-has-marks-above-active@2.png")); }
+    -gtk-icon-source: -gtk-scaled(url("assets/slider-horiz-top-active.png"), url("assets/slider-horiz-top-active@2.png")); }
 
 .context-menu {
   font: initial; }
