@@ -179,7 +179,7 @@
 }
 
 .titlebar .titlebutton.close {
-   color: transparent;
+    color: transparent;
     border-image: none;
     box-shadow: none;
     background-position: center;
@@ -196,7 +196,7 @@
 .titlebar .titlebutton.close:hover,
 .titlebar .titlebutton.close:active/*,
 .titlebar .titlebutton.close:checked*/  {
-   color: transparent;
+    color: transparent;
     border-image: none;
     box-shadow: none;
     background-position: center;

@@ -15,7 +15,7 @@
 @define-color txt_shadow rgba(20, 20, 20, 0.76923);
 
 /* OSD colors */
-@define-color osd_bg_color #000000;
+@define-color osd_bg_color alpha(#111111, 0.9);
 @define-color osd_fg_color #ffffff;
 @define-color osd_borders #8c8c8c;
 @define-color osd_outline #5e5e5e;

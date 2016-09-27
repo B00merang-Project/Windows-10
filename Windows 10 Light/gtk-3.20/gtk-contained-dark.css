@@ -194,12 +194,10 @@ assistant .sidebar label {
 assistant .sidebar label.highlight {
   background-color: shade(@theme_fg_color, 0.85); }
 
-/* skipped */
-
 .csd popover.background.touch-selection, .csd popover.background.magnifier, popover.background.touch-selection, popover.background.magnifier, .csd popover.background.osd, popover.background.osd, .app-notification,
 .app-notification.frame, .osd .scale-popup,
 .osd {
-  color: @theme_unfocused_fg_color;
+  color: @osd_fg_color;
   border: none;
   background-color: @osd_bg_color;
   background-clip: padding-box;
@@ -210,8 +208,6 @@ assistant .sidebar label.highlight {
   .osd:backdrop {
     text-shadow: none;
     -gtk-icon-shadow: none; }
-
-/* skipped end */
 
 /*********************
  * Spinner Animation *
@@ -2267,6 +2263,7 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar .titlebutton.minimize {
     color: transparent;
     border-image: none;
+    padding: 6px 12px;
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -2294,6 +2291,7 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar .titlebutton.maximize {
     color: transparent;
     border: none;
+    padding: 6px 12px;
     border-image: none;
     box-shadow: none;
     background-position: center;
@@ -2309,7 +2307,7 @@ window.csd > .titlebar:not(headerbar) {
 
 .titlebar .titlebutton.maximize:hover, 
 .titlebar .titlebutton.maximize:active,
-.titlebar .titlebutton.maximize:checked  {
+.titlebar .titlebutton.maximize:checked {
     color: transparent;
     border-image: none;
     box-shadow: none;
@@ -2322,6 +2320,7 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar .titlebutton.close {
     color: transparent;
     border: none;
+    padding: 6px 12px;
     border-image: none;
     box-shadow: none;
     background-position: center;
@@ -3618,6 +3617,7 @@ scale.vertical slider:backdrop:disabled {
       -gtk-icon-shadow: 0 1px @osd_txt_shadow;
       outline-color: @osd_outline;
       border-color: @osd_borders;
+      border-radius: 100%;
       background-color: #1c1f20; }
       .osd scale slider:hover {
         color: @osd_fg_color;

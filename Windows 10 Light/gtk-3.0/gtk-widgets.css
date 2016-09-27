@@ -231,7 +231,7 @@ GtkAssistant .sidebar {
 .button:hover:focus,
 .button:active:focus,
 .button:active:hover:focus {
-    border-color: shade(@theme_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 0.7);
 }
 
 .button:insensitive {
@@ -1149,17 +1149,14 @@ GtkModelButton.button:selected {
  * notebook *
  ************/
 .notebook {
+    background-color: shade (@bg_color, 1.02);
+    background-image: none;
+    border-radius: 0;
     padding: 0;
+    background-clip: border-box;
+    border-color: shade (@bg_color, 0.82);
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_base_color, 0.7);
-    border-radius: 0;
-    background-color: @theme_base_color;
-    background-image: none;
-    background-clip: border-box;
-
-    -GtkNotebook-initial-gap: 0;
-    -GtkNotebook-has-tab-gap: false;
 }
 
 .notebook.frame {
@@ -1168,111 +1165,93 @@ GtkModelButton.button:selected {
 
 .notebook.header {
     border-width: 0;
-    background-color: shade(@theme_base_color, 0.85);
+    background-color: @theme_bg_color;
 }
 
 .notebook.header.frame {
-    border-color: shade(@theme_base_color, 0.75);
-}
-
-.notebook.header.frame.top {
-    border-width: 1px 1px 0 1px;
-}
-
-.notebook.header.frame.right {
-    border-width: 1px 1px 1px 0;
-}
-
-.notebook.header.frame.bottom {
-    border-width: 0 1px 1px 1px;
-}
-
-.notebook.header.frame.left {
-    border-width: 1px 0 1px 1px;
-}
-
-.notebook GtkViewport {
-    border-width: 0;
-    background-color: @theme_base_color;
-    color: @theme_text_color;
+    border-color: @theme_bg_color;
+    box-shadow: none;
 }
 
 .notebook tab {
-    padding: 4px;
-    border-style: none;
-    background-color: shade(@theme_base_color, 0.95);
     background-image: none;
-}
-
-.notebook tab:hover {
-    background-color: shade(@theme_base_color, 0.95);
-    background-image: none;
+    background-color: shade(@theme_bg_color, 0.9);
+    border-style: solid;
+    border-color: shade(@bg_color, 0.8);
+    border-width: 1px;
+    border-radius: 0px;
+    box-shadow: none;
 }
 
 .notebook tab:active {
-    background-color: shade(@theme_base_color, 1.0);
+    border-color: shade (@bg_color, 0.82);
+    border-style: solid;
+    border-width: 1px;
+    background-color: @theme_base_color;
     background-image: none;
-}
-
-.notebook tab.top {
-    border-top: solid 2px @theme_base_color;
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 1px shade(@theme_bg_color, 0.7),
-                inset -1px 0 shade(@theme_bg_color, 0.7);
-}
-
-.notebook tab.top:active {
-    border: solid 1px shade(@theme_bg_color, 0.7);
-    border-bottom-width: 0;
-    box-shadow: none;
-}
-
-.notebook tab.right {
-    border-right: solid 2px @theme_base_color;
-    box-shadow: inset 0 1px shade(@theme_bg_color, 0.7),
-                inset -1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 -1px shade(@theme_bg_color, 0.7);
-}
-
-.notebook tab.right:active {
-    border: solid 1px shade(@theme_bg_color, 0.7);
-    border-left-width: 0;
-    box-shadow: none;
-}
-
-.notebook tab.bottom {
-    border-bottom: solid 2px @theme_base_color;
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.7),
-                inset -1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 -1px shade(@theme_bg_color, 0.7);
-}
-
-.notebook tab.bottom:active {
-    border: solid 1px shade(@theme_bg_color, 0.7);
-    border-top-width: 0;
-    box-shadow: none;
-}
-
-.notebook tab.left {
-    border-left: solid 2px @theme_base_color;
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 1px shade(@theme_bg_color, 0.7),
-                inset 0 -1px shade(@theme_bg_color, 0.7);
-}
-
-.notebook tab.left:active {
-    border: solid 1px shade(@theme_bg_color, 0.7);
-    border-right-width: 0;
-    box-shadow: none;
+    color: @fg_color;
 }
 
 .notebook tab GtkLabel {
-    color: mix(@theme_text_color, @theme_base_color, 0.3);
+    /*padding: 1px;*/
+    padding: 4px 8px 4px 8px;
 }
 
-.notebook .active-page,
-.notebook tab .active-page GtkLabel {
-    color: @theme_text_color;
+.notebook tab {
+    color: shade (@bg_color, 0.48);
+}
+
+.notebook tab.top:active {
+    padding: 3px 7px 1px 7px;
+}
+
+.notebook tab.top {
+    padding: 2px 5px 0 5px;
+}
+
+.notebook tab.right:active {
+    padding: 4px 6px 4px 1px;
+    background-image: none;
+    background-color: @theme_base_color;
+}
+
+.notebook tab.right {
+    padding: 3px 4px 3px 0;
+    border-image-width: 1px 0;
+}
+
+.notebook tab.bottom:active {
+    padding: 1px 7px 4px 7px;
+    background-image: none;
+    background-color: @theme_base_color;
+}
+
+.notebook tab.bottom {
+    padding: 0 5px 3px 5px;
+    border-image-width: 0 1px;
+}
+
+.notebook tab.left:active {
+    padding: 4px 1px 4px 6px;
+    background-image: none;
+    background-color: @theme_base_color;
+}
+
+.notebook tab.left {
+    padding: 3px 0 3px 4px;
+    border-image-width: 1px 0;
+}
+
+.notebook tab .button {
+    padding: 0;
+}
+
+.notebook GtkDrawingArea {
+        background-color: shade (@bg_color, 1.02);
+}
+
+.notebook.frame {
+    border-width: 1px;
 }
 
 /* close button styling */
@@ -1281,7 +1260,7 @@ GtkModelButton.button:selected {
 .notebook tab .button:hover {
     padding: 1px;
     border-width: 1px;
-    border-radius: 0px;
+    border-radius: 2px;
     border-style: solid;
     border-color: transparent;
     background-image: none;
@@ -1337,7 +1316,6 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.7);
-    border-image: url('assets/trough.png') 4 4 4 4 / 4px 4px 4px 4px stretch;
     background-color: shade(@theme_bg_color, 0.85);
     background-image: linear-gradient(shade(@theme_bg_color, 0.85));
 }
@@ -1424,9 +1402,9 @@ GtkLevelBar.vertical {
 }
 
 .scale {
-    -GtkRange-slider-width: 16;
+    -GtkRange-slider-width: 19;
     -GtkRange-trough-border: 0;
-    -GtkScale-slider-length: 7;
+    -GtkScale-slider-length: 11;
 
     padding: 0;
     border-width: 1px;
@@ -1435,31 +1413,30 @@ GtkLevelBar.vertical {
 
 .scale.slider {
     border-radius: 0px;
-    background-color: shade(@theme_bg_color, 1.08);
-    background-image: none;
-    /* we will draw the border using box shadow for now */
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.8),
-                inset 0 1px shade(@theme_bg_color, 0.8),
-                inset -1px 0 shade(@theme_bg_color, 0.8),
-                inset 0 -1px shade(@theme_bg_color, 0.8); 
+    background-image: url('assets/slider-horiz.png');
 }
 
 .scale.slider:hover {
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 1px shade(@theme_bg_color, 0.7),
-                inset -1px 0 shade(@theme_bg_color, 0.7),
-                inset 0 -1px shade(@theme_bg_color, 0.7);
+    background-image: url('assets/slider-horiz-hover.png');
 }
 
 .scale.slider:insensitive {
-    background-color: shade(@theme_bg_color, 0.9);
-    background-image: none;
-    box-shadow: inset 1px 0 shade(@theme_bg_color, 0.85),
-                inset 0 1px shade(@theme_bg_color, 0.85),
-                inset -1px 0 shade(@theme_bg_color, 0.85),
-                inset 0 -1px shade(@theme_bg_color, 0.85);
+    background-image: url('assets/slider-horiz-insensitive.png');
 }
 
+/* vertical sliders */
+.scale.slider.vertical {
+    border-radius: 0px;
+    background-image: url('assets/slider-vert.png');
+}
+
+.scale.slider.vertical:hover {
+    background-image: url('assets/slider-vert-hover.png');
+}
+
+.scale.slider.vertical:insensitive {
+    background-image: url('assets/slider-vert-insensitive.png');
+}
 .scale.slider.fine-tune:active,
 .scale.slider.fine-tune:active:hover,
 .scale.slider.fine-tune.horizontal:active,
@@ -1474,7 +1451,7 @@ GtkLevelBar.vertical {
 }
 
 .scale.trough {
-    margin: 7px 0;
+    margin: 8px 0;
     border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0px;
     background-color: shade(@theme_bg_color, 1.08);
@@ -1483,7 +1460,7 @@ GtkLevelBar.vertical {
 }
 
 .scale.trough.vertical {
-    margin: 0 7px;
+    margin: 0 8px;
 }
 
 .menuitem .scale.highlight.left,
@@ -2242,7 +2219,8 @@ GtkColorButton.button {
     background-image: none;
 }
 
-.header-bar .button:active {
+.header-bar .button:active,
+.header-bar .button:checked {
     border-color: shade(@titlebar_bg_color, 0.8);
     background-color: shade(@titlebar_bg_color, 0.95);
     background-image: none;
@@ -3664,7 +3642,7 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar .titlebutton {
-    padding: 2px;
+    padding: 6px 12px;
     border-style: none;
     background: none;
     color: @theme_selected_bg_color;

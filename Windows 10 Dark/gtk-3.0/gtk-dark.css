@@ -1,7 +1,7 @@
-/*# name: Windows 10 Light
+/*# name: B00merang Blackout
   # author: Christian Medel (Elbullazul)
-  # date: April 7th, 2016
-  # description: Windows 10 Default White color*/
+  # date: July 6th, 2016
+  # description: Pitch black GTK simulating a console view*/
 
 /* default color scheme */
 @define-color bg_color #000000;
@@ -85,7 +85,7 @@
 @define-color wm_icons_unfocused_pressed shade(@selected_bg_color, 0.8);
 
 /*Terminal Text color*/
-@define-color terminal_text_color @bg_color;
+@define-color terminal_text_color @fg_color;
 
 /*Scrollbar  colors*/
 @define-color scrollthrough_bg_color #e6e6e6;
@@ -94,9 +94,9 @@
 @define-color scrollnorm_bg_color #c6c6c6;
 
 /*Progressbar bg color*/
-@define-color progressbar_color #06B025;
+@define-color progressbar_color @theme_selected_bg_color;
 
-@import url("gtk-widgets-dark.css");
+@import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/granite-widgets.css");

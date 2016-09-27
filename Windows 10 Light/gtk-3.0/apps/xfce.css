@@ -14,10 +14,14 @@ XfceHeading {
 }
 
 .xfce4-panel .button {
-    padding: 0 2px;
+    background-image: none;
+    background-color: transparent;
     border-radius: 0;
-    border-style: none;
+    border-color: transparent;
+    box-shadow: none;
+    padding: 0 1px;
     color: @panel_fg_color;
+    text-shadow: 0px 1px alpha(@dark_shadow, 1.0);
 }
 
 .xfce4-panel .button:active {

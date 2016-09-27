@@ -196,7 +196,7 @@ assistant .sidebar label.highlight {
 .csd popover.background.touch-selection, .csd popover.background.magnifier, popover.background.touch-selection, popover.background.magnifier, .csd popover.background.osd, popover.background.osd, .app-notification,
 .app-notification.frame, .osd .scale-popup,
 .osd {
-  color: @theme_unfocused_fg_color;
+  color: @osd_fg_color;
   border: none;
   background-color: @osd_bg_color;
   background-clip: padding-box;
@@ -2217,7 +2217,7 @@ headerbar {
     .default-decoration.titlebar:not(headerbar) button.titlebutton,
     headerbar.default-decoration button.titlebutton {
       min-height: 26px;
-      min-width: 26px;
+      min-width: 36px;
       margin: 0;
       padding: 0; }
   .solid-csd .titlebar:backdrop:dir(rtl):not(headerbar), .solid-csd .titlebar:backdrop:dir(ltr):not(headerbar), .solid-csd .titlebar:dir(rtl):not(headerbar), .solid-csd .titlebar:dir(ltr):not(headerbar), .solid-csd
@@ -2264,6 +2264,7 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar .titlebutton.minimize {
     color: transparent;
     border-image: none;
+    padding: 6px 12px;
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
@@ -2291,6 +2292,7 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar .titlebutton.maximize {
     color: transparent;
     border: none;
+    padding: 6px 12px;
     border-image: none;
     box-shadow: none;
     background-position: center;
@@ -2319,6 +2321,7 @@ window.csd > .titlebar:not(headerbar) {
 .titlebar .titlebutton.close {
     color: transparent;
     border: none;
+    padding: 6px 12px;
     border-image: none;
     box-shadow: none;
     background-position: center;
@@ -3615,6 +3618,7 @@ scale.vertical slider:backdrop:disabled {
       -gtk-icon-shadow: 0 1px @osd_txt_shadow;
       outline-color: @osd_outline;
       border-color: @osd_borders;
+      border-radius: 100%;
       background-color: #1c1f20; }
       .osd scale slider:hover {
         color: @osd_fg_color;
