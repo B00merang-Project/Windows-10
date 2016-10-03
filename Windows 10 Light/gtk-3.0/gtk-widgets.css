@@ -201,7 +201,7 @@ GtkAssistant .sidebar {
     -GtkWidget-focus-padding: 1;
     -GtkWidget-focus-line-width: 0;
 
-    padding: 3px;
+    padding: 3px 4px;
     border-width: 1px;
     border-radius: 0px;
     border-style: solid;
@@ -217,7 +217,8 @@ GtkAssistant .sidebar {
     background-image: none;
 }
 
-.button:active {
+.button:active,
+.button:checked {
     border-color: shade(@theme_selected_bg_color, 0.8);
     background-color: shade(@theme_selected_bg_color, 0.95);
     background-image: none;
