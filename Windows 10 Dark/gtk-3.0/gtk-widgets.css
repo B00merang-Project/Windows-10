@@ -2303,6 +2303,7 @@ GtkColorButton.button {
 .primary-toolbar .raised.button,
 .toolbar GtkComboBox,
 .toolbar .button {
+    padding: 10px;
     border-color: transparent;
     background-color: shade(@toolbar_bg_color, 1.08);
     background-image: none;
@@ -2316,16 +2317,11 @@ GtkColorButton.button {
     background-image: none;
 }
 
+.primary-toolbar .button:checked,
 .primary-toolbar .button:active,
 .toolbar .button:active {
-    border-color: shade(@selected_bg_color, 1.1);
-    background-color: shade(@selected_bg_color, 0.9);
-    background-image: none;
-}
-
-.primary-toolbar .button:checked {
     border-color: transparent;
-    background-color: shade(@toolbar_bg_color, 1.1);
+    background-color: shade(@selected_bg_color, 0.9);
     background-image: none;
 }
 

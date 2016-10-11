@@ -4,8 +4,8 @@
   # description: Windows 10 Dark Granite color*/
 
 /* default color scheme */
-@define-color base_color #1f1f1f;
-@define-color bg_color #1F1F1F;
+@define-color base_color #000;
+@define-color bg_color #171717;
 @define-color text_color #ffffff;
 @define-color fg_color #ffffff;
 @define-color selected_bg_color #004D8C;
