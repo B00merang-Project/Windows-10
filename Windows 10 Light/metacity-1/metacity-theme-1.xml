@@ -44,70 +44,87 @@
 </frame_geometry>
 
 <draw_ops name="title-text-focused">
-<title color="#ffffff" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/> 
-<title color="#000000" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
+<title color="#000000" x="5" y="(height - title_height) / 2"/>
 </draw_ops>
 
 <draw_ops name="title-text-unfocused">
- <title color="#ffffff" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>  
-<title color="#cfcfcf" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
+<title color="#cfcfcf" x="5" y="(height - title_height) / 2"/>
 </draw_ops>
 
 <draw_ops name="blank">
 </draw_ops>
 
 <draw_ops name="title">
-  <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-  <image filename="titlebar-focused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <rectangle color="#ffffff" x="0" y="0" width="width" 
+    height="height" filled="true"/>
+  <line color="#cbccd0" x1="0" y1="0" x2="0" y2="height" 
+    width="1"/>
+  <line color="#cbccd0" x1="0" y1="0" x2="width" y2="0" 
+    width="1"/>
+  <line color="#cbccd0" x1="width - 1" y1="0" x2="width - 1" y2="height" 
+    width="1"/>
 </draw_ops>
 
 <draw_ops name="title-shaded">
-  <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-  <image filename="titlebar-focused-middle.png" x="18" y="0" width="width - 36" height="height"/>
-  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <rectangle color="#ffffff" x="0" y="0" width="width" 
+    height="height" filled="true"/>
+  <line color="#cbccd0" x1="0" y1="0" x2="0" y2="height" 
+    width="1"/>
+  <line color="#cbccd0" x1="0" y1="0" x2="width" y2="0" 
+    width="1"/>
+  <line color="#cbccd0" x1="width - 1" y1="0" x2="width - 1" y2="height" 
+    width="1"/>
 </draw_ops>
 
 <draw_ops name="title-unfocused">
-  <image filename="titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height"/>
-  <image filename="titlebar-unfocused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-  <image filename="titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <rectangle color="#ffffff" x="0" y="0" width="width" 
+    height="height" filled="true"/>
+  <line color="#cbccd0" x1="0" y1="0" x2="0" y2="height" 
+    width="1"/>
+  <line color="#cbccd0" x1="0" y1="0" x2="width" y2="0" 
+    width="1"/>
+  <line color="#cbccd0" x1="width - 1" y1="0" x2="width - 1" y2="height" 
+    width="1"/>
 </draw_ops>
 
 <draw_ops name="title-max">
-  <image filename="titlebar-focused-middle.png" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#ffffff" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="title-max-unfocused">
-  <image filename="titlebar-unfocused-middle.png" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#ffffff" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-left-focused">
-  <image filename="border-focused-left.png" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#cbccd0" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-left-unfocused">
-  <image filename="border-unfocused-left.png" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#cbccd0" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-right-focused">
-  <image filename="border-focused-right.png" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#cbccd0" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-right-unfocused">
-  <image filename="border-unfocused-right.png" x="0" y="0" width="width" height="height"/>
+  <rectangle color="#cbccd0" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-bottom-focused">
-  <image filename="border-focused-leftcorner.png" x="0" y="0" width="4" height="object_height"/>
-  <image filename="border-focused-bottom.png" x="4" y="0" width="width - 4" height="object_height"/>
-  <image filename="border-focused-rightcorner.png" x="width - object_width" y="0" width="object_width" height="object_height"/>
+  <rectangle color="#cbccd0" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="frame-bottom-unfocused">
-  <image filename="border-unfocused-leftcorner.png" x="0" y="0" width="4" height="object_height"/>
-  <image filename="border-unfocused-bottom.png" x="4" y="0" width="width - 4" height="object_height"/>
-  <image filename="border-unfocused-rightcorner.png" x="width - object_width" y="0" width="object_width" height="object_height"/>
+  <rectangle color="#cbccd0" x="0" y="0" width="width" 
+    height="height" filled="true"/>
 </draw_ops>
 
 <draw_ops name="button-close-focused">
@@ -177,42 +194,40 @@
 
 <!-- Menu drawing operations -->
 <draw_ops name="menu_button_icon"> 
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 
 <draw_ops name="menu_button_icon_unfocused"> 
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_normal">
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_pressed">
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_unfocused">
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
+  <clip x="15" y="0" width="width" height="height"/>
+<icon  x="(30 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
          y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
-
-
 
 <frame_style name="normal-focused" geometry="normal">
   <piece position="titlebar" draw_ops="title"/>
