@@ -1350,27 +1350,6 @@ GtkLevelBar.vertical {
     margin: 1px 0;
 }
 
-/* discrete indicator border rounding,
-   uncomment when :nth-child will be working
-   on the widget
-
-.level-bar.indicator-discrete.fill-block.horizontal:first-child {
-    border-radius: 2px 0 0 2px;
-}
-
-.level-bar.indicator-discrete.fill-block.horizontal:last-child {
-    border-radius: 0 2px 2px 0;
-}
-
-.level-bar.indicator-discrete.fill-block.vertical:first-child {
-    border-radius: 2px 2px 0 0;
-}
-
-.level-bar.indicator-discrete.fill-block.vertical:last-child {
-    border-radius: 0 0 2px 2px;
-}
-*/
-
 .level-bar.fill-block.level-high {
     border-color: shade(@success_color, 0.85);
     background-image: linear-gradient(to bottom,
@@ -1689,6 +1668,11 @@ GtkComboBox .separator {
 
 .sidebar .frame {
     border-width: 0;
+}
+
+/* nemo sidebar padding */
+NemoWindow .sidebar .cell {
+  padding: 0 2px; 
 }
 
 /* nautilus sidebar hover in 3.18 */
@@ -3631,22 +3615,6 @@ GtkBubbleWindow .toolbar {
     color: @theme_selected_bg_color;
     box-shadow: none;
 }
-
-/*
-.titlebar .right .titlebutton:first-child {
-    border-left: 1px solid shade(@titlebar_bg_color, 0.9);
-}
-
-.titlebar .right .titlebutton:last-child {
-}
-
-.titlebar .left .titlebutton:last-child {
-    border-right: 1px solid shade(@titlebar_bg_color, 0.9);
-}
-
-.titlebar .left .titlebutton:first-child {
-}
-*/
 
 .titlebar .titlebutton:backdrop {
     background-image: none;

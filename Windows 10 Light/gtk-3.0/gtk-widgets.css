@@ -1714,6 +1714,11 @@ GtkComboBox .separator {
     border-width: 0;
 }
 
+/* nemo sidebar padding */
+NemoWindow .sidebar .cell {
+  padding: 0 2px; 
+}
+
 /* nautilus sidebar hover in 3.18 */
 .sidebar .list-row:hover {
     background-color: shade(@theme_selected_bg_color, 1.05);
