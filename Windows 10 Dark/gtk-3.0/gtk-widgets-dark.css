@@ -1701,6 +1701,11 @@ GtkComboBox .separator {
     border-style: solid;
 }
 
+/* nemo sidebar padding */
+NemoWindow .sidebar .cell {
+  padding: 2px 2px; 
+}
+
 /*addition start*/
 .sidebar-item {
   padding: 10px 4px; }

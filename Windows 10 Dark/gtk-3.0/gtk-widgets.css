@@ -1672,7 +1672,7 @@ GtkComboBox .separator {
 
 /* nemo sidebar padding */
 NemoWindow .sidebar .cell {
-  padding: 0 2px; 
+  padding: 2px 2px; 
 }
 
 /* nautilus sidebar hover in 3.18 */
