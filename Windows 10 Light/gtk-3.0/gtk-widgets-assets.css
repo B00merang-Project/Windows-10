@@ -88,11 +88,11 @@
  * Touch text selection handles *
  ********************************
 .cursor-handle.bottom {
-	background-image: url("assets/slider-horiz.png");
+    background-image: url("assets/slider-horiz.png");
 }
 
 .cursor-handle.top {
-	background-image: url("assets/slider-horiz.png");
+    background-image: url("assets/slider-horiz.png");
 }*/
 
 /* menuitem */
@@ -285,40 +285,40 @@
  **************************/
 
 .menuitem.check {
-	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"));
-	color: @theme_fg_color;
-	icon-shadow: none; 
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"));
+    color: @theme_fg_color;
+    icon-shadow: none; 
 }
 .menuitem.check:active, .menuitem.check:checked {
-	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"));
 }
 .menuitem.check:inconsistent {
-	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"));
 }
 
 .menuitem.check:active:hover {
-	color: @theme_selected_fg_color;
+    color: @theme_selected_fg_color;
 }
 .menuitem.check:insensitive {
-	color: @insensitive_fg_color; 
+    color: @insensitive_fg_color; 
 }
 
 .menuitem.radio {
-	-gtk-icon-source: -gtk-scaled(url("assets/radio-unselected.png"));
-	color: @theme_fg_color;
-	icon-shadow: none; 
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected.png"));
+    color: @theme_fg_color;
+    icon-shadow: none; 
 }
 .menuitem.radio:active, .menuitem.radio:checked {
-	-gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"));
 }
 .menuitem.radio:inconsistent {
-	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"));
 }
 .menuitem.radio:hover {
-	color: @theme_selected_fg_color;
+    color: @theme_selected_fg_color;
 }
 .menuitem.radio:insensitive {
-	color: @insensitive_fg_color; 
+    color: @insensitive_fg_color; 
 }
 
 /**********************
@@ -327,36 +327,36 @@
 
 .scrollbar.button.vertical.top,
 .scrollbar.button.vertical.top:insensitive {
-	background-image: url("scrollbars/up.png");
-        border-image: url("scrollbars/up.png");
+    background-image: url("scrollbars/up.png");
+    border-image: url("scrollbars/up.png");
     background-size: cover;
-	border-width: 0px;
-	border-style: none;
-        color: transparent;
+    border-width: 0px;
+    border-style: none;
+    color: transparent;
 }
 
 .scrollbar.button.vertical.bottom,
 .scrollbar.button.vertical.bottom:insensitive {
-	background-image: url("scrollbars/down.png");
-        border-image: url("scrollbars/down.png");
+    background-image: url("scrollbars/down.png");
+    border-image: url("scrollbars/down.png");
     background-size: cover;
-	border-width: 0px;
-	border-style: none;
+    border-width: 0px;
+    border-style: none;
 }
 
 .scrollbar.button.horizontal.left,
 .scrollbar.button.horizontal.left:insensitive {
-	background-image: url("scrollbars/left.png");
-        border-image: url("scrollbars/left.png");
-	border-width: 0px;
-	border-style: none;
+    background-image: url("scrollbars/left.png");
+    border-image: url("scrollbars/left.png");
+    border-width: 0px;
+    border-style: none;
 }
 
 .scrollbar.button.horizontal.right,
 .scrollbar.button.horizontal.right:insensitive {
-	background-image: url("scrollbars/right.png");
-        border-image: url("scrollbars/right.png");
-	border-width: 0px;
-	border-style: none;
+    background-image: url("scrollbars/right.png");
+    border-image: url("scrollbars/right.png");
+    border-width: 0px;
+    border-style: none;
 }
 
