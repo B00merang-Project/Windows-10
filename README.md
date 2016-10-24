@@ -32,4 +32,4 @@ Repository hosting the Windows 10 GTK, Icon and Metacity themes. This Work aims 
 3. Type `bash install.sh`. What we're doing is piping the file to bash, so we don't have to mess with permissions and chmod +x
 4. The B00merang Installer should launch. Follow the steps until you get a message that everything went well. If it **DOESN'T**, then email-us, including the install.log file created during the installation and explaining what didn't go as expected
 
-**For common issues and solutions, visit our [wiki page](https://github.com/Elbullazul/Windows-10/wiki).
+> For common issues and solutions, visit our [wiki page](https://github.com/Elbullazul/Windows-10/wiki)
