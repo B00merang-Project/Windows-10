@@ -24,7 +24,12 @@ License: GPL v3
 
 - **Using the built-in installer**
 
-*Some users may find it hard to manipulate files like this, so we've built a small shell script that installs it for you,***SYSTEM-WIDE**
+*Some users may find it hard to manipulate files like this, so we've built a small shell script that installs it for you, ***SYSTEM-WIDE**
+
+```diff
+- Warning: This method is considered outdated and we are on the eve 
+- of removing ressources that make this install possible. 
+```
 
 1. Get the latest transformation pack from our [GNOME-LOOK](https://www.gnome-look.org/content/show.php/Windows%ED%9D%8F%E9%8E%85%EE%A6%9E?content=171327) webpage
 2. Unpack the file and open a terminal in the current directory
