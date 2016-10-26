@@ -1562,8 +1562,8 @@ background: #111;
  * Window list (windowList.js)
  * ===================================================================*/
 
-./-box {
-    spacing: 8px;   
+.window-list-box {
+    spacing: 4px;   
     padding-top: 0;   
 }
 

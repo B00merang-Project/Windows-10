@@ -2176,27 +2176,27 @@ GtkColorButton.button {
 }
 
 .header-bar .button:hover {
-    border-color: shade(@titlebar_bg_color, 0.7);
-    background-color: shade(@titlebar_bg_color, 1.10);
+    border-color: shade(@theme_selected_bg_color, 1.3);
+    background-color: shade(@theme_selected_bg_color, 1.02);
     background-image: none;
 }
 
 .header-bar .button:active,
 .header-bar .button:checked {
-    border-color: shade(@titlebar_bg_color, 0.8);
-    background-color: shade(@titlebar_bg_color, 0.6);
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    background-color: shade(@theme_selected_bg_color, 0.95);
     background-image: none;
 }
 
 .header-bar .button:active:hover {
-    border-color: shade(@titlebar_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 1.19);
 }
 
 .header-bar .button:focus,
 .header-bar .button:hover:focus,
 .header-bar .button:active:focus,
 .header-bar .button:active:hover:focus {
-    border-color: shade(@titlebar_bg_color, 0.7);
+    border-color: shade(@theme_selected_bg_color, 1.15);
 }
 
 .header-bar .button:insensitive {
