@@ -249,7 +249,7 @@ GtkAssistant .sidebar {
 
 /* default button */
 .button.default {
-    border-width: 2px;
+    box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 1.1);
     border-color: shade(@theme_selected_bg_color, 1.1);
     background-color: shade(@theme_bg_color, 0.85);
     color: @theme_fg_color;

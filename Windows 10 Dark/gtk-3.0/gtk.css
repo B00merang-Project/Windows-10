@@ -6,16 +6,16 @@
 /* default color scheme */
 @define-color base_color #000;
 @define-color bg_color #171717;
-@define-color text_color #ffffff;
-@define-color fg_color #ffffff;
+@define-color text_color #cecece;
+@define-color fg_color #cecece;
 @define-color selected_bg_color #004D8C;
-@define-color selected_fg_color #ffffff;
+@define-color selected_fg_color #cecece;
 @define-color tooltip_bg_color #1F1F1F;
-@define-color tooltip_fg_color #ffffff;
+@define-color tooltip_fg_color #cecece;
 
 /* dark color scheme */
 @define-color dark_bg_color #1F1F1F;
-@define-color dark_fg_color #ffffff;
+@define-color dark_fg_color #cecece;
 
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color @bg_color;
@@ -28,7 +28,7 @@
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
 /*Nemo Desktop shadow fix*/
- @define-color desktop_item_fg #ffffff;
+ @define-color desktop_item_fg #cecece;
  @define-color desktop_item_selected_fg @theme_selected_fg_color;
  @define-color desktop_item_text_shadow alpha(black, 0.8);
 
