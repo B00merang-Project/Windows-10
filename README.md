@@ -15,21 +15,26 @@ Repository hosting the Windows 10 GTK, Icon and Metacity themes. This Work aims 
 - **From source**
  
 1. Head to the [releases](https://github.com/Elbullazul/Windows-10/releases) page
-2. Download the latest release (as of 7/4/2016 latest is v0.9.9)
+2. Download the latest release (as of 10/26/2016 latest is v0.9.9 SP1)
 3. **Checksum** the packages to check everything is ok. To do so, open a terminal and navigate to the folder where the package is stored. Then run sha512sum and copy the resulting string. Use [Text Compare](https://text-compare.com/) to compare the sums you get and the one shown in the releases page
 4. If the sums match, open your file manager and navigate to your home folder. If nonexistant, create the **.themes** and **.icons** folder. Enable the 'view hidden files' option to work with them. Generally, Ctrl+H reveals the hidden folders
 5. Extract the packages and place the resulting folders (named *Windows 10 Light* and *Windows 10 Dark*) in the .themes folder. The Icon set should be placed in *.icons* once extracted
 6. You're all set! Open your appearance manager and select the corresponding themes from the list
 
+> For common issues and solutions, visit our [wiki page](https://github.com/Elbullazul/Windows-10/wiki)
+
 - **Using Bash script**
 
-```diff
-- Warning: This method is considered outdated and will soon lose all support
-```
+*This method gets the source code from the master branch, thus always installing the latest version*
 
-1. Get the latest transformation pack from our [GNOME-LOOK](https://www.gnome-look.org/content/show.php/Windows%ED%9D%8F%E9%8E%85%EE%A6%9E?content=171327) webpage
-2. Unpack the file and open a terminal in the current directory
-3. Type `bash install.sh`. What we're doing is piping the file to bash, so we don't have to mess with permissions and chmod +x
-4. The B00merang Installer should launch. Follow the steps until you get a message that everything went well. If it **DOESN'T**, then email-us, including the install.log file created during the installation and explaining what didn't go as expected
+1. Get the TransPack installer [from here](https://github.com/B00merang-Project/Windows-10/releases/tag/Rolling)
+2. Unpack the package and open a terminal in extracted folder. Add execution rights with `chmod +x install.sh`
+3. In same terminal, type `./install.sh`
+4. Choose which variant to install and wait till the process finishes. *YOU MAY need to restart your DE after the install*
+5. If the installation fails, open an issue, clearly explaining the error and including the log file if possible
 
-> For common issues and solutions, visit our [wiki page](https://github.com/Elbullazul/Windows-10/wiki)
+`To uninstall the package`
+
+1. Open a terminal and navigate to where uninstall.sh is
+2. Add execution rights with `chmod +x uninstall.sh`
+3. Run `./uninstall.sh`
