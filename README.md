@@ -27,7 +27,7 @@ Repository hosting the Windows 10 GTK, Icon and Metacity themes. This Work aims 
 
 *This method gets the source code from the master branch, thus always installing the latest version*
 
-1. Get the TransPack installer [from here](https://github.com/B00merang-Project/Windows-10/releases/tag/Rolling)
+1. Get the TransPack installer [from here](https://github.com/B00merang-Project/TransPack/archive/master.zip)
 2. Unpack the package and open a terminal in extracted folder. Add execution rights with `chmod +x install.sh`
 3. In same terminal, type `./install.sh`
 4. Choose which variant to install and wait till the process finishes. *YOU MAY need to restart your DE after the install*
