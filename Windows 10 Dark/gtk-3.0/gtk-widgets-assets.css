@@ -144,8 +144,8 @@
 }
 
 .titlebar .titlebutton.minimize:hover,
-.titlebar .titlebutton.minimize:active/*,
-.titlebar .titlebutton.minimize:checked*/ {
+.titlebar .titlebutton.minimize:active,
+.titlebar .titlebutton.minimize:checked {
     color: transparent;
     border-image: none;
     box-shadow: none;
@@ -170,8 +170,8 @@
 
 
 .titlebar .titlebutton.maximize:hover, 
-.titlebar .titlebutton.maximize:active/*,
-.titlebar .titlebutton.maximize:checked*/  {
+.titlebar .titlebutton.maximize:active,
+.titlebar .titlebutton.maximize:checked  {
     color: transparent;
     border-image: none;
     box-shadow: none;
@@ -179,6 +179,32 @@
     background-repeat: no-repeat;
     background-image: -gtk-scaled(url("buttons/maximize-focused-active.png"));
 }
+
+/* Restore button (unavailable)
+.titlebar .titlebutton.restore {
+   color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("buttons/restore-focused-normal.png"));
+}
+
+.titlebar .titlebutton.restore:backdrop {
+    background-image: -gtk-scaled(url("buttons/restore-unfocused-normal.png"));
+    color: transparent;
+}
+
+.titlebar .titlebutton.restore:hover, 
+.titlebar .titlebutton.restore:active,
+.titlebar .titlebutton.restore:checked  {
+    color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("buttons/restore-focused-active.png"));
+} */
 
 .titlebar .titlebutton.close {
    color: transparent;
@@ -196,8 +222,8 @@
 
 
 .titlebar .titlebutton.close:hover,
-.titlebar .titlebutton.close:active/*,
-.titlebar .titlebutton.close:checked*/  {
+.titlebar .titlebutton.close:active,
+.titlebar .titlebutton.close:checked  {
    color: transparent;
     border-image: none;
     box-shadow: none;

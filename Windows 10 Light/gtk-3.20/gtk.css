@@ -95,3 +95,4 @@ read if you used those and something break with a version upgrade you're on your
 @define-color content_view_bg #ffffff;
 
 @import url("gtk-contained.css");
+@import url("apps/gnome-terminal.css");
