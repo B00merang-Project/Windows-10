@@ -180,6 +180,42 @@ StScrollBar StButton#hhandle {
 }
 .popup-menu {
 
+    color: #fff;
+    font-size: 9.5pt;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 200px;
+    min-height: 80px;
+    border: rgba(50,50,50,0.9);
+    border-radius: 0 0 0 0;
+    background-color: rgba(25,25,25,0.85);
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    box-shadow: none;
+}
+
+.popup-menu StEntry {
+    border-image: url("misc-assets/entry.svg") 7;
+    background-gradient-direction: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 22px;
+    width: 220px;
+    color: #4c4c4c;
+    caret-color: #4c4c4c;
+    font-size: 9pt;
+    font-weight: normal;
+    caret-size: 1px;
+    selected-color: #fff;
+    selection-background-color: #2975E9;
+    padding: 4px 12px 3px 12px;
+}
+.menu {
+
 	color: #fff;
 	font-size: 9.5pt;
 	padding-right: 0px;
@@ -197,7 +233,7 @@ StScrollBar StButton#hhandle {
 	box-shadow: none;
 }
 
-.popup-menu StEntry {
+.menu StEntry {
     border-image: url("misc-assets/entry.svg") 7;
     background-gradient-direction: none;
     border: none;
