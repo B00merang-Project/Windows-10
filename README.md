@@ -13,13 +13,11 @@ Repository hosting the Windows 10 GTK, Icon and Metacity themes. This Work aims 
 ##How to install##
 
 - **From source**
- 
 1. Head to the [releases](https://github.com/Elbullazul/Windows-10/releases) page
 2. Download the latest release (as of 10/26/2016 latest is v0.9.9 SP1)
-3. **Checksum** the packages to check everything is ok. To do so, open a terminal and navigate to the folder where the package is stored. Then run sha512sum and copy the resulting string. Use [Text Compare](https://text-compare.com/) to compare the sums you get and the one shown in the releases page
-4. If the sums match, open your file manager and navigate to your home folder. If nonexistant, create the **.themes** and **.icons** folder. Enable the 'view hidden files' option to work with them. Generally, Ctrl+H reveals the hidden folders
-5. Extract the packages and place the resulting folders (named *Windows 10 Light* and *Windows 10 Dark*) in the .themes folder. The Icon set should be placed in *.icons* once extracted
-6. You're all set! Open your appearance manager and select the corresponding themes from the list
+3. Open your file manager and navigate to your home folder. If nonexistant, create the **.themes** and **.icons** folder. Enable the 'view hidden files' option to work with them. Generally, Ctrl+H reveals the hidden folders
+4. Extract the packages and place the resulting folders (named *Windows 10 Light* and *Windows 10 Dark*) in the .themes folder. The Icon set should be placed in *.icons* once extracted
+5. You're all set! Open your appearance manager and select the corresponding themes from the list
 
 > For common issues and solutions, visit our [wiki page](https://github.com/Elbullazul/Windows-10/wiki)
 
