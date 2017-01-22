@@ -178,8 +178,10 @@ StScrollBar StButton#hhandle {
     -arrow-border-radius: 16px;
     -arrow-border-width: 0;
 }
-.popup-menu {
 
+/* Cinnamon 3.2 fix */
+.popup-menu,
+.menu {
     color: #fff;
     font-size: 9.5pt;
     padding-right: 0px;
@@ -197,6 +199,7 @@ StScrollBar StButton#hhandle {
     box-shadow: none;
 }
 
+.menu stEntry,
 .popup-menu StEntry {
     border-image: url("misc-assets/entry.svg") 7;
     background-gradient-direction: none;
@@ -219,7 +222,7 @@ StScrollBar StButton#hhandle {
 
 }
 .popup-sub-menu {
-    color: #1a938b;    
+    color: #fff;    
     border: 1px #326b65;
     border-left: 0px;
     border-right: 0px;
@@ -238,7 +241,7 @@ StScrollBar StButton#hhandle {
     border-width: 0px;
 }
 .popup-sub-menu StScrollBar StBin#vhandle {
-      background-color: rgba(41,41,41,1);
+    background-color: rgba(41,41,41,1);
     border-width: 0px;
 }
 .popup-combo-menu {
@@ -350,10 +353,10 @@ StScrollBar StButton#hhandle {
     background-color: rgba(0,0,0,0.65);
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
     outline: 1px rgba(0,0,0,0.95);
-    color: #326b65;
+    color: #fff;
     font-size: 9pt;
     height: 40px;
-    padding: px;
+    padding: 0px;
 }
 
 #panelLeft, #panelCenter, #panelRight {
@@ -1521,11 +1524,11 @@ background: #111;
 }
 
 .menu-category-button-label:ltr { 
-    padding-left: 5px       
+    padding-left: 5px     
 }
 
 .menu-category-button-label:rtl { 
-    padding-right: 5px       
+    padding-right: 5px     
 }
 
 .menu-category-button-button:hover {

@@ -162,10 +162,6 @@ GtkGrid:insensitive {
 }
 
 .entry {
-    box-shadow: inset 0 0 alpha(@dark_shadow, 0.10),
-                inset 0 0 alpha(@dark_shadow, 0.12),
-                inset 0 0 alpha(@dark_shadow, 0.10),
-                inset 0 0 alpha(@dark_shadow, 0.05);
 }
 
 /* disable inset shadow */
@@ -1503,7 +1499,7 @@ GtkLevelBar.vertical {
 }
 
 .scrollbar.slider {
-    border-width: 0 0 0 0;
+    border-width: 0;
     border-color: transparent;
     border-radius: 0;
     background-color: mix(@theme_bg_color, @theme_fg_color, 0.32);
@@ -1755,12 +1751,12 @@ GtkSidebarRow .sidebar-label:dir(rtl) {
 }
 
 .spinbutton .button:first-child {
-    border-radius: 0px 0 0 0px;
+    border-radius: 0;
     box-shadow: none;
 }
 
 .spinbutton .button:last-child {
-    border-radius: 0 0px 0px 0;
+    border-radius: 0;
 }
 
 .spinbutton .button:dir(rtl) {
@@ -2673,7 +2669,7 @@ GtkColorButton.button {
 .toolbar .button.raised.linked,
 .toolbar .raised.linked .button,
 .toolbar .linked .button {
-    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.9);
+    box-shadow: none;
 }
 
 .primary-toolbar .button.raised.linked:active,
@@ -2681,10 +2677,7 @@ GtkColorButton.button {
 .toolbar .button.raised.linked:active,
 .toolbar .raised.linked .button:active,
 .toolbar .linked .button:active {
-    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.9),
-                inset 0 0 alpha(@dark_shadow, 0.07),
-                inset 0 0 alpha(@dark_shadow, 0.08),
-                inset 0 0 alpha(@dark_shadow, 0.05);
+    box-shadow: none;
 }
 
 .primary-toolbar .button.raised.linked:insensitive,
@@ -2692,7 +2685,7 @@ GtkColorButton.button {
 .toolbar .button.raised.linked:insensitive,
 .toolbar .raised.linked .button:insensitive,
 .toolbar .linked .button:insensitive {
-    box-shadow: inset 0 0 shade(@toolbar_bg_color, 0.85);
+    box-shadow: none;
 }
 
 /* remove box shadow from last-child and only-child */
@@ -2740,9 +2733,7 @@ GtkColorButton.button {
 .toolbar .raised.linked .button:active:only-child,
 .toolbar .linked .button:active:last-child,
 .toolbar .linked .button:active:only-child {
-    box-shadow: inset 0 0 alpha(@dark_shadow, 0.07),
-                inset 0 0 alpha(@dark_shadow, 0.08),
-                inset 0 0 alpha(@dark_shadow, 0.07);
+    box-shadow: none;
 }
 
 /* middle button */
@@ -3087,7 +3078,7 @@ GtkFileChooserButton GtkImage:last-child {
     border-style: solid;
     border-color: shade(@theme_base_color, 0.8);
     border-width: 0 1px 1px 1px;
-    border-radius: 0 0 0px 0px;
+    border-radius: 0;
     padding: 8px;
     background-color: @theme_base_color;
     background-image: none;
@@ -3225,7 +3216,7 @@ GtkOverlay.osd {
 
 .osd.toolbar .button:last-child {
     box-shadow: none;
-    border-radius: 0 0px 0px 0;
+    border-radius: 0;
     border-width: 1px 1px 1px 0;
 }
 
@@ -3564,7 +3555,7 @@ GtkBubbleWindow .toolbar {
  * CSD *
  *******/
 .titlebar {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
     background-color: @titlebar_bg_color;
     background-image: none;
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
@@ -3652,7 +3643,7 @@ GtkBubbleWindow .toolbar {
 
 /* Server-side decoration (SSD) */
 .window-frame.ssd {
-    border-radius: 0 0 0 0;
+    border-radius: 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18); 
 }
 

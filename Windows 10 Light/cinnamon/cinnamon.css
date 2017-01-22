@@ -172,31 +172,34 @@ StScrollBar StButton#hhandle {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-	-arrow-border-color: rgba(10,10,10,0.9);
-	-arrow-background-color: transparent;
-	-boxpointer-gap: -1px;
-	-arrow-border-radius: 16px;
-	-arrow-border-width: 0;
+    -arrow-border-color: rgba(10,10,10,0.9);
+    -arrow-background-color: transparent;
+    -boxpointer-gap: -1px;
+    -arrow-border-radius: 16px;
+    -arrow-border-width: 0;
 }
-.popup-menu {
 
-	color: #fff;
-	font-size: 9.5pt;
-	padding-right: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	min-width: 200px;
-	min-height: 80px;
-	border: rgba(50,50,50,0.9);
-	border-radius: 0 0 0 0;
-	background-color: rgba(25,25,25,0.85);
-	border-top: 1px;
+/* Cinnamon 3.2 fix */
+.popup-menu,
+.menu {
+    color: #fff;
+    font-size: 9.5pt;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 200px;
+    min-height: 80px;
+    border: rgba(50,50,50,0.9);
+    border-radius: 0 0 0 0;
+    background-color: rgba(25,25,25,0.85);
+    border-top: 1px;
     border-left: 1px;
     border-right: 1px;
-	border-bottom: 1px;
-	box-shadow: none;
+    border-bottom: 1px;
+    box-shadow: none;
 }
 
+.menu stEntry,
 .popup-menu StEntry {
     border-image: url("misc-assets/entry.svg") 7;
     background-gradient-direction: none;
@@ -219,36 +222,36 @@ StScrollBar StButton#hhandle {
 
 }
 .popup-sub-menu {
-	color: #1a938b;	
-       	border: 1px #326b65;
-	border-left: 0px;
-	border-right: 0px;
+    color: #fff;    
+    border: 1px #326b65;
+    border-left: 0px;
+    border-right: 0px;
 }
 .popup-sub-menu .popup-menu-item:ltr {
-	padding-right: 0em;
+    padding-right: 0em;
 }
 .popup-sub-menu .popup-menu-item:rtl {
-	padding-left: 0em;
+    padding-left: 0em;
 }
 .popup-sub-menu StScrollBar {
-	padding: 4px;
+    padding: 4px;
 }
 .popup-sub-menu StScrollBar StBin#trough {
-	border-width: 0px;
+    border-width: 0px;
 }
 .popup-sub-menu StScrollBar StBin#vhandle {
-  	background-color: rgba(41,41,41,1);
-    	border-width: 0px;
+    background-color: rgba(41,41,41,1);
+    border-width: 0px;
 }
 .popup-combo-menu {
-   	 color: #eeeeee;
-    	background-gradient-direction: vertical;
- 	background-gradient-start: rgba(52,52,52,0.95);
- 	background-gradient-end: rgba(44,44,44,0.95);
-    	border: 1px solid rgba(255,255,255,0.1);
-    	padding:  0em;
-    	font-size: 7.5pt;
-    	border-radius: 2px;
+    color: #eeeeee;
+    background-gradient-direction: vertical;
+     background-gradient-start: rgba(52,52,52,0.95);
+     background-gradient-end: rgba(44,44,44,0.95);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding:  0em;
+    font-size: 7.5pt;
+    border-radius: 2px;
 }
 
 /* The remaining popup-menu sizing is all done in ems, so that if you
@@ -260,36 +263,36 @@ padding: 0.8em 0em;
 .popup-menu-item {
 padding: .4em 1.75em;
 spacing: 1em;
-    	border: 1px solid transparent;
-    	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
+    border: 1px solid transparent;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
 .popup-menu-item:active {
-	color: #fff;
-	border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
-	border: 1px transparent;
-  	border-bottom: 0px;
-   	border-left: 0px;
-   	border-right: 0px;
+    color: #fff;
+    border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
+    border: 1px transparent;
+    border-bottom: 0px;
+     border-left: 0px;
+     border-right: 0px;
 }
 .popup-menu-item:insensitive {
-	color: #9f9f9f;
+    color: #9f9f9f;
 }
 .popup-image-menu-item {
 }
 .popup-combobox-item {
-	spacing: 1em;
+    spacing: 1em;
 }
 .popup-separator-menu-item {
-	background-color: rgba(50,50,50,1);
-	box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
-	border-radius: 5px; 
-    	-margin-horizontal: 14px;
-    	height: 1px;
+    background-color: rgba(50,50,50,1);
+    box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
+    border-radius: 5px; 
+    -margin-horizontal: 14px;
+    height: 1px;
 }
 .popup-alternating-menu-item:alternate {
-	font-weight: bold;
+    font-weight: bold;
 }
 .popup-slider-menu-item {
 background-color: none;
@@ -305,17 +308,17 @@ background-color: none;
     -slider-handle-radius: 0.5em;
 }
 .popup-device-menu-item {
-	spacing: .5em;
+    spacing: .5em;
 }
 .popup-inactive-menu-item {
-	font-weight: normal;
-	color: #999;
+    font-weight: normal;
+    color: #999;
 }
 .popup-subtitle-menu-item {
-	font-weight: bold;
+    font-weight: bold;
 }
 .popup-menu-icon {
-	icon-size: 1em;
+    icon-size: 1em;
 }
 /* Switches (to be used in menus) */
 
@@ -346,16 +349,16 @@ background-color: none;
  * ===================================================================*/
 #panel {
     background-color: rgba(0,0,0,0.65);
-	box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
     outline: 1px rgba(0,0,0,0.95);
-    color: #326b65;
+    color: #fff;
     font-size: 9pt;
     height: 40px;
-    padding: px;
+    padding: 0px;
 }
 
 #panelLeft, #panelCenter, #panelRight {
-	spacing: 0px;
+    spacing: 0px;
 }
 
 #panelLeft:ltr {
@@ -387,11 +390,11 @@ transition-duration: 150;
 
 .panel-status-button:hover,
 .panel-button:hover {
-	background-color: #083854;
-        border-radius: 0px;
-	color:  #083854;
-	box-shadow: inset 0px -1px 0px 0px rgba(37,154,202,1);
-	transition-duration: 100;
+    background-color: #083854;
+    border-radius: 0px;
+    color:  #083854;
+    box-shadow: inset 0px -1px 0px 0px rgba(37,154,202,1);
+    transition-duration: 100;
 }
 
 .system-status-icon {
@@ -1406,7 +1409,7 @@ background: #111;
  * ===================================================================*/
 .menu-background {
     background: rgba(20,20,20,0.9);
-	box-shadow: 1px -1px 4px 1px rgba(1,1,1,0.6);
+    box-shadow: 1px -1px 4px 1px rgba(1,1,1,0.6);
 }
 
 
@@ -1519,11 +1522,11 @@ background: #111;
 }
 
 .menu-category-button-label:ltr { 
-    padding-left: 5px       
+    padding-left: 5px     
 }
 
 .menu-category-button-label:rtl { 
-    padding-right: 5px       
+    padding-right: 5px     
 }
 
 .menu-category-button-button:hover {
