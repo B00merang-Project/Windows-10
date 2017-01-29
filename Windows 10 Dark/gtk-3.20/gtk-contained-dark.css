@@ -21,8 +21,8 @@
  * floating bar *
  ***************/
 .floating-bar {
-    background-image: linear-gradient(to bottom, @theme_bg_color);
-    background-color: transparent;
+    background-image: none;
+    background-color: @theme_bg_color;
     border: 1px solid @borders;
 
     color: @theme_fg_color;
@@ -55,7 +55,8 @@
 .floating-bar:backdrop {
     border-color: transparent;
     color: @theme_fg_color;
-    background-image: linear-gradient(to bottom, @theme_bg_color);
+    background-image: none;
+    background-color: @theme_bg_color;
     box-shadow: none;
 }
 
@@ -2521,7 +2522,8 @@ menubar,
     padding: 4px 8px; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
-      background-image: linear-gradient(to bottom, @theme_selected_bg_color);
+      background-image: none;
+      background-color: @theme_selected_bg_color;
       color: @borders; }
     menubar > menuitem:disabled,
     .menubar > menuitem:disabled {
@@ -2880,7 +2882,7 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 1px 1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    border: solid 1px 0 0 @theme_bg_color;
+    border: solid 1px 0 @theme_bg_color;
     opacity: 1;
     margin: 0;
     background-color: @theme_bg_color; }
@@ -3579,26 +3581,26 @@ scale.vertical slider:backdrop:disabled {
 /* scale sliders */
 
   scale slider {
-	background-image: url("assets/slider-horiz.png"); 
+	background-image: url("assets/slider-horiz.png")); 
 	background-position: center;
         background-repeat: no-repeat; }
     scale slider:hover, scale slider:active {
-	background-image: url("assets/slider-horiz-hover.png"); 
+	background-image: url("assets/slider-horiz-hover.png")); 
 	background-position: center;
         background-repeat: no-repeat; }
     scale slider:disabled {
-	background-image: url("assets/slider-horiz-insensitive.png"); 
+	background-image: url("assets/slider-horiz-insensitive.png")); 
 	background-position: center;
         background-repeat: no-repeat; }
       scale slider:disabled label, scale slider:disabled {
         color: @insensitive_fg_color; }
     scale slider:backdrop {
-	background-image: url("assets/slider-horiz-insensitive.png");
+	background-image: url("assets/slider-horiz-insensitive.png"));
 	background-position: center;
         background-repeat: no-repeat; }
       scale slider:backdrop:disabled {
         border-color: shade(@borders, 0.95);
-	background-image: url("assets/slider-horiz-insensitive.png");
+	background-image: url("assets/slider-horiz-insensitive.png"));
         text-shadow: none;
         -gtk-icon-shadow: none;
         box-shadow: inset 0 1px transparent; }
@@ -3707,7 +3709,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-top.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-top.png"));
     min-height: 19px;
     min-width: 11px;
     margin-top: -14px;
@@ -3723,7 +3725,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-top-hover.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-hover.png"));
     min-height: 19px;
     min-width: 11px;
     margin-top: -14px;
@@ -3739,7 +3741,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-top-hover.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-hover.png"));
     min-height: 19px;
     min-width: 11px;
     margin-top: -14px;
@@ -3755,7 +3757,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png"));
     min-height: 19px;
     min-width: 11px;
     margin-top: -14px;
@@ -3771,7 +3773,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png"));
     min-height: 19px;
     min-width: 11px;
     margin-top: -14px;
@@ -3787,7 +3789,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-top-insensitive.png"));
     min-height: 19px;
     min-width: 11px;
     margin-top: -14px;
@@ -3802,7 +3804,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz.png"));
     min-height: 19px;
     min-width: 11px;
     margin-bottom: -14px;
@@ -3817,7 +3819,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-hover.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-hover.png"));
     min-height: 19px;
     min-width: 11px;
     margin-bottom: -14px;
@@ -3832,7 +3834,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-hover.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-hover.png"));
     min-height: 19px;
     min-width: 11px;
     margin-bottom: -14px;
@@ -3847,7 +3849,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png"));
     min-height: 19px;
     min-width: 11px;
     margin-bottom: -14px;
@@ -3862,7 +3864,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png"));
     min-height: 19px;
     min-width: 11px;
     margin-bottom: -14px;
@@ -3877,7 +3879,7 @@ scale.vertical slider:backdrop:disabled {
     border-style: none;
     border-radius: 0;
     background-color: transparent;
-    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png");
+    background-image: -gtk-scaled(url("assets/slider-horiz-insensitive.png"));
     min-height: 19px;
     min-width: 11px;
     margin-bottom: -14px;
@@ -4725,7 +4727,8 @@ infobar {
     outline-color: rgba(255, 255, 255, 0.3);
     border-color: shade(@theme_selected_bg_color, 0.6);
     border-bottom-color: shade(@theme_selected_bg_color, 0.6);
-    background-image: linear-gradient(to bottom, @theme_selected_bg_color);
+    background-image: none;
+    background-color: @theme_selected_bg_color;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
     -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
@@ -4737,7 +4740,8 @@ infobar {
       outline-color: rgba(255, 255, 255, 0.3);
       border-color: shade(@theme_selected_bg_color, 0.6);
       border-bottom-color: shade(@theme_selected_bg_color, 0.6);
-      background-image: linear-gradient(to bottom, shade(@theme_selected_bg_color, 1.1));
+      background-image: none;
+      background-color: shade(@theme_selected_bg_color, 1.1);
       text-shadow: 0 -1px rgba(0, 0, 0, 0.49553);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.49553);
       box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
