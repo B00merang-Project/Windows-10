@@ -1431,7 +1431,7 @@ GtkLevelBar.vertical {
     margin: 0 8px;
 }
 
-.menuitem .scale.highlight.left,
+/* .menuitem .scale.highlight.left,
 .scale.highlight.left {
     border-color: @theme_selected_bg_color;
     background-color: @theme_selected_bg_color;
@@ -1447,7 +1447,7 @@ GtkLevelBar.vertical {
     border-color: @theme_selected_bg_color;
     background-color: @theme_selected_bg_color;
     background-image: none;
-}
+} */
 
 .scale.trough:insensitive,
 .scale.highlight.left:insensitive {
