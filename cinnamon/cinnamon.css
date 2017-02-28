@@ -360,7 +360,7 @@ background-color: none;
     spacing: 0px;
 }
 
-/* ORB menu */
+/* Start Menu icon */
 #panelLeft .applet-box:first-child {
 	background-image: url("orb/menu.png");
 	transition-duration: 300;
@@ -368,13 +368,8 @@ background-color: none;
     width: 35px;
 	color: rgba(255,0,0,0) !important;
 }
-#panelLeft .applet-box:first-child:hover {
-	transition-duration: 200;
-	background-image: url("orb/menu.png");
-    background-color: #1f1f1f;
-}
+
 #panelLeft .applet-box:first-child:active {
-	background-image: url("orb/menu.png");
     background-color: rgba(255,255,255,0.25);
 }
 
@@ -2060,3 +2055,7 @@ background: #111;
     border-right-width: 0px;
     border-radius: 8px 0px 0px 0px;
 }
+
+/*.slingshot .button.app {
+    border-image: url('buttons/app-button.svg') 6;
+}*/
