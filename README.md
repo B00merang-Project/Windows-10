@@ -1,6 +1,6 @@
-#Windows 10 Transformation Pack#
+# Windows 10 Transformation Pack
 
-###[Dark theme here](https://github.com/B00merang-Project/Windows-10-Dark)
+### [Dark theme here](https://github.com/B00merang-Project/Windows-10-Dark)
 
 Repository hosting the Windows 10 GTK, Icon and Metacity themes. This Work aims to provide the closest imitation of Microsoft's Windows 10 appearance, while making itself available to the most Desktop Environments. For a complete compatibility list, visit the [theme's webpage](http://b00merang.weebly.com/windows-10-transformation-pack.html)
 
@@ -44,13 +44,12 @@ For the moment, this theme works with the following Desktop environments :
 *This method gets the source code from the master branch, thus always installing the latest version*
 
 1. Get the TransPack installer [from here](https://github.com/B00merang-Project/TransPack/archive/master.zip)
-2. Unpack the package and open a terminal in extracted folder. Add execution rights with `chmod +x install.sh`
-3. In same terminal, type `./install.sh`
+2. Unpack the package and open a terminal in extracted folder. Add execution rights with `chmod +x transpack.sh`
+3. In same terminal, type `./transpack.sh`
 4. Choose which variant to install and wait till the process finishes. *YOU MAY need to restart your DE after the install*
 5. If the installation fails, open an issue, clearly explaining the error and including the log file if possible
 
 `To uninstall the package`
 
-1. Open a terminal and navigate to where uninstall.sh is
-2. Add execution rights with `chmod +x uninstall.sh`
-3. Run `./uninstall.sh`
+1. Open a terminal and navigate to where transpack.sh is
+3. Run `./transpack.sh (-l for local uninstall) -u`
