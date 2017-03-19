@@ -28,7 +28,7 @@ For the moment, this theme works with the following Desktop environments :
 - GTK+ 3.6 or above
 - Murrine theme engine (GTK 2)
 
-##How to install##
+## How to install
 
 - **From source**
 1. Head to the [releases](https://github.com/Elbullazul/Windows-10/releases) page
