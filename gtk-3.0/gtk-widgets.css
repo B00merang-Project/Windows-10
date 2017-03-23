@@ -2309,7 +2309,7 @@ GtkColorButton.button {
 .primary-toolbar .button:checked,
 .primary-toolbar .button:active,
 .toolbar .button:active {
-    border-color: transparent;
+    border-color: shade(@theme_selected_bg_color, 0.8);
     background-color: shade(@selected_bg_color, 0.9);
     background-image: none;
 }
