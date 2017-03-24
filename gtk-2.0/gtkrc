@@ -380,15 +380,15 @@ style "murrine-menubar" {
 
 style "murrine-menubaritem" {
 	bg[NORMAL] = @menubar_bg_color
-	bg[PRELIGHT] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
-	bg[SELECTED] =  mix (0.21, @menubar_fg_color, @menubar_bg_color)
-	bg[ACTIVE] = shade (0.9, @menubar_bg_color)
+	bg[PRELIGHT] =  @selected_bg_color
+	bg[SELECTED] =  @selected_bg_color
+	bg[ACTIVE] = shade (0.9, @selected_bg_color)
 	bg[INSENSITIVE] = @menubar_bg_color
 
 	fg[NORMAL] = @menubar_fg_color
-	fg[PRELIGHT] = shade (1.08, @menubar_fg_color)
-	fg[SELECTED] = shade (1.08, @menubar_fg_color)
-	fg[ACTIVE] = @menubar_fg_color
+	fg[PRELIGHT] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+	fg[ACTIVE] = @selected_fg_color
 	fg[INSENSITIVE] = mix (0.5, @menubar_bg_color, @menubar_fg_color)
 
 	engine "murrine" {

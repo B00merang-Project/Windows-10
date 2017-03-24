@@ -1,5 +1,5 @@
 /*******************
- * check and radio *
+ * check and radio (deprecated )*
  *******************/
 /* draw regular check and radio items using our assets */
 .check,
@@ -95,7 +95,7 @@
     background-image: url("assets/slider-horiz.png");
 }*/
 
-/* menuitem */
+/* menuitem (deprecated)
 
 .menuitem.check:active {
     background-image: url("assets/menuitem-checkbox-checked.png");
@@ -121,7 +121,7 @@
 
 .menuitem.radio:active:insensitive {
     background-image: url("assets/menuitem-radio-checked-insensitive.png");
-}
+} */
 
 /******************
  * window actions *
