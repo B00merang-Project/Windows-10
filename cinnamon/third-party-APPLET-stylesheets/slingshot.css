@@ -84,18 +84,16 @@
 
 .slingshot .button.app {
     border-image: none;
-    border-width: 0;
+    background-color: #1884da;
+    border: 2px solid transparent;
     font-size: 9pt;
     padding: 0;
 }
 
 .slingshot .app:hover {
-    border-image: url("../background-assets/hover.svg") 4;
-    background-gradient-direction: vertical;
-    background-gradient-end: transparent;
-    background-gradient-start: transparent;
-    background-color: transparent;
+/*    border-image: url("../background-assets/hover.svg") 4;*/
     color: #fff;
+    border-color: white;
 }
 
 .slingshot .app:focus {

@@ -1438,7 +1438,6 @@ background-color: none;
     box-shadow: 1px -1px 4px 1px rgba(1,1,1,0.6);
 }
 
-
 .menu-favorites-box {
     margin: auto;
     padding-top: 10px;
@@ -1448,11 +1447,13 @@ background-color: none;
 }
 
 .menu-favorites-button {
-    padding: 10px;
+    padding: 8px;
+    border: 2px solid transparent;
 }
 
 .menu-favorites-button:hover {
-    border-image: url("background-assets/hover.svg") 4;
+/*    border-image: url("background-assets/hover.svg") 4;*/
+    border-color: white;
 }
 
 .menu-places-box {
@@ -1493,17 +1494,19 @@ background-color: none;
     padding-top: 7px;
     padding-left: 7px;
     padding-right: 0;
-    padding-bottom: 7px; 
-    max-width: 10px;   
+    padding-bottom: 7px;
+    max-width: 10px;
+    border: 2px solid transparent;   
 }
 
 .menu-application-button-selected {
-    border-image: url("background-assets/hover.svg") 8;
+/*    border-image: url("background-assets/hover.svg") 8;*/
     padding-top: 7px;
     padding-left: 7px;
     padding-right: 7px;
     padding-bottom: 7px;
     color: #fff; 
+    border: 2px solid white;
 }
 
 .menu-application-button-label:ltr { 
@@ -1527,6 +1530,7 @@ background-color: none;
     padding-left: 7px;
     padding-right: 7px;
     padding-bottom: 7px;
+    border: 2px solid transparent;
 }
 
 .menu-category-button-greyed {
@@ -1534,16 +1538,18 @@ background-color: none;
     padding-left: 7px;
     padding-right: 7px;
     padding-bottom: 7px; 
+    border: 2px solid transparent;
     color: rgba(255, 255, 255, .3);
     font-style: normal;
 }
 
 .menu-category-button-selected {
-    background-color: rgba(255,255,255,0.3);
+/*    background-color: rgba(255,255,255,0.3);*/
     padding-top: 7px;
     padding-left: 7px;
     padding-right: 7px;
     padding-bottom: 7px; 
+    border: 2px solid white;
     color: #fff; 
 }
 
@@ -1576,12 +1582,32 @@ background-color: none;
 }
 
 .menu-search-box {
-   padding-left: 20px;
+   padding-left: 10px;
 }
 
 .menu-search-entry-icon {
     icon-size: 16px;
     color: #1f1f1f;
+}
+
+#menu-search-entry {
+    padding: 10px 8px;
+    color: rgba(255,255,255,0.7);
+    font-size: 10pt;
+    background-color: rgba(255,255,255,0.3);
+    caret-color: black;
+    caret-size: 1px;
+    width: 400px;
+    height: 15px;
+}
+
+#menu-search-entry:focus,
+#menu-search-entry:hover {
+    color: black;
+    background-color: white;
+    font-weight: normal;
+    selected-color: #fff;
+    selection-background-color: #0f7bd1;
 }
 
 /* Context menu (at the moment only for favorites) */
