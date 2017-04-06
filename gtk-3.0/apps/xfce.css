@@ -14,7 +14,7 @@ XfceHeading {
 }
 
 .xfce4-panel .button {
-    background-image: image(@theme_bg_color);
+    background-image: linear-gradient(to bottom, @theme_bg_color);
     background-color: transparent;
     border-radius: 0;
     border-color: transparent;
