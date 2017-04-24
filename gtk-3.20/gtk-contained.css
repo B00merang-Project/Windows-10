@@ -2877,7 +2877,7 @@ scrollbar {
   scrollbar.fine-tune.vertical slider {
     border-width: 1px 1px; }
   scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    border: solid 1px 0 shade(@theme_bg_color, 0.8);
+    border: solid 1px shade(@theme_bg_color, 0.8);
     opacity: 1;
     margin: 0;
     background-color: shade(@theme_bg_color, 0.9); }
