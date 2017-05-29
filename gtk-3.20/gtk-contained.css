@@ -206,6 +206,19 @@ assistant .sidebar label.highlight {
     text-shadow: none;
     -gtk-icon-shadow: none; }
 
+/* nemo icon view entry */
+.nemo-window .nemo-window-pane widget.entry {
+    border: 1px solid;
+    border-radius: 3px;
+    color: @theme_fg_color;
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_base_color; }
+  
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
 /*********************
  * Spinner Animation *
  *********************/
@@ -245,8 +258,6 @@ entry {
   entry image.right {
     padding-left: 6px;
     padding-right: 0; }
-
-/* what's this ??? */
 
   spinbutton:not(.vertical) undershoot.left,
   entry undershoot.left {
