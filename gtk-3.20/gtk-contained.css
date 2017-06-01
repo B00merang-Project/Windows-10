@@ -6,6 +6,8 @@
   -GtkToolItemGroup-expander-size: 11;
   -GtkTreeView-expander-size: 11;
   -GtkTreeView-horizontal-separator: 4;
+  -GtkScrollbar-has-backward-stepper: true;
+  -GtkScrollbar-has-forward-stepper: true;
   -GtkWidget-text-handle-width: 20;
   -GtkWidget-text-handle-height: 24;
   -GtkDialog-button-spacing: 4;
@@ -31,41 +33,35 @@
     border-radius: 0;
     border-width: 1px;
     border-style: solid;
-    box-shadow: none;
-}
+    box-shadow: none; }
 
 .floating-bar.right {
     border-right-width: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
+    border-bottom-right-radius: 0; }
 
 .floating-bar.bottom {
     border-bottom-width: 0;
     border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
+    border-bottom-left-radius: 0; }
 
 .floating-bar.left {
     border-left-width: 0;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
+    border-bottom-left-radius: 0; }
 
 .floating-bar:backdrop {
     border-color: transparent;
     color: @theme_fg_color;
     background-image: image(@theme_bg_color);
-    box-shadow: none;
-}
+    box-shadow: none; }
 
 .floating-bar .button {
     border-color: @borders;
     background-image: none;
     background-color: @theme_bg_color;
     border-style: none;
-    box-shadow: none;
-}
+    box-shadow: none; }
 
 
 /***************
@@ -216,8 +212,7 @@ assistant .sidebar label.highlight {
   
 .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
     background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
-}
+    color: @theme_selected_fg_color; }
 
 /*********************
  * Spinner Animation *
@@ -2276,13 +2271,11 @@ window.csd > .titlebar:not(headerbar) {
     background-position: center;
     background-repeat: no-repeat;
     border: none;
-    background-image: -gtk-scaled(url("buttons/minimize-focused-normal.png"));
-}
+    background-image: -gtk-scaled(url("buttons/minimize-focused-normal.png")); }
 
 .titlebar .titlebutton.minimize:backdrop {
     background-image: -gtk-scaled(url("buttons/minimize-unfocused-normal.png"));
-    color: transparent;
-}
+    color: transparent; }
 
 .titlebar .titlebutton.minimize:hover,
 .titlebar .titlebutton.minimize:active,
@@ -2293,8 +2286,7 @@ window.csd > .titlebar:not(headerbar) {
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-    background-image: -gtk-scaled(url("buttons/minimize-focused-active.png"));
-}
+    background-image: -gtk-scaled(url("buttons/minimize-focused-active.png")); }
 
 .titlebar .titlebutton.maximize {
     color: transparent;
@@ -2304,13 +2296,11 @@ window.csd > .titlebar:not(headerbar) {
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/maximize-focused-normal.png"));
-}
+    background-image: -gtk-scaled(url("buttons/maximize-focused-normal.png")); }
 
 .titlebar .titlebutton.maximize:backdrop {
     background-image: -gtk-scaled(url("buttons/maximize-unfocused-normal.png"));
-    color: transparent;
-}
+    color: transparent; }
 
 
 .titlebar .titlebutton.maximize:hover, 
@@ -2322,8 +2312,7 @@ window.csd > .titlebar:not(headerbar) {
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-    background-image: -gtk-scaled(url("buttons/maximize-focused-active.png"));
-}
+    background-image: -gtk-scaled(url("buttons/maximize-focused-active.png")); }
 
 .titlebar .titlebutton.close {
     color: transparent;
@@ -2333,13 +2322,11 @@ window.csd > .titlebar:not(headerbar) {
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/close-focused-normal.png"));
-}
+    background-image: -gtk-scaled(url("buttons/close-focused-normal.png")); }
 
 .titlebar .titlebutton.close:backdrop {
     background-image: -gtk-scaled(url("buttons/close-unfocused-normal.png"));
-    color: transparent;
-}
+    color: transparent; }
 
 
 .titlebar .titlebutton.close:hover,
@@ -2351,8 +2338,7 @@ window.csd > .titlebar:not(headerbar) {
     background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
-    background-image: -gtk-scaled(url("buttons/close-focused-active.png"));
-}
+    background-image: -gtk-scaled(url("buttons/close-focused-active.png")); }
 
 
 
@@ -2843,147 +2829,70 @@ notebook > stack:not(:only-child) {
   notebook > stack:not(:only-child):backdrop {
     background-color: @theme_unfocused_bg_color; }
 
-/**************
- * Scrollbars *
- **************/
+/*************
+ * scrollbar *
+ *************/
 scrollbar {
-  background-color: shade(@theme_bg_color, 0.9);
-  transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-  * {
-    -GtkScrollbar-has-backward-stepper: true;
-    -GtkScrollbar-has-forward-stepper: true; }
-  scrollbar.top {
-    border-bottom: 1px solid @borders; }
-  scrollbar.bottom {
-    border-top: 1px solid @borders; }
-  scrollbar.left {
-    border-right: 1px solid @borders; }
-  scrollbar.right {
-    border-left: 1px solid @borders; }
-  scrollbar:backdrop {
-    background-color: shade(@theme_bg_color, 0.9);
-    border-color: shade(@borders, 0.95);
-    transition: 200ms ease-out; }
-  scrollbar slider {
-    min-width: 14px;
-    min-height: 14px;
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    background-clip: padding-box;
-    background-color: shade(@theme_bg_color, 0.8); }
-    scrollbar slider:hover {
-      background-color: shade(@theme_bg_color, 0.85); }
-    scrollbar slider:hover:active {
-      background-color: shade(@theme_bg_color, 0.75); }
-    scrollbar slider:backdrop {
-      background-color: shade(@theme_bg_color, 0.8); }
-    scrollbar slider:disabled {
-      background-color: transparent; }
-  scrollbar.fine-tune slider {
-    min-width: 12px;
-    min-height: 12px; }
-  scrollbar.fine-tune.horizontal slider {
-    border-width: 1px 1px; }
-  scrollbar.fine-tune.vertical slider {
-    border-width: 1px 1px; }
-  scrollbar.overlay-indicator:not(.dragging):not(.hovering) {
-    border: solid 1px shade(@theme_bg_color, 0.8);
-    opacity: 1;
-    margin: 0;
-    background-color: shade(@theme_bg_color, 0.9); }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-      margin: 0;
-      min-width: 12px;
-      min-height: 12px;
-      background-color: shade(@theme_bg_color, 0.8);
-      border: 1px solid shade(@theme_bg_color, 0.8); }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering) button {
-      min-width: 12px;
-      min-height: 12px;
-      background-color: transparent;
-      background-clip: padding-box;
-      border-radius: 0;
-      border: none /*1px solid shade(@theme_bg_color, 0.8)*/;
-      -gtk-icon-source: none; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
-      margin: 0 2px;
-      min-width: 40px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal button {
-      margin: 1px 2px;
-      min-width: 5px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical slider {
-      margin: 2px 0;
-      min-height: 40px; }
-    scrollbar.overlay-indicator:not(.dragging):not(.hovering).vertical button {
-      margin: 2px 1px;
-      min-height: 5px; }
-  scrollbar.overlay-indicator.dragging, scrollbar.overlay-indicator.hovering {
-    opacity: 1; }
-  scrollbar.horizontal slider {
-    min-width: 40px; }
-  scrollbar.vertical slider {
-    min-height: 40px; }
-  scrollbar button {
+    border-width: 0;
+    border-style: solid;
     padding: 0;
-    min-width: 12px;
-    min-height: 12px;
-    border-style: none;
     border-radius: 0;
-    transition-property: min-height, min-width, color;
-    border-color: transparent;
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    border-image: none; }
+
+scrollbar button,
+scrollbar button:hover,
+scrollbar button:active:hover {
+    border-width: 0;
+    border-radius: 0;
+    min-height: 12px;
+    min-width: 1px;
+    padding: none;
+    box-shadow: none;
     background-color: transparent;
     background-image: none;
-    box-shadow: inset 0 1px transparent;
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    color: #787c7d; }
-    scrollbar button:hover {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px transparent;
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: #535859; }
-    scrollbar button:active, scrollbar button:checked {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px transparent;
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: @borders; }
-    scrollbar button:disabled {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px transparent;
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: rgba(120, 124, 125, 0.2); }
-    scrollbar button:backdrop {
-      border-color: transparent;
-      background-color: transparent;
-      background-image: none;
-      box-shadow: inset 0 1px transparent;
-      text-shadow: none;
-      -gtk-icon-shadow: none;
-      color: #c3c4c4; }
-      scrollbar button:backdrop:disabled {
-        border-color: transparent;
-        background-color: transparent;
-        background-image: none;
-        box-shadow: inset 0 1px transparent;
-        text-shadow: none;
-        -gtk-icon-shadow: none;
-        color: rgba(195, 196, 196, 0.2); }
+    color: shade(@theme_fg_color, 0.4); }
+
+scrollbar.horizontal button {
+    min-height: 1px;
+    min-width: 12px; }
+
+scrollbar slider {
+    border-width: 0;
+    min-width: 45px;
+    min-height: 14px;
+    border-color: transparent;
+    border-radius: 0;
+    background-color: mix(@theme_bg_color, @theme_fg_color, 0.32); }
+
+scrollbar.vertical slider {
+    min-width: 14px;
+    min-height: 45px; }
+
+scrollbar slider:hover,
+scrollbar.vertical slider:hover {
+    border-color: transparent;
+    background-color: mix(@theme_bg_color, @theme_fg_color, 0.5); }
+
+scrollbar slider:active,
+scrollbar.vertical slider:active {
+    border-color: transparent;
+    background-color: shade(@theme_bg_color, 0.5); }
+
+  scrollbar slider.fine-tune:prelight:active {
+    border-width: 2px;
+    border-color: transparent; }
+
   scrollbar.vertical button.down {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+
   scrollbar.vertical button.up {
     -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+
   scrollbar.horizontal button.down {
     -gtk-icon-source: -gtk-icontheme("pan-right-symbolic"); }
+
   scrollbar.horizontal button.up {
     -gtk-icon-source: -gtk-icontheme("pan-left-symbolic"); }
 
@@ -3566,12 +3475,10 @@ scale {
 
 scale slider,
 scale slider.horizontal {
-    background-image: -gtk-scaled(url("assets/slider-horiz.png"));
-}
+    background-image: -gtk-scaled(url("assets/slider-horiz.png")); }
 
 scale.vertical slider {
-    background-image: -gtk-scaled(url("assets/slider-vert.png"));
-}
+    background-image: -gtk-scaled(url("assets/slider-vert.png")); }
 
 scale.vertical slider:hover, 
 scale.vertical slider:active {
@@ -4578,8 +4485,7 @@ decoration {
 
 .window-frame.ssd,
 .window-frame.ssd:backdrop {
-    background-color: @theme_bg_color;
-}
+    background-color: @theme_bg_color; }
 
 button.titlebutton {
   text-shadow: 0 1px @txt_shadow;
