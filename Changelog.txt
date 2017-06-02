@@ -125,3 +125,5 @@ v0.9.9 SP1 [AU] (all themes) : GTK 3.20 fixes and general corrctions to colors, 
 v0.9.9 SP2 (all themes) : GTK 3.20 and 3.18 fixes and corrections
 
 v0.9.9 SP3 (all themes) : XML elements instead of PNGs in metacity themes, other GTK fixes, updates for compatibility with pantheon, reworked Metro theme, unity theme corrections
+
+v1.0.0 (all themes): Full GTK 3.20+ compatibility, new scrollbar, selection-mode headerbar
