@@ -31,9 +31,6 @@ stage {
 	color: white;
 	font-weight: bold;
 	background-color: rgba(0,0,0,0.95);
-	background-gradient-direction: none;
-	background-gradient-start: rgba(255,255,255,0.9);
-	background-gradient-end: rgba(255,255,255,0.9);
 	box-shadow: none;
 	text-shadow: none;
 	icon-shadow: none; }
@@ -41,9 +38,6 @@ stage {
 		color: white;
 		border: none;
 		background-color: #1f1f1f;
-		background-gradient-direction: none;
-		background-gradient-start: rgba(0,120,215,1);
-		background-gradient-end: rgba(0,120,215,1);
 		box-shadow: none;
 		text-shadow: none;
 		icon-shadow: none; }
@@ -51,7 +45,6 @@ stage {
 		color: white;
 		border: none;
 		background-color: rgba(0,0,0,0.0.5);
-		background-gradient-direction: none;
 		box-shadow: none;
 		text-shadow: none;
 		icon-shadow: none; }
@@ -59,9 +52,6 @@ stage {
 		color: white;
 		border: none;
 		background-color: rgba(0,0,0,0.95);
-		background-gradient-direction: none;
-		background-gradient-start: rgba(255,255,255,1);
-		background-gradient-end: rgba(255,255,255,1);
 		box-shadow: none;
 		text-shadow: none;
 		icon-shadow: none; }
@@ -79,8 +69,8 @@ StEntry {
 	selection-background-color:#026ec4;
 	selected-color: white; }
 	StEntry:focus {
-		background-color: #026ec4;
-		color: white;
+		background-color: #fff;
+		color: #000;
 		box-shadow: none;
 		border-color: rgba(0,0,0,0); }
 	StEntry:insensitive {
