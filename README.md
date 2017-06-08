@@ -34,7 +34,7 @@ For the moment, this theme works with the following Desktop environments :
 1. Head to the [releases](https://github.com/Elbullazul/Windows-10/releases) page
 2. Download the latest release (as of 8/6/2017 latest is v1.0.0)
 3. Open your file manager and navigate to your home folder. If nonexistant, create the **.themes** and **.icons** folder. Enable the 'view hidden files' option to work with them. Generally, Ctrl+H reveals the hidden folders
-4. Extract the packages and place the resulting folders (named *Windows 10 Light* and *Windows 10 Dark*) in the .themes folder. The Icon set should be placed in *.icons* once extracted
+4. Extract the packages and place the resulting folders (*Windows 10 Light*) in the .themes folder.
 5. You're all set! Open your appearance manager and select the corresponding themes from the list
 
 > For common issues and solutions, visit our [wiki page](https://github.com/Elbullazul/Windows-10/wiki)
