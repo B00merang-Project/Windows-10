@@ -1,0 +1,46 @@
+/* nemo icon view entry */
+.nemo-window .nemo-window-pane widget.entry {
+    border: 1px solid;
+    border-radius: 3px;
+    color: @theme_fg_color;
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_base_color; }
+  
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+/* nemo sidebar padding */
+.nemo-window .sidebar .cell {
+    padding: 2px 2px; 
+}
+
+/* sidebar */
+filechooser placessidebar.sidebar,
+.nautilus-window placessidebar.sidebar {
+    color: @theme_fg_color;
+    background-color: @theme_base_color; }
+
+filechooser placessidebar.sidebar:backdrop,
+.nautilus-window placessidebar.sidebar:backdrop {
+    color: @theme_fg_color;
+    background-color: @theme_base_color; }
+
+.nemo-window .sidebar {
+    color: @theme_fg_color;
+    background-color: @theme_bg_color; }
+.nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+    background-color: transparent;
+    color: @theme_fg_color; }
+.nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    background-image: none;
+    color: @theme_selected_fg_color; }
+.nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
+    color: @theme_fg_color; }
+.nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover {
+    color: shade(@theme_selected_bg_color, 1.15); }
+.nemo-window .sidebar separator {
+    background-color: transparent; }

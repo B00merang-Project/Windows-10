@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Windows 10 Default
-Comment=Windows 10 UI for Linux OSes
+Name=Windows 10 Light
+Comment=Windows 10 Light theme for Linux OSes; based on the MTAC architecture
 Comment=Author : Christian Medel (Elbullazul)
-Version=v0.9.8
+Version=rolling
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Windows 10 Default
-MetacityTheme=Windows 10 Default
+GtkTheme=Windows 10 Light
+MetacityTheme=Windows 10 Light
 ButtonLayout=:minimize,maximize,close
