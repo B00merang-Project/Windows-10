@@ -1269,12 +1269,12 @@ modelbutton.flat arrow.right {
  * notebook *
  ************/
 notebook {
-    background-color: shade (@bg_color, 1.02);
+    background-color: @theme_base_color;
     background-image: none;
     border-radius: 0;
     padding: 0;
     background-clip: border-box;
-    border-color: shade (@bg_color, 0.82);
+    border-color: shade(@theme_bg_color, 0.82);
     border-width: 0;
     border-style: solid;
 }
@@ -1303,14 +1303,14 @@ notebook tab {
     background-image: none;
     background-color: shade(@theme_bg_color, 0.9);
     border-style: solid;
-    border-color: shade(@bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.8);
     border-width: 1px;
     border-radius: 0px;
     box-shadow: none;
 }
 
 notebook tab:checked {
-    border-color: shade (@bg_color, 0.82);
+    border-color: shade (@theme_bg_color, 0.82);
     border-style: solid;
     border-width: 1px;
     background-color: @theme_base_color;
