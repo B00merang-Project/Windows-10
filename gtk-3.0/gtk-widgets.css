@@ -1184,12 +1184,12 @@ GtkModelButton.button:selected {
  * notebook *
  ************/
 .notebook {
-    background-color: shade (@bg_color, 1.02);
+    background-color: @theme_base_color;
     background-image: none;
     border-radius: 0;
     padding: 0;
     background-clip: border-box;
-    border-color: shade (@bg_color, 0.82);
+    border-color: shade(@theme_bg_color, 0.82);
     border-width: 1px;
     border-style: solid;
 }
@@ -1212,14 +1212,14 @@ GtkModelButton.button:selected {
     background-image: none;
     background-color: shade(@theme_bg_color, 0.9);
     border-style: solid;
-    border-color: shade(@bg_color, 0.8);
+    border-color: shade(@theme_bg_color, 0.8);
     border-width: 1px;
     border-radius: 0px;
     box-shadow: none;
 }
 
 .notebook tab:active {
-    border-color: shade (@bg_color, 0.82);
+    border-color: shade(@theme_bg_color, 0.82);
     border-style: solid;
     border-width: 1px;
     background-color: @theme_base_color;
@@ -1233,7 +1233,7 @@ GtkModelButton.button:selected {
 }
 
 .notebook tab {
-    color: shade (@bg_color, 0.48);
+    color: shade(@theme_bg_color, 0.48);
 }
 
 .notebook tab.top:active {
