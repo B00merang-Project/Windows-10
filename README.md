@@ -53,3 +53,11 @@ For the moment, this theme works with the following Desktop environments :
 
 1. Open a terminal and navigate to where transpack.sh is
 3. Run `./transpack.sh (-l for local uninstall) -u`
+
+## Configuration
+
+Please note that this guide contains third-party software. Therefore, B00merang is not responsible for its content.
+
+1. Most of the menu bar configuration is explained in [rubsalma's video on YouTube](https://www.youtube.com/watch?v=OT958w5YW9c).
+2. To make your menu look like the menu in the image at the top of this page, install the "Slingshot" applet on Cinnamon. If you can't find any of the applets when you search, hit the "Refresh list" button in the "Available applets (online)" tab.
+3. To make your taskbar icons look like Windows 10, install the "Icing Task Manager" applet, not the grouping applet described in the video (WindowListWithAppGrouping breaks Cinnamon 3.0 and above when used). Icing shows the thumbnails for the open programs, and also allows you to right click the icons.
