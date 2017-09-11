@@ -61,4 +61,5 @@ Please note that this guide contains third-party software. Therefore, B00merang 
 1. Most of the menu bar configuration is explained in [rubsalma's video on YouTube](https://www.youtube.com/watch?v=OT958w5YW9c).
 2. To make your menu look like the menu in the image at the top of this page, install the "Slingshot" applet on Cinnamon. If you can't find any of the applets when you search, hit the "Refresh list" button in the "Available applets (online)" tab.
 3. To make your taskbar icons look like Windows 10, install the "Icing Task Manager" applet, not the grouping applet described in the video (WindowListWithAppGrouping breaks Cinnamon 3.0 and above when used). Icing shows the thumbnails for the open programs, and also allows you to right click the icons.
+
 PS: If you don't want to have to go through all this work yourself, then check out feren OS, it comes with a Windows 10 Transformation using this exact theme in Themer that does all the hard work for you.
