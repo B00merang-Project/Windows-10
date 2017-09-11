@@ -363,7 +363,7 @@ background-color: none;
 
 /* Start Menu icon */
 #panelLeft .applet-box:first-child {
-	background-image: url("orb/menu.png");
+	/*background-image: url("orb/menu.png");*/
 	transition-duration: 300;
     background-size: cover;
     width: 35px;
