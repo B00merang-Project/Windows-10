@@ -3433,6 +3433,10 @@ filechooser button image:last-child {
     color: @theme_text_color;
 }
 
+.app-notification border {
+    border: none;
+}
+
 /*******
  * osd *
  *******/
@@ -3448,10 +3452,6 @@ GtkOverlay.osd {
 .osd frame {
     background-clip: border-box;
     background-origin: border-box;
-}
-
-.app-notification border {
-    border: none;
 }
 
 .osd button,
