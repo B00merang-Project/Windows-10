@@ -2584,14 +2584,6 @@ toolbar button {
     padding: 2px;
 }
 
-toolbar button.text-button {
-    padding: 2px 4px;
-}
-
-toolbar button.image-button {
-    padding: 4px 3px 3px 4px;
-}
-
 toolbar:disabled {
     background-color: shade(@toolbar_bg_color, 0.9);
     color: mix(@toolbar_fg_color, @toolbar_bg_color, 0.5);
