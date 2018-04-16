@@ -117,11 +117,11 @@ menu menuitem check {
 
 menu menuitem.check:disabled,
 menu menuitem check:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-insensitive.png"), url("assets/checkbox-insensitive@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-insensitive@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.check:disabled:hover,
   menu menuitem check:disabled:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-insensitive.png"), url("assets/checkbox-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-insensitive@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
@@ -291,11 +291,11 @@ menu menuitem radio {
 
 menu menuitem.radio:disabled,
 menu menuitem radio:disabled {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-insensitive.png"), url("assets/radio-insensitive@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-insensitive.png"), url("assets/radio-insensitive@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.radio:disabled:hover,
   menu menuitem radio:disabled:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/radio-insensitive.png"), url("assets/radio-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-insensitive.png"), url("assets/radio-insensitive@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
