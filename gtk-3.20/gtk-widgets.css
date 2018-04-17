@@ -617,6 +617,10 @@ statusbar frame > border {
     border: none;
 }
 
+.frame {
+	background: none;
+}
+
 /*******************
  * scrolled window *
  *******************/
@@ -1255,7 +1259,7 @@ popover.background:backdrop {
  * notebook *
  ************/
 notebook {
-    background-color: shade(@theme_bg_color, 1.02);
+    background-color: @theme_base_color;
     background-image: none;
     border-radius: 0;
     padding: 0;
@@ -1287,7 +1291,7 @@ notebook view {
 }
 
 notebook > stack:not(:only-child) {
-    background-color: @theme_bg_color;
+    background-color: @theme_base_color;
     border: 1px solid shade(@theme_bg_color, 0.8);
     box-shadow: none;
 }
@@ -1322,11 +1326,13 @@ notebook tab {
 notebook header.top tab:checked {
     padding: 3px 7px 1px 7px;
     box-shadow: 0 1px @theme_base_color;
+    margin-top: 0;
 }
 
 notebook header.top tab {
     padding: 2px 5px 0 5px;
     border-bottom-width: 0;
+    margin-top: 2px;
 }
 
 notebook header.right tab:checked {
@@ -1334,11 +1340,12 @@ notebook header.right tab:checked {
     background-image: none;
     background-color: @theme_base_color;
     box-shadow: -1px 0 @theme_base_color;
+    margin-right: 0;
 }
 
 notebook header.right tab {
     padding: 3px 4px 3px 0;
-    border-image-width: 1px 0;
+    margin-right: 2px;
     border-left-width: 0;
 }
 
@@ -1347,11 +1354,12 @@ notebook header.bottom tab:checked {
     background-image: none;
     background-color: @theme_base_color;
     box-shadow: 0 -1px @theme_base_color;
+    margin-bottom: 0;
 }
 
 notebook header.bottom tab {
     padding: 0 5px 3px 5px;
-    border-image-width: 0 1px;
+    margin-bottom: 2px;
     border-top-width: 0;
 }
 
@@ -1360,11 +1368,12 @@ notebook header.left tab:checked {
     background-image: none;
     background-color: @theme_base_color;
     box-shadow: 1px 0 @theme_base_color;
+    margin-left: 0;
 }
 
 notebook header.left tab {
     padding: 3px 0 3px 4px;
-    border-image-width: 1px 0;
+    margin-left: 2px;
     border-right-width: 0;
 }
 
@@ -3275,22 +3284,28 @@ headerbar .linked button:disabled:only-child {
  * tooltip *
  ***********/
 tooltip {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade(@theme_tooltip_bg_color, 0.8);
-    border-radius: 0px;
-    background-color: @theme_tooltip_bg_color;
-    background-image: none;
-    color: @theme_tooltip_fg_color;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+tooltip.background {
+    border: 1px solid shade(@tooltip_bg_color, 0.8);
+    background-color: @tooltip_bg_color;
+    background-clip: padding-box;
+}
+
+tooltip.background label {
+    padding: 1px;
+}
+
+tooltip decoration {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 tooltip * {
     background-color: transparent;
-}
-
-tooltip.csd decoration {
-    border-radius: 0px;
-    box-shadow: 0 0 0 1px shade(@theme_bg_color, 0.85);
+    color: @tooltip_fg_color;
 }
 
 /************
