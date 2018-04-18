@@ -1606,7 +1606,8 @@ levelbar block.empty {
 scale {
     min-height: 10px;
     min-width: 10px;
-    padding: 12px; 
+    padding: 12px;
+    background-color: transparent;    
 }
 
 scale slider {
