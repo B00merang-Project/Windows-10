@@ -1830,11 +1830,13 @@ scrollbar.vertical button.up {
 }
 
 scrollbar.horizontal button.down {
-    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");
+/*    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");*/
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 scrollbar.horizontal button.up {
-    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");
+/*    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");*/
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 
 treeview ~ scrollbar.vertical {
