@@ -1156,23 +1156,33 @@ StScrollBar {
 }
 #dash .overview-icon * {
 	icon-shadow: 0 0 5px 0px #222;
-	color: white;
+	color: transparent;
 }
 /* Windows Start Icon on Dash Apps button */
 .show-apps .overview-icon {
   background-image: url("assets/view-grid-symbolic.svg") !important;
   background-size: contain !important;
+  color: transparent;
 }
+
 .show-apps StWidget,
 .show-apps StWidget:hover,
 .show-apps StWidget:focus,
 .show-apps StWidget:active,
 .show-apps StWidget:checked {
 /*  background-color: transparent !important;*/
-  color: transparent;
   border-width: 0px;
   border-radius: 0;
+  icon-size: 0;
 }
+
+.show-apps:active .overview-icon,
+.show-apps:active .show-apps-icon,
+.show-apps:checked .overview-icon,
+.show-apps:checked .show-apps-icon {
+    color: transparent;
+}
+
 .dash-item-container > StWidget {
 	padding: 2px 4px;
 }
@@ -1298,7 +1308,8 @@ StScrollBar {
 }
 
 .search-provider-icon,
-.list-search-result, .app-well-app .overview-icon,
+.list-search-result,
+.app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
 /*.show-apps .overview-icon,*/
 .grid-search-result .overview-icon {
@@ -1313,10 +1324,11 @@ StScrollBar {
 .app-well-app.app-folder > .overview-icon {
 	background-color: rgba(0, 0, 0, 0.7); }
 
-/*.show-apps:checked .show-apps-icon,
+.show-apps:checked .show-apps-icon,
 .show-apps:focus .show-apps-icon {
-	color: white;
-	transition-duration: 100ms; }*/
+/*	color: white;*/
+	transition-duration: 100ms;
+}
 
 .app-folder-popup {
 	-arrow-border-radius: 8px;
