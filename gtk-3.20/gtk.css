@@ -27,10 +27,10 @@
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
 
-/*Nemo Desktop shadow fix*/
- @define-color desktop_item_fg #ffffff;
- @define-color desktop_item_selected_fg shade(@theme_selected_fg_color, 0.8);
- @define-color desktop_item_text_shadow alpha(black, 0.8);
+/* Desktop Icons */
+@define-color desktop_item_fg #fff;
+@define-color desktop_item_selected_fg @theme_selected_fg_color;
+@define-color desktop_item_text_shadow alpha(black, 0.8);
 
 /* shadow effects */
 @define-color light_shadow #fff;
@@ -93,3 +93,4 @@
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-assets.css");
 @import url("apps/gnome-terminal.css");
+@import url("apps/desktop.css");
