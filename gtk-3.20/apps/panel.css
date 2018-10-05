@@ -1,0 +1,68 @@
+panel-toplevel.background,
+panel-toplevel.background menubar {
+    background-color: @panel_bg_color;
+    color: @panel_fg_color;
+}
+
+panel-toplevel.background menubar,
+panel-toplevel.background #PanelApplet label,
+panel-toplevel.background #PanelApplet image {
+    color: @panel_fg_color;
+}
+
+/* overrides */
+panel-toplevel.background menubar > menuitem,
+panel-toplevel.background menubar > menuitem label:backdrop {
+    color: @panel_fg_color;
+}
+
+panel-toplevel.background menubar > menuitem:hover,
+panel-toplevel.background menubar > menuitem:hover label:backdrop {
+    color: @theme_selected_fg_color;
+}
+
+panel-toplevel.background button {
+    background-image: none;
+    background-color: @panel_bg_color;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: @panel_fg_color;
+}
+
+panel-toplevel.background button:active,
+panel-toplevel.background button:checked {
+    background-image: none;
+    background-color: shade(@panel_bg_color, 0.8);
+    border: none;
+    box-shadow: none;
+    color: @panel_fg_color;
+}
+
+#tasklist-button,
+#tasklist-button label {
+    color: alpha(@panel_fg_color, 0.7);
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+#tasklist-button:hover {
+    color: alpha(@panel_fg_color, 0.7);
+    background-color: transparent;
+}
+
+#tasklist-button:checked {
+    color: @panel_fg_color;
+    background-image: none;
+}
+
+#tasklist-button:checked label {
+    color: @panel_fg_color;
+}
+
+panel-toplevel.background na-tray-applet {
+  -NaTrayApplet-icon-padding: 0;
+  -NaTrayApplet-icon-size: 16px;
+}
