@@ -43,16 +43,14 @@ For the moment, this theme works with the following Desktop environments :
 
 *This method gets the source code from the master branch, thus always installing the latest version*
 
-1. Get the TransPack installer [from here](https://github.com/B00merang-Project/Shell-Scripts/blob/master/transpack.sh)
-2. Unpack the package and open a terminal in extracted folder. Add execution rights with `chmod +x transpack.sh`
-3. In same terminal, type `./transpack.sh`
-4. Choose which variant to install and wait till the process finishes. *YOU MAY need to restart your DE after the install*
-5. If the installation fails, open an issue, clearly explaining the error and including the log file if possible
+1. Get the auto installer [from here](https://raw.githubusercontent.com/B00merang-Project/Shell-Scripts/master/auto_install.sh)
+2. Open a terminal where you downloaded the file and run chmod +x to allow execution
+3. The script will download the latest version and unpack it in your ~/.themes folder
+4. Open your distro's customization tool to apply the theme
 
 `To uninstall the package`
 
-1. Open a terminal and navigate to where transpack.sh is
-3. Run `./transpack.sh (-l for local uninstall) -u`
+1. Remove 'Windows 10' from your ~/.themes folder
 
 ## Configuration (Cinnamon Only)
 
