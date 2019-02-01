@@ -1159,12 +1159,6 @@ StScrollBar {
 	icon-shadow: 0 0 5px 0px #222;
 	color: transparent;
 }
-/* Windows Start Icon on Dash Apps button */
-.show-apps .overview-icon {
-  background-image: url("assets/view-grid-symbolic.svg") !important;
-  background-size: contain !important;
-  color: transparent;
-}
 
 .show-apps StWidget,
 .show-apps StWidget:hover,
