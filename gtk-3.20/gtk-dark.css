@@ -1,11 +1,11 @@
 /* Normal colors */
 @import url("gtk-widgets.css");
-@define-color bg_color #ffffff;
-@define-color fg_color #000000;
-@define-color base_color #FFFFFF;
-@define-color text_color #000000;
-@define-color selected_bg_color #cce8ff;
-@define-color selected_fg_color #000000;
+@define-color bg_color #171717;
+@define-color fg_color #ffffff;
+@define-color base_color #000000;
+@define-color text_color #ffffff;
+@define-color selected_bg_color #004D8C;
+@define-color selected_fg_color #ffffff;
 @define-color disabled_bg_color mix(@fg_color, @bg_color, 0.95);
 @define-color disabled_fg_color mix(@fg_color, @bg_color, 0.5);
 @define-color disabled_base_color @disabled_bg_color;
@@ -22,8 +22,8 @@
 @define-color unfocused_disabled_base_color @unfocused_disabled_bg_color;
 @define-color unfocused_disabled_text_color @unfocused_disabled_fg_color;
 /* Darker color scheme */
-@define-color dark_bg_color #ffffff;
-@define-color dark_fg_color #000000;
+@define-color dark_bg_color #1F1F1F;
+@define-color dark_fg_color #ffffff;
 /* Theme colors */
 @define-color theme_bg_color @bg_color;
 @define-color theme_fg_color @fg_color;
@@ -63,7 +63,7 @@
 @define-color question_bg_color #2C2C2C;
 @define-color error_fg_color #FFFFFF;
 @define-color error_bg_color #FF0000;
-@define-color link_color #224ba0;
+@define-color link_color #1D8ECE;
 @define-color error_color #CC0000;
 @define-color success_color #39e4a3;
 @define-color warning_color #FF9900;
@@ -84,8 +84,8 @@
 @define-color titlebar_fg_color @fg_color;
 @define-color headerbar_bg_color @bg_color;
 @define-color headerbar_fg_color @fg_color;
-@define-color terminal_bg_color @fg_color;
-@define-color terminal_fg_color @bg_color;
+@define-color terminal_bg_color #000000;
+@define-color terminal_fg_color #ffffff;
 @define-color progressbar_bg_color #06B025;
 @define-color progressbar_fg_color @selected_fg_color;
 /* OSD */
