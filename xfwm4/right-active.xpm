@@ -1,8 +1,19 @@
 /* XPM */
-static char * right_active_xpm[] = {
-"1 21 2 1",
+static char * C:\Users\crime\Shared\Win10dark_elemen_fire\xfwm4\right_active_xpm[] = {
+"1 32 2 1",
 " 	c None",
-".	c #CBCCD0",
+".	c #F1F1F1",
+".",
+".",
+".",
+".",
+".",
+".",
+".",
+".",
+".",
+".",
+".",
 ".",
 ".",
 ".",
