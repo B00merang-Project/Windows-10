@@ -9,4 +9,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Windows 10 Light
 MetacityTheme=Windows 10 Light
-ButtonLayout=:minimize,maximize,close
+IconTheme=Windows 10
+CursorTheme=DMZ-White
+ButtonLayout=menu:minimize,maximize,close
