@@ -775,14 +775,4 @@ widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
 
 
 ### EXTERNAL FILES ###
-#include "Apps/banshee.rc
-#include "Apps/chromium.rc"
-include "Apps/ff.rc"
-#include "Apps/gnome-terminal.rc"
-#include "Apps/nautilus.rc"
-#include "Apps/filemanager.rc"
 include "Apps/panel.rc"
-#include "Apps/panel-menus.rc"
-include "Apps/mintmenu.rc"
-#include "Apps/mate.rc"
-include "Apps/xfce.rc"
