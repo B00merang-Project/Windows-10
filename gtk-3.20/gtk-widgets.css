@@ -440,9 +440,9 @@ calendar {
   color: @theme_fg_color; }
   calendar.header {
     border: none;
-    color: @theme_selected_bg_color; }
+    color: @theme_fg_color; }
   calendar.button {
-    color: @theme_selected_bg_color; }
+    color: @theme_fg_color; }
   calendar:selected {
     border-radius: 0;
     color: @theme_selected_fg_color;
@@ -1403,10 +1403,6 @@ filechooser placessidebar.sidebar row, filechooser placessidebar.sidebar view ro
 
 .sidebar frame, .sidebar.frame {
   border: none; }
-.sidebar scrollbar {
-  background-color: transparent; }
-  .sidebar scrollbar slider, .sidebar scrollbar slider:hover, .sidebar scrollbar slider:active, .sidebar scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider {
-    background-color: alpha(@sidebar_fg_color, 0.3); }
 paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
   border: none; }
 
@@ -2140,7 +2136,22 @@ searchbar {
     outline-color: transparent; }
 
 button.destructive-action {
-  /* not implemented in windows 10 */ }
+  border-width: 1px;
+  border-style: solid;
+  border-color: mix(@error_color, @theme_fg_color, 0.2);
+  border-radius: 0px;
+  color: mix(@theme_selected_fg_color, @error_color, 0.1);
+  background-color: @error_color; }
+  button.destructive-action:hover {
+    border-color: mix(@error_color, @theme_fg_color, 0.3);
+    background-color: mix(@error_color, @theme_selected_fg_color, 0.2); }
+  button.destructive-action:active {
+    border-color: mix(@error_color, @theme_fg_color, 0.3);
+    background-color: mix(@error_color, @theme_fg_color, 0.1); }
+  button.destructive-action:backdrop {
+    border-color: mix(@error_color, @theme_unfocused_fg_color, 0.2);
+    color: mix(@theme_unfocused_selected_fg_color, @error_color, 0.1);
+    background-color: mix(@error_color, @theme_unfocused_bg_color, 0.3); }
 
 button.suggested-action {
   box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
@@ -2395,6 +2406,9 @@ panel-toplevel.background na-tray-applet {
     background-color: transparent; }
   .mate-panel-menu-bar, .mate-panel-menu-bar .menubar {
     background-color: @taskbar_bg_color; }
+  .mate-panel-menu-bar menubar, .mate-panel-menu-bar menubar menuitem, .mate-panel-menu-bar togglebutton {
+    border-color: transparent;
+    background-color: transparent; }
   .mate-panel-menu-bar .menubar > .menuitem {
     padding-top: 0;
     padding-bottom: 0; }
@@ -2425,13 +2439,16 @@ panel-toplevel.background na-tray-applet {
       background-color: shade(@taskbar_bg_color, 1.1); }
     .mate-panel-menu-bar #tasklist-button:checked, .mate-panel-menu-bar #tasklist-button:active {
       color: @theme_selected_fg_color;
-      background-color: @theme_selected_bg_color; }
+      background-color: alpha(shade(@theme_selected_bg_color, 0.6), 0.3);
+      box-shadow: inset 0 -2px shade(@theme_selected_bg_color, 0.8); }
   .mate-panel-menu-bar PanelSeparator {
     color: shade(@taskbar_bg_color, 0.7);
     padding-top: 4px;
     padding-bottom: 4px; }
   .mate-panel-menu-bar NaTrayApplet {
     -NaTrayApplet-icon-padding: 2; }
+  .mate-panel-menu-bar #PanelApplet label {
+    color: @taskbar_fg_color; }
 
 .mintmenu:hover {
   background-color: shade(@taskbar_bg_color, 1.1); }
