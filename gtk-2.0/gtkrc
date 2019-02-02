@@ -521,8 +521,17 @@ style "xfdesktop-windowlist" {
 
 style "xfdesktop-icon-view" {
 	XfdesktopIconView::label-alpha = 0
-	XfdesktopIconView::selected-label-alpha = 60
-	XfdesktopIconVIew::ellipsize-icon-labels = 1
+	XfdesktopIconView::selected-label-alpha = 100
+	XfdesktopIconView::shadow-x-offset = 0
+	XfdesktopIconView::shadow-y-offset = 1
+	XfdesktopIconView::selected-shadow-x-offset = 0
+	XfdesktopIconView::selected-shadow-y-offset = 1
+	XfdesktopIconView::shadow-color = @shadow_color
+	XfdesktopIconView::selected-shadow-color = @shadow_color
+	XfdesktopIconView::shadow-blur-radius = 2
+	XfdesktopIconView::cell-spacing = 2
+	XfdesktopIconView::cell-padding = 6
+	XfdesktopIconView::cell-text-width-proportion = 1.9
 
 	base[NORMAL] = @selected_bg_color
 	base[SELECTED] = @selected_bg_color
