@@ -253,18 +253,20 @@ checkbutton.text-button, radiobutton.text-button {
   padding: 4px;
   outline-offset: 0; }
 
-checkbutton:hover, checkbutton:active:hover {
-  padding: 4px;
-  border-style: none;
-  background-color: transparent; }
-checkbutton:selected {
-  padding: 4px;
-  border-style: none;
-  background-color: transparent; }
-  checkbutton:selected:focus {
+checkbutton {
+  padding: 4px; }
+  checkbutton:hover, checkbutton:active:hover {
     padding: 4px;
     border-style: none;
     background-color: transparent; }
+  checkbutton:selected {
+    padding: 4px;
+    border-style: none;
+    background-color: transparent; }
+    checkbutton:selected:focus {
+      padding: 4px;
+      border-style: none;
+      background-color: transparent; }
 
 view.content-view check, .content-view.view check {
   background-color: transparent; }
@@ -2388,7 +2390,7 @@ panel-toplevel.background na-tray-applet {
   background-color: @taskbar_bg_color; }
   .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
     color: @taskbar_fg_color;
-    background-color: @taskbar_bg_color;
+    background-color: transparent;
     border-radius: 0;
     border: none; }
     .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
