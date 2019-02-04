@@ -1558,9 +1558,9 @@ switch {
   switch:checked:backdrop slider {
     background-color: @theme_unfocused_bg_color; }
   switch:disabled slider {
-    background-color: @theme_disabled_bg_color; }
+    background-color: @theme_disabled_fg_color; }
   switch:disabled:backdrop slider {
-    background-color: @theme_unfocused_disabled_bg_color; }
+    background-color: @theme_unfocused_disabled_fg_color; }
   switch:backdrop slider {
     background-color: @theme_unfocused_fg_color; }
 
