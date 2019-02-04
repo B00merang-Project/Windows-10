@@ -211,6 +211,14 @@ button {
       color: @theme_unfocused_fg_color;
       border-color: shade(@theme_unfocused_bg_color, 0.85);
       background-color: shade(@theme_unfocused_bg_color, 0.85); }
+    button:active:disabled, button:checked:disabled {
+      color: mix(@theme_fg_color, @theme_unfocused_disabled_fg_color, 0.1);
+      border-color: mix(@theme_bg_color, @theme_disabled_bg_color, 0.6);
+      background-color: mix(@theme_bg_color, @theme_disabled_bg_color, 0.2); }
+      button:active:disabled:backdrop, button:checked:disabled:backdrop {
+        color: @theme_unfocused_disabled_fg_color;
+        border-color: @unfocused_borders;
+        background-color: mix(@theme_bg_color, @theme_disabled_bg_color, 0.2); }
   button:focus, button:hover:focus, button:active:focus, button:active:hover:focus {
     border-color: shade(@theme_selected_bg_color, 0.7); }
   button:disabled {
@@ -518,12 +526,17 @@ list {
     padding: 2px; }
     list row:hover {
       background-color: mix(@theme_bg_color, @theme_fg_color, 0.1); }
+    list row:backdrop {
+      color: @theme_unfocused_fg_color; }
     list row:selected {
       color: @theme_selected_fg_color;
       background-color: @theme_selected_bg_color; }
       list row:selected:disabled {
         color: alpha(@theme_selected_fg_color, 0.7);
         background-color: @theme_selected_bg_color; }
+      list row:selected:backdrop {
+        color: @theme_unfocused_selected_fg_color;
+        background-color: @theme_unfocused_selected_bg_color; }
   list separator, list separator:backdrop {
     background: none; }
 
@@ -929,9 +942,11 @@ notebook {
       background-color: transparent;
       color: @theme_fg_color; }
   notebook > header {
+    padding-top: 2px;
     background-color: @theme_bg_color; }
+    notebook > header:backdrop {
+      background-color: @theme_unfocused_bg_color; }
     notebook > header.top {
-      padding-top: 2px;
       box-shadow: 0 1px @borders; }
       notebook > header.top > tabs > tab {
         border-bottom: none;
@@ -1543,9 +1558,9 @@ switch {
   switch:checked:backdrop slider {
     background-color: @theme_unfocused_bg_color; }
   switch:disabled slider {
-    background-color: @theme_disabled_fg_color; }
+    background-color: @theme_disabled_bg_color; }
   switch:disabled:backdrop slider {
-    background-color: @theme_unfocused_disabled_fg_color; }
+    background-color: @theme_unfocused_disabled_bg_color; }
   switch:backdrop slider {
     background-color: @theme_unfocused_fg_color; }
 
@@ -1722,6 +1737,14 @@ toolbar {
         color: @theme_unfocused_fg_color;
         border-color: shade(@theme_unfocused_bg_color, 0.85);
         background-color: shade(@theme_unfocused_bg_color, 0.85); }
+      .primary-toolbar button:active:disabled, .primary-toolbar button:checked:disabled, .primary-toolbar .raised button:active:disabled, .primary-toolbar .raised button:checked:disabled {
+        color: mix(@toolbar_fg_color, @theme_unfocused_disabled_fg_color, 0.1);
+        border-color: mix(@toolbar_bg_color, @theme_disabled_bg_color, 0.6);
+        background-color: mix(@toolbar_bg_color, @theme_disabled_bg_color, 0.2); }
+        .primary-toolbar button:active:disabled:backdrop, .primary-toolbar button:checked:disabled:backdrop, .primary-toolbar .raised button:active:disabled:backdrop, .primary-toolbar .raised button:checked:disabled:backdrop {
+          color: @theme_unfocused_disabled_fg_color;
+          border-color: @unfocused_borders;
+          background-color: mix(@toolbar_bg_color, @theme_disabled_bg_color, 0.2); }
     .primary-toolbar button:focus, .primary-toolbar button:hover:focus, .primary-toolbar button:active:focus, .primary-toolbar button:active:hover:focus, .primary-toolbar .raised button:focus, .primary-toolbar .raised button:hover:focus, .primary-toolbar .raised button:active:focus, .primary-toolbar .raised button:active:hover:focus {
       border-color: shade(@theme_selected_bg_color, 0.7); }
     .primary-toolbar button:disabled, .primary-toolbar .raised button:disabled {
@@ -1768,6 +1791,14 @@ toolbar {
         color: @theme_unfocused_fg_color;
         border-color: shade(@theme_unfocused_bg_color, 0.85);
         background-color: shade(@theme_unfocused_bg_color, 0.85); }
+      .inline-toolbar toolbar button:active:disabled, .inline-toolbar toolbar button:checked:disabled {
+        color: mix(@toolbar_fg_color, @theme_unfocused_disabled_fg_color, 0.1);
+        border-color: mix(@toolbar_bg_color, @theme_disabled_bg_color, 0.6);
+        background-color: mix(@toolbar_bg_color, @theme_disabled_bg_color, 0.2); }
+        .inline-toolbar toolbar button:active:disabled:backdrop, .inline-toolbar toolbar button:checked:disabled:backdrop {
+          color: @theme_unfocused_disabled_fg_color;
+          border-color: @unfocused_borders;
+          background-color: mix(@toolbar_bg_color, @theme_disabled_bg_color, 0.2); }
     .inline-toolbar toolbar button:focus, .inline-toolbar toolbar button:hover:focus, .inline-toolbar toolbar button:active:focus, .inline-toolbar toolbar button:active:hover:focus {
       border-color: shade(@theme_selected_bg_color, 0.7); }
     .inline-toolbar toolbar button:disabled {
@@ -1964,7 +1995,7 @@ treeview {
   color: @theme_text_color;
   background-color: @theme_base_color; }
   .view:not(treeview) {
-    border-radius: 0; }
+    border-radius: 0px; }
   .view:disabled {
     color: @theme_disabled_fg_color;
     background-color: @theme_disabled_bg_color; }
@@ -2156,18 +2187,18 @@ button.destructive-action {
     background-color: mix(@error_color, @theme_unfocused_bg_color, 0.3); }
 
 button.suggested-action {
-  box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
+  border-color: shade(@theme_selected_bg_color, 0.6);
+  box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6); }
   button.suggested-action:hover {
-    box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
-  button.suggested-action:backdrop {
-    box-shadow: none; }
+    border-color: shade(@theme_selected_bg_color, 0.6);
+    box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6); }
 
 headerbar button.suggested-action {
-  box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
+  border-color: shade(@theme_selected_bg_color, 0.6);
+  box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6); }
   headerbar button.suggested-action:hover {
-    box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
-  headerbar button.suggested-action:backdrop {
-    box-shadow: none; }
+    border-color: shade(@theme_selected_bg_color, 0.6);
+    box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6); }
 
 toolbar.selection-mode {
   padding: 4px; }
@@ -2201,11 +2232,11 @@ headerbar.selection-mode, toolbar.selection-mode {
       color: mix(@theme_unfocused_selected_bg_color, @theme_unfocused_fg_color, 0.3);
       background-color: mix(@theme_unfocused_selected_bg_color, @theme_unfocused_selected_fg_color, 0.75); }
   headerbar.selection-mode button.suggested-action, toolbar.selection-mode button.suggested-action {
-    box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
+    border-color: shade(@theme_selected_bg_color, 0.6);
+    box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6); }
     headerbar.selection-mode button.suggested-action:hover, toolbar.selection-mode button.suggested-action:hover {
-      box-shadow: inset 0 0 1px 0 shade(@theme_selected_bg_color, 0.6); }
-    headerbar.selection-mode button.suggested-action:backdrop, toolbar.selection-mode button.suggested-action:backdrop {
-      box-shadow: none; }
+      border-color: shade(@theme_selected_bg_color, 0.6);
+      box-shadow: inset 0 0 0 1px shade(@theme_selected_bg_color, 0.6); }
   headerbar.selection-mode .selection-menu button, toolbar.selection-mode .selection-menu button {
     border-style: none;
     background-color: transparent;
@@ -2243,9 +2274,9 @@ messagedialog .background.csd {
   border-radius: 0 0 0px 0px;
   color: @theme_fg_color;
   background-color: @theme_bg_color; }
-  messagedialog .background.csd decoration {
-    border-radius: 0px;
-    box-shadow: 0 1px 2px alpha(@dark_shadow, 0.2); }
+messagedialog decoration {
+  border-radius: 0px;
+  box-shadow: 0 1px 2px alpha(@dark_shadow, 0.2); }
 messagedialog .titlebar.horizontal {
   background-color: @theme_bg_color; }
 messagedialog.csd .dialog-action-area button {
@@ -2386,21 +2417,6 @@ panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-padding: 0;
   -NaTrayApplet-icon-size: 16px; }
 
-.xfce4-panel.panel {
-  background-color: @taskbar_bg_color; }
-  .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
-    color: @taskbar_fg_color;
-    background-color: transparent;
-    border-radius: 0;
-    border: none; }
-    .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
-      border: none;
-      background-color: shade(@taskbar_bg_color, 1.1); }
-    .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.sidebar-button:checked {
-      color: @theme_selected_bg_color;
-      border: none;
-      background-color: shade(@taskbar_bg_color, 0.93); }
-
 .mate-panel-menu-bar {
   color: @taskbar_fg_color;
   background-color: @taskbar_bg_color; }
@@ -2477,6 +2493,21 @@ panel-toplevel.background na-tray-applet {
     background-color: alpha(@selected_bg_color, 0.3); }
   .wnck-pager:hover {
     background-color: alpha(@selected_bg_color, 0.2); }
+
+.xfce4-panel.panel {
+  background-color: @taskbar_bg_color; }
+  .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
+    color: @taskbar_fg_color;
+    background-color: transparent;
+    border-radius: 0;
+    border: none; }
+    .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
+      border: none;
+      background-color: shade(@taskbar_bg_color, 1.1); }
+    .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.sidebar-button:checked {
+      color: @theme_selected_bg_color;
+      border: none;
+      background-color: shade(@taskbar_bg_color, 0.93); }
 
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
