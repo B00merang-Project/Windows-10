@@ -2448,7 +2448,7 @@ panel-toplevel.background na-tray-applet {
   .mate-panel-menu-bar menubar, .mate-panel-menu-bar menubar menuitem, .mate-panel-menu-bar togglebutton {
     border-color: transparent;
     background-color: transparent; }
-  .mate-panel-menu-bar menubar menuitem:hover .mate-panel-menu-bar menubar menuitem:active {
+  .mate-panel-menu-bar menubar menuitem:hover, .mate-panel-menu-bar menubar menuitem:active {
     color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
   .mate-panel-menu-bar .menubar > .menuitem {
