@@ -1,6 +1,8 @@
 * {
   -GtkScrollbar-has-backward-stepper: true;
   -GtkScrollbar-has-forward-stepper: true;
+  -GtkScrollbar-has-secondary-backward-stepper: false;
+  -GtkScrollbar-has-secondary-forward-stepper: false;
   -GtkScrolledwindow-scrollbar-spacing: 0;
   -GtkScrolledwindow-scrollbars-within-bevel: 1;
   -GtkTextView-error-underline-color: @error_color;
@@ -93,8 +95,10 @@ scrollbar {
   scrollbar slider {
     transition: 200ms ease-out; }
 
-decoration, decoration:backdrop {
+decoration {
   transition: 200ms ease-out; }
+  decoration:backdrop {
+    transition: 200ms ease-out; }
 
 assistant .sidebar label.highlight {
   color: @theme_selected_fg_color;
@@ -249,14 +253,6 @@ button.flat {
   button.flat:backdrop {
     color: @theme_unfocused_fg_color; }
 
-row:selected, row:selected:hover, row:selected:focus {
-  border: none;
-  color: @theme_selected_fg_color;
-  background-color: @theme_selected_bg_color; }
-  row:selected switch:checked, row:selected:hover switch:checked, row:selected:focus switch:checked {
-    background: shade(@theme_selected_bg_color, 1.15);
-    border-color: shade(@theme_selected_bg_color, 1.15); }
-
 checkbutton.text-button, radiobutton.text-button {
   padding: 4px;
   outline-offset: 0; }
@@ -407,6 +403,9 @@ radio {
   radio row:selected:indeterminate:disabled:backdrop, radio row:selected:focus:indeterminate:disabled:backdrop {
     -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-unfocused.png"), url("assets/radio-mixed-insensitive-unfocused@2.png")); }
 
+menuitem check, menuitem radio {
+  min-height: 16px;
+  min-width: 16px; }
 menuitem check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png"));
   color: @theme_fg_color;
@@ -528,15 +527,16 @@ list {
       background-color: mix(@theme_bg_color, @theme_fg_color, 0.1); }
     list row:backdrop {
       color: @theme_unfocused_fg_color; }
-    list row:selected {
+    list row:selected, list row:selected:hover, list row:selected:focus {
+      border: none;
       color: @theme_selected_fg_color;
       background-color: @theme_selected_bg_color; }
-      list row:selected:disabled {
-        color: alpha(@theme_selected_fg_color, 0.7);
-        background-color: @theme_selected_bg_color; }
-      list row:selected:backdrop {
-        color: @theme_unfocused_selected_fg_color;
-        background-color: @theme_unfocused_selected_bg_color; }
+    list row:selected:disabled {
+      color: alpha(@theme_selected_fg_color, 0.7);
+      background-color: @theme_selected_bg_color; }
+    list row:selected:backdrop {
+      color: @theme_unfocused_selected_fg_color;
+      background-color: @theme_unfocused_selected_bg_color; }
   list separator, list separator:backdrop {
     background: none; }
 
@@ -857,9 +857,6 @@ menu menuitem, .menu menuitem {
       margin-right: 10px;
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
 
-menuitem check, menuitem radio {
-  min-height: 16px;
-  min-width: 16px; }
 menuitem accelerator {
   color: alpha(currentColor, 0.55); }
   menuitem accelerator:hover {
