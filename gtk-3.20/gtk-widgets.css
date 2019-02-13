@@ -469,7 +469,7 @@ entry {
   border-radius: 0px;
   color: @theme_text_color;
   caret-color: currentColor;
-  background-color: @theme_base_color; }
+  background-color: @theme_bg_color; }
   entry:active, entry:focus {
     border-color: shade(@theme_selected_bg_color, 0.6); }
   entry:selected, entry:selected:focus, entry selection, entry selection:focus {
@@ -487,7 +487,7 @@ entry {
     background-color: mix(@theme_bg_color, @theme_disabled_bg_color, 0.1); }
   entry:backdrop {
     color: @theme_unfocused_fg_color;
-    background-color: @theme_unfocused_base_color; }
+    background-color: @theme_unfocused_bg_color; }
   entry > image.left {
     padding-right: 5px; }
   entry > image.right {

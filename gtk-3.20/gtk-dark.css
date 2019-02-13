@@ -1,8 +1,8 @@
 /* Normal colors */
 @import url("gtk-widgets.css");
-@define-color bg_color #171717;
+@define-color bg_color #191919;
 @define-color fg_color #ffffff;
-@define-color base_color #000000;
+@define-color base_color #202020;
 @define-color text_color #ffffff;
 @define-color selected_bg_color #004D8C;
 @define-color selected_fg_color #ffffff;
@@ -22,7 +22,7 @@
 @define-color unfocused_disabled_base_color @unfocused_disabled_bg_color;
 @define-color unfocused_disabled_text_color @unfocused_disabled_fg_color;
 /* Darker color scheme */
-@define-color dark_bg_color #1F1F1F;
+@define-color dark_bg_color #191919;
 @define-color dark_fg_color #ffffff;
 /* Theme colors */
 @define-color theme_bg_color @bg_color;
