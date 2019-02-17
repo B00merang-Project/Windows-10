@@ -619,8 +619,8 @@ entry {
   entry:active, entry:focus {
     border-color: shade(@theme_selected_bg_color, 0.6); }
   entry:selected, entry:selected:focus, entry selection, entry selection:focus {
-    color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color; }
+    color: @theme_selected_text_color;
+    background-color: @theme_selected_base_color; }
   entry:disabled {
     color: @theme_disabled_text_color;
     border-color: mix(@theme_bg_color, @theme_disabled_bg_color, 0.6);
@@ -1684,14 +1684,14 @@ switch {
   background-color: transparent;
   min-width: 42px; }
   switch:checked {
-    border-color: shade(@theme_selected_bg_color, 0.6);
-    background-color: shade(@theme_selected_bg_color, 0.6);
+    border-color: @theme_selected_base_color;
+    background-color: @theme_selected_base_color;
     box-shadow: none; }
     switch:checked:disabled {
-      border-color: mix(@theme_selected_bg_color, @theme_disabled_bg_color, 0.4); }
+      border-color: mix(@theme_selected_base_color, @theme_disabled_bg_color, 0.4); }
     switch:checked:backdrop {
-      border-color: shade(@theme_unfocused_selected_bg_color, 0.6);
-      background-color: shade(@theme_unfocused_selected_bg_color, 0.6); }
+      border-color: shade(@theme_selected_base_color, 0.9);
+      background-color: shade(@theme_selected_base_color, 0.9); }
   switch:disabled {
     border-color: @theme_disabled_fg_color; }
     switch:disabled:backdrop {

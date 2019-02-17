@@ -4,8 +4,10 @@
 @define-color fg_color #ffffff;
 @define-color base_color #202020;
 @define-color text_color #ffffff;
-@define-color selected_bg_color #004D8C;
+@define-color selected_bg_color #4d4d4d;
 @define-color selected_fg_color #ffffff;
+@define-color selected_base_color #0078d7;
+@define-color selected_text_color #ffffff;
 @define-color disabled_bg_color mix(@fg_color, @bg_color, 0.95);
 @define-color disabled_fg_color mix(@fg_color, @bg_color, 0.5);
 @define-color disabled_base_color @disabled_bg_color;
@@ -31,6 +33,8 @@
 @define-color theme_text_color @text_color;
 @define-color theme_selected_bg_color @selected_bg_color;
 @define-color theme_selected_fg_color @selected_fg_color;
+@define-color theme_selected_base_color @selected_base_color;
+@define-color theme_selected_text_color @selected_text_color;
 @define-color theme_disabled_bg_color @disabled_bg_color;
 @define-color theme_disabled_fg_color @disabled_fg_color;
 @define-color theme_disabled_text_color @disabled_text_color;
