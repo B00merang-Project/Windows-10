@@ -55,8 +55,8 @@ image:disabled {
   color: alpha(currentColor, 0.5); }
 
 label selection {
-  background-color: @theme_selected_bg_color;
-  color: @theme_selected_fg_color; }
+  background-color: @theme_selected_base_color;
+  color: @theme_selected_text_color; }
 label.separator {
   color: @borders; }
   label.separator:backdrop {
@@ -1088,9 +1088,13 @@ notebook {
     border-color: @borders;
     color: @theme_fg_color;
     background-color: @theme_bg_color; }
+    notebook tab:hover {
+      background-color: @theme_selected_bg_color; }
     notebook tab:checked {
       border-color: @borders;
       background-color: @theme_base_color; }
+      notebook tab:checked:hover {
+        background-color: @theme_base_color; }
       notebook tab:checked:backdrop {
         border-color: @unfocused_borders;
         background-color: @theme_unfocused_base_color; }
@@ -1727,8 +1731,8 @@ textview {
   color: @theme_text_color;
   background-color: @theme_base_color; }
   textview text:selected, textview text selection, textview text:selected:focus, textview text selection:focus {
-    color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color; }
+    color: @theme_selected_text_color;
+    background-color: @theme_selected_base_color; }
 
 colorswatch.top {
   border-top-left-radius: 2.5px;
@@ -2162,13 +2166,22 @@ treeview {
   .view:disabled {
     color: @theme_disabled_fg_color;
     background-color: @theme_disabled_bg_color; }
-  .view:selected, .view:selected:focus, .view text:selected, .view text:selected:focus, .view text selection, .view text selection:focus {
+  .view:selected, .view:selected:focus, .view text:selected, .view text:selected:focus {
     color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
-    .view:selected:disabled, .view:selected:focus:disabled, .view text:selected:disabled, .view text:selected:focus:disabled, .view text selection:disabled, .view text selection:focus:disabled {
+    .view:selected:disabled, .view:selected:focus:disabled, .view text:selected:disabled, .view text:selected:focus:disabled {
       color: mix(@theme_selected_fg_color, @theme_disabled_fg_color, 0.5);
       background-color: @theme_selected_bg_color; }
-    .view:selected:backdrop, .view:selected:focus:backdrop, .view text:selected:backdrop, .view text:selected:focus:backdrop, .view text selection:backdrop, .view text selection:focus:backdrop {
+    .view:selected:backdrop, .view:selected:focus:backdrop, .view text:selected:backdrop, .view text:selected:focus:backdrop {
+      color: @theme_unfocused_selected_fg_color;
+      background-color: @theme_unfocused_selected_bg_color; }
+  .view text selection, .view text selection:focus {
+    color: @theme_selected_text_color;
+    background-color: @theme_selected_base_color; }
+    .view text selection:disabled, .view text selection:focus:disabled {
+      color: mix(@theme_selected_fg_color, @theme_disabled_fg_color, 0.5);
+      background-color: @theme_selected_bg_color; }
+    .view text selection:backdrop, .view text selection:focus:backdrop {
       color: @theme_unfocused_selected_fg_color;
       background-color: @theme_unfocused_selected_bg_color; }
 
