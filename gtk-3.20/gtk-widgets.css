@@ -251,6 +251,8 @@ button.flat {
       color: alpha(@theme_fg_color, 0.7);
       background-color: transparent; }
   button.flat:backdrop {
+    border-color: transparent;
+    background-color: transparent;
     color: @theme_unfocused_fg_color; }
 
 check, radio {
@@ -1869,6 +1871,8 @@ toolbar {
         color: alpha(@toolbar_fg_color, 0.7);
         background-color: transparent; }
     toolbar button.flat:backdrop {
+      border-color: transparent;
+      background-color: transparent;
       color: @theme_unfocused_fg_color; }
   toolbar menubar {
     -GtkToolbar-button-relief: normal; }
