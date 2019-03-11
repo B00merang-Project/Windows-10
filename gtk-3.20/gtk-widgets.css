@@ -603,11 +603,11 @@ calendar {
   calendar:selected {
     border-radius: 0;
     color: @theme_selected_fg_color;
-    background-color: @theme_selected_bg_color; }
+    background-color: @theme_selected_base_color; }
   calendar:indeterminate {
     color: alpha(currentColor, 0.55); }
   calendar.highlight {
-    color: @theme_selected_bg_color; }
+    color: @theme_selected_base_color; }
 
 entry {
   padding: 4px 3px;
@@ -2160,7 +2160,7 @@ treeview {
       background-color: @theme_bg_color; }
     treeview header button:hover, treeview header button:active:hover, treeview header button:hover:focus, treeview header button:active:hover:focus {
       color: @theme_selected_fg_color;
-      background-color: @theme_selected_bg_color; }
+      background-color: @theme_selected_base_color; }
   treeview header:last-child button {
     border-width: 0 0 1px 0; }
 
