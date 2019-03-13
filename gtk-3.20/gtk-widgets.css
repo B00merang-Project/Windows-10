@@ -1154,7 +1154,7 @@ notebook {
         notebook > header.left > tabs > tab:checked {
           border-top-left-radius: 0px;
           border-bottom-left-radius: 0px;
-          margin: 0;
+          margin-left: 0;
           margin-right: -1px; }
   notebook > header.top > tabs > arrow.up, notebook > header.bottom > tabs > arrow.up {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
