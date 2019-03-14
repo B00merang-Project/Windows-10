@@ -1127,6 +1127,7 @@ notebook {
           margin-top: 0;
           margin-bottom: -1px; }
     notebook > header.bottom {
+      padding-top: 0;
       box-shadow: 0 -1px @borders; }
       notebook > header.bottom > tabs > tab {
         border-top: none;
@@ -2546,7 +2547,7 @@ messagedialog.csd .dialog-action-area button {
     border-radius: 0; }
 
 .titlebar, .titlebar:not(headerbar), headerbar.default-decoration, .csd headerbar.default-decoration, .default-decoration.titlebar:not(headerbar), .csd .default-decoration.titlebar:not(headerbar) {
-  min-height: 28px;
+  min-height: 30px;
   color: @titlebar_fg_color;
   background-color: @titlebar_bg_color; }
   .titlebar:backdrop, .titlebar:not(headerbar):backdrop, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar):backdrop, .csd .default-decoration.titlebar:not(headerbar):backdrop {
