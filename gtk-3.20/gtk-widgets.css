@@ -2556,7 +2556,7 @@ messagedialog.csd .dialog-action-area button {
     border-radius: 0; }
 
 .titlebar, .titlebar:not(headerbar), headerbar.default-decoration, .csd headerbar.default-decoration, .default-decoration.titlebar:not(headerbar), .csd .default-decoration.titlebar:not(headerbar) {
-  min-height: 30px;
+  min-height: 32px;
   color: @titlebar_fg_color;
   background-color: @titlebar_bg_color;
   box-shadow: 0 1px @borders; }
