@@ -1057,9 +1057,9 @@ modelbutton.flat, menuitem.button.flat, .menuitem.button.flat {
     background-color: @theme_selected_bg_color; }
   modelbutton.flat > image, menuitem.button.flat > image, .menuitem.button.flat > image {
     padding-right: 4px; }
-  modelbutton.flat.flat arrow.left, menuitem.button.flat.flat arrow.left, .menuitem.button.flat.flat arrow.left {
+  modelbutton.flat arrow.left, menuitem.button.flat arrow.left, .menuitem.button.flat arrow.left {
     -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
-  modelbutton.flat.flat arrow.right, menuitem.button.flat.flat arrow.right, .menuitem.button.flat.flat arrow.right {
+  modelbutton.flat arrow.right, menuitem.button.flat arrow.right, .menuitem.button.flat arrow.right {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
 notebook {
