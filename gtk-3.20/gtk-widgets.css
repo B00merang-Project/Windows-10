@@ -1434,7 +1434,7 @@ scrollbar {
     border-radius: 0; }
   scrollbar:backdrop {
     background-color: shade(@theme_bg_color, 0.9); }
-  scrollbar button, scrollbar button:hover, scrollbar button:active, scrollbar button:disabled {
+  scrollbar button, scrollbar button:backdrop, scrollbar button:hover, scrollbar button:hover:backdrop, scrollbar button:active, scrollbar button:active:backdrop, scrollbar button:disabled, scrollbar button:disabled:backdrop {
     padding: 3px;
     border-color: shade(@theme_bg_color, 0.9);
     background-color: shade(@theme_bg_color, 0.9); }
@@ -2488,71 +2488,82 @@ messagedialog.csd .dialog-action-area button {
     padding-right: 12px;
     color: alpha(currentColor, 0.7); }
   .titlebar .titlebutton.close, .titlebar .titlebutton.maximize, .titlebar .titlebutton.minimize, .titlebar .titlebutton:not(separator) {
-    padding: 7px 12px;
+    padding: 7px 14px;
     border: none;
     color: transparent;
     background-color: transparent;
     -gtk-icon-shadow: none;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat; }
+    .titlebar .titlebutton.close:hover, .titlebar .titlebutton.maximize:hover, .titlebar .titlebutton.minimize:hover, .titlebar .titlebutton:not(separator):hover {
+      background-color: alpha(@theme_fg_color, 0.15); }
+    .titlebar .titlebutton.close:active, .titlebar .titlebutton.maximize:active, .titlebar .titlebutton.minimize:active, .titlebar .titlebutton:not(separator):active {
+      background-color: alpha(@theme_fg_color, 0.3); }
   .titlebar .titlebutton.close {
-    background: url("assets/close-normal.png") 100% 100%; }
+    background-image: url("assets/close-focused.png"); }
     .titlebar .titlebutton.close:hover {
-      background: url("assets/close-hover.png") 100% 100%; }
+      background-color: #ff5252;
+      background-image: url("assets/close-focused-active.png"); }
     .titlebar .titlebutton.close:active {
-      background: url("assets/close-active.png") 100% 100%; }
+      background-color: #ff0000;
+      background-image: url("assets/close-focused-active.png"); }
     .titlebar .titlebutton.close:backdrop {
-      background: url("assets/close-backdrop.png") 100% 100%; }
+      background-image: url("assets/close-unfocused.png"); }
       .titlebar .titlebutton.close:backdrop:hover {
-        background: url("assets/close-hover.png") 100% 100%; }
+        background-color: #ff5252;
+        background-image: url("assets/close-focused-active.png"); }
       .titlebar .titlebutton.close:backdrop:active {
-        background: url("assets/close-active.png") 100% 100%; }
+        background-color: #ff0000;
+        background-image: url("assets/close-focused-active.png"); }
   .titlebar .titlebutton.minimize {
-    background: url("assets/minimize-normal.png") 100% 100%; }
+    background-image: url("assets/minimize-focused.png"); }
     .titlebar .titlebutton.minimize:hover {
-      background: url("assets/minimize-hover.png") 100% 100%; }
+      background-image: url("assets/minimize-focused.png"); }
     .titlebar .titlebutton.minimize:active {
-      background: url("assets/minimize-active.png") 100% 100%; }
+      background-image: url("assets/minimize-focused.png"); }
     .titlebar .titlebutton.minimize:backdrop {
-      background: url("assets/minimize-backdrop.png") 100% 100%; }
+      background-image: url("assets/minimize-unfocused.png"); }
       .titlebar .titlebutton.minimize:backdrop:hover {
-        background: url("assets/minimize-hover.png") 100% 100%; }
+        background-image: url("assets/minimize-focused.png"); }
       .titlebar .titlebutton.minimize:backdrop:active {
-        background: url("assets/minimize-active.png") 100% 100%; }
+        background-image: url("assets/minimize-focused.png"); }
   .titlebar .titlebutton.maximize {
-    background: url("assets/maximize-normal.png") 100% 100%; }
+    background-image: url("assets/maximize-focused.png"); }
     .titlebar .titlebutton.maximize:hover {
-      background: url("assets/maximize-hover.png") 100% 100%; }
+      background-image: url("assets/maximize-focused.png"); }
     .titlebar .titlebutton.maximize:active {
-      background: url("assets/maximize-active.png") 100% 100%; }
+      background-image: url("assets/maximize-focused.png"); }
     .titlebar .titlebutton.maximize:backdrop {
-      background: url("assets/maximize-backdrop.png") 100% 100%; }
+      background-image: url("assets/maximize-unfocused.png"); }
       .titlebar .titlebutton.maximize:backdrop:hover {
-        background: url("assets/maximize-hover.png") 100% 100%; }
+        background-image: url("assets/maximize-focused.png"); }
       .titlebar .titlebutton.maximize:backdrop:active {
-        background: url("assets/maximize-active.png") 100% 100%; }
+        background-image: url("assets/maximize-focused.png"); }
   .maximized .titlebar .titlebutton.maximize {
-    background: url("assets/restore-normal.png") 100% 100%; }
+    background-image: url("assets/restore-focused.png"); }
     .maximized .titlebar .titlebutton.maximize:hover {
-      background: url("assets/restore-hover.png") 100% 100%; }
+      background-image: url("assets/restore-focused.png"); }
     .maximized .titlebar .titlebutton.maximize:active {
-      background: url("assets/restore-active.png") 100% 100%; }
+      background-image: url("assets/restore-focused.png"); }
     .maximized .titlebar .titlebutton.maximize:backdrop {
-      background: url("assets/restore-backdrop.png") 100% 100%; }
+      background-image: url("assets/restore-unfocused.png"); }
       .maximized .titlebar .titlebutton.maximize:backdrop:hover {
-        background: url("assets/restore-hover.png") 100% 100%; }
+        background-image: url("assets/restore-focused.png"); }
       .maximized .titlebar .titlebutton.maximize:backdrop:active {
-        background: url("assets/restore-active.png") 100% 100%; }
+        background-image: url("assets/restore-focused.png"); }
   .tiled .titlebar:not(headerbar), .tiled .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar) {
     border-radius: 0; }
 
 .titlebar, .titlebar:not(headerbar), headerbar.default-decoration, .csd headerbar.default-decoration, .default-decoration.titlebar:not(headerbar), .csd .default-decoration.titlebar:not(headerbar) {
   min-height: 30px;
   color: @titlebar_fg_color;
-  background-color: @titlebar_bg_color; }
+  background-color: @titlebar_bg_color;
+  box-shadow: 0 1px @borders; }
   .titlebar:backdrop, .titlebar:not(headerbar):backdrop, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar):backdrop, .csd .default-decoration.titlebar:not(headerbar):backdrop {
     background-color: @theme_unfocused_bg_color;
-    color: @theme_unfocused_fg_color; }
+    color: @theme_unfocused_fg_color;
+    box-shadow: 0 1px @unfocused_borders; }
 
 .caja-desktop, .nemo-desktop.nemo-canvas-item, .nautilus-desktop.nautilus-canvas-item {
   color: @desktop_item_fg;
