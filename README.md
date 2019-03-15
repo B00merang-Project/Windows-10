@@ -12,6 +12,8 @@ GTK theme based on the appearance of Win32 apps on the Windows 10 platform using
 
 **License :** GPL v3
 
+**More info :** http://b00merang.weebly.com/windows-10.html
+
 For the moment, this theme works with the following Desktop environments : 
 - Cinnamon 3.x and 4.x (beta)
 - GNOME-SHELL 3.14 and higher
