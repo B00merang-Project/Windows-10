@@ -1263,9 +1263,9 @@ progressbar {
   progressbar trough {
     border: 1px solid shade(@borders, 0.85);
     border-radius: 0px;
-    background-color: alpha(@dark_shadow, 0.1); }
+    background-color: alpha(@theme_fg_color, 0.1); }
     progressbar trough:backdrop {
-      background-color: shade(@theme_unfocused_bg_color, 0.95); }
+      background-color: mix(@theme_unfocused_bg_color, @theme_unfocused_fg_color, 0.05); }
   progressbar.horizontal trough, progressbar.horizontal progress {
     min-height: 14px; }
   progressbar.vertical trough, progressbar.vertical progress {
@@ -1281,16 +1281,16 @@ treeview.view.progressbar:focus, treeview.view.progressbar:selected:focus, treev
   background-color: @progressbar_bg_color; }
 treeview.view.trough {
   color: @theme_fg_color;
-  background-color: alpha(@dark_shadow, 0.1);
+  background-color: alpha(@theme_fg_color, 0.1);
   border-radius: 0;
   border: none; }
   treeview.view.trough:selected, treeview.view.trough:selected:focus {
     color: @theme_selected_fg_color;
-    background-color: alpha(@dark_shadow, 0.1);
+    background-color: alpha(@theme_fg_color, 0.1);
     border-radius: 0;
     border: none; }
 infobar treeview.view trough, row:selected treeview.view trough {
-  background-color: alpha(@dark_shadow, 0.1); }
+  background-color: alpha(@theme_fg_color, 0.1); }
 
 levelbar trough {
   padding: 1px;
@@ -1318,15 +1318,15 @@ scale {
   scale fill, scale trough {
     border: 1px solid @borders;
     border-radius: 0;
-    background-color: alpha(@dark_shadow, 0.1);
+    background-color: alpha(@theme_fg_color, 0.1);
     outline-offset: 2px;
     -gtk-outline-radius: 0; }
     scale fill:disabled, scale trough:disabled {
-      background-color: alpha(@dark_shadow, 0.05); }
+      background-color: alpha(@theme_fg_color, 0.05); }
       scale fill:disabled:backdrop, scale trough:disabled:backdrop {
-        background-color: alpha(@dark_shadow, 0.05); }
+        background-color: alpha(@theme_fg_color, 0.05); }
     scale fill:backdrop, scale trough:backdrop {
-      background-color: alpha(@dark_shadow, 0.1); }
+      background-color: alpha(@theme_fg_color, 0.1); }
   scale highlight {
     border: none;
     border-radius: 4px;
