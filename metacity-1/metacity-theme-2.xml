@@ -144,7 +144,11 @@
 </draw_ops>
 
 <draw_ops name="titlebar_max">
+  <rectangle color="C_wm_bg_focused" x="0" y="0" width="width" height="height" filled="true" />
+</draw_ops>
 
+<draw_ops name="titlebar_max_unfocused">
+	<rectangle color="C_wm_bg_unfocused" x="0" y="0" width="width" height="height" filled="true" />
 </draw_ops>
 
 <draw_ops name="titlebar_small_focused">
@@ -549,7 +553,7 @@
 
 <frame_style name="normal_max_unfocused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="titlebar" draw_ops="titlebar_max" />
+	<piece position="titlebar" draw_ops="titlebar_max_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
@@ -617,7 +621,7 @@
 
 <frame_style name="normal_max_shaded_unfocused" geometry="max">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="titlebar" draw_ops="titlebar_max" />
+	<piece position="titlebar" draw_ops="titlebar_max_unfocused" />
 	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal" draw_ops="close_unfocused"/>
 	<button function="close" state="prelight" draw_ops="close_unfocused_prelight"/>
