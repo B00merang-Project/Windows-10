@@ -27,7 +27,7 @@ style "panel_task_button" = "dark"
 			function        	= BOX
 			recolorable     	= TRUE
 			state			= NORMAL
-			file            	= "Panel/panel-button-inactive.png"
+			file            	= "assets/panel-button-inactive.png"
 			border          	= { 4, 4, 4, 4 }
 			stretch         	= TRUE			
 		}
@@ -37,7 +37,7 @@ style "panel_task_button" = "dark"
 			function        	= BOX
 			recolorable     	= TRUE
 			state			= PRELIGHT
-			file            	= "Panel/panel-button-hover.png"
+			file            	= "assets/panel-button-hover.png"
 			border          	= { 4, 4, 4, 4 }
 			stretch         	= TRUE
 		}
@@ -48,7 +48,7 @@ style "panel_task_button" = "dark"
 			recolorable     	= TRUE
 			shadow			= OUT
 			state			= PRELIGHT
-			file            	= "Panel/panel-button-hover.png"
+			file            	= "assets/panel-button-hover.png"
 			border          	= { 4, 4, 4, 4 }
 			stretch         	= TRUE
 			
@@ -60,7 +60,7 @@ style "panel_task_button" = "dark"
 			recolorable     	= TRUE
 			shadow			= IN
 			state			= PRELIGHT
-			file            	= "Panel/panel-button-hover.png"
+			file            	= "assets/panel-button-hover.png"
 			border          	= { 4, 4, 4, 4 }
 			stretch         	= TRUE
 			 
@@ -71,7 +71,7 @@ style "panel_task_button" = "dark"
 			function        	= BOX
 			recolorable     	= TRUE
 			state			= ACTIVE
-			file            	= "Panel/panel-button-active.png"
+			file            	= "assets/panel-button-active.png"
 			border          	= { 4, 4, 4, 4 }
 			stretch         	= TRUE
 		}  
@@ -80,7 +80,7 @@ style "panel_task_button" = "dark"
 			function        	= BOX
 			recolorable     	= TRUE
 			state			= INSENSITIVE
-			file            	= "Panel/panel-button-inactive.png"
+			file            	= "assets/panel-button-inactive.png"
 			border          	= { 4, 4, 4, 4 }
 			stretch         	 = TRUE
 		}
@@ -92,7 +92,7 @@ style "XFCE"
 	xthickness = 3
 	ythickness = 3
 
-	bg_pixmap[NORMAL]	= "Panel/panel.png"
+	bg_pixmap[NORMAL]	= "assets/panel.png"
 }
 
 #widget_class "*?anel*utton"      style "panel_task_button" # causing problems to monodevelop
@@ -100,4 +100,4 @@ widget "*task*"                   style "panel_task_button"
 widget "*.tasklist-button"        style "panel_task_button"
 widget "*PanelApplet*TaskTitle*"  style "panel_task_button"
 widget_class "*Xfce*Panel*"	  style "XFCE"
-class "GtkScrollbar"		  style "murrine-scrollbar"
+class "GtkScrollbar"		  style "scrollbar"
