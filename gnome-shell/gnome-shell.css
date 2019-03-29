@@ -890,8 +890,8 @@ StScrollBar {
 }
 
 .system-switch-user-submenu-icon {
-	/*icon-size: 48px;*/
-	border: none; }
+	icon-size: 16px;
+  	padding: 0 4px; }
 
 #appMenu {
 	spinner-image: none /*url("assets/process-working.svg")*/;
