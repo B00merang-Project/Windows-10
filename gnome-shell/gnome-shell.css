@@ -111,15 +111,15 @@ StScrollBar {
 .slider {
 	height: 1.09em;
 	-barlevel-height: 0.3em;
-  -barlevel-background-color: white;
-  -barlevel-border-color: #adadad;
-  -barlevel-active-background-color: #c6c6c6;
-  -barlevel-active-border-color: #c6c6c6;
-  -barlevel-overdrive-color: #b2161d;
-  -barlevel-overdrive-border-color: #851015;
-  -barlevel-overdrive-separator-width: 0.2em;
-  -barlevel-border-width: 0px;
-  -slider-handle-radius: 6px; }
+	-barlevel-background-color: white;
+	-barlevel-border-color: #adadad;
+	-barlevel-active-background-color: #c6c6c6;
+	-barlevel-active-border-color: #c6c6c6;
+	-barlevel-overdrive-color: #b2161d;
+	-barlevel-overdrive-border-color: #851015;
+	-barlevel-overdrive-separator-width: 0.2em;
+	-barlevel-border-width: 0px;
+	-slider-handle-radius: 6px; }
 
 /* Check Boxes */
 .check-box StBoxLayout {
@@ -477,15 +477,15 @@ StScrollBar {
 
 /* OSD */
 .osd-window {
-  text-align: center;
-  font-weight: bold;
-  spacing: 1em;
-  margin: 32px;
-  min-width: 64px;
-  min-height: 64px; }
-  .osd-window .osd-monitor-label {
+	text-align: center;
+	font-weight: bold;
+	spacing: 1em;
+	margin: 32px;
+	min-width: 64px;
+	min-height: 64px; }
+.osd-window .osd-monitor-label {
     font-size: 3em; }
-  .osd-window .level {
+.osd-window .level {
     height: 0.6em;
     -barlevel-height: 0.6em;
     -barlevel-background-color: rgba(0, 0, 0, 1);
