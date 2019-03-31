@@ -110,12 +110,15 @@ StScrollBar {
 /* Slider */
 .slider {
 	height: 1.09em;
-	-slider-height: 3px;
-	-slider-background-color: white;
-	-slider-border-color: #adadad;
-	-slider-active-background-color:#c6c6c6;
-	-slider-active-border-color:#c6c6c6;
-	-slider-border-width: 0px;
+	-barlevel-height: 0.3em;
+	-barlevel-background-color: white;
+	-barlevel-border-color: #adadad;
+	-barlevel-active-background-color: #c6c6c6;
+	-barlevel-active-border-color: #c6c6c6;
+	-barlevel-overdrive-color: #b2161d;
+	-barlevel-overdrive-border-color: #851015;
+	-barlevel-overdrive-separator-width: 0.2em;
+	-barlevel-border-width: 0px;
 	-slider-handle-radius: 6px; }
 
 /* Check Boxes */
@@ -480,14 +483,16 @@ StScrollBar {
 	margin: 32px;
 	min-width: 64px;
 	min-height: 64px; }
-	.osd-window .osd-monitor-label {
-		font-size: 3em; }
-	.osd-window .level {
-		height: 0.6em;
-		border-radius: 0.3em;
-		background-color: rgba(0, 0, 0, 1);
-		color: white; }
-
+.osd-window .osd-monitor-label {
+    font-size: 3em; }
+.osd-window .level {
+    height: 0.6em;
+    -barlevel-height: 0.6em;
+    -barlevel-background-color: rgba(0, 0, 0, 1);
+    -barlevel-active-background-color: #eeeeec;
+    -barlevel-overdrive-color: #b2161d;
+    -barlevel-overdrive-separator-width: 0.2em; }
+    
 /* App Switcher (alt-tab) */
 .switcher-popup {
 	padding: 8px;
@@ -885,8 +890,8 @@ StScrollBar {
 }
 
 .system-switch-user-submenu-icon {
-	/*icon-size: 48px;*/
-	border: none; }
+	icon-size: 16px;
+  	padding: 0 4px; }
 
 #appMenu {
 	spinner-image: none /*url("assets/process-working.svg")*/;
