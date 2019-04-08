@@ -1193,27 +1193,42 @@ paned > separator {
 paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
   border-style: none; }
 
-/* not implemented in windows 10 */
 overshoot.top {
+  background-image: -gtk-gradient(radial, center top, 0.55, center top, 0.6, from(alpha(@color_shadow, 0.2)), to(transparent));
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center top;
   background-color: transparent;
   border: none;
   box-shadow: none; }
 overshoot.bottom {
+  background-image: -gtk-gradient(radial, center bottom, 0.55, center bottom, 0.6, from(alpha(@color_shadow, 0.2)), to(transparent));
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
   background-color: transparent;
   border: none;
   box-shadow: none; }
 overshoot.left {
+  background-image: -gtk-gradient(radial, left center, 0.55, left center, 0.6, from(alpha(@color_shadow, 0.2)), to(transparent));
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: left center;
   background-color: transparent;
   border: none;
   box-shadow: none; }
 overshoot.right {
+  background-image: -gtk-gradient(radial, right center, 0.55, right center, 0.6, from(alpha(@color_shadow, 0.2)), to(transparent));
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
   background-color: transparent;
   border: none;
   box-shadow: none; }
 
-/* not implemented in windows 10 */
 undershoot.top {
   background-color: transparent;
+  background-image: linear-gradient(to left, alpha(@light_shadow, 0.2) 50%, alpha(@dark_shadow, 0.2) 50%);
   padding-top: 1px;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -1221,6 +1236,7 @@ undershoot.top {
   background-position: center top; }
 undershoot.bottom {
   background-color: transparent;
+  background-image: linear-gradient(to left, alpha(@light_shadow, 0.2) 50%, alpha(@dark_shadow, 0.2) 50%);
   padding-bottom: 1px;
   background-size: 10px 1px;
   background-repeat: repeat-x;
@@ -1228,6 +1244,7 @@ undershoot.bottom {
   background-position: center bottom; }
 undershoot.left {
   background-color: transparent;
+  background-image: linear-gradient(to top, alpha(@light_shadow, 0.2) 50%, alpha(@dark_shadow, 0.2) 50%);
   padding-left: 1px;
   background-size: 1px 10px;
   background-repeat: repeat-y;
@@ -1235,6 +1252,7 @@ undershoot.left {
   background-position: left center; }
 undershoot.right {
   background-color: transparent;
+  background-image: linear-gradient(to top, alpha(@light_shadow, 0.2) 50%, alpha(@dark_shadow, 0.2) 50%);
   padding-right: 1px;
   background-size: 1px 10px;
   background-repeat: repeat-y;
