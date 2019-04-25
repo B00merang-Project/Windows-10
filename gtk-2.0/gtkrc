@@ -191,9 +191,9 @@ style "dark" {
 	GtkMenuBar	:: shadow-type		= GTK_SHADOW_NONE
 
 	bg[NORMAL]	= @bg_color_dark
-	bg[ACTIVE]	= shade (0.7, @bg_color_dark)
-	bg[PRELIGHT]	= shade (0.7, @bg_color_dark)
-	bg[SELECTED]	= shade (0.6, @bg_color_dark)
+	bg[ACTIVE]	= mix (0.7, @text_color_dark, @bg_color_dark)
+	bg[PRELIGHT]	= mix (0.7, @text_color_dark, @bg_color_dark)
+	bg[SELECTED]	= mix (0.6, @text_color_dark, @bg_color_dark)
 
 	fg[NORMAL]	= @text_color_dark
 	fg[PRELIGHT]	= @text_color_dark
@@ -1050,7 +1050,7 @@ style "xfwm-tabwin"
 	bg[NORMAL]	= shade (0.35, @bg_color_dark)
 	bg[ACTIVE]	= shade (0.65, @selected_bg_color)
 	bg[PRELIGHT]	= shade (0.85, @selected_bg_color)
-	bg[SELECTED]	= shade (0.45, @bg_color_dark)
+	bg[SELECTED]	= shade (0.45, @selected_bg_color)
 
 	fg[NORMAL]	= shade (0.8, @base_color)
 	fg[ACTIVE]	= @base_color
@@ -1061,10 +1061,10 @@ style "xfwm-tabwin"
 		contrast            = 0.4
 		highlight_shade     = 1.00
 		lightborder_shade   = 1.0
-		gradient_shades     = {0.9,1.2,1.2,1.4}
-		border_shades       = { 3.5, 3.5 }
+		gradient_shades     = {1.0, 1.0, 1.0, 1.0}
+		border_shades       = { 1.0, 1.0 }
 		reliefstyle         = 0
-		shadow_shades	    = { 1.3, 1.7 }
+		shadow_shades	    = { 1.0, 1.0 }
 		textstyle = 1
 		text_shade = 0.25
 	}
@@ -1090,8 +1090,8 @@ style "xfdesktop-icon-view"
 	XfdesktopIconView::cell-padding = 6
 	XfdesktopIconView::cell-text-width-proportion = 1.9
 
-	fg[NORMAL] = @selected_fg_color
-	fg[ACTIVE] = @selected_fg_color
+	fg[NORMAL] = @text_color_dark
+	fg[ACTIVE] = @text_color_dark
 }
 
 style "xfsm-logout"

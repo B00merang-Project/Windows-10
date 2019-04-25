@@ -1,103 +1,226 @@
-# ===========================================================================================================================
-# GNOME,XFCE,LXDE & GTK Desktop(S) PANEL SPECIFIC SETTINGS *SPECIFIC SETTINGS TO ENABLE PROPER FUNCTION ON XFCE/LXDE*
-# ===========================================================================================================================
+style "theme-panel" {
 
-style "panel_task_button" = "dark"
-{
-	xthickness = 3
-	ythickness = 3
+  xthickness = 2
+  ythickness = 0
 
-	GtkWidget::focus-line-width        = 0
-	GtkWidget::focus_padding           = 0
-	GtkWidget::interior_focus          = 0
-	GtkWidget::internal_padding        = 0
+  bg[NORMAL] = @panel_bg
+  bg[ACTIVE] = @selected_bg_color
+  bg[PRELIGHT] = shade(1.2, @panel_bg)
+  bg[SELECTED] = @selected_bg_color
 
-	GtkButton::child_displacement_x    = 0
-	GtkButton::child_displacement_y    = 0
-	GtkButton::default_border          = {0, 0, 0, 0}
-	GtkButton::default_outside_border  = {0, 0, 0, 0}
-	GtkButtonBox::child_internal_pad_x = 0
-	GtkButtonBox::child_internal_pad_y = 0
-	GtkButtonBox::child_min_heigth     = 0
+  fg[NORMAL] = @text_color_dark
+  fg[PRELIGHT] = @text_color_dark
+  fg[ACTIVE] = @text_color_dark
+  fg[SELECTED] = @text_color_dark
 
-	engine "pixmap" {
+  text[NORMAL] = @text_color_dark
+  text[PRELIGHT] = @text_color_dark
+  text[ACTIVE] = @text_color_dark
+  text[SELECTED] = @text_color_dark
+
+  engine "murrine" {
+    reliefstyle = 0
+    glazestyle = 0
+    glow_shade = 1.0
+    highlight_shade = 1.0
+    roundness = 0
+    gradient_shades = {1.0,1.0,1.0,1.0}
+    textstyle = 0
+    contrast = 0.0
+  }
+}
+
+style "theme-panel-progressbar" {
+  bg[ACTIVE] = @selected_bg_color
+}
+
+style "panelbar" {
+
+  fg[NORMAL] = shade(1.5, @selected_bg_color)
+  fg[ACTIVE] = shade(1.5, @selected_bg_color)
+  fg[PRELIGHT] = shade(1.5, @selected_bg_color)
+  fg[SELECTED] = @selected_fg_color
+
+  bg[SELECTED] = @selected_bg_color
+
+  engine "murrine" {}
+}
+
+style "panelbuttons" {
+
+  xthickness = 4
+  ythickness = 0
+
+  engine "murrine" {
+    textstyle = 0
+  }
+
+  engine "pixmap" {
       
-		image
-		{
-			function        	= BOX
-			recolorable     	= TRUE
-			state			= NORMAL
-			file            	= "assets/panel-button-inactive.png"
-			border          	= { 4, 4, 4, 4 }
-			stretch         	= TRUE			
-		}
-		
-		image
-		{
-			function        	= BOX
-			recolorable     	= TRUE
-			state			= PRELIGHT
-			file            	= "assets/panel-button-hover.png"
-			border          	= { 4, 4, 4, 4 }
-			stretch         	= TRUE
-		}
+    image
+    {
+      function          = BOX
+      recolorable       = TRUE
+      state             = NORMAL
+      file              = "assets/panel-button-inactive.png"
+      border            = { 4, 4, 4, 4 }
+      stretch           = TRUE      
+    }
+    
+    image
+    {
+      function          = BOX
+      recolorable       = TRUE
+      state             = PRELIGHT
+      file              = "assets/panel-button-hover.png"
+      border            = { 4, 4, 4, 4 }
+      stretch           = TRUE
+    }
 
-		image
-		{
-			function        	= BOX
-			recolorable     	= TRUE
-			shadow			= OUT
-			state			= PRELIGHT
-			file            	= "assets/panel-button-hover.png"
-			border          	= { 4, 4, 4, 4 }
-			stretch         	= TRUE
-			
-		}
-		
-		image
-		{
-			function        	= BOX
-			recolorable     	= TRUE
-			shadow			= IN
-			state			= PRELIGHT
-			file            	= "assets/panel-button-hover.png"
-			border          	= { 4, 4, 4, 4 }
-			stretch         	= TRUE
-			 
-		}
-		
-		image
-		{
-			function        	= BOX
-			recolorable     	= TRUE
-			state			= ACTIVE
-			file            	= "assets/panel-button-active.png"
-			border          	= { 4, 4, 4, 4 }
-			stretch         	= TRUE
-		}  
-		image
-		{
-			function        	= BOX
-			recolorable     	= TRUE
-			state			= INSENSITIVE
-			file            	= "assets/panel-button-inactive.png"
-			border          	= { 4, 4, 4, 4 }
-			stretch         	 = TRUE
-		}
-	}
+    image
+    {
+      function          = BOX
+      recolorable       = TRUE
+      shadow            = OUT
+      state             = PRELIGHT
+      file              = "assets/panel-button-hover.png"
+      border            = { 4, 4, 4, 4 }
+      stretch           = TRUE
+      
+    }
+    
+    image
+    {
+      function          = BOX
+      recolorable       = TRUE
+      shadow            = IN
+      state             = PRELIGHT
+      file              = "assets/panel-button-hover.png"
+      border            = { 4, 4, 4, 4 }
+      stretch           = TRUE
+       
+    }
+    
+    image
+    {
+      function          = BOX
+      recolorable       = TRUE
+      state             = ACTIVE
+      file              = "assets/panel-button-active.png"
+      border            = { 4, 4, 4, 4 }
+      stretch           = TRUE
+    }  
+    image
+    {
+      function          = BOX
+      recolorable       = TRUE
+      state             = INSENSITIVE
+      file              = "assets/panel-button-inactive.png"
+      border            = { 4, 4, 4, 4 }
+      stretch           = TRUE
+    }
+  }
 }
 
-style "XFCE"
-{
-	xthickness = 3
-	ythickness = 3
+style "theme-panel-text" {
 
-	bg_pixmap[NORMAL]	= "assets/panel.png"
+  fg[NORMAL] = shade(1.5,@selected_bg_color)
+  fg[PRELIGHT] = @selected_fg_color
+  fg[ACTIVE] = shade(1.5,@selected_bg_color)
+
+  text[NORMAL] = shade(1.5,@selected_bg_color)
+  text[PRELIGHT] = @selected_fg_color
+  text[ACTIVE] = shade(1.5,@selected_bg_color)
+
+  engine "murrine" {
+    textstyle = 0
+    text_shade = 0.2
+  }
 }
 
-#widget_class "*?anel*utton"      style "panel_task_button" # causing problems to monodevelop
-widget "*task*"                   style "panel_task_button"
-widget "*.tasklist-button"        style "panel_task_button"
-widget "*PanelApplet*TaskTitle*"  style "panel_task_button"
-widget_class "*Xfce*Panel*"	  style "XFCE"
-class "GtkScrollbar"		  style "scrollbar"
+style "panel-entry" {
+
+  fg[NORMAL] = @text_color
+  fg[PRELIGHT] = @text_color
+  fg[ACTIVE] = @text_color
+  fg[SELECTED] = @text_color
+  fg[INSENSITIVE] = @text_color
+
+  text[NORMAL] = @text_color
+  text[PRELIGHT] = @text_color
+  text[ACTIVE] = @text_color
+  text[SELECTED] = @text_color
+  text[INSENSITIVE] = @text_color
+
+}
+
+style "theme-main-menu-text" = "theme-panel-text" {
+  fg[PRELIGHT] = @selected_fg_color
+  text[PRELIGHT] = @selected_fg_color
+}
+
+style "workspace-switcher" = "theme-panel" {
+  bg[SELECTED] = @selected_bg_color
+}
+
+style "indicator" = "theme-panel" {
+  xthickness = 0
+  ythickness = 0
+}
+
+widget "*tasklist*"                                   style "panelbuttons"
+widget_class "*Xfce*Panel*.GtkToggleButton"           style "panelbuttons"
+widget_class "*Xfce*NetkTasklist*GtkToggleButton"     style "panelbuttons"
+widget_class "*PanelToplevel*Button"                  style "panelbuttons"
+widget_class "*Panel*GtkToggleButton"                 style "panelbuttons"
+widget_class "*Xfce*Panel*Button*"                    style "panelbuttons"
+widget_class "*<XfceArrowButton>"                     style "panelbuttons"
+widget_class "*<XfceActionsPlugin>*"                  style "panelbuttons"
+widget_class "*XfcePanelPlugin.GtkButton"             style "panelbuttons"
+widget "*dict*Applet*"                                style "panelbuttons"
+widget_class "*Xfce*NetkTasklist*GtkToggleButton"     style "panelbuttons"
+widget_class "*Tasklist*"                             style:highest "panelbuttons"
+
+class "*Panel*MenuBar*"                               style "panelbar"
+widget_class "*Panel*MenuBar*"                        style "panelbar"
+widget_class "*Panel*MenuBar*Item*"                   style:highest "panelbar"
+
+widget "*PanelWidget*"                                style "theme-panel"
+widget "*PanelApplet*"                                style "theme-panel"
+widget "*fast-user-switch*"                           style "theme-panel"
+widget "*CPUFreq*Applet*"                             style "theme-panel"
+class "PanelApp*"                                     style "theme-panel"
+class "PanelToplevel*"                                style "theme-panel"
+widget_class "*PanelToplevel*"                        style "theme-panel"
+widget_class "*notif*"                                style "theme-panel"
+widget_class "*Notif*"                                style "theme-panel"
+widget_class "*Tray*"                                 style "theme-panel" 
+widget_class "*tray*"                                 style "theme-panel"
+widget_class "*computertemp*"                         style "theme-panel"
+widget_class "*Applet*Tomboy*"                        style "theme-panel"
+widget_class "*Applet*Netstatus*"                     style "theme-panel"
+
+# Fixes for tooltip text in some apps.
+widget_class "*Notif*Beagle*"                         style "theme-panel"
+widget_class "*Notif*Brasero*"                        style "theme-panel"
+
+# XFCE panel theming.
+widget "*Xfce*Panel*"                                 style "theme-panel"
+class "*Xfce*Panel*"                                  style "theme-panel"
+widget "*Xfce*Panel*GtkProgressBar"                   style "theme-panel-progressbar"
+widget "*WnckPager*"                                  style "workspace-switcher"
+widget "*TopMenu*"                                    style "theme-panel"
+widget "*XfceTasklist*"                               style "panelbuttons"
+
+# Fix gtk-entries in the panel
+widget "*bookmark*GtkEntry"                           style "panel-entry" # fixes smartbookmark-plugin
+
+# Make sure panel text color doesn't change
+widget_class "*Panel*MenuBar*"                        style "theme-main-menu-text"
+widget_class "*Panel*<GtkMenuBar>*"                   style "theme-main-menu-text"
+widget "*.clock-applet-button.*"                      style "theme-panel-text"
+widget "*PanelApplet*"                                style "theme-panel-text"
+
+# Override general panel-style with specific plugin-styles
+widget "*indicator-applet*"                           style "indicator"
+widget "*indicator-button*"                           style "indicator"
