@@ -113,44 +113,37 @@ assistant .sidebar {
   background-color: @theme_bg_color; }
 
 button:link > label,
-button:visited > label,
-*:link,
-button:link,
+button:visited > label, *:link, button:link,
 button:visited {
   color: @link_color; }
   button:link > label:visited,
-  button:visited > label:visited,
-  *:link:visited,
+  button:visited > label:visited, *:link:visited,
   button:visited {
     color: mix(@link_color, @theme_fg_color, 0.2); }
     *:selected button:link > label:visited,
-    *:selected button:visited > label:visited, *:selected
-    *:link:visited, *:selected
-    button:visited:link,
+    *:selected button:visited > label:visited,
+    *:selected *:link:visited,
+    *:selected button:visited:link,
     *:selected button:visited {
       color: mix(@selected_fg_color, @selected_bg_color, 0.4); }
   button:link > label:hover,
-  button:visited > label:hover,
-  *:link:hover,
-  button:hover:link,
+  button:visited > label:hover, *:link:hover, button:hover:link,
   button:hover:visited {
     color: shade(@link_color, 1.1); }
     *:selected button:link > label:hover,
-    *:selected button:visited > label:hover, *:selected
-    *:link:hover, *:selected
-    button:hover:link,
+    *:selected button:visited > label:hover,
+    *:selected *:link:hover,
+    *:selected button:hover:link,
     *:selected button:hover:visited {
       color: mix(@selected_fg_color, @selected_bg_color, 0.9); }
   button:link > label:active,
-  button:visited > label:active,
-  *:link:active,
-  button:active:link,
+  button:visited > label:active, *:link:active, button:active:link,
   button:active:visited {
     color: @link_color; }
     *:selected button:link > label:active,
-    *:selected button:visited > label:active, *:selected
-    *:link:active, *:selected
-    button:active:link,
+    *:selected button:visited > label:active,
+    *:selected *:link:active,
+    *:selected button:active:link,
     *:selected button:active:visited {
       color: mix(@selected_fg_color, @selected_bg_color, 0.8); }
   button:link > label:backdrop:backdrop:hover,
@@ -172,9 +165,9 @@ button:visited {
   *:selected button:visited > label,
   *:link:selected,
   button:selected:link,
-  button:selected:visited, *:selected
-  *:link, *:selected
-  button:link,
+  button:selected:visited,
+  *:selected *:link,
+  *:selected button:link,
   *:selected button:visited {
     color: mix(@selected_fg_color, @selected_bg_color, 0.8); }
 
@@ -1719,6 +1712,7 @@ statusbar {
 
 switch {
   font-size: 0;
+  color: transparent;
   outline-offset: -4px;
   margin: 4px;
   margin-left: -3px;
