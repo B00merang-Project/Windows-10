@@ -2669,7 +2669,7 @@ panel-toplevel.background na-tray-applet {
     background-color: @taskbar_bg_color; }
     .mate-panel-menu-bar .button:not(#tasklist-button):hover {
       border: none;
-      background-color: shade(@taskbar_bg_color, 1.1); }
+      background-color: mix(@taskbar_bg_color, @taskbar_fg_color, 0.2); }
     .mate-panel-menu-bar .button:not(#tasklist-button):active, .mate-panel-menu-bar .button:not(#tasklist-button):checked {
       color: @taskbar_fg_color;
       border: none;
@@ -2681,7 +2681,7 @@ panel-toplevel.background na-tray-applet {
     padding-bottom: 0;
     padding-top: 0; }
     .mate-panel-menu-bar #tasklist-button:hover {
-      background-color: shade(@taskbar_bg_color, 1.1); }
+      background-color: mix(@taskbar_bg_color, @taskbar_fg_color, 0.2); }
     .mate-panel-menu-bar #tasklist-button:checked, .mate-panel-menu-bar #tasklist-button:active {
       color: @theme_selected_fg_color;
       background-color: alpha(shade(@theme_selected_bg_color, 0.6), 0.3);
@@ -2739,7 +2739,7 @@ panel-toplevel.background na-tray-applet {
   padding-bottom: 0;
   padding-top: 0; }
   .xfce4-panel.background .tasklist button:hover {
-    background-color: shade(@taskbar_bg_color, 1.1); }
+    background-color: mix(@taskbar_bg_color, @taskbar_fg_color, 0.2); }
   .xfce4-panel.background .tasklist button:checked, .xfce4-panel.background .tasklist button:active {
     color: @taskbar_fg_color;
     background-color: alpha(shade(@theme_selected_bg_color, 0.6), 0.3);
