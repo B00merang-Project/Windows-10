@@ -2788,8 +2788,10 @@ panel-toplevel.background na-tray-applet {
     color: @theme_selected_fg_color;
     background-color: @theme_selected_bg_color; }
 .nemo-window .sidebar {
-  background-color: @theme_bg_color; }
+  color: @sidebar_fg_color;
+  background-color: @sidebar_bg_color; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar row {
+    color: @sidebar_fg_color;
     background-color: transparent; }
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       border-color: @theme_selected_bg_color;
