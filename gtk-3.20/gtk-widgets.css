@@ -1089,10 +1089,6 @@ notebook {
         background-color: @theme_unfocused_base_color; }
     notebook tab:backdrop {
       background-color: @theme_unfocused_bg_color; }
-    notebook tab button, notebook tab button:hover, notebook tab button:focus, notebook tab button:active, notebook tab button:checked, notebook tab button:active:hover, notebook tab button:checked:hover, notebook tab button:backdrop, notebook tab:checked button, notebook tab:checked button:hover, notebook tab:checked button:focus, notebook tab:checked button:active, notebook tab:checked button:checked, notebook tab:checked button:active:hover, notebook tab:checked button:checked:hover, notebook tab:checked button:backdrop {
-      border-color: transparent;
-      background-color: transparent;
-      color: @theme_fg_color; }
   notebook > header {
     padding-top: 2px;
     background-color: @theme_bg_color; }
