@@ -54,10 +54,6 @@ image, image:disabled, label, label:disabled, box, box:disabled {
 label selection {
   background-color: @theme_selected_base_color;
   color: @theme_selected_text_color; }
-label.separator {
-  color: @borders; }
-  label.separator:backdrop {
-    color: @unfocused_borders; }
 label.dim-label, label.separator, popover label.separator, popover.background label.separator, label:disabled {
   opacity: 0.55; }
 
@@ -912,6 +908,11 @@ button.circular, button.circular-button {
   padding: 2px 6px;
   border-radius: 50%;
   -gtk-outline-radius: 50%; }
+
+stackswitcher button.circular, stackswitcher button.text-button.circular {
+  min-width: 32px;
+  min-height: 32px;
+  padding: 0; }
 
 printdialog paper {
   border: 1px solid @borders;
