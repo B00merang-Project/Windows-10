@@ -1,8 +1,10 @@
-# Windows 10 Transformation Pack
+[![built-with-azurra-framework](https://github.com/Elbullazul/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/Elbullazul/Azurra_framework)
+
+# Windows 10 Theme for Linux
 
 GTK theme based on the appearance of Win32 apps on the Windows 10 platform using the default color scheme
 
-![Windows-10-TP-by-B00merang](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-11-01-10-35-43_orig.png)
+![Windows-10](http://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-2016-11-01-10-35-43_orig.png)
 
 ### [Dark available theme here](https://github.com/B00merang-Project/Windows-10-Dark) ###
 
