@@ -592,7 +592,7 @@ entry {
   border-radius: 0px;
   color: #FFFFFF;
   caret-color: currentColor;
-  background-color: #191919; }
+  background-color: #202020; }
   entry:active, entry:focus {
     border-color: shade(#4D4D4D, 0.6); }
   entry:selected, entry:selected:focus, entry selection, entry selection:focus {
@@ -601,16 +601,16 @@ entry {
   entry:disabled {
     color: mix(#FFFFFF, #191919, 0.5);
     border-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.6);
-    background-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.1); }
+    background-color: mix(#202020, mix(#FFFFFF, #191919, 0.95), 0.1); }
     entry:disabled:backdrop {
       color: mix(#FFFFFF, #191919, 0.75);
       border-color: shade(#FFFFFF, 0.2);
       background-color: mix(#FFFFFF, #191919, 0.98); }
   entry.read-only {
-    background-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.1); }
+    background-color: mix(#202020, mix(#FFFFFF, #191919, 0.95), 0.1); }
   entry:backdrop {
     color: #FFFFFF;
-    background-color: #191919; }
+    background-color: #202020; }
   entry > image.left {
     padding-right: 5px; }
   entry > image.right {
