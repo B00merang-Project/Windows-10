@@ -935,7 +935,7 @@ filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
 
-:not(decoration):not(window):drop(active), :not(decoration):not(window):drop(active):focus {
+:not(decoration):not(window):drop(active), :not(decoration):not(window):drop(active):focus, combobox:drop(active) button.combo {
   border-color: #4D4D4D;
   box-shadow: inset 0 0 0 1px #4D4D4D;
   caret-color: #4D4D4D; }
@@ -1801,14 +1801,10 @@ colorchooser #add-color-button {
 
 headerbar, headerbar:not(.titlebar) {
   padding: 4px 8px;
-  border-width: 0;
-  border-style: solid;
-  border-color: mix(shade(#FFFFFF, 0.2), #191919, 0.5);
-  border-bottom-width: 1px;
+  border: none;
   color: #FFFFFF;
   background-color: #191919; }
   headerbar:backdrop, headerbar:not(.titlebar):backdrop {
-    border-color: shade(#FFFFFF, 0.2);
     color: #FFFFFF;
     background-color: #191919; }
   .titlebar headerbar, .titlebar headerbar:backdrop, .titlebar headerbar:not(.titlebar), .titlebar headerbar:not(.titlebar):backdrop {
@@ -2236,77 +2232,8 @@ treeview {
       color: #FFFFFF;
       background-color: #4D4D4D; }
 
-filechooser.csd.background, filechooser placessidebar list, .nautilus-window.csd.background, .nautilus-window placessidebar list, .nemo-window.csd.background, .nemo-window placessidebar list {
-  background-color: #191919; }
-filechooser .sidebar, .nautilus-window .sidebar, .nemo-window .sidebar {
-  background-color: #191919; }
-  filechooser .sidebar row, filechooser .sidebar row:focus, filechooser .sidebar view row, filechooser .sidebar view row:focus, filechooser .sidebar row.sidebar-row, filechooser .sidebar row.sidebar-row:focus, filechooser .sidebar .view, filechooser .sidebar .view:focus, filechooser .sidebar iconview, filechooser .sidebar iconview:focus, .nautilus-window .sidebar row, .nautilus-window .sidebar row:focus, .nautilus-window .sidebar view row, .nautilus-window .sidebar view row:focus, .nautilus-window .sidebar row.sidebar-row, .nautilus-window .sidebar row.sidebar-row:focus, .nautilus-window .sidebar .view, .nautilus-window .sidebar .view:focus, .nautilus-window .sidebar iconview, .nautilus-window .sidebar iconview:focus, .nemo-window .sidebar row, .nemo-window .sidebar row:focus, .nemo-window .sidebar view row, .nemo-window .sidebar view row:focus, .nemo-window .sidebar row.sidebar-row, .nemo-window .sidebar row.sidebar-row:focus, .nemo-window .sidebar .view, .nemo-window .sidebar .view:focus, .nemo-window .sidebar iconview, .nemo-window .sidebar iconview:focus {
-    border: none;
-    color: #FFFFFF;
-    background-color: transparent; }
-    filechooser .sidebar row:hover, filechooser .sidebar row:focus:hover, filechooser .sidebar view row:hover, filechooser .sidebar view row:focus:hover, filechooser .sidebar row.sidebar-row:hover, filechooser .sidebar row.sidebar-row:focus:hover, filechooser .sidebar .view:hover, filechooser .sidebar .view:focus:hover, filechooser .sidebar iconview:hover, filechooser .sidebar iconview:focus:hover, .nautilus-window .sidebar row:hover, .nautilus-window .sidebar row:focus:hover, .nautilus-window .sidebar view row:hover, .nautilus-window .sidebar view row:focus:hover, .nautilus-window .sidebar row.sidebar-row:hover, .nautilus-window .sidebar row.sidebar-row:focus:hover, .nautilus-window .sidebar .view:hover, .nautilus-window .sidebar .view:focus:hover, .nautilus-window .sidebar iconview:hover, .nautilus-window .sidebar iconview:focus:hover, .nemo-window .sidebar row:hover, .nemo-window .sidebar row:focus:hover, .nemo-window .sidebar view row:hover, .nemo-window .sidebar view row:focus:hover, .nemo-window .sidebar row.sidebar-row:hover, .nemo-window .sidebar row.sidebar-row:focus:hover, .nemo-window .sidebar .view:hover, .nemo-window .sidebar .view:focus:hover, .nemo-window .sidebar iconview:hover, .nemo-window .sidebar iconview:focus:hover {
-      color: #FFFFFF;
-      background-color: shade(#4D4D4D, 1.05); }
-    filechooser .sidebar row:active, filechooser .sidebar row:focus:active, filechooser .sidebar view row:active, filechooser .sidebar view row:focus:active, filechooser .sidebar row.sidebar-row:active, filechooser .sidebar row.sidebar-row:focus:active, filechooser .sidebar .view:active, filechooser .sidebar .view:focus:active, filechooser .sidebar iconview:active, filechooser .sidebar iconview:focus:active, .nautilus-window .sidebar row:active, .nautilus-window .sidebar row:focus:active, .nautilus-window .sidebar view row:active, .nautilus-window .sidebar view row:focus:active, .nautilus-window .sidebar row.sidebar-row:active, .nautilus-window .sidebar row.sidebar-row:focus:active, .nautilus-window .sidebar .view:active, .nautilus-window .sidebar .view:focus:active, .nautilus-window .sidebar iconview:active, .nautilus-window .sidebar iconview:focus:active, .nemo-window .sidebar row:active, .nemo-window .sidebar row:focus:active, .nemo-window .sidebar view row:active, .nemo-window .sidebar view row:focus:active, .nemo-window .sidebar row.sidebar-row:active, .nemo-window .sidebar row.sidebar-row:focus:active, .nemo-window .sidebar .view:active, .nemo-window .sidebar .view:focus:active, .nemo-window .sidebar iconview:active, .nemo-window .sidebar iconview:focus:active {
-      color: #FFFFFF;
-      background-color: shade(#4D4D4D, 0.96); }
-    filechooser .sidebar row:selected, filechooser .sidebar row:focus:selected, filechooser .sidebar view row:selected, filechooser .sidebar view row:focus:selected, filechooser .sidebar row.sidebar-row:selected, filechooser .sidebar row.sidebar-row:focus:selected, filechooser .sidebar .view:selected, filechooser .sidebar .view:focus:selected, filechooser .sidebar iconview:selected, filechooser .sidebar iconview:focus:selected, .nautilus-window .sidebar row:selected, .nautilus-window .sidebar row:focus:selected, .nautilus-window .sidebar view row:selected, .nautilus-window .sidebar view row:focus:selected, .nautilus-window .sidebar row.sidebar-row:selected, .nautilus-window .sidebar row.sidebar-row:focus:selected, .nautilus-window .sidebar .view:selected, .nautilus-window .sidebar .view:focus:selected, .nautilus-window .sidebar iconview:selected, .nautilus-window .sidebar iconview:focus:selected, .nemo-window .sidebar row:selected, .nemo-window .sidebar row:focus:selected, .nemo-window .sidebar view row:selected, .nemo-window .sidebar view row:focus:selected, .nemo-window .sidebar row.sidebar-row:selected, .nemo-window .sidebar row.sidebar-row:focus:selected, .nemo-window .sidebar .view:selected, .nemo-window .sidebar .view:focus:selected, .nemo-window .sidebar iconview:selected, .nemo-window .sidebar iconview:focus:selected {
-      color: #FFFFFF;
-      background-color: #4D4D4D; }
-      filechooser .sidebar row:selected:hover, filechooser .sidebar row:focus:selected:hover, filechooser .sidebar view row:selected:hover, filechooser .sidebar view row:focus:selected:hover, filechooser .sidebar row.sidebar-row:selected:hover, filechooser .sidebar row.sidebar-row:focus:selected:hover, filechooser .sidebar .view:selected:hover, filechooser .sidebar .view:focus:selected:hover, filechooser .sidebar iconview:selected:hover, filechooser .sidebar iconview:focus:selected:hover, .nautilus-window .sidebar row:selected:hover, .nautilus-window .sidebar row:focus:selected:hover, .nautilus-window .sidebar view row:selected:hover, .nautilus-window .sidebar view row:focus:selected:hover, .nautilus-window .sidebar row.sidebar-row:selected:hover, .nautilus-window .sidebar row.sidebar-row:focus:selected:hover, .nautilus-window .sidebar .view:selected:hover, .nautilus-window .sidebar .view:focus:selected:hover, .nautilus-window .sidebar iconview:selected:hover, .nautilus-window .sidebar iconview:focus:selected:hover, .nemo-window .sidebar row:selected:hover, .nemo-window .sidebar row:focus:selected:hover, .nemo-window .sidebar view row:selected:hover, .nemo-window .sidebar view row:focus:selected:hover, .nemo-window .sidebar row.sidebar-row:selected:hover, .nemo-window .sidebar row.sidebar-row:focus:selected:hover, .nemo-window .sidebar .view:selected:hover, .nemo-window .sidebar .view:focus:selected:hover, .nemo-window .sidebar iconview:selected:hover, .nemo-window .sidebar iconview:focus:selected:hover {
-        color: #FFFFFF;
-        background-color: shade(#4D4D4D, 1.02); }
-      filechooser .sidebar row:selected:active, filechooser .sidebar row:focus:selected:active, filechooser .sidebar view row:selected:active, filechooser .sidebar view row:focus:selected:active, filechooser .sidebar row.sidebar-row:selected:active, filechooser .sidebar row.sidebar-row:focus:selected:active, filechooser .sidebar .view:selected:active, filechooser .sidebar .view:focus:selected:active, filechooser .sidebar iconview:selected:active, filechooser .sidebar iconview:focus:selected:active, .nautilus-window .sidebar row:selected:active, .nautilus-window .sidebar row:focus:selected:active, .nautilus-window .sidebar view row:selected:active, .nautilus-window .sidebar view row:focus:selected:active, .nautilus-window .sidebar row.sidebar-row:selected:active, .nautilus-window .sidebar row.sidebar-row:focus:selected:active, .nautilus-window .sidebar .view:selected:active, .nautilus-window .sidebar .view:focus:selected:active, .nautilus-window .sidebar iconview:selected:active, .nautilus-window .sidebar iconview:focus:selected:active, .nemo-window .sidebar row:selected:active, .nemo-window .sidebar row:focus:selected:active, .nemo-window .sidebar view row:selected:active, .nemo-window .sidebar view row:focus:selected:active, .nemo-window .sidebar row.sidebar-row:selected:active, .nemo-window .sidebar row.sidebar-row:focus:selected:active, .nemo-window .sidebar .view:selected:active, .nemo-window .sidebar .view:focus:selected:active, .nemo-window .sidebar iconview:selected:active, .nemo-window .sidebar iconview:focus:selected:active {
-        color: #FFFFFF;
-        background-color: shade(#4D4D4D, 0.98); }
-      filechooser .sidebar row:selected:backdrop, filechooser .sidebar row:focus:selected:backdrop, filechooser .sidebar view row:selected:backdrop, filechooser .sidebar view row:focus:selected:backdrop, filechooser .sidebar row.sidebar-row:selected:backdrop, filechooser .sidebar row.sidebar-row:focus:selected:backdrop, filechooser .sidebar .view:selected:backdrop, filechooser .sidebar .view:focus:selected:backdrop, filechooser .sidebar iconview:selected:backdrop, filechooser .sidebar iconview:focus:selected:backdrop, .nautilus-window .sidebar row:selected:backdrop, .nautilus-window .sidebar row:focus:selected:backdrop, .nautilus-window .sidebar view row:selected:backdrop, .nautilus-window .sidebar view row:focus:selected:backdrop, .nautilus-window .sidebar row.sidebar-row:selected:backdrop, .nautilus-window .sidebar row.sidebar-row:focus:selected:backdrop, .nautilus-window .sidebar .view:selected:backdrop, .nautilus-window .sidebar .view:focus:selected:backdrop, .nautilus-window .sidebar iconview:selected:backdrop, .nautilus-window .sidebar iconview:focus:selected:backdrop, .nemo-window .sidebar row:selected:backdrop, .nemo-window .sidebar row:focus:selected:backdrop, .nemo-window .sidebar view row:selected:backdrop, .nemo-window .sidebar view row:focus:selected:backdrop, .nemo-window .sidebar row.sidebar-row:selected:backdrop, .nemo-window .sidebar row.sidebar-row:focus:selected:backdrop, .nemo-window .sidebar .view:selected:backdrop, .nemo-window .sidebar .view:focus:selected:backdrop, .nemo-window .sidebar iconview:selected:backdrop, .nemo-window .sidebar iconview:focus:selected:backdrop {
-        color: #FFFFFF;
-        background-color: #4D4D4D; }
-  filechooser .sidebar row.expander, filechooser .sidebar view row.expander, filechooser .sidebar row.sidebar-row.expander, filechooser .sidebar .view.expander, filechooser .sidebar iconview.expander, .nautilus-window .sidebar row.expander, .nautilus-window .sidebar view row.expander, .nautilus-window .sidebar row.sidebar-row.expander, .nautilus-window .sidebar .view.expander, .nautilus-window .sidebar iconview.expander, .nemo-window .sidebar row.expander, .nemo-window .sidebar view row.expander, .nemo-window .sidebar row.sidebar-row.expander, .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander {
-    color: #FFFFFF; }
-    filechooser .sidebar row.expander:hover, filechooser .sidebar view row.expander:hover, filechooser .sidebar row.sidebar-row.expander:hover, filechooser .sidebar .view.expander:hover, filechooser .sidebar iconview.expander:hover, .nautilus-window .sidebar row.expander:hover, .nautilus-window .sidebar view row.expander:hover, .nautilus-window .sidebar row.sidebar-row.expander:hover, .nautilus-window .sidebar .view.expander:hover, .nautilus-window .sidebar iconview.expander:hover, .nemo-window .sidebar row.expander:hover, .nemo-window .sidebar view row.expander:hover, .nemo-window .sidebar row.sidebar-row.expander:hover, .nemo-window .sidebar .view.expander:hover, .nemo-window .sidebar iconview.expander:hover {
-      color: #4D4D4D; }
-  filechooser .sidebar frame, filechooser .sidebar.frame, .nautilus-window .sidebar frame, .nautilus-window .sidebar.frame, .nemo-window .sidebar frame, .nemo-window .sidebar.frame {
-    border: none; }
-  filechooser .sidebar separator, filechooser .sidebar separator:backdrop, .nautilus-window .sidebar separator, .nautilus-window .sidebar separator:backdrop, .nemo-window .sidebar separator, .nemo-window .sidebar separator:backdrop {
-    background-color: transparent; }
-  paned filechooser .sidebar.left, paned filechooser .sidebar.right, paned filechooser .sidebar.left:dir(rtl), paned filechooser .sidebar:dir(rtl), paned filechooser .sidebar:dir(ltr), paned filechooser .sidebar, paned .nautilus-window .sidebar.left, paned .nautilus-window .sidebar.right, paned .nautilus-window .sidebar.left:dir(rtl), paned .nautilus-window .sidebar:dir(rtl), paned .nautilus-window .sidebar:dir(ltr), paned .nautilus-window .sidebar, paned .nemo-window .sidebar.left, paned .nemo-window .sidebar.right, paned .nemo-window .sidebar.left:dir(rtl), paned .nemo-window .sidebar:dir(rtl), paned .nemo-window .sidebar:dir(ltr), paned .nemo-window .sidebar {
-    border: none; }
-
-.caja-navigation-window .caja-side-pane {
-  background-color: #191919; }
-  .caja-navigation-window .caja-side-pane row, .caja-navigation-window .caja-side-pane row:focus, .caja-navigation-window .caja-side-pane view row, .caja-navigation-window .caja-side-pane view row:focus, .caja-navigation-window .caja-side-pane row.sidebar-row, .caja-navigation-window .caja-side-pane row.sidebar-row:focus, .caja-navigation-window .caja-side-pane .view, .caja-navigation-window .caja-side-pane .view:focus, .caja-navigation-window .caja-side-pane iconview, .caja-navigation-window .caja-side-pane iconview:focus {
-    border: none;
-    color: #FFFFFF;
-    background-color: transparent; }
-    .caja-navigation-window .caja-side-pane row:hover, .caja-navigation-window .caja-side-pane row:focus:hover, .caja-navigation-window .caja-side-pane view row:hover, .caja-navigation-window .caja-side-pane view row:focus:hover, .caja-navigation-window .caja-side-pane row.sidebar-row:hover, .caja-navigation-window .caja-side-pane row.sidebar-row:focus:hover, .caja-navigation-window .caja-side-pane .view:hover, .caja-navigation-window .caja-side-pane .view:focus:hover, .caja-navigation-window .caja-side-pane iconview:hover, .caja-navigation-window .caja-side-pane iconview:focus:hover {
-      color: #FFFFFF;
-      background-color: shade(#4D4D4D, 1.05); }
-    .caja-navigation-window .caja-side-pane row:active, .caja-navigation-window .caja-side-pane row:focus:active, .caja-navigation-window .caja-side-pane view row:active, .caja-navigation-window .caja-side-pane view row:focus:active, .caja-navigation-window .caja-side-pane row.sidebar-row:active, .caja-navigation-window .caja-side-pane row.sidebar-row:focus:active, .caja-navigation-window .caja-side-pane .view:active, .caja-navigation-window .caja-side-pane .view:focus:active, .caja-navigation-window .caja-side-pane iconview:active, .caja-navigation-window .caja-side-pane iconview:focus:active {
-      color: #FFFFFF;
-      background-color: shade(#4D4D4D, 0.96); }
-    .caja-navigation-window .caja-side-pane row:selected, .caja-navigation-window .caja-side-pane row:focus:selected, .caja-navigation-window .caja-side-pane view row:selected, .caja-navigation-window .caja-side-pane view row:focus:selected, .caja-navigation-window .caja-side-pane row.sidebar-row:selected, .caja-navigation-window .caja-side-pane row.sidebar-row:focus:selected, .caja-navigation-window .caja-side-pane .view:selected, .caja-navigation-window .caja-side-pane .view:focus:selected, .caja-navigation-window .caja-side-pane iconview:selected, .caja-navigation-window .caja-side-pane iconview:focus:selected {
-      color: #FFFFFF;
-      background-color: #4D4D4D; }
-      .caja-navigation-window .caja-side-pane row:selected:hover, .caja-navigation-window .caja-side-pane row:focus:selected:hover, .caja-navigation-window .caja-side-pane view row:selected:hover, .caja-navigation-window .caja-side-pane view row:focus:selected:hover, .caja-navigation-window .caja-side-pane row.sidebar-row:selected:hover, .caja-navigation-window .caja-side-pane row.sidebar-row:focus:selected:hover, .caja-navigation-window .caja-side-pane .view:selected:hover, .caja-navigation-window .caja-side-pane .view:focus:selected:hover, .caja-navigation-window .caja-side-pane iconview:selected:hover, .caja-navigation-window .caja-side-pane iconview:focus:selected:hover {
-        color: #FFFFFF;
-        background-color: shade(#4D4D4D, 1.02); }
-      .caja-navigation-window .caja-side-pane row:selected:active, .caja-navigation-window .caja-side-pane row:focus:selected:active, .caja-navigation-window .caja-side-pane view row:selected:active, .caja-navigation-window .caja-side-pane view row:focus:selected:active, .caja-navigation-window .caja-side-pane row.sidebar-row:selected:active, .caja-navigation-window .caja-side-pane row.sidebar-row:focus:selected:active, .caja-navigation-window .caja-side-pane .view:selected:active, .caja-navigation-window .caja-side-pane .view:focus:selected:active, .caja-navigation-window .caja-side-pane iconview:selected:active, .caja-navigation-window .caja-side-pane iconview:focus:selected:active {
-        color: #FFFFFF;
-        background-color: shade(#4D4D4D, 0.98); }
-      .caja-navigation-window .caja-side-pane row:selected:backdrop, .caja-navigation-window .caja-side-pane row:focus:selected:backdrop, .caja-navigation-window .caja-side-pane view row:selected:backdrop, .caja-navigation-window .caja-side-pane view row:focus:selected:backdrop, .caja-navigation-window .caja-side-pane row.sidebar-row:selected:backdrop, .caja-navigation-window .caja-side-pane row.sidebar-row:focus:selected:backdrop, .caja-navigation-window .caja-side-pane .view:selected:backdrop, .caja-navigation-window .caja-side-pane .view:focus:selected:backdrop, .caja-navigation-window .caja-side-pane iconview:selected:backdrop, .caja-navigation-window .caja-side-pane iconview:focus:selected:backdrop {
-        color: #FFFFFF;
-        background-color: #4D4D4D; }
-  .caja-navigation-window .caja-side-pane row.expander, .caja-navigation-window .caja-side-pane view row.expander, .caja-navigation-window .caja-side-pane row.sidebar-row.expander, .caja-navigation-window .caja-side-pane .view.expander, .caja-navigation-window .caja-side-pane iconview.expander {
-    color: #FFFFFF; }
-    .caja-navigation-window .caja-side-pane row.expander:hover, .caja-navigation-window .caja-side-pane view row.expander:hover, .caja-navigation-window .caja-side-pane row.sidebar-row.expander:hover, .caja-navigation-window .caja-side-pane .view.expander:hover, .caja-navigation-window .caja-side-pane iconview.expander:hover {
-      color: #4D4D4D; }
-  .caja-navigation-window .caja-side-pane frame, .caja-navigation-window .caja-side-pane.frame {
-    border: none; }
-  .caja-navigation-window .caja-side-pane separator, .caja-navigation-window .caja-side-pane separator:backdrop {
-    background-color: transparent; }
-  paned .caja-navigation-window .caja-side-pane.left, paned .caja-navigation-window .caja-side-pane.right, paned .caja-navigation-window .caja-side-pane.left:dir(rtl), paned .caja-navigation-window .caja-side-pane:dir(rtl), paned .caja-navigation-window .caja-side-pane:dir(ltr), paned .caja-navigation-window .caja-side-pane {
-    border: none; }
+.sidebar frame, .sidebar.frame {
+  border: none; }
 
 stacksidebar row {
   padding: 10px 4px; }
@@ -2324,7 +2251,7 @@ placessidebar row {
   placessidebar row > revealer {
     padding: 0 14px; }
   placessidebar row image.sidebar-icon {
-    opacity: 0.75; }
+    opacity: 1; }
     placessidebar row image.sidebar-icon:dir(ltr) {
       padding-right: 8px; }
     placessidebar row image.sidebar-icon:dir(rtl) {
@@ -2383,6 +2310,9 @@ searchbar {
   border-style: solid;
   border-color: shade(#FFFFFF, 0.2);
   background-color: #191919; }
+
+.nautilus-window .searchbar-container {
+  margin-top: -1px; }
 
 .app-notification {
   border-style: solid;
@@ -2723,11 +2653,13 @@ messagedialog.csd .dialog-action-area button {
   min-height: 32px;
   color: #FFFFFF;
   background-color: #191919;
-  box-shadow: 0 1px shade(#FFFFFF, 0.2); }
+  border-bottom: 1px solid shade(#FFFFFF, 0.2); }
+  .titlebar headerbar, .titlebar:not(headerbar) headerbar, headerbar.default-decoration headerbar, .csd headerbar.default-decoration headerbar, .default-decoration.titlebar:not(headerbar) headerbar, .csd .default-decoration.titlebar:not(headerbar) headerbar {
+    border-bottom: none; }
   .titlebar:backdrop, .titlebar:not(headerbar):backdrop, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar):backdrop, .csd .default-decoration.titlebar:not(headerbar):backdrop {
     background-color: #191919;
     color: #FFFFFF;
-    box-shadow: 0 1px shade(#FFFFFF, 0.2); }
+    border-bottom-color: shade(#FFFFFF, 0.2); }
 
 .caja-desktop, .nemo-desktop.nemo-canvas-item, .nautilus-desktop.nautilus-canvas-item {
   color: #FFFFFF;
