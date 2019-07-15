@@ -927,13 +927,14 @@ notebook {
     border-style: solid;
     border-radius: 0;
     border-color: shade(#FFFFFF, 0.9);
-    color: #000000;
+    color: mix(#000000, #FFFFFF, 0.3);
     background-color: shade(#FFFFFF, 0.97); }
     notebook tab:hover {
       background-color: #CCE8FF; }
     notebook tab:checked {
       border-color: shade(#FFFFFF, 0.9);
-      background-color: #FFFFFF; }
+      background-color: #FFFFFF;
+      color: #000000; }
       notebook tab:checked:hover {
         background-color: #FFFFFF; }
       notebook tab:checked:backdrop {
