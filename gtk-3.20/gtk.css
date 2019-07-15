@@ -1114,7 +1114,7 @@ notebook {
         border-color: shade(#FFFFFF, 0.9);
         background-color: #FFFFFF; }
     notebook tab:backdrop {
-      background-color: shade(#FFFFFF, 0.98); }
+      background-color: shade(#FFFFFF, 0.97); }
   notebook > header {
     padding-top: 2px;
     background-color: #FFFFFF; }
