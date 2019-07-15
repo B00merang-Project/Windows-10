@@ -1102,7 +1102,7 @@ notebook {
     border-radius: 0;
     border-color: shade(#FFFFFF, 0.9);
     color: #000000;
-    background-color: shade(#FFFFFF, 0.98); }
+    background-color: shade(#FFFFFF, 0.97); }
     notebook tab:hover {
       background-color: #CCE8FF; }
     notebook tab:checked {
