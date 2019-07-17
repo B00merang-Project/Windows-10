@@ -14,8 +14,8 @@
    viewBox="0 0 6 7"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="right.svg">
+   sodipodi:docname="arrow-right.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,17 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="19.221578"
-     inkscape:cy="-0.44527318"
+     inkscape:zoom="5.6"
+     inkscape:cx="-2.6297933"
+     inkscape:cy="-15.403005"
      inkscape:document-units="mm"
      inkscape:current-layer="g4537"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1358"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -52,7 +54,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-0.49531806,0.48949428)">
+     transform="translate(-0.49531825,0.48949413)">
     <g
        transform="translate(-0.00468177,0.01050555)"
        id="g4537">
@@ -63,9 +65,10 @@
          inkscape:connector-curvature="0" />
       <path
          style="fill:#ffffff;fill-opacity:1"
-         d="m 6.1249998,2.3750006 0.375,0.125 v 0.5 l 0,0.5 -0.375,0.125 q -0.375,0.125 -0.625,0.375 -0.25,0.25 -0.5,0.5 -0.25,0.25 -0.5,0.5 -0.25,0.25 -0.5,0.5 -0.25,0.25 -0.375,0.625 l -0.125,0.375 h -0.5 -0.5 -0.5 -0.5 -0.49999997 -0.5 v -0.5 -0.5 l 0.375,-0.125 q 0.37499997,-0.125 0.62499997,-0.375 0.25,-0.25 0.5,-0.5 0.25,-0.25 0.5,-0.5 0.25,-0.25 0.5,-0.5 0.25,-0.25 0.25,-0.5 0,-0.25 -0.25,-0.5 -0.25,-0.25 -0.5,-0.5 -0.25,-0.25 -0.5,-0.5 -0.25,-0.25 -0.5,-0.5 -0.25,-0.25000004 -0.62499997,-0.37500004 l -0.375,-0.125 V 5.5941701e-7 -0.49999944 h 0.5 0.49999997 0.5 0.5 0.5 l 0.5,0 0.125,0.375 q 0.125,0.375 0.375,0.625 0.25,0.25 0.5,0.50000004 0.25,0.25 0.5,0.5 0.25,0.25 0.5,0.5 0.25,0.25 0.625,0.375"
+         d="m 6.5,3.0000003 c 0,0 0,0 -3,3.5 -1.154448,0 -1.9621581,0 -2.99999998,0 2.74164778,-3.5 2.74164778,-3.5 2.74164778,-3.5 0,0 0,0 -2.74164778,-3.49999998 1.15444808,0 1.96215808,0 2.99999998,0"
          id="path4531"
-         inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
       <path
          style="fill:#000000;fill-opacity:0"
          d="M 4.125,0.375 4,0 H 4.5 5 5.5 6 6.5 7 V 0.5 1 1.5 2 2.5 3 L 6.625,2.875 Q 6.25,2.75 6,2.5 5.75,2.25 5.5,2 5.25,1.75 5,1.5 4.75,1.25 4.5,1 4.25,0.75 4.125,0.375"

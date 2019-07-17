@@ -233,10 +233,9 @@ button {
 check, radio {
   padding: 4px;
   border-style: none;
-  background-color: transparent; }
-  menuitem check, menuitem radio {
-    min-height: 16px;
-    min-width: 16px; }
+  background-color: transparent;
+  min-height: 13px;
+  min-width: 13px; }
 
 checkbutton, radiobutton {
   padding: 4px;

@@ -14,8 +14,8 @@
    viewBox="0 0 7 6"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="up.svg">
+   sodipodi:docname="arrow-up.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,17 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="21.111342"
-     inkscape:cy="-2.3350377"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-255.56385"
+     inkscape:cy="27.940314"
      inkscape:document-units="mm"
      inkscape:current-layer="g4537"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1358"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-height="991"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -44,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,9 +65,10 @@
          inkscape:connector-curvature="0" />
       <path
          style="fill:#808080;fill-opacity:1"
-         d="M 2.875,0.375 3,0 H 3.5 4 L 4.125,0.375 Q 4.25,0.75 4.5,1 4.75,1.25 5,1.5 5.25,1.75 5.5,2 5.75,2.25 6,2.5 6.25,2.75 6.625,2.875 L 7,3 V 3.5 4 4.5 5 5.5 6 H 6.5 6 L 5.875,5.625 Q 5.75,5.25 5.5,5 5.25,4.75 5,4.5 4.75,4.25 4.5,4 4.25,3.75 4,3.5 3.75,3.25 3.5,3.25 3.25,3.25 3,3.5 2.75,3.75 2.5,4 2.25,4.25 2,4.5 1.75,4.75 1.5,5 1.25,5.25 1.125,5.625 L 1,6 H 0.5 0 V 5.5 5 4.5 4 3.5 3 L 0.375,2.875 Q 0.75,2.75 1,2.5 1.25,2.25 1.5,2 1.75,1.75 2,1.5 2.25,1.25 2.5,1 2.75,0.75 2.875,0.375"
+         d="m 3.5,3.2e-7 c 0,0 0,0 3.5,2.99999998 0,1.154448 0,1.9621581 0,3 C 3.5,3.2583525 3.5,3.2583525 3.5,3.2583525 c 0,0 0,0 -3.49999998,2.7416478 0,-1.1544481 0,-1.9621581 0,-3"
          id="path4531"
-         inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
       <path
          style="fill:#000000;fill-opacity:0"
          d="M 4.125,0.375 4,0 H 4.5 5 5.5 6 6.5 7 V 0.5 1 1.5 2 2.5 3 L 6.625,2.875 Q 6.25,2.75 6,2.5 5.75,2.25 5.5,2 5.25,1.75 5,1.5 4.75,1.25 4.5,1 4.25,0.75 4.125,0.375"
