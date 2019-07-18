@@ -501,17 +501,16 @@ list {
   list separator, list separator:backdrop {
     background: none; }
 
-frame > border {
+.frame, frame > border {
   border-width: 1px;
   border-style: solid;
   border-color: shade(#FFFFFF, 0.9);
   border-radius: 0;
-  box-shadow: none; }
-frame.flat > border, frame > border.flat, statusbar frame > border {
-  border: none; }
-
-.frame {
+  box-shadow: none;
   background: none; }
+
+frame.flat > border, frame > border.flat, .frame.flat {
+  border-style: none; }
 
 iconview:selected, iconview:selected:focus, iconview text:selected, iconview text selection, iconview text:selected:focus, iconview text selection:focus {
   border-width: 1px;
@@ -2058,8 +2057,37 @@ treeview {
       color: #000000;
       background-color: #CCE8FF; }
 
-.sidebar frame, .sidebar.frame {
-  border: none; }
+filechooser.csd.background, filechooser placessidebar list, .nautilus-window.csd.background, .nautilus-window placessidebar list, .nemo-window.csd.background, .nemo-window placessidebar list {
+  background-color: #FFFFFF; }
+filechooser .sidebar, .nautilus-window .sidebar, .nemo-window .sidebar {
+  background-color: #FFFFFF; }
+  filechooser .sidebar .view:not(:selected), filechooser .sidebar iconview, .nautilus-window .sidebar .view:not(:selected), .nautilus-window .sidebar iconview, .nemo-window .sidebar .view:not(:selected), .nemo-window .sidebar iconview {
+    border: none;
+    color: #000000;
+    background-color: transparent; }
+  filechooser .sidebar frame > border, filechooser .sidebar .frame, .nautilus-window .sidebar frame > border, .nautilus-window .sidebar .frame, .nemo-window .sidebar frame > border, .nemo-window .sidebar .frame {
+    border: none; }
+  filechooser .sidebar row:not(:selected), filechooser .sidebar view row:not(:selected), filechooser .sidebar row.sidebar-row:not(:selected), .nautilus-window .sidebar row:not(:selected), .nautilus-window .sidebar view row:not(:selected), .nautilus-window .sidebar row.sidebar-row:not(:selected), .nemo-window .sidebar row:not(:selected), .nemo-window .sidebar view row:not(:selected), .nemo-window .sidebar row.sidebar-row:not(:selected) {
+    color: #000000; }
+  filechooser .sidebar .expander, .nautilus-window .sidebar .expander, .nemo-window .sidebar .expander {
+    color: #000000; }
+    filechooser .sidebar .expander:hover, .nautilus-window .sidebar .expander:hover, .nemo-window .sidebar .expander:hover {
+      color: #CCE8FF; }
+
+.caja-navigation-window .caja-side-pane {
+  background-color: #FFFFFF; }
+  .caja-navigation-window .caja-side-pane .view:not(:selected), .caja-navigation-window .caja-side-pane iconview {
+    border: none;
+    color: #000000;
+    background-color: transparent; }
+  .caja-navigation-window .caja-side-pane frame > border, .caja-navigation-window .caja-side-pane .frame {
+    border: none; }
+  .caja-navigation-window .caja-side-pane row:not(:selected), .caja-navigation-window .caja-side-pane view row:not(:selected), .caja-navigation-window .caja-side-pane row.sidebar-row:not(:selected) {
+    color: #000000; }
+  .caja-navigation-window .caja-side-pane .expander {
+    color: #000000; }
+    .caja-navigation-window .caja-side-pane .expander:hover {
+      color: #CCE8FF; }
 
 stacksidebar row {
   padding: 10px 4px; }
