@@ -2089,6 +2089,12 @@ filechooser .sidebar, .nautilus-window .sidebar, .nemo-window .sidebar {
     .caja-navigation-window .caja-side-pane .expander:hover {
       color: #4D4D4D; }
 
+stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list {
+  border-right: 1px solid shade(#FFFFFF, 0.2);
+  border-left-style: none; }
+stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list {
+  border-left: 1px solid shade(#FFFFFF, 0.2);
+  border-right-style: none; }
 stacksidebar row {
   padding: 10px 4px; }
   stacksidebar row > label {
