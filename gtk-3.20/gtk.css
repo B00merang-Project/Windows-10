@@ -2408,18 +2408,21 @@ decoration {
     box-shadow: none; }
 
 messagedialog .background.csd {
-  border-radius: 0 0 0px 0px;
+  border-radius: 0px 0px 0 0;
   color: #000000;
   background-color: #FFFFFF; }
 messagedialog decoration {
-  border-radius: 0px;
+  border-radius: 0px 0px 0 0;
   box-shadow: 0 1px 2px alpha(black, 0.2); }
 messagedialog .titlebar.horizontal {
+  border: none;
   background-color: #FFFFFF; }
 messagedialog.csd .dialog-action-area button {
+  margin: 0;
   padding: 10px;
   border-radius: 0;
-  border-bottom-style: none; }
+  border-bottom-style: none;
+  -gtk-outline-radius: 0; }
   messagedialog.csd .dialog-action-area button:last-child {
     border-right-width: 0;
     border-radius: 0px; }
