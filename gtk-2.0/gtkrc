@@ -52,7 +52,7 @@ style "default"
 
 	GtkPaned		::handle-size          			= 3
 
-	GtkNotebook		::tab-overlap				= 0
+	GtkNotebook		::tab-overlap				= 1
 
 	GtkProgressBar		::min-vertical-bar-width		= 14
 	GtkProgressBar		::min-horizontal-bar-height		= 14
@@ -269,7 +269,7 @@ style "notebook-button" = "notebook-bg"
 style "notebook-bg"
 {
 	bg[NORMAL] = @base_color
-	bg[ACTIVE] = shade (0.87, @base_color)
+	bg[ACTIVE] = shade (0.95, @base_color)
 }
 
 style "notebook" = "notebook-bg"
@@ -279,6 +279,7 @@ style "notebook" = "notebook-bg"
 
 	engine "murrine" {
 		contrast		= 0.4
+		roundness = 0
 		gradient_shades		= {1.0,1.0,1.0,1.0}
 		#focusstyle		= 2
 		#lightborder_shade	= 1.16
@@ -421,7 +422,7 @@ style "progressbar"
 	bg[SELECTED] = "#06B025" #progressbar bg color
 	bg[PRELIGHT] = @selected_bg_color
 
-	fg[PRELIGHT] = @selected_fg_color
+	fg[PRELIGHT] = "#fff"
 
 	engine "murrine" {
 		border_shades = { 1.0, 1.0 }
@@ -1289,6 +1290,22 @@ widget_class "*<GtkListItem>*"		style "fg-is-text-color-workaround"
 # Only match GtkCList and not the parent widgets, because that would also change the headers.
 widget_class "*<GtkCList>"		style "fg-is-text-color-workaround"
 widget_class "*<EelEditableLabel>"	style "fg-is-text-color-workaround"
+
+# Text Style
+style "text" = "default" {
+  engine "murrine" { textstyle = 0 }
+}
+
+style "menu_text" = "menu_item" {
+  engine "murrine" { textstyle = 0 }
+}
+
+# Fixes ugly text shadows for insensitive text
+widget_class "*<GtkLabel>"                                          style "text"
+widget_class "*<GtkMenu>*<GtkLabel>"                                style "menu_text" 
+widget_class "*<GtkComboBox>*<GtkCellLayout>"                       style "text"
+widget_class "*<GtkNotebook>*<GtkLabel>"                            style "text"
+widget_class "*<GtkNotebook>*<GtkCellLayout>"                       style "text"
 
 # panel theming
 include "panel.rc"
