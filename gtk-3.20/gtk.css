@@ -2003,6 +2003,7 @@ textview {
 treeview {
   -treeview-vertical-separator: 0; }
   treeview.view:selected, treeview.view:selected:focus {
+    border-radius: 0;
     color: #000000;
     background-color: #CCE8FF; }
   treeview.view:drop(active) {
@@ -2035,14 +2036,14 @@ treeview {
 .view {
   color: #000000;
   background-color: #FFFFFF; }
-  .view:not(treeview) {
-    border-radius: 0px; }
   .view:disabled {
     color: mix(#000000, #FFFFFF, 0.5);
     background-color: mix(#000000, #FFFFFF, 0.95); }
   .view:selected, .view:selected:focus, .view text:selected, .view text:selected:focus {
     color: #000000;
-    background-color: #CCE8FF; }
+    background-color: #CCE8FF;
+    border-radius: 0px;
+    -gtk-outline-radius: 0px; }
     .view:selected:disabled, .view:selected:focus:disabled, .view text:selected:disabled, .view text:selected:focus:disabled {
       color: mix(#000000, mix(#000000, #FFFFFF, 0.5), 0.5);
       background-color: #CCE8FF; }
@@ -2124,12 +2125,12 @@ placessidebar row {
     padding-left: 2px; }
   placessidebar row.sidebar-new-bookmark-row {
     color: #CCE8FF; }
-    placessidebar row.sidebar-new-bookmark-row:drop(active):not(:disabled) {
-      color: #CCE8FF;
-      box-shadow: inset 0 1px #CCE8FF, inset 0 -1px #CCE8FF; }
-      placessidebar row.sidebar-new-bookmark-row:drop(active):not(:disabled):selected {
-        color: #000000;
-        background-color: #CCE8FF; }
+  placessidebar row:drop(active):not(:disabled) {
+    color: #CCE8FF;
+    box-shadow: inset 0 1px #CCE8FF, inset 0 -1px #CCE8FF; }
+    placessidebar row:drop(active):not(:disabled):selected {
+      color: #000000;
+      background-color: #CCE8FF; }
 
 button.sidebar-button, button.sidebar-button:backdrop {
   min-width: 22px;
