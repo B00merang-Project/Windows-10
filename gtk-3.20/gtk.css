@@ -230,25 +230,14 @@ button {
       background-color: transparent;
       color: #000000; }
 
-check, radio {
-  padding: 4px;
-  border-style: none;
-  background-color: transparent;
-  min-height: 13px;
-  min-width: 13px; }
-
 checkbutton, radiobutton {
   padding: 4px;
-  border: none;
-  background-color: transparent;
   outline-offset: 0; }
-  checkbutton:hover, checkbutton:active:hover, checkbutton:selected, checkbutton:focus, radiobutton:hover, radiobutton:active:hover, radiobutton:selected, radiobutton:focus {
-    padding: 4px; }
 
-view.content-view check, .content-view.view check {
-  background-color: transparent; }
-  view.content-view check:hover, view.content-view check:disabled, view.content-view check:selected, view.content-view check:active, .content-view.view check:hover, .content-view.view check:disabled, .content-view.view check:selected, .content-view.view check:active {
-    background-color: transparent; }
+check, .check, radio, .radio {
+  margin: 4px;
+  min-height: 13px;
+  min-width: 13px; }
 
 .check, check {
   -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked-@2.png"));
