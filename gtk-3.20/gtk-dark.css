@@ -234,7 +234,7 @@ checkbutton, radiobutton {
   padding: 4px;
   outline-offset: 0; }
 
-check, .check, radio, .radio {
+check, radio {
   margin: 4px;
   min-height: 13px;
   min-width: 13px; }
