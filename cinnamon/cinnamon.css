@@ -1727,17 +1727,25 @@ StScrollBar StButton#hhandle:focus {
   transition-duration: 100;
 }
 
-.grouped-window-list-item-box:hover,
-.grouped-window-list-item-box:focus {
+.grouped-window-list-item-box:hover {
+  color: #ffffff;
+  border-image: url("panel-assets/item-hover.svg") 4;
+  transition-duration: 100;
+}
+
+.grouped-window-list-item-box:active,
+.grouped-window-list-item-box:checked,
+.grouped-window-list-item-box:focus:hover,
+.grouped-window-list-item-box:active:hover,
+.grouped-window-list-item-box:checked:hover {
   color: #ffffff;
   border-image: url("panel-assets/item-active-hover.svg") 4;
   transition-duration: 100;
 }
 
-.grouped-window-list-item-box:active,
-.grouped-window-list-item-box:checked {
+.grouped-window-list-item-box:focus {
   color: #ffffff;
-  border-image: url("panel-assets/item-active.svg") 4;
+  border-image: url("panel-assets/item-active.svg") 8;
   transition-duration: 100;
 }
 
