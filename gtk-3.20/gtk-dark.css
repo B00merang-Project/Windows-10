@@ -105,39 +105,28 @@ assistant .sidebar {
   color: #FFFFFF;
   background-color: #191919; }
 
-button:link > label, button:visited > label,
-*:link,
-button:link,
-button:visited {
+button:link > label, button:visited > label, *:link, button:link, button:visited {
   color: #224BA0; }
-  button:link > label:visited, button:visited > label:visited,
-  *:link:visited,
-  button:visited {
+  button:link > label:visited, button:visited > label:visited, *:link:visited, button:visited {
     color: mix(#224BA0, #FFFFFF, 0.2); }
-    *:selected button:link > label:visited, *:selected button:visited > label:visited, *:selected
-    *:link:visited, *:selected
-    button:visited:link, *:selected
-    button:visited {
+    *:selected button:link > label:visited, *:selected button:visited > label:visited,
+    *:selected *:link:visited,
+    *:selected button:visited:link,
+    *:selected button:visited {
       color: mix(#FFFFFF, #4D4D4D, 0.4); }
-  button:link > label:hover, button:visited > label:hover,
-  *:link:hover,
-  button:hover:link,
-  button:hover:visited {
+  button:link > label:hover, button:visited > label:hover, *:link:hover, button:hover:link, button:hover:visited {
     color: shade(#224BA0, 1.1); }
-    *:selected button:link > label:hover, *:selected button:visited > label:hover, *:selected
-    *:link:hover, *:selected
-    button:hover:link, *:selected
-    button:hover:visited {
+    *:selected button:link > label:hover, *:selected button:visited > label:hover,
+    *:selected *:link:hover,
+    *:selected button:hover:link,
+    *:selected button:hover:visited {
       color: mix(#FFFFFF, #4D4D4D, 0.9); }
-  button:link > label:active, button:visited > label:active,
-  *:link:active,
-  button:active:link,
-  button:active:visited {
+  button:link > label:active, button:visited > label:active, *:link:active, button:active:link, button:active:visited {
     color: #224BA0; }
-    *:selected button:link > label:active, *:selected button:visited > label:active, *:selected
-    *:link:active, *:selected
-    button:active:link, *:selected
-    button:active:visited {
+    *:selected button:link > label:active, *:selected button:visited > label:active,
+    *:selected *:link:active,
+    *:selected button:active:link,
+    *:selected button:active:visited {
       color: mix(#FFFFFF, #4D4D4D, 0.8); }
   button:link > label:backdrop:backdrop:hover, button:visited > label:backdrop:backdrop:hover, button:link > label:backdrop:backdrop:hover:selected, button:visited > label:backdrop:backdrop:hover:selected, button:link > label:backdrop, button:visited > label:backdrop,
   *:link:backdrop:backdrop:hover,
@@ -153,10 +142,10 @@ button:visited {
   button:link > label:selected, button:visited > label:selected, *:selected button:link > label, *:selected button:visited > label,
   *:link:selected,
   button:selected:link,
-  button:selected:visited, *:selected
-  *:link, *:selected
-  button:link, *:selected
-  button:visited {
+  button:selected:visited,
+  *:selected *:link,
+  *:selected button:link,
+  *:selected button:visited {
     color: mix(#FFFFFF, #4D4D4D, 0.8); }
 
 button:link, button:visited {
@@ -2610,6 +2599,8 @@ panel-toplevel.background button {
   color: #FFFFFF;
   border-radius: 0;
   border: none;
+  box-shadow: inset 0 -2px shade(#4D4D4D, 0.8), inset 4px 0 #000000, inset -4px 0 #000000;
+  background-color: transparent;
   padding-bottom: 0;
   padding-top: 0; }
   #tasklist-button:hover {
@@ -2669,6 +2660,8 @@ panel-toplevel.background na-tray-applet {
     color: #FFFFFF;
     border-radius: 0;
     border: none;
+    box-shadow: inset 0 -2px shade(#4D4D4D, 0.8), inset 4px 0 #000000, inset -4px 0 #000000;
+    background-color: transparent;
     padding-bottom: 0;
     padding-top: 0; }
     .mate-panel-menu-bar #tasklist-button:hover {
@@ -2726,6 +2719,8 @@ panel-toplevel.background na-tray-applet {
     color: #FFFFFF;
     border-radius: 0;
     border: none;
+    box-shadow: inset 0 -2px shade(#4D4D4D, 0.8), inset 4px 0 #000000, inset -4px 0 #000000;
+    background-color: transparent;
     padding-bottom: 0;
     padding-top: 0; }
     .xfce4-panel.background .tasklist button:hover {
