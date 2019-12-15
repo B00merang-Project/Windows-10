@@ -9,139 +9,53 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:export-ydpi="90.000000"
-   inkscape:export-xdpi="90.000000"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    width="24"
    height="24"
-   id="svg11300"
-   sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="button-insensitive.svg"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   version="1.0"
-   style="display:inline;enable-background:new">
-  <sodipodi:namedview
-     stroke="#ef2929"
-     fill="#f57900"
-     id="base"
-     pagecolor="#8c8c8c"
-     bordercolor="#ff5e00"
-     borderopacity="1"
-     inkscape:pageopacity="1"
-     inkscape:pageshadow="2"
-     inkscape:zoom="15.328321"
-     inkscape:cx="-3.5279691"
-     inkscape:cy="11.7026"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:grid-bbox="true"
-     inkscape:document-units="px"
-     inkscape:showpageshadow="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="846"
-     inkscape:window-x="0"
-     inkscape:window-y="25"
-     width="400px"
-     height="300px"
-     inkscape:snap-nodes="true"
-     inkscape:snap-bbox="true"
-     gridtolerance="10000"
-     inkscape:object-nodes="true"
-     inkscape:snap-grids="true"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:window-maximized="1"
-     inkscape:bbox-nodes="true"
-     inkscape:bbox-paths="false"
-     inkscape:snap-bbox-edge-midpoints="false"
-     inkscape:snap-bbox-midpoints="false"
-     objecttolerance="10000"
-     guidetolerance="10000"
-     borderlayer="true"
-     showborder="true"
-     guidecolor="#ff0b00"
-     guideopacity="1"
-     guidehicolor="#001aff"
-     guidehiopacity="0.49803922">
-    <inkscape:grid
-       type="xygrid"
-       id="grid3123"
-       empspacing="4"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true" />
-  </sodipodi:namedview>
-  <defs
-     id="defs3" />
+   sodipodi:docname="button-insensitive.svg">
   <metadata
-     id="metadata4">
+     id="metadata8">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:creator>
-          <cc:Agent>
-            <dc:title />
-          </cc:Agent>
-        </dc:creator>
-        <dc:source />
-        <cc:license
-           rdf:resource="" />
         <dc:title />
-        <dc:subject>
-          <rdf:Bag />
-        </dc:subject>
-        <dc:date />
-        <dc:rights>
-          <cc:Agent>
-            <dc:title />
-          </cc:Agent>
-        </dc:rights>
-        <dc:publisher>
-          <cc:Agent>
-            <dc:title />
-          </cc:Agent>
-        </dc:publisher>
-        <dc:identifier />
-        <dc:relation />
-        <dc:language />
-        <dc:coverage />
-        <dc:description />
-        <dc:contributor>
-          <cc:Agent>
-            <dc:title />
-          </cc:Agent>
-        </dc:contributor>
-      </cc:Work>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     style="display:inline"
-     inkscape:groupmode="layer"
-     inkscape:label="Base"
-     id="layer1"
-     transform="translate(0,-276)">
-    <path
-       style="fill:#ffffff;fill-opacity:1;stroke:none;opacity:0.1"
-       d="M 3 1 C 1.892 1 1 1.892 1 3 L 1 21 C 1 22.108 1.892 23 3 23 L 21 23 C 22.108 23 23 22.108 23 21 L 23 3 C 23 1.892 22.108 1 21 1 L 3 1 z M 4 2 L 20 2 C 21.108 2 22 2.892 22 4 L 22 20 C 22 21.108 21.108 22 20 22 L 4 22 C 2.892 22 2 21.108 2 20 L 2 4 C 2 2.892 2.892 2 4 2 z "
-       transform="translate(0,276)"
-       id="rect3005" />
-    <rect
-       rx="2"
-       ry="2"
-       y="278"
-       x="2"
-       height="20"
-       width="20"
-       id="rect3003"
-       style="opacity:0.12000000000000000;fill:#000000;fill-opacity:1;stroke:none" />
-  </g>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1226"
+     inkscape:window-height="739"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="-14.972257"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <rect
+     style="opacity:1;fill:#646464;fill-opacity:1;stroke:none"
+     id="rect2987"
+     width="24.005695"
+     height="23.999468"
+     x="0"
+     y="0.00053215027"
+     rx="0"
+     ry="0" />
 </svg>

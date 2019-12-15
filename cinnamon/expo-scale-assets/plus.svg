@@ -15,7 +15,7 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="plus.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,15 +30,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="15.003922"
-     inkscape:cx="17.565211"
+     inkscape:cx="7.5345004"
      inkscape:cy="14.565996"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="699"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
      inkscape:window-y="0"
      width="400px"
@@ -146,13 +146,5 @@
        d="m 14,281 0,6 -6,0 0,2 6,0 0,6 2,0 0,-6 6,0 0,-2 -6,0 0,-6 -2,0 z"
        id="rect3119-7"
        inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:0.93000034;fill:#ffffff;fill-opacity:0;stroke:#ffffff;stroke-opacity:1"
-       id="rect4690"
-       width="18"
-       height="18"
-       x="6"
-       y="279"
-       ry="9" />
   </g>
 </svg>

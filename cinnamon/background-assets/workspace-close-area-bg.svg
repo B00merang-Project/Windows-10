@@ -15,8 +15,8 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="add-workspace-bg.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="workspace-close-area-bg-hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,18 +29,18 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="20.594485"
-     inkscape:cx="4.8094446"
-     inkscape:cy="12"
+     inkscape:zoom="29.125"
+     inkscape:cx="12.485423"
+     inkscape:cy="12.112196"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="846"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="0"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -129,17 +129,19 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <path
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:none"
-       d="m 0,300 0,-22 c 0,-1.108 0.892,-2 2,-2 l 20,0 c 1.108,0 2,0.892 2,2 l 0,22 -1,0 0,-21 c 0,-1.108 -0.892,-2 -2,-2 l -18,0 c -1.108,0 -2,0.892 -2,2 l 0,21 z"
-       id="rect3005"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssssccsssscc" />
-    <path
-       style="opacity:0.85;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 1,300 0,-21 c 0,-1.108 0.892,-2 2,-2 l 18,0 c 1.108,0 2,0.892 2,2 l 0,21 z"
-       id="rect3003"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssscc" />
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.20000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451"
+       id="rect817"
+       width="24"
+       height="24"
+       x="0"
+       y="276" />
+    <rect
+       style="display:inline;opacity:1;fill:#191919;fill-opacity:1;stroke:none;stroke-width:1.12472224;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451;enable-background:new"
+       id="rect817-3"
+       width="22"
+       height="23"
+       x="1.0004139"
+       y="277" />
   </g>
 </svg>

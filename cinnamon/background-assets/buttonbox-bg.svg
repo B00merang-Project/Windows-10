@@ -15,7 +15,7 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="buttonbox-bg.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,17 +30,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="20.594485"
-     inkscape:cx="12.665422"
+     inkscape:cx="5.3576403"
      inkscape:cy="12"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="846"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="0"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -129,40 +129,12 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <path
-       style="opacity:0.05;fill:#ffffff;fill-opacity:1;stroke:none"
-       d="m 1,0 0,21 c 0,1.108 0.892,2 2,2 l 18,0 c 1.108,0 2,-0.892 2,-2 L 23,0 z"
-       transform="translate(0,276)"
-       id="rect3985"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssscc" />
     <rect
-       y="278"
-       x="1"
-       height="1"
+       style="opacity:1;fill:#ffffff;fill-opacity:0.06666667;stroke:none;stroke-width:1.20000005;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.68627451"
+       id="rect818"
        width="22"
-       id="rect3989"
-       style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none" />
-    <rect
-       style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
-       id="rect3991"
-       width="22"
-       height="1"
+       height="23"
        x="1"
-       y="279" />
-    <rect
-       y="277"
-       x="1"
-       height="1"
-       width="22"
-       id="rect3756"
-       style="opacity:0.6;fill:#000000;fill-opacity:1;stroke:none" />
-    <rect
-       y="276"
-       x="1"
-       height="1"
-       width="22"
-       id="rect2988"
-       style="opacity:0.3;fill:#ffffff;fill-opacity:1;stroke:none" />
+       y="276" />
   </g>
 </svg>

@@ -9,14 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg2987"
+   id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    width="24"
    height="24"
-   sodipodi:docname="app-button.svg">
+   viewBox="0 0 24 24"
+   sodipodi:docname="item-progress.svg">
   <metadata
-     id="metadata2993">
+     id="metadata8">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -28,7 +29,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs2991" />
+     id="defs6" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -38,24 +39,29 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="697"
-     id="namedview2989"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     id="namedview4"
      showgrid="false"
-     inkscape:zoom="11.313709"
-     inkscape:cx="8.7889179"
-     inkscape:cy="5.7477463"
+     inkscape:zoom="13.906433"
+     inkscape:cx="-28.322112"
+     inkscape:cy="11.573112"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2987" />
+     inkscape:current-layer="svg2" />
   <rect
-     style="opacity:0.9;fill:#0078d7;fill-opacity:1;stroke:none"
-     id="rect2987"
-     width="21.442434"
-     height="21.524595"
-     x="1.2380989"
-     y="1.3263549"
-     rx="0"
-     ry="0" />
+     style="fill:#4b7843;fill-opacity:1"
+     id="rect4133"
+     width="24.101694"
+     height="21.661016"
+     x="0"
+     y="0" />
+  <rect
+     style="fill:#3eb82e;fill-opacity:1"
+     id="rect4147"
+     width="24"
+     height="2.401"
+     x="0"
+     y="21.598999" />
 </svg>
