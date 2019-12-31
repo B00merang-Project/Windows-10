@@ -14,7 +14,7 @@
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    width="24"
    height="24"
-   sodipodi:docname="button-hover.svg">
+   sodipodi:docname="button-focused-hover.svg">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -43,12 +43,21 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="9.8333333"
-     inkscape:cx="7.6847459"
+     inkscape:cx="-11.077966"
      inkscape:cy="12"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg2" />
+  <rect
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none"
+     id="rect2987"
+     width="24.005695"
+     height="23.999468"
+     x="-0.0028476715"
+     y="0.00026607513"
+     rx="0"
+     ry="0" />
   <rect
      style="opacity:1;fill:#646464;fill-opacity:1;stroke:none;stroke-width:0.83334786"
      id="rect2987-3"

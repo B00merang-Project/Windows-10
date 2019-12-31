@@ -106,13 +106,13 @@
 	<!-- title -->
 
 <draw_ops name="title_focused">
-	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+	<title x="2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                color="C_title_focused" />
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title x="(0 `max` ((width - title_width) / 2)) + 2"
+	<title x="2"
                y="(0 `max` ((height - title_height) / 2)) + 1"
                color="C_title_unfocused"/>
 </draw_ops>

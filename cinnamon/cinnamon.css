@@ -61,9 +61,9 @@ StScrollBar StButton#hhandle:focus {
  * ===================================================================*/
 
 #Tooltip {
-  border-image: url("background-assets/popup.svg") 7;
+  background-color: rgba(238,238,238,1);
   padding: 4px 10px;
-  color: #ffffff;
+  color: #000000;
   font-size: 9pt;
   font-weight: normal;
   text-align: center;
@@ -166,7 +166,7 @@ StScrollBar StButton#hhandle:focus {
 .popup-menu-boxpointer {
   -arrow-border-color: rgba(10, 10, 10, 0.9);
   -arrow-background-color: transparent;
-  -boxpointer-gap: -1px;
+  -boxpointer-gap: 0;
   -arrow-border-radius: 16px;
   -arrow-border-width: 0;
 }
@@ -175,21 +175,22 @@ StScrollBar StButton#hhandle:focus {
 
 .menu,
 .popup-menu {
-  color: #ffffff;
+  color: #000000;
   font-size: 9.5pt;
   padding-right: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
   min-width: 200px;
   min-height: 80px;
-  border: rgba(50, 50, 50, 0.9);
-  border-radius: 0 0 0 0;
-  background-color: rgba(25, 25, 25, 0.85);
+  border: 1px solid #919191;
+  border-radius: 0;
+  background-color: rgba(238, 238, 238, 1);
   border-top: 1px;
   border-left: 1px;
   border-right: 1px;
   border-bottom: 1px;
   box-shadow: none;
+  margin-bottom: 1px;
 }
 
 .menu stEntry,
@@ -214,8 +215,8 @@ StScrollBar StButton#hhandle:focus {
 .popup-submenu-menu-item:open {}
 
 .popup-sub-menu {
-  color: #ffffff;
-  border: 1px #326b65;
+  color: #000000;
+  border: 1px solid #919191;
   border-left: 0px;
   border-right: 0px;
 }
@@ -270,9 +271,8 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .popup-menu-item:active {
-  color: #ffffff;
-  border-image: url('buttons/button-focused.svg') 2 2 2 2 stretch;
-  border: 1px transparent;
+  color: #000000;
+  background-color: rgba(255,255,255,0.8);
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -363,10 +363,10 @@ StScrollBar StButton#hhandle:focus {
  * ===================================================================*/
 
 #panel {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(238, 238, 238, 0.85);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
   outline: 1px rgba(0, 0, 0, 0.95);
-  color: #ffffff;
+  color: #000000;
   font-size: 9pt;
   height: 40px;
   width: 50px;
@@ -384,7 +384,7 @@ StScrollBar StButton#hhandle:focus {
   background-size: cover;
   width: 35px;
   height: 40px;
-  color: #ffffff;
+  color: #000000;
 }
 
 #panelLeft .applet-box:first-child:hover {
@@ -779,7 +779,7 @@ StScrollBar StButton#hhandle:focus {
 
 #notification {
   font-size: 10pt;
-  background-color: rgba(30, 30, 30, 0.96);
+  background-color: rgba(238, 238, 238, 0.96);
   padding: 8px 8px 8px 8px;
   spacing-rows: 10px;
   spacing-columns: 10px;
@@ -787,17 +787,17 @@ StScrollBar StButton#hhandle:focus {
   opacity: 255px;
   mouseover-opacity: 255px;
   width: 34em;
-  color: #ffffff;
+  color: #000000;
 }
 
 #notification.multi-line-notification {
   padding: 8px 8px 8px 8px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .notification-with-image {
   min-height: 159px;
-  color: #ffffff;
+  color: #000000;
 }
 
 #notification-scrollview {
@@ -825,8 +825,8 @@ StScrollBar StButton#hhandle:focus {
   border-radius: 0;
   height: 22px;
   width: 220px;
-  color: #ffffff;
-  caret-color: #ffffff;
+  color: #000000;
+  caret-color: #000000;
   font-size: 9pt;
   font-weight: normal;
   caret-size: 1px;
@@ -836,15 +836,15 @@ StScrollBar StButton#hhandle:focus {
 }
 
 #notification StEntry:focus {
-  border-image: url("misc-assets/entry-focused.svg") 6;
+  border-image: url("misc-assets/entry.svg") 6;
   background-gradient-direction: none;
   border: none;
   box-shadow: none;
   border-radius: 0;
   height: 22px;
   width: 220px;
-  color: #000;
-  caret-color: #000;
+  color: #000000;
+  caret-color: #000000;
   font-size: 9pt;
   font-weight: normal;
   caret-size: 1px;
@@ -1002,7 +1002,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: none;
   border: none;
   border-radius: 0;
-  border-image: url("buttons/button-focused.svg") 7;
+  border-image: url("buttons/button-focused-hover.svg") 7;
   padding: 6px;
   padding-right: 24px;
   padding-left: 24px;
@@ -1015,7 +1015,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: none;
   border: none;
   border-radius: 0;
-  border-image: url("buttons/button-focused.svg") 7;
+  border-image: url("buttons/button-pressed.svg") 7;
   padding: 6px;
   padding-right: 24px;
   padding-left: 24px;
@@ -1096,7 +1096,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: none;
   border: none;
   border-radius: 0;
-  border-image: url("buttons/button-focused.svg") 7;
+  border-image: url("buttons/button-focused-hover.svg") 7;
   padding: 6px;
   padding-right: 24px;
   padding-left: 24px;
@@ -1110,7 +1110,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: none;
   border: none;
   border-radius: 0;
-  border-image: url("buttons/button-focused.svg") 7;
+  border-image: url("buttons/button-pressed.svg") 7;
   padding: 6px;
   padding-right: 24px;
   padding-left: 24px;
@@ -1179,7 +1179,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: none;
   border: none;
   border-radius: 0;
-  border-image: url("buttons/button-focused.svg") 7;
+  border-image: url("buttons/button-focused-hover.svg") 7;
   padding: fff;
   color: #ffffff;
 }
@@ -1190,7 +1190,7 @@ StScrollBar StButton#hhandle:focus {
   background-gradient-direction: none;
   border: none;
   border-radius: 0;
-  border-image: url("buttons/button-focused.svg") 7;
+  border-image: url("buttons/button-pressed.svg") 7;
   padding: 6px;
   color: #ffffff;
 }
@@ -1299,7 +1299,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .run-dialog-entry:focus {
-  border-image: url("misc-assets/entry-focused.svg") 6;
+  border-image: url("misc-assets/entry-dark.svg") 6;
   background-gradient-direction: none;
   border: none;
   box-shadow: none;
@@ -1462,7 +1462,8 @@ StScrollBar StButton#hhandle:focus {
  * ===================================================================*/
 
 .menu-background {
-  background: rgba(20, 20, 20, 0.9);
+  border: none;
+  background: rgba(228, 228, 228, 0.85);
   box-shadow: 1px -1px 4px 1px rgba(1, 1, 1, 0.6);
 }
 
@@ -1480,7 +1481,7 @@ StScrollBar StButton#hhandle:focus {
 }
 
 .menu-favorites-button:hover {
-  border-color: rgba(255, 255, 255, 1);
+  border-color: #000000;
 }
 
 .menu-places-box {
@@ -1531,8 +1532,8 @@ StScrollBar StButton#hhandle:focus {
   padding-left: 7px;
   padding-right: 7px;
   padding-bottom: 7px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
 }
 
 .menu-application-button-label:ltr {
@@ -1565,7 +1566,7 @@ StScrollBar StButton#hhandle:focus {
   padding-right: 7px;
   padding-bottom: 7px;
   border: 2px solid transparent;
-  color: rgba(255, 255, 255, .3);
+  color: rgba(0, 0, 0, .3);
   font-style: normal;
 }
 
@@ -1574,8 +1575,8 @@ StScrollBar StButton#hhandle:focus {
   padding-left: 7px;
   padding-right: 7px;
   padding-bottom: 7px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  border: 2px solid #000000;
+  color: #000000;
 }
 
 .menu-category-button-label:ltr {
@@ -1611,7 +1612,7 @@ StScrollBar StButton#hhandle:focus {
 
 .menu-search-entry-icon {
   icon-size: 16px;
-  color: #1f1f1f;
+  color: #000000;
 }
 
 #menu-search-entry {
@@ -1671,7 +1672,7 @@ StScrollBar StButton#hhandle:focus {
 .window-list-item-box:focus {
   font-weight: normal;
   border-image: url("panel-assets/item-active.svg") 4;
-  color: #ffffff;
+  color: #000000;
 }
 
 .window-list-item-box:focus:hover,
@@ -1679,7 +1680,7 @@ StScrollBar StButton#hhandle:focus {
 .window-list-item-box:checked:hover {
   font-weight: normal;
   border-image: url("panel-assets/item-active-hover.svg") 8;
-  color: #ffffff;
+  color: #000000;
 }
 
 .window-list-item-demands-attention {
@@ -1694,7 +1695,7 @@ StScrollBar StButton#hhandle:focus {
 
 /* experimental support for grouped window list */
 .grouped-window-list-item-box {
-  color: #ffffff;
+  color: #000000;
   font-weight: normal;
   border-image: none;
   transition-duration: 100;
@@ -1727,6 +1728,16 @@ StScrollBar StButton#hhandle:focus {
   transition-duration: 100;
 }
 
+.grouped-window-list-item-demands-attention {
+  font-weight: normal;
+  border-image: url("panel-assets/item-attention.svg") 4;
+  transition-duration: 100;
+}
+
+.grouped-window-list-item-attention:hover {
+  border-image: url("panel-assets/item-attention-hover.svg") 4;
+}
+
 .window-list-item-box .progress,
 .grouped-window-list-item-box .progress {
   background-color: #4b7843;
@@ -1744,12 +1755,17 @@ StScrollBar StButton#hhandle:focus {
 .window-list-preview,
 .grouped-window-list-thumbnail-menu {
   spacing: 6px;
-  color: #ffffff;
-  border: 1px solid #000000;
-  background-color: rgba(0, 0, 0, 0.9);
+  color: #000000;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.75);
   border-radius: 0;
   padding: 6px 12px 12px 12px;
   font-size: 1em;
+}
+
+/* disable background color inheritance to child widgets */
+.grouped-window-list-thumbnail-menu * {
+  background-color: transparent;
 }
 
 .grouped-window-list-thumbnail-menu > StBoxLayout {
@@ -1764,7 +1780,7 @@ StScrollBar StButton#hhandle:focus {
 
 .grouped-window-list-thumbnail-menu .item-box:outlined {
   padding: 8px;
-  border: 1px solid #0078d7;
+  border: 2px solid #000000;
 }
 
 .grouped-window-list-thumbnail-menu .item-box:selected {
@@ -1889,17 +1905,10 @@ StScrollBar StButton#hhandle:focus {
   padding-top: 1px;
 }
 
-.workspace-button:outlined {
-  border-image: url("panel-assets/item-active.svg") 4;
-  color: #ffffff;
-}
-
-.workspace-button:hover {
-  border-image: url("panel-assets/item-hover.svg") 4;
-}
-
+.workspace-button:hover,
+.workspace-button:outlined,
 .workspace-button:outlined:hover {
-  border-image: url("panel-assets/item-active-hover.svg") 8;
+  border-image: url("background-assets/hover.svg") 4;
   color: #ffffff;
 }
 
@@ -1914,13 +1923,7 @@ StScrollBar StButton#hhandle:focus {
   padding: 0 4px;
 }
 
-.panel-launcher:hover {}
-
-.panel-top .panel-launcher:hover {
-  border-image: url("panel-assets/top-item-hover.svg") 4;
-}
-
-.panel-bottom .panel-launcher:hover {
+.panel-launcher:hover {
   border-image: url("panel-assets/item-hover.svg") 4;
 }
 
@@ -1966,7 +1969,7 @@ StScrollBar StButton#hhandle:focus {
 
 .applet-box {
   font-weight: normal;
-  color: #ffffff;
+  color: #000000;
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -1981,19 +1984,13 @@ StScrollBar StButton#hhandle:focus {
 .applet-box:hover,
 .applet-box:active {}
 
-.panel-top .applet-box:hover {
-  font-weight: normal;
-  color: #ffffff;
-  border-image: url("panel-assets/top-item-hover.svg") 4;
-}
-
-.panel-bottom .applet-box:hover {
+.applet-box:hover {
   border-image: url("panel-assets/item-hover.svg") 4;
 }
 
 .applet-label {
   font-weight: normal;
-  color: #ffffff;
+  color: #000000;
 }
 
 .applet-label:hover {
