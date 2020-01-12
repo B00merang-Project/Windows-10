@@ -1,14 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Windows 10 Light
+Name=Windows 10
 Comment=Windows 10 UI for Linux OSes
-Comment=Author : Christian Medel (Elbullazul)
-Version=v2.0
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Windows 10 Light
-MetacityTheme=Windows 10 Light
+GtkTheme=Windows 10
+MetacityTheme=Windows 10
 IconTheme=Windows 10
 CursorTheme=DMZ-White
 ButtonLayout=menu:minimize,maximize,close
