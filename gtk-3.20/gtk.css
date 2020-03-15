@@ -1476,7 +1476,7 @@ statusbar {
     border: none; }
 
 switch {
-  font-size: 0;
+  font-size: 1px;
   color: transparent;
   outline-offset: -4px;
   margin: 4px;
