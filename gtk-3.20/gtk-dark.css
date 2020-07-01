@@ -683,7 +683,7 @@ image {
 .caja-location-entry {
   padding: 3px 5px; }
 
-scrolledwindow viewport.frame {
+scrolledwindow.frame, scrolledwindow viewport.frame {
   border: none; }
 
 arrow, combobox arrow {
@@ -1603,28 +1603,36 @@ colorchooser #add-color-button {
   padding-left: 0;
   padding-right: 0; }
 
-headerbar, headerbar:not(.titlebar) {
+headerbar {
   padding: 4px 8px;
-  border: none;
+  min-height: 32px;
   color: #FFFFFF;
-  background-color: #191919; }
-  headerbar:backdrop, headerbar:not(.titlebar):backdrop {
+  background-color: #191919;
+  border-bottom: 1px solid shade(#FFFFFF, 0.2); }
+  headerbar:backdrop {
+    background-color: #191919;
     color: #FFFFFF;
-    background-color: #191919; }
-  .titlebar headerbar, .titlebar headerbar:backdrop, .titlebar headerbar:not(.titlebar), .titlebar headerbar:not(.titlebar):backdrop {
-    background-color: transparent; }
-  .tiled headerbar:backdrop, .tiled headerbar, .tiled-top headerbar:backdrop, .tiled-top headerbar, .tiled-right headerbar:backdrop, .tiled-right headerbar, .tiled-bottom headerbar:backdrop, .tiled-bottom headerbar, .tiled-left headerbar:backdrop, .tiled-left headerbar, .maximized headerbar:backdrop, .maximized headerbar, .fullscreen headerbar:backdrop, .fullscreen headerbar, .tiled headerbar:not(.titlebar):backdrop, .tiled headerbar:not(.titlebar), .tiled-top headerbar:not(.titlebar):backdrop, .tiled-top headerbar:not(.titlebar), .tiled-right headerbar:not(.titlebar):backdrop, .tiled-right headerbar:not(.titlebar), .tiled-bottom headerbar:not(.titlebar):backdrop, .tiled-bottom headerbar:not(.titlebar), .tiled-left headerbar:not(.titlebar):backdrop, .tiled-left headerbar:not(.titlebar), .maximized headerbar:not(.titlebar):backdrop, .maximized headerbar:not(.titlebar), .fullscreen headerbar:not(.titlebar):backdrop, .fullscreen headerbar:not(.titlebar) {
+    border-bottom-color: shade(#FFFFFF, 0.2); }
+  .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
     border-radius: 0; }
-  headerbar .title, headerbar:not(.titlebar) .title {
+  separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
+    border-top-left-radius: 0px; }
+    .maximized separator:first-child + headerbar, .tiled separator:first-child + headerbar, .maximized separator:first-child + headerbar:backdrop, .tiled separator:first-child + headerbar:backdrop, .maximized headerbar:first-child, .tiled headerbar:first-child, .maximized headerbar:first-child:backdrop, .tiled headerbar:first-child:backdrop {
+      border-radius: 0; }
+  headerbar:last-child, headerbar:last-child:backdrop {
+    border-top-right-radius: 0px; }
+    .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
+      border-radius: 0; }
+  headerbar .title {
     padding-left: 12px;
     padding-right: 12px;
     font-weight: bold; }
-  headerbar .subtitle, headerbar:not(.titlebar) .subtitle {
+  headerbar .subtitle {
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px;
     color: alpha(currentColor, 0.7); }
-  headerbar button, headerbar:not(.titlebar) button {
+  headerbar button {
     padding: 3px;
     border-style: solid;
     border-width: 1px;
@@ -1632,42 +1640,109 @@ headerbar, headerbar:not(.titlebar) {
     color: #FFFFFF;
     border-color: shade(#FFFFFF, 0.2);
     background-color: #191919; }
-    headerbar button:hover, headerbar:not(.titlebar) button:hover {
+    headerbar button:hover {
       color: #FFFFFF;
       border-color: shade(#4D4D4D, 0.7);
       background-color: shade(#4D4D4D, 1.02); }
-    headerbar button:active, headerbar button:checked, headerbar:not(.titlebar) button:active, headerbar:not(.titlebar) button:checked {
+    headerbar button:active, headerbar button:checked {
       color: #FFFFFF;
       border-color: shade(#4D4D4D, 0.8);
       background-color: shade(#4D4D4D, 0.95); }
-      headerbar button:active:backdrop, headerbar button:checked:backdrop, headerbar:not(.titlebar) button:active:backdrop, headerbar:not(.titlebar) button:checked:backdrop {
+      headerbar button:active:backdrop, headerbar button:checked:backdrop {
         color: #FFFFFF;
         border-color: shade(#191919, 0.85);
         background-color: shade(#191919, 0.85); }
-      headerbar button:active:disabled, headerbar button:checked:disabled, headerbar:not(.titlebar) button:active:disabled, headerbar:not(.titlebar) button:checked:disabled {
+      headerbar button:active:disabled, headerbar button:checked:disabled {
         color: mix(#FFFFFF, mix(#FFFFFF, #191919, 0.75), 0.1);
         border-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.6);
         background-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.2); }
-        headerbar button:active:disabled:backdrop, headerbar button:checked:disabled:backdrop, headerbar:not(.titlebar) button:active:disabled:backdrop, headerbar:not(.titlebar) button:checked:disabled:backdrop {
+        headerbar button:active:disabled:backdrop, headerbar button:checked:disabled:backdrop {
           color: mix(#FFFFFF, #191919, 0.75);
           border-color: shade(#FFFFFF, 0.2);
           background-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.2); }
-    headerbar button:focus, headerbar button:hover:focus, headerbar button:active:focus, headerbar button:active:hover:focus, headerbar:not(.titlebar) button:focus, headerbar:not(.titlebar) button:hover:focus, headerbar:not(.titlebar) button:active:focus, headerbar:not(.titlebar) button:active:hover:focus {
+    headerbar button:focus, headerbar button:hover:focus, headerbar button:active:focus, headerbar button:active:hover:focus {
       border-color: shade(#4D4D4D, 0.7); }
-    headerbar button:disabled, headerbar:not(.titlebar) button:disabled {
+    headerbar button:disabled {
       color: mix(#FFFFFF, mix(#FFFFFF, #191919, 0.75), 0.1);
       border-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.6);
       background-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.1); }
-      headerbar button:disabled:backdrop, headerbar:not(.titlebar) button:disabled:backdrop {
+      headerbar button:disabled:backdrop {
         color: mix(#FFFFFF, #191919, 0.75);
         border-color: shade(#FFFFFF, 0.2);
         background-color: mix(#FFFFFF, #191919, 0.98); }
-    headerbar button:backdrop, headerbar:not(.titlebar) button:backdrop {
+    headerbar button:backdrop {
       border-color: shade(#FFFFFF, 0.2);
       color: #FFFFFF;
       background-color: #191919; }
-  headerbar entry, headerbar:not(.titlebar) entry {
+  headerbar entry {
     padding: 4px 8px; }
+  headerbar.titlebar, .titlebar headerbar {
+    border-radius: 0px 0px 0px 0px; }
+  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
+    padding: 7px 14px;
+    border: none;
+    color: transparent;
+    background-color: transparent;
+    -gtk-icon-shadow: none;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    headerbar .titlebutton.close:hover, headerbar .titlebutton.maximize:hover, headerbar .titlebutton.minimize:hover, headerbar .titlebutton:not(separator):hover {
+      background-color: alpha(#FFFFFF, 0.15); }
+    headerbar .titlebutton.close:active, headerbar .titlebutton.maximize:active, headerbar .titlebutton.minimize:active, headerbar .titlebutton:not(separator):active {
+      background-color: alpha(#FFFFFF, 0.3); }
+  headerbar .titlebutton.close {
+    background-image: url("assets/close-focused.png"); }
+    headerbar .titlebutton.close:hover {
+      background-color: #ff5252;
+      background-image: url("assets/close-focused-active.png"); }
+    headerbar .titlebutton.close:active {
+      background-color: #ff0000;
+      background-image: url("assets/close-focused-active.png"); }
+    headerbar .titlebutton.close:backdrop {
+      background-image: url("assets/close-unfocused.png"); }
+      headerbar .titlebutton.close:backdrop:hover {
+        background-color: #ff5252;
+        background-image: url("assets/close-focused-active.png"); }
+      headerbar .titlebutton.close:backdrop:active {
+        background-color: #ff0000;
+        background-image: url("assets/close-focused-active.png"); }
+  headerbar .titlebutton.minimize {
+    background-image: url("assets/minimize-focused.png"); }
+    headerbar .titlebutton.minimize:hover {
+      background-image: url("assets/minimize-focused.png"); }
+    headerbar .titlebutton.minimize:active {
+      background-image: url("assets/minimize-focused.png"); }
+    headerbar .titlebutton.minimize:backdrop {
+      background-image: url("assets/minimize-unfocused.png"); }
+      headerbar .titlebutton.minimize:backdrop:hover {
+        background-image: url("assets/minimize-focused.png"); }
+      headerbar .titlebutton.minimize:backdrop:active {
+        background-image: url("assets/minimize-focused.png"); }
+  headerbar .titlebutton.maximize {
+    background-image: url("assets/maximize-focused.png"); }
+    headerbar .titlebutton.maximize:hover {
+      background-image: url("assets/maximize-focused.png"); }
+    headerbar .titlebutton.maximize:active {
+      background-image: url("assets/maximize-focused.png"); }
+    headerbar .titlebutton.maximize:backdrop {
+      background-image: url("assets/maximize-unfocused.png"); }
+      headerbar .titlebutton.maximize:backdrop:hover {
+        background-image: url("assets/maximize-focused.png"); }
+      headerbar .titlebutton.maximize:backdrop:active {
+        background-image: url("assets/maximize-focused.png"); }
+  .maximized headerbar .titlebutton.maximize {
+    background-image: url("assets/restore-focused.png"); }
+    .maximized headerbar .titlebutton.maximize:hover {
+      background-image: url("assets/restore-focused.png"); }
+    .maximized headerbar .titlebutton.maximize:active {
+      background-image: url("assets/restore-focused.png"); }
+    .maximized headerbar .titlebutton.maximize:backdrop {
+      background-image: url("assets/restore-unfocused.png"); }
+      .maximized headerbar .titlebutton.maximize:backdrop:hover {
+        background-image: url("assets/restore-focused.png"); }
+      .maximized headerbar .titlebutton.maximize:backdrop:active {
+        background-image: url("assets/restore-focused.png"); }
 
 toolbar {
   padding: 4px;
@@ -2031,9 +2106,11 @@ tooltip {
 textview {
   color: #FFFFFF;
   background-color: #202020; }
-  textview text:selected, textview text selection, textview text:selected:focus, textview text selection:focus {
-    color: #FFFFFF;
-    background-color: #0078D7; }
+  textview text {
+    background-color: #202020; }
+    textview text:selected, textview text selection, textview text:selected:focus, textview text selection:focus {
+      color: #FFFFFF;
+      background-color: #0078D7; }
 
 treeview {
   -treeview-vertical-separator: 0; }
@@ -2446,98 +2523,6 @@ decoration {
     border-radius: 0px;
     background-color: alpha(white, 0.95);
     box-shadow: none; }
-
-.titlebar {
-  border-bottom: none;
-  border-radius: 0px 0px 0px 0px; }
-  .titlebar .title {
-    padding-left: 12px;
-    padding-right: 12px;
-    font-weight: bold; }
-  .titlebar .subtitle {
-    font-size: smaller;
-    padding-left: 12px;
-    padding-right: 12px;
-    color: alpha(currentColor, 0.7); }
-  .titlebar .titlebutton.close, .titlebar .titlebutton.maximize, .titlebar .titlebutton.minimize, .titlebar .titlebutton:not(separator) {
-    padding: 7px 14px;
-    border: none;
-    color: transparent;
-    background-color: transparent;
-    -gtk-icon-shadow: none;
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat; }
-    .titlebar .titlebutton.close:hover, .titlebar .titlebutton.maximize:hover, .titlebar .titlebutton.minimize:hover, .titlebar .titlebutton:not(separator):hover {
-      background-color: alpha(#FFFFFF, 0.15); }
-    .titlebar .titlebutton.close:active, .titlebar .titlebutton.maximize:active, .titlebar .titlebutton.minimize:active, .titlebar .titlebutton:not(separator):active {
-      background-color: alpha(#FFFFFF, 0.3); }
-  .titlebar .titlebutton.close {
-    background-image: url("assets/close-focused.png"); }
-    .titlebar .titlebutton.close:hover {
-      background-color: #ff5252;
-      background-image: url("assets/close-focused-active.png"); }
-    .titlebar .titlebutton.close:active {
-      background-color: #ff0000;
-      background-image: url("assets/close-focused-active.png"); }
-    .titlebar .titlebutton.close:backdrop {
-      background-image: url("assets/close-unfocused.png"); }
-      .titlebar .titlebutton.close:backdrop:hover {
-        background-color: #ff5252;
-        background-image: url("assets/close-focused-active.png"); }
-      .titlebar .titlebutton.close:backdrop:active {
-        background-color: #ff0000;
-        background-image: url("assets/close-focused-active.png"); }
-  .titlebar .titlebutton.minimize {
-    background-image: url("assets/minimize-focused.png"); }
-    .titlebar .titlebutton.minimize:hover {
-      background-image: url("assets/minimize-focused.png"); }
-    .titlebar .titlebutton.minimize:active {
-      background-image: url("assets/minimize-focused.png"); }
-    .titlebar .titlebutton.minimize:backdrop {
-      background-image: url("assets/minimize-unfocused.png"); }
-      .titlebar .titlebutton.minimize:backdrop:hover {
-        background-image: url("assets/minimize-focused.png"); }
-      .titlebar .titlebutton.minimize:backdrop:active {
-        background-image: url("assets/minimize-focused.png"); }
-  .titlebar .titlebutton.maximize {
-    background-image: url("assets/maximize-focused.png"); }
-    .titlebar .titlebutton.maximize:hover {
-      background-image: url("assets/maximize-focused.png"); }
-    .titlebar .titlebutton.maximize:active {
-      background-image: url("assets/maximize-focused.png"); }
-    .titlebar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-unfocused.png"); }
-      .titlebar .titlebutton.maximize:backdrop:hover {
-        background-image: url("assets/maximize-focused.png"); }
-      .titlebar .titlebutton.maximize:backdrop:active {
-        background-image: url("assets/maximize-focused.png"); }
-  .maximized .titlebar .titlebutton.maximize {
-    background-image: url("assets/restore-focused.png"); }
-    .maximized .titlebar .titlebutton.maximize:hover {
-      background-image: url("assets/restore-focused.png"); }
-    .maximized .titlebar .titlebutton.maximize:active {
-      background-image: url("assets/restore-focused.png"); }
-    .maximized .titlebar .titlebutton.maximize:backdrop {
-      background-image: url("assets/restore-unfocused.png"); }
-      .maximized .titlebar .titlebutton.maximize:backdrop:hover {
-        background-image: url("assets/restore-focused.png"); }
-      .maximized .titlebar .titlebutton.maximize:backdrop:active {
-        background-image: url("assets/restore-focused.png"); }
-  .tiled .titlebar:not(headerbar), .tiled .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar) {
-    border-radius: 0; }
-
-.titlebar, .titlebar:not(headerbar), headerbar.default-decoration, .csd headerbar.default-decoration, .default-decoration.titlebar:not(headerbar), .csd .default-decoration.titlebar:not(headerbar) {
-  min-height: 32px;
-  color: #FFFFFF;
-  background-color: #191919;
-  border-bottom: 1px solid shade(#FFFFFF, 0.2); }
-  .titlebar headerbar, .titlebar:not(headerbar) headerbar, headerbar.default-decoration headerbar, .csd headerbar.default-decoration headerbar, .default-decoration.titlebar:not(headerbar) headerbar, .csd .default-decoration.titlebar:not(headerbar) headerbar {
-    border-bottom: none; }
-  .titlebar:backdrop, .titlebar:not(headerbar):backdrop, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar):backdrop, .csd .default-decoration.titlebar:not(headerbar):backdrop {
-    background-color: #191919;
-    color: #FFFFFF;
-    border-bottom-color: shade(#FFFFFF, 0.2); }
 
 messagedialog .background.csd {
   border-radius: 0px 0px 0 0;
