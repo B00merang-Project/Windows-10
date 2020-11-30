@@ -1403,6 +1403,10 @@ StScrollBar {
 .url-highlighter {
 	link-color:#2d73b5; }
 
+.notification-banner * {
+  color: white;
+}
+
 .notification-banner {
 	font-size: 11pt;
 	width: 34em;
