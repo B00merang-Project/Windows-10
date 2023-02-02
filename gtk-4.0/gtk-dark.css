@@ -17,53 +17,46 @@ dnd {
 image:disabled {
   -gtk-icon-filter: opacity(0.5); }
 
-.view {
+.view, iconview {
   color: #FFFFFF;
   background-color: #202020; }
-  .view:disabled {
+  .view:disabled, iconview:disabled {
     color: #8c8c8c;
     background-color: #252525; }
-  .view:selected, .view:selected:focus, .view text:selected, .view text:selected:focus {
+  .view:selected:focus, .view:selected, iconview:selected {
     color: #FFFFFF;
     background-color: #4D4D4D;
     border-radius: 0px; }
-    .view:selected:disabled, .view:selected:focus:disabled, .view text:selected:disabled, .view text:selected:focus:disabled {
-      color: #c6c6c6;
-      background-color: #4D4D4D; }
-    .view:selected:backdrop, .view:selected:focus:backdrop, .view text:selected:backdrop, .view text:selected:focus:backdrop {
-      color: #FFFFFF;
-      background-color: #4D4D4D; }
-  .view text selection, .view text selection:focus {
+  .view:selected:backdrop, iconview:selected:backdrop {
+    color: #FFFFFF;
+    background-color: #4D4D4D; }
+
+textview > text {
+  color: #FFFFFF;
+  background-color: #202020;
+  background-color: transparent; }
+  textview > text:disabled {
+    color: #8c8c8c;
+    background-color: #252525; }
+  textview > text:selected:focus, textview > text:selected {
+    color: #FFFFFF;
+    background-color: #4D4D4D; }
+  textview > text:selected:backdrop {
     color: #FFFFFF;
     background-color: #0078D7; }
-    .view text selection:disabled, .view text selection:focus:disabled {
-      color: #c6c6c6;
-      background-color: #4D4D4D; }
-    .view text selection:backdrop, .view text selection:focus:backdrop {
-      color: #FFFFFF;
-      background-color: #4D4D4D; }
-
-textview {
-  color: #FFFFFF;
-  background-color: #202020; }
-  textview text {
-    background-color: #202020; }
-    textview text:selected, textview text selection, textview text:selected:focus, textview text selection:focus {
-      color: #FFFFFF;
+  textview > text > selection {
+    background-color: #4D4D4D; }
+    textview > text > selection:focus-within {
       background-color: #0078D7; }
 
-iconview:selected, iconview:selected:focus, iconview text:selected, iconview text:selected:focus, iconview text selection, iconview text selection:focus {
-  border: 1px solid #4D4D4D;
-  color: #FFFFFF;
-  background-color: #4D4D4D; }
+textview:drop(active) {
+  caret-color: #4D4D4D; }
 
-iconview:selected:backdrop, iconview selection:backdrop, iconview text:selected:backdrop, iconview text selection:backdrop {
-  color: #FFFFFF;
-  background-color: #4D4D4D; }
+iconview:drop(active) {
+  box-shadow: none; }
 
-rubberband {
-  border: 1px solid #454545;
-  background-color: rgba(77, 77, 77, 0.3); }
+iconview > dndtarget:drop(active) {
+  border: 1px solid #4D4D4D; }
 
 rubberband {
   border: 1px solid #454545;
@@ -78,6 +71,23 @@ flowbox > flowboxchild {
   flowbox > flowboxchild:selected {
     color: #FFFFFF;
     background-color: #4D4D4D; }
+
+gridview > rubberband {
+  border: 1px solid #454545;
+  background-color: rgba(77, 77, 77, 0.3); }
+
+gridview > child {
+  padding: 3px;
+  transition: outline-width 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94), outline-offset 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+  gridview > child:selected {
+    color: #FFFFFF;
+    background-color: #4D4D4D; }
+    gridview > child:selected:backdrop {
+      color: #FFFFFF;
+      background-color: #4D4D4D; }
+  gridview > child box {
+    border-spacing: 8px;
+    margin: 12px; }
 
 coverflow cover {
   color: #FFFFFF;
@@ -164,7 +174,7 @@ switch {
   switch > slider {
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 
-.view.content-view.check:not(list),
+.view.content-view.check:not(list), iconview.content-view.check:not(list),
 .content-view .tile check:not(list) {
   transition: 200ms; }
 
@@ -318,9 +328,9 @@ window.aboutdialog image.large-icons {
     border-color: #606060;
     background-color: #303030; }
 
-.osd view, view.osd, .osd.view {
+.osd view, view.osd, .osd.view, iconview.osd {
   background-color: #191919; }
-  .osd view:selected, .osd view:selected:focus, view.osd:selected, view.osd:selected:focus, .osd.view:selected, .osd.view:selected:focus {
+  .osd view:selected, .osd view:selected:focus, view.osd:selected, view.osd:selected:focus, .osd.view:selected, iconview.osd:selected, .osd.view:selected:focus {
     background-color: transparent;
     border-style: solid;
     border-radius: 0;
@@ -967,63 +977,34 @@ modelbutton.flat {
 
 menu, .menu {
   margin: 4px;
-  padding: 0;
+  padding: 4px 0px;
   border-radius: 0px;
-  border-style: none;
-  color: #FFFFFF;
-  background-color: #191919; }
-  .csd menu, .csd .menu {
-    padding: 4px 0px;
-    border-radius: 0px;
-    border: none; }
-  menu > arrow, .menu > arrow {
-    padding: 4px;
-    border-color: transparent;
-    background-color: #191919;
-    min-width: 16px;
-    min-height: 16px; }
-    menu > arrow.top, .menu > arrow.top {
-      margin-top: -6px;
-      border-bottom: 1px solid #171717;
-      -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
-    menu > arrow.bottom, .menu > arrow.bottom {
-      margin-bottom: -6px;
-      border-top: 1px solid #171717;
-      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-
-menu menuitem, .menu menuitem {
-  min-height: 16px;
-  min-width: 40px;
-  padding: 4px;
   border: none;
-  border-radius: 0;
   color: #FFFFFF;
   background-color: #191919; }
-  menu menuitem:hover, .menu menuitem:hover {
+  menu menuitem, .menu menuitem {
+    min-height: 16px;
+    min-width: 40px;
+    padding: 4px;
+    border: none;
+    border-radius: 0;
     color: #FFFFFF;
-    background-color: #4D4D4D; }
-    menu menuitem:hover switch slider, menu menuitem:hover scale highlight, menu menuitem:hover scale slider, .menu menuitem:hover switch slider, .menu menuitem:hover scale highlight, .menu menuitem:hover scale slider {
-      background-color: #FFFFFF; }
-    menu menuitem:hover scale trough, menu menuitem:hover switch, .menu menuitem:hover scale trough, .menu menuitem:hover switch {
-      background-color: rgba(255, 255, 255, 0.75); }
-  menu menuitem:disabled, .menu menuitem:disabled {
-    color: #8c8c8c; }
-  menu menuitem arrow, .menu menuitem arrow {
-    min-width: 16px;
-    min-height: 16px; }
-    menu menuitem arrow:dir(ltr), .menu menuitem arrow:dir(ltr) {
-      margin-left: 10px;
-      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
-    menu menuitem arrow:dir(rtl), .menu menuitem arrow:dir(rtl) {
-      margin-right: 10px;
-      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
-
-menuitem accelerator {
-  color: alpha(currentColor, 0.55); }
-  menuitem accelerator:hover {
-    color: rgba(255, 255, 255, 0.8); }
-  menuitem accelerator:disabled {
-    color: #8c8c8c; }
+    background-color: #191919; }
+    menu menuitem:hover, .menu menuitem:hover {
+      color: #FFFFFF;
+      background-color: #4D4D4D; }
+      menu menuitem:hover switch slider, menu menuitem:hover scale highlight, menu menuitem:hover scale slider, .menu menuitem:hover switch slider, .menu menuitem:hover scale highlight, .menu menuitem:hover scale slider {
+        background-color: #FFFFFF; }
+      menu menuitem:hover scale trough, menu menuitem:hover switch, .menu menuitem:hover scale trough, .menu menuitem:hover switch {
+        background-color: rgba(255, 255, 255, 0.75); }
+    menu menuitem:disabled, .menu menuitem:disabled {
+      color: #8c8c8c; }
+    menu menuitem accelerator, .menu menuitem accelerator {
+      color: alpha(currentColor, 0.55); }
+      menu menuitem accelerator:hover, .menu menuitem accelerator:hover {
+        color: rgba(255, 255, 255, 0.8); }
+      menu menuitem accelerator:disabled, .menu menuitem accelerator:disabled {
+        color: #8c8c8c; }
 
 menubar, .menubar {
   padding: 0;
