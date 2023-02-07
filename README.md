@@ -10,9 +10,9 @@ GTK theme based on the appearance of Win32 apps on the Windows 10 platform using
 - Any GTK-based desktop
 - Cinnamon
 - Gnome
-- Xfce
-- MATE
 - LXDE/Openbox
+- MATE
+- Xfce
 
 ### Manual installation
 Go to releases, download the latest `.zip` file and extract it to the themes directory i.e. `/home/USERNAME/.themes`
