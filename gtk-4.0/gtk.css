@@ -648,120 +648,88 @@ searchbar {
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
 
-infobar {
-  border: none; }
+infobar > revealer > box {
+  padding: 8px;
+  border-spacing: 12px; }
 
-.info {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #144bb8;
-  color: #FFFFFF;
+infobar.info > revealer > box {
+  border: 1px solid #144bb8;
+  color: #000000;
   background-image: none;
   background-color: #0055FF; }
-  .info button {
+  infobar.info > revealer > box button {
     border-color: #144bb8;
-    color: #FFFFFF;
+    color: #000000;
     background-image: none;
     background-color: #1463ff; }
-    .info button:hover {
+    infobar.info > revealer > box button:hover {
       border-color: #104ec8;
       background-color: #1a66ff; }
-    .info button:active {
+    infobar.info > revealer > box button:active {
       border-color: #1f3d7a;
       background-color: #0653ec; }
-      .info button:active:hover {
-        border-color: #104ec8; }
-    .info button.close {
-      color: #FFFFFF; }
-      .info button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .info button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
 
-.warning {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #b86814;
-  color: #FFFFFF;
+infobar.warning > revealer > box {
+  border: 1px solid #b87614;
+  color: #000000;
   background-image: none;
-  background-color: #FF8300; }
-  .warning button {
-    border-color: #b86814;
-    color: #FFFFFF;
+  background-color: #FF9900; }
+  infobar.warning > revealer > box button {
+    border-color: #b87614;
+    color: #000000;
     background-image: none;
-    background-color: #ff8d14; }
-    .warning button:hover {
-      border-color: #c86f10;
-      background-color: #ff8f1a; }
-    .warning button:active {
-      border-color: #7a4e1f;
-      background-color: #ec7c06; }
-      .warning button:active:hover {
-        border-color: #c86f10; }
-    .warning button.close {
-      color: #FFFFFF; }
-      .warning button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .warning button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
+    background-color: #ffa114; }
+    infobar.warning > revealer > box button:hover {
+      border-color: #c87f10;
+      background-color: #ffa31a; }
+    infobar.warning > revealer > box button:active {
+      border-color: #7a561f;
+      background-color: #ec9006; }
 
-.question {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #232323;
-  color: #FFFFFF;
+infobar.question > revealer > box {
+  border: 1px solid #232323;
+  color: #000000;
   background-image: none;
   background-color: #2C2C2C; }
-  .question button {
+  infobar.question > revealer > box button {
     border-color: #232323;
-    color: #FFFFFF;
+    color: #000000;
     background-image: none;
     background-color: #303030; }
-    .question button:hover {
+    infobar.question > revealer > box button:hover {
       border-color: #252525;
       background-color: #303030; }
-    .question button:active {
+    infobar.question > revealer > box button:active {
       border-color: #1a1a1a;
       background-color: #2a2a2a; }
-      .question button:active:hover {
-        border-color: #252525; }
-    .question button.close {
-      color: #FFFFFF; }
-      .question button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .question button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
 
-.error {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #b81414;
+infobar.error > revealer > box {
+  border: 1px solid #b81414;
   background-color: #FF0000;
   background-image: none;
   color: #FFFFFF; }
-  .error button {
+  infobar.error > revealer > box button {
     border-color: #b81414;
     color: #FFFFFF;
     background-image: none;
     background-color: #ff1414; }
-    .error button:hover {
+    infobar.error > revealer > box button:hover {
       border-color: #c81010;
       background-color: #ff1a1a; }
-    .error button:active {
+    infobar.error > revealer > box button:active {
       border-color: #7a1f1f;
       background-color: #ec0606; }
-      .error button:active:hover {
-        border-color: #c81010; }
-    .error button.close {
-      color: #FFFFFF; }
-      .error button.close:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
-      .error button.close:active {
-        color: #FFFFFF;
-        background-color: rgba(0, 0, 0, 0.1); }
+
+infobar .close {
+  color: #000000;
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+  infobar .close:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  infobar .close:active {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 headerbar {
   padding: 4px 8px;
