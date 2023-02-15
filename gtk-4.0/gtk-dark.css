@@ -1586,50 +1586,24 @@ scale {
       margin-right: -12px; }
 
 progressbar {
-  padding: 0;
-  border: none;
-  color: white;
-  background-color: transparent; }
-  progressbar progress {
-    border: none;
-    border-radius: 0px;
-    background-color: #06B025; }
-    progressbar progress:backdrop {
-      background-color: #06B025; }
-  progressbar trough {
+  font-size: smaller;
+  color: white; }
+  progressbar > trough {
     border: 1px solid #2b2b2b;
     border-radius: 0px;
     background-color: rgba(255, 255, 255, 0.1); }
-    progressbar trough:backdrop {
-      background-color: #252525; }
-  progressbar.horizontal trough, progressbar.horizontal progress {
+  progressbar > trough > progress {
+    border: none;
+    border-radius: 0px;
+    background-color: #06B025; }
+  progressbar.horizontal > trough {
+    min-width: 150px; }
+  progressbar.vertical > trough {
+    min-height: 80px; }
+  progressbar.horizontal > trough, progressbar.horizontal > trough > progress {
     min-height: 14px; }
-  progressbar.vertical trough, progressbar.vertical progress {
+  progressbar.vertical > trough, progressbar.vertical > trough > progress {
     min-width: 14px; }
-
-treeview.view.progressbar, treeview.view.progressbar:disabled {
-  color: #FFFFFF;
-  border-radius: 0;
-  background-color: #06B025; }
-
-treeview.view.progressbar:focus, treeview.view.progressbar:selected:focus, treeview.view.progressbar:focus:selected, treeview.view.progressbar:focus:selected:focus, treeview.view.progressbar:disabled:selected {
-  border-radius: 0;
-  color: #4D4D4D;
-  background-color: #06B025; }
-
-treeview.view.trough {
-  color: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 0;
-  border: none; }
-  treeview.view.trough:selected, treeview.view.trough:selected:focus {
-    color: #FFFFFF;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 0;
-    border: none; }
-
-infobar treeview.view trough, row:selected treeview.view trough {
-  background-color: rgba(255, 255, 255, 0.1); }
 
 levelbar trough {
   padding: 1px;
