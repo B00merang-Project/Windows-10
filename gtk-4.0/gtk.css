@@ -37,16 +37,18 @@ textview > text {
   background-color: transparent; }
   textview > text:disabled {
     color: gray;
-    background-color: #f2f2f2; }
+    background-color: gray; }
   textview > text:selected:focus, textview > text:selected {
-    color: #000000;
-    background-color: #CCE8FF; }
+    color: #FFFFFF;
+    background-color: #0078D7; }
   textview > text:selected:backdrop {
     color: #FFFFFF;
     background-color: #0078D7; }
   textview > text > selection {
-    background-color: #CCE8FF; }
+    color: #FFFFFF;
+    background-color: #0078D7; }
     textview > text > selection:focus-within {
+      color: #FFFFFF;
       background-color: #0078D7; }
 
 textview:drop(active) {
@@ -650,75 +652,72 @@ searchbar {
 
 infobar > revealer > box {
   padding: 8px;
-  border-spacing: 12px; }
+  border-spacing: 12px;
+  box-shadow: none; }
 
 infobar.info > revealer > box {
-  border: 1px solid #144bb8;
+  border: 1px solid #0055FF;
   color: #000000;
   background-image: none;
   background-color: #0055FF; }
-  infobar.info > revealer > box button {
-    border-color: #144bb8;
+  infobar.info > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #000000;
     background-image: none;
-    background-color: #1463ff; }
-    infobar.info > revealer > box button:hover {
-      border-color: #104ec8;
+    background-color: #1463ff;
+    box-shadow: none; }
+    infobar.info > revealer > box button:not(.close):hover {
       background-color: #1a66ff; }
-    infobar.info > revealer > box button:active {
-      border-color: #1f3d7a;
+    infobar.info > revealer > box button:not(.close):active {
       background-color: #0653ec; }
 
 infobar.warning > revealer > box {
-  border: 1px solid #b87614;
+  border: 1px solid #FF9900;
   color: #000000;
   background-image: none;
   background-color: #FF9900; }
-  infobar.warning > revealer > box button {
-    border-color: #b87614;
+  infobar.warning > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #000000;
     background-image: none;
-    background-color: #ffa114; }
-    infobar.warning > revealer > box button:hover {
-      border-color: #c87f10;
+    background-color: #ffa114;
+    box-shadow: none; }
+    infobar.warning > revealer > box button:not(.close):hover {
       background-color: #ffa31a; }
-    infobar.warning > revealer > box button:active {
-      border-color: #7a561f;
+    infobar.warning > revealer > box button:not(.close):active {
       background-color: #ec9006; }
 
 infobar.question > revealer > box {
-  border: 1px solid #232323;
+  border: 1px solid #2C2C2C;
   color: #000000;
   background-image: none;
   background-color: #2C2C2C; }
-  infobar.question > revealer > box button {
-    border-color: #232323;
+  infobar.question > revealer > box button:not(.close) {
+    border-color: transparent;
     color: #000000;
     background-image: none;
-    background-color: #303030; }
-    infobar.question > revealer > box button:hover {
-      border-color: #252525;
+    background-color: #303030;
+    box-shadow: none; }
+    infobar.question > revealer > box button:not(.close):hover {
       background-color: #303030; }
-    infobar.question > revealer > box button:active {
-      border-color: #1a1a1a;
+    infobar.question > revealer > box button:not(.close):active {
       background-color: #2a2a2a; }
 
 infobar.error > revealer > box {
-  border: 1px solid #b81414;
-  background-color: #FF0000;
+  border: 1px solid #CC0000;
+  background-color: #CC0000;
   background-image: none;
-  color: #FFFFFF; }
-  infobar.error > revealer > box button {
-    border-color: #b81414;
-    color: #FFFFFF;
+  color: #000000; }
+  infobar.error > revealer > box button:not(.close) {
+    border-color: transparent;
+    color: #000000;
     background-image: none;
-    background-color: #ff1414; }
-    infobar.error > revealer > box button:hover {
-      border-color: #c81010;
-      background-color: #ff1a1a; }
-    infobar.error > revealer > box button:active {
-      border-color: #7a1f1f;
-      background-color: #ec0606; }
+    background-color: #dc0000;
+    box-shadow: none; }
+    infobar.error > revealer > box button:not(.close):hover {
+      background-color: #e00000; }
+    infobar.error > revealer > box button:not(.close):active {
+      background-color: #bd0505; }
 
 infobar .close {
   color: #000000;
@@ -727,9 +726,9 @@ infobar .close {
   background-image: none;
   box-shadow: none; }
   infobar .close:hover {
-    background-color: rgba(255, 255, 255, 0.2); }
+    background-color: rgba(255, 255, 255, 0.1); }
   infobar .close:active {
-    background-color: rgba(0, 0, 0, 0.1); }
+    background-color: rgba(0, 0, 0, 0.05); }
 
 headerbar {
   padding: 4px 8px;
