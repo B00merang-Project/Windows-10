@@ -1700,6 +1700,7 @@ StScrollBar StButton#hhandle:focus {
   font-weight: normal;
   border-image: none;
   transition-duration: 100;
+  min-width: 46px;
 }
 
 .grouped-window-list-item-box:hover {
