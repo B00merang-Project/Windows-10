@@ -1618,12 +1618,12 @@ progressbar {
   font-size: smaller;
   color: white; }
   progressbar > trough {
-    border: 1px solid #2b2b2b;
     border-radius: 0px;
+    border: 1px solid #2b2b2b;
     background-color: rgba(255, 255, 255, 0.1); }
   progressbar > trough > progress {
-    border: none;
     border-radius: 0px;
+    border: none;
     background-color: #06B025; }
   progressbar.horizontal > trough {
     min-width: 150px; }
