@@ -403,14 +403,15 @@ entry {
     entry:focus-within > placeholder {
       opacity: 0; }
   entry:disabled {
-    border-color: #202020;
+    border-color: #2f2f2f;
     color: #8c8c8c;
     background-color: #202020; }
     entry:disabled:backdrop {
-      border-color: #333333;
+      border-color: #232323;
       color: #535353;
       background-color: #1e1e1e; }
   entry:backdrop {
+    border-color: #333333;
     color: #FFFFFF;
     background-color: #202020; }
   entry.flat, entry.flat:focus {
@@ -474,81 +475,211 @@ editablelabel > stack > text > selection {
     color: #FFFFFF;
     background-color: #0078D7; }
 
+
 button {
-  padding: 3px;
+  padding: 3px 6px;
   border: 1px solid #333333;
   border-radius: 0px;
   color: #FFFFFF;
   background-color: #191919;
   background-image: none;
-  box-shadow: none; }
-  button:hover {
-    color: #FFFFFF;
-    border-color: #363636;
-    background-color: #4f4f4f; }
-  button:active, button:checked {
-    color: #FFFFFF;
-    border-color: #3e3e3e;
-    background-color: #494949; }
-    button:active:backdrop, button:checked:backdrop {
-      color: #FFFFFF;
-      border-color: #151515;
-      background-color: #151515; }
-    button:active:disabled, button:checked:disabled {
-      color: #eeeeee;
-      border-color: #202020;
-      background-color: #1b1b1b; }
-      button:active:disabled:backdrop, button:checked:disabled:backdrop {
-        color: #535353;
-        border-color: #333333;
-        background-color: #1b1b1b; }
-  button:focus, button:hover:focus, button:active:focus, button:active:hover:focus {
+  text-shadow: none;
+  box-shadow: none;
+  -gtk-icon-shadow: none; }
+  
+  button:focus {
     border-color: #363636; }
+  
+  button:hover {
+    border-color: #363636;
+    color: #FFFFFF;
+    background-color: #4f4f4f; }
+  
+  button:active {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+  
+  button:checked {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+  
+  button:checked:backdrop {
+    border-color: #535353;
+    color: #FFFFFF;
+    background-color: #3c3c3c; }
+  
+  button:checked:disabled {
+    border-color: #4e4e4e;
+    color: #8c8c8c;
+    background-color: #393939; }
+  
+  button:checked:disabled:backdrop {
+    border-color: #333333;
+    color: #535353;
+    background-color: #282828; }
+  
   button:disabled {
-    color: #eeeeee;
-    border-color: #202020;
-    background-color: #1a1a1a; }
-    button:disabled:backdrop {
-      color: #535353;
-      border-color: #333333;
-      background-color: #1e1e1e; }
+    border-color: #2f2f2f;
+    color: #8c8c8c;
+    background-color: #252525; }
+  
+  button:disabled:backdrop {
+    border-color: #232323;
+    color: #535353;
+    background-color: #1e1e1e; }
+  
   button:backdrop {
     border-color: #333333;
     color: #FFFFFF;
     background-color: #191919; }
-  button.flat {
+
+headerbar button, toolbar button,
+.toolbar button,
+button.flat {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+  -gtk-icon-shadow: none; }
+  headerbar button:backdrop, toolbar button:backdrop,
+  .toolbar button:backdrop, headerbar button:disabled, toolbar button:disabled,
+  .toolbar button:disabled,
+  button.flat:backdrop,
+  button.flat:disabled,
+  button.flat:disabled:backdrop {
     border-color: transparent;
-    border-radius: 0px;
-    color: #FFFFFF;
     background-color: transparent;
     background-image: none;
-    box-shadow: none; }
-    button.flat:disabled {
-      border-color: transparent;
-      color: rgba(255, 255, 255, 0.8);
-      background-color: transparent; }
-      button.flat:disabled:backdrop {
-        border-color: transparent;
-        color: rgba(255, 255, 255, 0.7);
-        background-color: transparent; }
-    button.flat:backdrop {
-      border-color: transparent;
-      background-color: transparent;
-      color: #FFFFFF; }
+    text-shadow: none;
+    box-shadow: none;
+    -gtk-icon-shadow: none; }
+  headerbar button:hover, toolbar button:hover,
+  .toolbar button:hover,
+  button.flat:hover {
+    border-color: #363636;
+    color: #FFFFFF;
+    background-color: #4f4f4f; }
+  headerbar button:active, toolbar button:active,
+  .toolbar button:active,
+  button.flat:active {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+  headerbar button:checked, toolbar button:checked,
+  .toolbar button:checked,
+  button.flat:checked {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+  headerbar button:checked:backdrop, toolbar button:checked:backdrop,
+  .toolbar button:checked:backdrop,
+  button.flat:checked:backdrop {
+    border-color: #535353;
+    color: #FFFFFF;
+    background-color: #3c3c3c; }
+  headerbar button:checked:disabled, toolbar button:checked:disabled,
+  .toolbar button:checked:disabled,
+  button.flat:checked:disabled {
+    border-color: #4e4e4e;
+    color: #8c8c8c;
+    background-color: #393939; }
+  headerbar button:checked:disabled:backdrop, toolbar button:checked:disabled:backdrop,
+  .toolbar button:checked:disabled:backdrop,
+  button.flat:checked:disabled:backdrop {
+    border-color: #333333;
+    color: #535353;
+    background-color: #282828; }
 
 button.destructive-action {
-  border-color: #621818;
-  box-shadow: inset 0 0 0 1px #621818; }
+  padding: 3px 6px;
+  border: 1px solid #333333;
+  border-radius: 0px;
+  color: #FFFFFF;
+  background-color: #191919;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+  -gtk-icon-shadow: none; }
+  button.destructive-action:focus {
+    border-color: #363636; }
+  button.destructive-action:not(:hover) {
+    border-color: #ae0909;
+    box-shadow: inset 0 0 0 1px #ae0909; }
   button.destructive-action:hover {
-    border-color: #621818;
-    box-shadow: inset 0 0 0 1px #621818; }
+    border-color: #363636;
+    color: #FFFFFF;
+    background-color: #4f4f4f; }
+    button.destructive-action:hover:not(:hover) {
+      border-color: #ae0909;
+      box-shadow: inset 0 0 0 1px #ae0909; }
+  button.destructive-action:active {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+    button.destructive-action:active:not(:hover) {
+      border-color: #ae0909;
+      box-shadow: inset 0 0 0 1px #ae0909; }
+  button.destructive-action:checked {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+    button.destructive-action:checked:not(:hover) {
+      border-color: #ae0909;
+      box-shadow: inset 0 0 0 1px #ae0909; }
+  button.destructive-action:backdrop {
+    border-color: #333333;
+    color: #FFFFFF;
+    background-color: #191919; }
+    button.destructive-action:backdrop:not(:hover) {
+      border-color: #ae0909;
+      box-shadow: inset 0 0 0 1px #ae0909; }
 
 button.suggested-action {
-  border-color: #2e2e2e;
-  box-shadow: inset 0 0 0 1px #2e2e2e; }
+  padding: 3px 6px;
+  border: 1px solid #333333;
+  border-radius: 0px;
+  color: #FFFFFF;
+  background-color: #191919;
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+  -gtk-icon-shadow: none; }
+  button.suggested-action:focus {
+    border-color: #363636; }
+  button.suggested-action:not(:hover) {
+    border-color: #0a6bb8;
+    box-shadow: inset 0 0 0 1px #0a6bb8; }
   button.suggested-action:hover {
-    border-color: #2e2e2e;
-    box-shadow: inset 0 0 0 1px #2e2e2e; }
+    border-color: #363636;
+    color: #FFFFFF;
+    background-color: #4f4f4f; }
+    button.suggested-action:hover:not(:hover) {
+      border-color: #0a6bb8;
+      box-shadow: inset 0 0 0 1px #0a6bb8; }
+  button.suggested-action:active {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+    button.suggested-action:active:not(:hover) {
+      border-color: #0a6bb8;
+      box-shadow: inset 0 0 0 1px #0a6bb8; }
+  button.suggested-action:checked {
+    border-color: #717171;
+    color: #FFFFFF;
+    background-color: #494949; }
+    button.suggested-action:checked:not(:hover) {
+      border-color: #0a6bb8;
+      box-shadow: inset 0 0 0 1px #0a6bb8; }
+  button.suggested-action:backdrop {
+    border-color: #333333;
+    color: #FFFFFF;
+    background-color: #191919; }
+    button.suggested-action:backdrop:not(:hover) {
+      border-color: #0a6bb8;
+      box-shadow: inset 0 0 0 1px #0a6bb8; }
 
 button.link,
 link {
@@ -585,65 +716,101 @@ button.link, button.link:hover, button.link:active, button.link:checked {
 button.link > label {
   text-decoration: underline; }
 
-spinbutton.horizontal {
-  border: 1px solid #333333; }
-  spinbutton.horizontal:backdrop {
-    border-color: #333333; }
-  spinbutton.horizontal:focus {
-    border-color: #2e2e2e; }
-  spinbutton.horizontal entry {
-    border: none;
-    padding: 7px 15px; }
-  spinbutton.horizontal button {
-    border-width: 0;
-    border-radius: 0;
-    border-left-width: 1px; }
-    spinbutton.horizontal button:hover, spinbutton.horizontal button:active, spinbutton.horizontal button:checked {
-      border-color: #333333;
-      background-color: #191919; }
-      spinbutton.horizontal button:hover:backdrop, spinbutton.horizontal button:active:backdrop, spinbutton.horizontal button:checked:backdrop {
-        border-color: #333333;
-        background-color: #191919; }
-    spinbutton.horizontal button:focus {
-      border-color: #2e2e2e; }
+spinbutton:not(.vertical) {
+  padding: 4px 3px;
+  border-radius: 0px;
+  border: 1px solid #333333;
+  color: #FFFFFF;
+  background-color: #202020;
+  min-height: 28px;
+  padding: 0px; }
+  spinbutton:not(.vertical):focus {
+    border-color: #4D4D4D; }
+  spinbutton:not(.vertical) > text {
+    min-height: 0px;
+    padding: 3px;
+    border-radius: 0px;
+    background-image: none;
+    border-color: transparent;
+    padding: 7px;
+    min-width: 36px; }
+    spinbutton:not(.vertical) > text > selection {
+      background-color: #4D4D4D;
+      color: #FFFFFF; }
+      spinbutton:not(.vertical) > text > selection:focus-within {
+        background-color: #0078D7;
+        color: #FFFFFF; }
+  spinbutton:not(.vertical) > button {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    text-shadow: none;
+    box-shadow: none;
+    -gtk-icon-shadow: none;
+    padding: 4px 6px;
+    border-radius: 0px;
+    box-shadow: -1px 0 #333333; }
+    spinbutton:not(.vertical) > button.up {
+      border-radius: 0 0px 0px 0; }
+    spinbutton:not(.vertical) > button:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+  spinbutton:not(.vertical):disabled {
+    border-color: #2f2f2f;
+    color: #8c8c8c;
+    background-color: #202020; }
+    spinbutton:not(.vertical):disabled:backdrop {
+      border-color: #232323;
+      color: #535353;
+      background-color: #1e1e1e; }
+  spinbutton:not(.vertical):backdrop {
+    border-color: #333333;
+    color: #FFFFFF;
+    background-color: #202020; }
 
-spinbutton.vertical button.up {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-width: 0; }
+spinbutton.vertical > text {
+  padding: 4px 3px;
+  border-radius: 0px;
+  border: 1px solid #333333;
+  color: #FFFFFF;
+  background-color: #202020;
+  min-height: 32px;
+  min-width: 32px;
+  padding: 0;
+  border-radius: 0; }
+  spinbutton.vertical > text > selection {
+    background-color: #4D4D4D;
+    color: #FFFFFF; }
+    spinbutton.vertical > text > selection:focus-within {
+      background-color: #0078D7;
+      color: #FFFFFF; }
 
-spinbutton.vertical button.down {
-  border-top-width: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0; }
+spinbutton.vertical > button {
+  min-height: 32px;
+  min-width: 32px;
+  padding: 0; }
+  spinbutton.vertical > button.up {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0; }
+  spinbutton.vertical > button.down {
+    border-top-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
 
-toolbar {
+spinbutton.vertical:drop(active) {
+  border-color: transparent;
+  box-shadow: none; }
+
+toolbar,
+.toolbar {
   padding: 4px;
   border: none;
   color: #FFFFFF;
   background-color: #191919; }
-  toolbar:backdrop {
+  toolbar:backdrop,
+  .toolbar:backdrop {
     color: #FFFFFF;
     background-color: #191919; }
-  toolbar button.flat {
-    border-color: transparent;
-    border-radius: 0px;
-    color: #FFFFFF;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: none; }
-    toolbar button.flat:disabled {
-      border-color: transparent;
-      color: rgba(255, 255, 255, 0.8);
-      background-color: transparent; }
-      toolbar button.flat:disabled:backdrop {
-        border-color: transparent;
-        color: rgba(255, 255, 255, 0.7);
-        background-color: transparent; }
-    toolbar button.flat:backdrop {
-      border-color: transparent;
-      background-color: transparent;
-      color: #FFFFFF; }
 
 searchbar {
   border-width: 0 0 1px 0;
@@ -751,25 +918,6 @@ headerbar {
     padding-left: 12px;
     padding-right: 12px;
     color: alpha(currentColor, 0.7); }
-  headerbar button {
-    border-color: transparent;
-    border-radius: 0px;
-    color: #FFFFFF;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: none; }
-    headerbar button:disabled {
-      border-color: transparent;
-      color: rgba(255, 255, 255, 0.8);
-      background-color: transparent; }
-      headerbar button:disabled:backdrop {
-        border-color: transparent;
-        color: rgba(255, 255, 255, 0.7);
-        background-color: transparent; }
-    headerbar button:backdrop {
-      border-color: transparent;
-      background-color: transparent;
-      color: #FFFFFF; }
   headerbar:backdrop {
     border-bottom-color: #333333;
     color: #FFFFFF;
@@ -2018,7 +2166,8 @@ calendar {
       calendar > header > button:hover {
         color: #FFFFFF; }
       calendar > header > button:backdrop {
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        background: none; }
       calendar > header > button:disabled {
         color: #8c8c8c; }
   calendar > grid > label.today {
@@ -2121,6 +2270,10 @@ paned > separator {
   background-size: 1px 1px; }
   paned > separator:selected {
     background-image: image(#4D4D4D); }
+  paned > separator:backdrop {
+    background-color: transparent;
+    background-image: image(#333333);
+    background-size: 1px 1px; }
   paned > separator.wide {
     min-width: 5px;
     min-height: 5px;
@@ -2657,59 +2810,21 @@ statusbar {
   .linked.vertical spinbutton button:first-child, .linked.vertical spinbutton button:last-child, .primary-toolbar .linked.vertical spinbutton button:first-child, .primary-toolbar .linked.vertical spinbutton button:last-child {
     border-radius: 0; }
 
-.toolbar > button,
-.toolbar > :not(.linked) > button,
-.toolbar :not(.linked) > menubutton > button,
-.toolbar :not(.linked) > scalebutton > button,
-.toolbar :not(.linked) > dropdown > button,
-.toolbar :not(.linked) > colorbutton > button,
-.toolbar :not(.linked) > fontbutton > button,
-.toolbar :not(.linked) > appchooserbutton > button,
-.toolbar :not(.linked) > combobox > box > button {
-  margin: 1px;
-  border-color: transparent;
-  border-radius: 0px;
-  color: #FFFFFF;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none; }
-  .toolbar > button:disabled,
-  .toolbar > :not(.linked) > button:disabled,
-  .toolbar :not(.linked) > menubutton > button:disabled,
-  .toolbar :not(.linked) > scalebutton > button:disabled,
-  .toolbar :not(.linked) > dropdown > button:disabled,
-  .toolbar :not(.linked) > colorbutton > button:disabled,
-  .toolbar :not(.linked) > fontbutton > button:disabled,
-  .toolbar :not(.linked) > appchooserbutton > button:disabled,
-  .toolbar :not(.linked) > combobox > box > button:disabled {
-    border-color: transparent;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: transparent; }
-    .toolbar > button:disabled:backdrop,
-    .toolbar > :not(.linked) > button:disabled:backdrop,
-    .toolbar :not(.linked) > menubutton > button:disabled:backdrop,
-    .toolbar :not(.linked) > scalebutton > button:disabled:backdrop,
-    .toolbar :not(.linked) > dropdown > button:disabled:backdrop,
-    .toolbar :not(.linked) > colorbutton > button:disabled:backdrop,
-    .toolbar :not(.linked) > fontbutton > button:disabled:backdrop,
-    .toolbar :not(.linked) > appchooserbutton > button:disabled:backdrop,
-    .toolbar :not(.linked) > combobox > box > button:disabled:backdrop {
-      border-color: transparent;
-      color: rgba(255, 255, 255, 0.7);
-      background-color: transparent; }
-  .toolbar > button:backdrop,
-  .toolbar > :not(.linked) > button:backdrop,
-  .toolbar :not(.linked) > menubutton > button:backdrop,
-  .toolbar :not(.linked) > scalebutton > button:backdrop,
-  .toolbar :not(.linked) > dropdown > button:backdrop,
-  .toolbar :not(.linked) > colorbutton > button:backdrop,
-  .toolbar :not(.linked) > fontbutton > button:backdrop,
-  .toolbar :not(.linked) > appchooserbutton > button:backdrop,
-  .toolbar :not(.linked) > combobox > box > button:backdrop {
-    border-color: transparent;
-    background-color: transparent;
-    color: #FFFFFF; }
-
+/*
+  .toolbar > button,
+  .toolbar > :not(.linked) > button,
+  .toolbar :not(.linked) > menubutton > button,
+  .toolbar :not(.linked) > scalebutton > button,
+  .toolbar :not(.linked) > dropdown > button,
+  .toolbar :not(.linked) > colorbutton > button,
+  .toolbar :not(.linked) > fontbutton > button,
+  .toolbar :not(.linked) > appchooserbutton > button,
+  .toolbar :not(.linked) > combobox > box > button {
+    margin: 1px;
+    
+    @include flat_buttons();
+  }
+  */
 .linked button:focus, .linked button:hover, .linked button:active, .linked button:checked, .linked .raised button:focus, .linked .raised button:hover, .linked .raised button:active, .linked .raised button:checked {
   box-shadow: -1px 0 #3e3e3e; }
   .linked button:focus:backdrop, .linked button:hover:backdrop, .linked button:active:backdrop, .linked button:checked:backdrop, .linked .raised button:focus:backdrop, .linked .raised button:hover:backdrop, .linked .raised button:active:backdrop, .linked .raised button:checked:backdrop {
