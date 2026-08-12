@@ -16,3 +16,6 @@ GTK theme based on the appearance of Win32 apps on the Windows 10 platform using
 
 ### Manual installation
 Go to releases, download the latest `.zip` file and extract it to the themes directory i.e. `/home/USERNAME/.themes`
+
+### Cinnamon 6.6 start icon
+Right-click the Menu applet and choose **Configure**. Enable **Use a custom icon and label**, select `cinnamon/windows-start-symbolic.svg` from the extracted theme, set the icon size to 22 px, and leave the label empty.

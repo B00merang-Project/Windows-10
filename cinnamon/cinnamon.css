@@ -382,8 +382,10 @@ StScrollBar StButton#hhandle:focus {
 #panelLeft .applet-box:first-child {
   transition-duration: 300;
   background-size: cover;
-  width: 35px;
+  width: 22px;
   height: 40px;
+  padding-left: 13px;
+  padding-right: 13px;
   color: #000000;
 }
 
@@ -2119,4 +2121,238 @@ StScrollBar StButton#hhandle:focus {
   border-bottom-width: 0px;
   border-right-width: 0px;
   border-radius: 8px 0px 0px 0px;
+}
+
+/* ===================================================================
+ * Cinnamon 6.6 menu compatibility
+ *
+ * Cinnamon 6.6 renamed the stock menu selectors from menu-* to
+ * appmenu-*. Keep the original theme intact and style the redesigned
+ * applet here with the flat Windows 10 light appearance.
+ * ===================================================================*/
+
+.appmenu-background .popup-menu-content {
+  padding: 0;
+  border-radius: 0;
+  color: #000000;
+  background-color: rgba(238, 238, 238, 0.98);
+  box-shadow: 1px -1px 4px 1px rgba(1, 1, 1, 0.6);
+}
+
+.appmenu-main-box {
+  spacing: 0;
+}
+
+.appmenu-right-box {
+  spacing: 6px;
+  padding: 10px;
+}
+
+.appmenu-categories-applications-box {
+  spacing: 10px;
+}
+
+.appmenu-categories-applications-box:top {
+  padding-top: 4px;
+}
+
+.appmenu-categories-box,
+.appmenu-applications-box,
+.appmenu-favs-box,
+.appmenu-places-box {
+  padding: 0;
+}
+
+.appmenu-applications-box {
+  padding-right: 4px;
+}
+
+.appmenu-search-box {
+  spacing: 8px;
+  padding-top: 4px;
+}
+
+.appmenu-category-button,
+.appmenu-category-button-greyed,
+.appmenu-category-button-selected,
+.appmenu-application-button,
+.appmenu-application-button-selected,
+.appmenu-sidebar-button {
+  padding: 6px;
+  spacing: 5px;
+  border: 0;
+  border-radius: 0;
+}
+
+.appmenu-application-button,
+.appmenu-category-button {
+  color: #000000;
+  background-color: transparent;
+}
+
+.appmenu-application-button:hover,
+.appmenu-application-button-selected {
+  color: #000000;
+  background-color: #cce8ff;
+  box-shadow: inset 3px 0 #0078d7;
+}
+
+.appmenu-application-button:highlighted,
+.appmenu-application-button-selected:highlighted {
+  font-weight: normal;
+  background-color: #fff0c2;
+}
+
+.appmenu-application-button-label,
+.appmenu-category-button-label {
+  padding: 0;
+}
+
+.appmenu-application-button-description {
+  color: #626262;
+}
+
+.appmenu-category-button:hover {
+  color: #000000;
+  background-color: #d9d9d9;
+}
+
+.appmenu-category-button-selected {
+  color: #ffffff;
+  background-color: #0078d7;
+}
+
+.appmenu-category-button-greyed {
+  color: #777777;
+  font-style: normal;
+}
+
+.appmenu-category-button-greyed StIcon {
+  opacity: 0.5;
+}
+
+.appmenu-sidebar {
+  padding: 10px 0;
+  color: #ffffff;
+  background-color: #2b2b2b;
+  border: 0;
+  border-radius: 0;
+}
+
+.appmenu-sidebar-button {
+  margin: 0;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.appmenu-sidebar-button:hover {
+  color: #ffffff;
+  background-color: #454545;
+}
+
+.appmenu-system-box {
+  spacing: 4px;
+}
+
+.appmenu-system-button,
+.appmenu-sidebar .appmenu-system-button {
+  padding: 8px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.appmenu-system-button-lock:hover,
+.appmenu-system-button-logout:hover,
+.appmenu-sidebar .appmenu-system-button-lock:hover,
+.appmenu-sidebar .appmenu-system-button-logout:hover {
+  background-color: #454545;
+}
+
+.appmenu-system-button-shutdown,
+.appmenu-sidebar .appmenu-system-button-shutdown {
+  background-color: transparent;
+}
+
+.appmenu-system-button-shutdown:hover,
+.appmenu-sidebar .appmenu-system-button-shutdown:hover {
+  background-color: #c42b1c;
+}
+
+#appmenu-search-entry {
+  width: 400px;
+  height: 18px;
+  padding: 7px 8px;
+  color: #000000;
+  caret-color: #000000;
+  caret-size: 1px;
+  border: 1px solid #767676;
+  border-radius: 0;
+  background-color: #ffffff;
+  selected-color: #ffffff;
+  selection-background-color: #0078d7;
+}
+
+#appmenu-search-entry:hover,
+#appmenu-search-entry:focus {
+  border: 2px solid #0078d7;
+  background-color: #ffffff;
+}
+
+#appmenu-search-entry StLabel.hint-text {
+  color: #666666;
+}
+
+.appmenu-search-entry-icon {
+  icon-size: 16px;
+  color: #000000;
+}
+
+/* Windows 10 notification-area proportions for Cinnamon 6.6. */
+#panelRight .applet-box {
+  padding-left: 5px;
+  padding-right: 5px;
+  spacing: 4px;
+  color: #000000;
+}
+
+#panelRight .applet-box:hover,
+#panelRight .applet-box:active,
+#panelRight .panel-status-button:hover,
+#panelRight .panel-button:hover {
+  border-image: none;
+  border: 0;
+  border-radius: 0;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.08);
+  box-shadow: none;
+}
+
+#panelRight .system-status-icon {
+  icon-size: 16px;
+  padding: 0;
+  color: #000000;
+}
+
+#panelRight .applet-label {
+  color: #000000;
+  font-size: 9pt;
+  font-weight: normal;
+}
+
+#panelRight .systray {
+  padding: 0 2px;
+  spacing: 0;
+}
+
+#panelRight .applet-cornerbar {
+  width: 5px;
+  border: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.35);
+  background-color: transparent;
+}
+
+#panelRight .applet-cornerbar-box:hover > .applet-cornerbar {
+  background-color: rgba(0, 0, 0, 0.08);
 }
