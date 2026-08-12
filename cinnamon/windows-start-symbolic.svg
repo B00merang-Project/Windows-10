@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g class="ColorScheme-Text" fill="currentColor">
+    <path d="M4 10L29 6V30H4Z"/>
+    <path d="M33 5L60 1V30H33Z"/>
+    <path d="M4 34H29V58L4 54Z"/>
+    <path d="M33 34H60V63L33 59Z"/>
+  </g>
+</svg>
